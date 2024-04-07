@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Navbar,
   Collapse,
@@ -11,13 +12,7 @@ import {
   CardBody,
   CardFooter,
 } from "@material-tailwind/react";
-import {
-  Bars3Icon,
-  CloudIcon,
-  CreditCardIcon,
-  ShareIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 interface NavItemPropsType {
@@ -90,41 +85,27 @@ export function HeroSection12() {
     );
   }, []);
 
-  const cards = [
-    {
-      active: true,
-      icon: CreditCardIcon,
-      title: "Netflix's 'Shuffle Play' feature",
-      desc: "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process.",
-    },
-    {
-      active: false,
-      icon: CloudIcon,
-      title: "Landbot closes $8M Series",
-      desc: "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process.",
-    },
-    {
-      active: false,
-      icon: ShareIcon,
-      title: "Brave web browser",
-      desc: "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process.",
-    },
-  ];
-
   return (
     <>
       <Navbar
         fullWidth
         shadow={false}
         color="transparent"
-        className="absolute z-50 border-0"
+        className="absolute z-50 border-0 bg-white text-black"
       >
         <div className="container mx-auto flex items-center justify-between">
-          <Typography variant="h6">Material Design</Typography>
+          <Image
+            src="/logo.png"
+            width={250}
+            height={80}
+            alt="ABC Foundation Logo"
+          />
           <ul className="ml-10 hidden items-center gap-6 lg:flex">
             <NavItem>Home</NavItem>
-            <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
+            <NavItem>About</NavItem>
+            <NavItem>Resources</NavItem>
+            <NavItem>Initiatives</NavItem>
+            <NavItem>Contacts</NavItem>
           </ul>
           <div className="hidden gap-2 lg:flex">
             <IconButton variant="text" color="white" size="sm">
@@ -144,9 +125,9 @@ export function HeroSection12() {
             className="ml-auto inline-block lg:hidden"
           >
             {open ? (
-              <XMarkIcon strokeWidth={2} className="h-6 w-6 text-white" />
+              <XMarkIcon strokeWidth={2} className="h-6 w-6 text-black" />
             ) : (
-              <Bars3Icon strokeWidth={2} className="h-6 w-6 text-white" />
+              <Bars3Icon strokeWidth={2} className="h-6 w-6 text-black" />
             )}
           </IconButton>
         </div>
@@ -154,8 +135,10 @@ export function HeroSection12() {
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900">
               <NavItem>Home</NavItem>
-              <NavItem>About Us</NavItem>
-              <NavItem>Contact Us</NavItem>
+              <NavItem>About</NavItem>
+              <NavItem>Resources</NavItem>
+              <NavItem>Initiatives</NavItem>
+              <NavItem>Contacts</NavItem>
             </ul>
             <div className="mt-4 flex gap-2">
               <IconButton variant="text" color="gray" size="sm">
@@ -198,19 +181,6 @@ export function HeroSection12() {
               are often just seeking status.
             </Typography>
           </div>
-        </div>
-      </div>
-      <div className="relative mx-8 -mt-14 rounded-xl bg-white p-6 shadow-md lg:mx-16">
-        <div className="grid grid-cols-1 justify-between gap-8 md:col-span-1 lg:grid-cols-3">
-          {cards.map(({ icon, title, desc, active }) => (
-            <SimpleCard
-              key={title}
-              icon={icon}
-              title={title}
-              desc={desc}
-              active={active}
-            />
-          ))}
         </div>
       </div>
     </>
