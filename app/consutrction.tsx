@@ -16,7 +16,7 @@ export function MaintenanceSection4() {
         />
 
         <div className="mt-7 !text-2xl md:text-3xl max-w-xl mx-auto !leading-snug">
-          We&apos;re currently working hard buidling our website. In the
+          We&apos;re currently working hard building our website. In the
           meantime connect with us via our social media accounts.
         </div>
         <div className="mt-4 md:max-w-2xl text-[18px] font-normal text-gray-500">
