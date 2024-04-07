@@ -1,9 +1,9 @@
-import MaintenanceSection4 from "./consutrction";
+import MainPage from "./main/page";
 
 export default function Home() {
   return (
     <main>
-      <MaintenanceSection4 />
+      <MainPage />
     </main>
   );
 }
