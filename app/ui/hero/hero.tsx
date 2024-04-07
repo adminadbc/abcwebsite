@@ -133,7 +133,7 @@ export function HeroSection12() {
         </div>
         <Collapse open={open}>
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-            <ul className="flex flex-col gap-4 text-gray-900">
+            <ul className="flex flex-col gap-4 text-gray-900 text-lg">
               <NavItem>Home</NavItem>
               <NavItem>About</NavItem>
               <NavItem>Resources</NavItem>
@@ -154,16 +154,16 @@ export function HeroSection12() {
           </div>
         </Collapse>
       </Navbar>
-      <div className="relative h-[42rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
+      <div className="relative h-[56rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 h-full w-full bg-black/50" />
-        <div className="grid min-h-[50rem] px-12">
-          <div className="container relative z-10 my-auto mx-auto">
+        <div className="grid min-h-[50rem] px-12 ">
+          <div className="container relative z-10 my-auto mx-auto text-center">
             <Typography
               variant="h3"
               color="white"
               className="text-lg !leading-snug lg:text-2xl"
             >
-              Pricing Plans
+              We are Changemakers
             </Typography>
             <Typography
               variant="h1"
@@ -174,12 +174,18 @@ export function HeroSection12() {
             </Typography>
             <Typography
               variant="lead"
-              className="mb-10 w-full text-white/80 md:max-w-full lg:max-w-xl"
+              className="mb-10 w-full text-white/80 md:max-w-full"
             >
-              Wealth creation is an evolutionarily recent positive-sum game.
-              Status is an old zero-sum game. Those attacking wealth creation
-              are often just seeking status.
+              We support communities accross Canada.
             </Typography>
+            <Button
+              size="lg"
+              variant="text"
+              color="white"
+              className="bg-[#B49712] hover:bg-[#B49712] active:bg-"
+            >
+              Book a call
+            </Button>
           </div>
         </div>
       </div>
