@@ -1,10 +1,10 @@
 import React from "react";
-import { HeroSection17 } from "../ui/hero/hero";
+import { HeroSection12 } from "../ui/hero/hero";
 
 function MainPage() {
   return (
     <div>
-      <HeroSection17 />
+      <HeroSection12 />
     </div>
   );
 }

@@ -15,11 +15,7 @@ const config: Config = withMT({
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        gree: {
-          100: "#B49712",
-        },
-      },
+      colors: {},
     },
   },
   plugins: [],
