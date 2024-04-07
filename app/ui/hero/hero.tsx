@@ -58,7 +58,7 @@ export function HeroSection17() {
       >
         <div className="container mx-auto flex items-center justify-between">
           <Typography variant="h6">Material Tailwind</Typography>
-          <ul className="ml-10 hidden items-center gap-6 lg:flex">
+          <ul className="ml-10 hidden items-center gap-6 lg:flex" color="black">
             <NavItem>
               <RectangleStackIcon className="h-5 w-5" />
               Home
@@ -80,28 +80,13 @@ export function HeroSection17() {
               Contact
             </NavItem>
           </ul>
-
-          {/* <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="text" color="white">
-              Log in
-            </Button>
-            <Button color="white">sign in</Button>
-          </div>
-          <IconButton
-            variant="text"
-            onClick={handleOpen}
-            className="ml-auto inline-block lg:hidden"
-          >
-            {open ? (
-              <XMarkIcon strokeWidth={2} className="h-6 w-6 text-white" />
-            ) : (
-              <Bars3Icon strokeWidth={2} className="h-6 w-6 text-white" />
-            )}
-          </IconButton> */}
         </div>
         <Collapse open={open}>
-          <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-            <ul className="flex flex-col gap-4 text-gray-900">
+          <div
+            className="container mx-auto mt-4 rounded-lg bg-black px-6 py-5"
+            color="black"
+          >
+            <ul className="flex flex-col gap-4 text-black-900">
               <NavItem>
                 <RectangleStackIcon className="h-5 w-5" />
                 Pages
@@ -126,11 +111,11 @@ export function HeroSection17() {
           </div>
         </Collapse>
       </Navbar>
-      <div className="relative min-h-screen w-full bg-black">
-        <div className="bg-[url('/image/bg-hero-17.png')] min-h-screen bg-contain bg-center bg-no-repeat">
+      <div className="relative min-h-screen w-full bg-white">
+        <div className="bg-[url('/hero.webp')] min-h-screen bg-contain bg-center bg-no-repeat">
           <div className="px-12 container min-h-screen mx-auto grid place-items-center text-center">
             <div className="grid place-items-center">
-              <div className="lg:-translate-y-28 -translate-y-14">
+              <div className="">
                 <Typography
                   color="white"
                   className="text-base font-bold !leading-snug"
@@ -155,10 +140,14 @@ export function HeroSection17() {
               <div className="lg:translate-y-44 md:translate-y-24 translate-y-2">
                 <Typography color="white" className="text-lg mb-4">
                   <span className="font-bold">100+</span>{" "}
-                  <span className="font-normal">Free Tickets</span>
+                  <span className="font-normal">
+                    We support local communities accross Canada
+                  </span>
                 </Typography>
-                <Button variant="outlined" color="white" fullWidth>
-                  get started
+              </div>
+              <div className="lg:translate-y-44 md:translate-y-24 translate-y-2">
+                <Button variant="filled" color="gree" fullWidth>
+                  BOOK A CALL
                 </Button>
               </div>
             </div>
