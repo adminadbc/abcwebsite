@@ -3,7 +3,6 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import Link from "next/link";
 
 export function MaintenanceSection4() {
   return (
@@ -16,18 +15,14 @@ export function MaintenanceSection4() {
           alt="Picture of the author"
         />
 
-        <Typography
-          variant="h1"
-          color="blue-gray"
-          className="mt-7 !text-2xl md:text-3xl max-w-xl mx-auto !leading-snug"
-        >
+        <div className="mt-7 !text-2xl md:text-3xl max-w-xl mx-auto !leading-snug">
           We&apos;re currently working hard buidling our website. In the
           meantime connect with us via our social media accounts.
-        </Typography>
-        <Typography className="mt-4 md:max-w-2xl text-[18px] font-normal text-gray-500">
+        </div>
+        <div className="mt-4 md:max-w-2xl text-[18px] font-normal text-gray-500">
           Please bear with us while we make these enhancements. Thank you for
           your patience!
-        </Typography>
+        </div>
         <div className="flex mt-5 gap-3">
           <a
             href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
