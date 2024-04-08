@@ -134,11 +134,11 @@ export function HeroSection12() {
         <Collapse open={open}>
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900 text-lg">
-              <NavItem>Home</NavItem>
-              <NavItem>About</NavItem>
-              <NavItem>Resources</NavItem>
-              <NavItem>Initiatives</NavItem>
-              <NavItem>Contacts</NavItem>
+              <li>Home</li>
+              <li>About</li>
+              <li>Resources</li>
+              <li>Initiatives</li>
+              <li>Contacts</li>
             </ul>
             <div className="mt-4 flex gap-2">
               <IconButton variant="text" color="gray" size="sm">
