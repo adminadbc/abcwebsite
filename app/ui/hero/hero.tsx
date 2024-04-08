@@ -95,17 +95,17 @@ export function HeroSection12() {
       >
         <div className="container mx-auto flex items-center justify-between">
           <Image
-            src="/logo.png"
+            src="/logoabc.png"
             width={250}
             height={80}
             alt="ABC Foundation Logo"
           />
-          <ul className="ml-10 hidden items-center gap-6 lg:flex">
-            <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Resources</NavItem>
-            <NavItem>Initiatives</NavItem>
-            <NavItem>Contacts</NavItem>
+          <ul className="ml-10 hidden items-center gap-14 lg:flex text-xl">
+            <li>Home</li>
+            <li>About</li>
+            <li>Resources</li>
+            <li>Initiatives</li>
+            <li>Contacts</li>
           </ul>
           <div className="hidden gap-2 lg:flex">
             <IconButton variant="text" color="white" size="sm">
@@ -168,9 +168,9 @@ export function HeroSection12() {
             <Typography
               variant="h1"
               color="white"
-              className="my-4 text-3xl !leading-snug lg:text-5xl"
+              className="my-4 text-3xl !leading-snug lg:text-4xl"
             >
-              Work with the rockets
+              We work with the lawyers and people
             </Typography>
             <Typography
               variant="lead"
