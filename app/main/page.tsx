@@ -8,6 +8,10 @@ import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
 import { FounderMessage } from "../ui/main/foundermessage";
 import { ProjectSection } from "../ui/main/projects";
+import { TestimonialSection6 } from "../ui/main/testimonials";
+import { WorkWithUs } from "../ui/main/workwithus";
+import { NewsLetter1 } from "../ui/main/newsletter";
+import { Footer4 } from "../ui/main/footer";
 
 function MainPage() {
   return (
@@ -19,6 +23,10 @@ function MainPage() {
       <WidgetsExample6 />
       <FounderMessage />
       <ProjectSection />
+      <TestimonialSection6 />
+      <WorkWithUs />
+      <NewsLetter1 />
+      <Footer4 />
     </div>
   );
 }

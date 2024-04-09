@@ -1,7 +1,14 @@
 "use client";
 
-import { Button, Typography } from "@material-tailwind/react";
-import { CardDefault } from "../../ui/main/card";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+import Image from "next/image";
 
 export function ProjectSection() {
   return (
@@ -22,8 +29,47 @@ export function ProjectSection() {
           </Button>
         </div>
         <div className="flex flex-wrap">
-          <CardDefault />
-          <CardDefault />
+          <Card className="mt-6 mr-5 mb-9 md:mb-10 md:w-80 lg:w-96">
+            <CardHeader color="blue-gray" className="">
+              <Image src="/02.png" alt="card-image" width={300} height={100} />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                Legal Connect
+              </Typography>
+              <Typography>
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button>Read More</Button>
+            </CardFooter>
+          </Card>
+          <Card className="mt-6 mr-5 mb-9 md:mb-10 md:w-80 lg:w-96">
+            <CardHeader color="blue-gray" className="">
+              <Image
+                src="/changemakers.jpeg"
+                alt="card-image"
+                width={300}
+                height={100}
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                The Changemakers
+              </Typography>
+              <Typography>
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button>Read More</Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>
