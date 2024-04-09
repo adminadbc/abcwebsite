@@ -12,6 +12,13 @@ export function NewsLetter1() {
         >
           Be the first who see the news
         </Typography>
+        <div className="relative flex py-5 items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <span className="flex-shrink mx-4 text-gray-400">
+            We are Changemakers
+          </span>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        </div>
         <Typography
           color="black"
           className="my-3 text-center !text-base md:w-7/12"
@@ -20,7 +27,7 @@ export function NewsLetter1() {
           software company will be in your business.
         </Typography>
         <div className="mt-2 flex w-full flex-col gap-3 md:w-fit md:flex-row">
-          {/* <Input label="Email" color="white" /> */}
+          <Input label="Email" color="white" />
           <Button
             color="white"
             size="md"
