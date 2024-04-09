@@ -16,13 +16,10 @@ export function MaintenanceSection4() {
         />
 
         <div className="mt-7 !text-2xl md:text-3xl max-w-xl mx-auto !leading-snug">
-          We&apos;re currently working hard building our website. In the
-          meantime connect with us via our social media accounts.
+          Exciting updates ahead!
+          <br></br>Stay tuned for our upcoming launch.
         </div>
-        <div className="mt-4 md:max-w-2xl text-[18px] font-normal text-gray-500">
-          Please bear with us while we make these enhancements. Thank you for
-          your patience!
-        </div>
+
         <div className="flex mt-5 gap-3">
           <a
             href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
