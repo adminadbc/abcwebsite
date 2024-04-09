@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Navbar,
   Collapse,
@@ -19,15 +20,28 @@ interface NavItemPropsType {
   children: React.ReactNode;
 }
 
-function NavItem({ children }: NavItemPropsType) {
-  return (
-    <li>
-      <Typography as="a" href="#" variant="small" className="font-medium">
-        {children}
-      </Typography>
-    </li>
-  );
-}
+// function NavItem({ children }: NavItemPropsType) {
+//   return (
+//     <li>
+//       <Typography as="a" href="#" variant="small" className="font-medium">
+//         {children}
+//       </Typography>
+//     </li>
+//   );
+// }
+
+// nav list component
+const navListItems = [
+  {
+    label: "Account",
+  },
+  {
+    label: "Blocks",
+  },
+  {
+    label: "Docs",
+  },
+];
 
 interface SimpleCardPropsType {
   icon: any;
@@ -100,12 +114,32 @@ export function HeroSection12() {
             height={80}
             alt="ABC Foundation Logo"
           />
-          <ul className="ml-10 hidden items-center gap-14 lg:flex text-xl">
-            <li>Home</li>
-            <li>About</li>
-            <li>Resources</li>
-            <li>Initiatives</li>
-            <li>Contacts</li>
+          <ul className="ml-10 hidden items-center gap-14 lg:flex text-2xl">
+            <li>
+              <Link as="a" href="#">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link as="a" href="#">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link as="a" href="#">
+                Resources
+              </Link>
+            </li>
+            <li>
+              <Link as="a" href="#">
+                Initiatives
+              </Link>
+            </li>
+            <li>
+              <Link as="a" href="#">
+                Contacts
+              </Link>
+            </li>
           </ul>
           <div className="hidden gap-2 lg:flex">
             <IconButton variant="text" color="white" size="sm">
@@ -134,11 +168,31 @@ export function HeroSection12() {
         <Collapse open={open}>
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900 text-lg">
-              <li>Home</li>
-              <li>About</li>
-              <li>Resources</li>
-              <li>Initiatives</li>
-              <li>Contacts</li>
+              <li>
+                <Link as="a" href="#">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link as="a" href="#">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link as="a" href="#">
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link as="a" href="#">
+                  Initiatives
+                </Link>
+              </li>
+              <li>
+                <Link as="a" href="#">
+                  Contacts
+                </Link>
+              </li>
             </ul>
             <div className="mt-4 flex gap-2">
               <IconButton variant="text" color="gray" size="sm">
@@ -158,26 +212,15 @@ export function HeroSection12() {
         <div className="absolute inset-0 h-full w-full bg-black/50" />
         <div className="grid min-h-[50rem] px-12 ">
           <div className="container relative z-10 my-auto mx-auto text-center">
-            <Typography
-              variant="h3"
-              color="white"
-              className="text-lg !leading-snug lg:text-2xl"
-            >
+            <h3 className="text-lg !leading-snug lg:text-2xl text-white">
               We are Changemakers
-            </Typography>
-            <Typography
-              variant="h1"
-              color="white"
-              className="my-4 text-3xl !leading-snug lg:text-4xl"
-            >
+            </h3>
+            <h1 className="my-4 text-2xl !leading-snug lg:text-6xl text-white">
               We work with the lawyers and people
-            </Typography>
-            <Typography
-              variant="lead"
-              className="mb-10 w-full text-white/80 md:max-w-full"
-            >
+            </h1>
+            <h4 className="mb-10 w-full text-xl text-white/80 md:max-w-full text-white ">
               We support communities accross Canada.
-            </Typography>
+            </h4>
             <Button
               size="lg"
               variant="text"
