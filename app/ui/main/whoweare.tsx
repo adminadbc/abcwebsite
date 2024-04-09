@@ -16,7 +16,7 @@ export function ContentSection5() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="grid max-w-7xl mx-auto my-auto items-center place-items-center lg:grid-cols-2 gap-14">
+      <div className="flex flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
         <div className="lg:max-w-md">
           <h2
             color="blue-gray"

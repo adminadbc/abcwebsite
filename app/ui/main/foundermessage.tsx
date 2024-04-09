@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, Button } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 import Image from "next/image";
 
 export function FounderMessage() {
@@ -16,7 +16,7 @@ export function FounderMessage() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="grid max-w-7xl mx-auto my-auto items-center place-items-center lg:grid-cols-2 gap-14">
+      <div className="flex flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
         <div className="lg:max-w-md">
           <h2
             color="blue-gray"
@@ -51,12 +51,13 @@ export function FounderMessage() {
             kinds of natural reasons, there&apos;s huge variety of the state of
             the ice.
           </p>
+          <Button className="mt-9 bg-abcf"> Read More </Button>
         </div>
         <div>
           <Image
             src="/angie-lal.jpg"
             alt="team work"
-            className="mb-6 h-full lg:h-[700px] w-full shadow-lg rounded-xl object-cover object-center"
+            className="mb-6 h-full lg:h-[700px] w-full shadow-lg rounded-xl "
             width={370}
             height={500}
           />
