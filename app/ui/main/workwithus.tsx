@@ -14,8 +14,8 @@ export function WorkWithUs() {
   return (
     <section className="py-10 px-8">
       <div className="rounded-xl bg-[url('/gradientone.png')] bg-cover bg-center  p-10 flex flex-wrap justify-around items-center">
-        <div className="mb-9 lg:w-4/5 text-wrap">
-          <h3 className="text-white text-4xl mb-5">Our Current Projects</h3>
+        <div className="mb-9 md:w-4/5 lg:w-2/5">
+          <h3 className="text-white text-4xl mb-5">Work With US</h3>
           <h4 className="text-white font-bold text-2xl">Volunteering:</h4>
           <p className="mt-2 mb-6 text-base text-white  ">
             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used

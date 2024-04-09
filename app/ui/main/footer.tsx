@@ -7,20 +7,20 @@ import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
   {
-    title: "Company",
-    items: ["About Us", "Careers", "Premium Tools", "Blog"],
+    title: "Product",
+    items: ["Changemakers", "Legal Connect", "Donations"],
   },
   {
-    title: "Pages",
-    items: ["Login", "Register", "Add List", "Contact"],
+    title: "Resources",
+    items: ["Articles", "Education"],
   },
   {
     title: "Legal",
-    items: ["Terms", "Privacy", "Team", "About Us"],
+    items: ["Terms", "Privacy", "Coonfidentiality"],
   },
   {
-    title: "Resourced",
-    items: ["Blog", "Services", "Product", "Pricing"],
+    title: "Pages",
+    items: ["Home", "About", "Changemakers", "Contact Us"],
   },
 ];
 
@@ -38,34 +38,24 @@ export function Footer4() {
               height={80}
               alt="ABC Foundation Logo"
             />
-            <div className="flex items-end gap-4">
-              <IconButton size="md">
-                <i className="fas fa-heart" />
-              </IconButton>
-              <IconButton size="md">
-                <i className="fas fa-heart" />
-              </IconButton>
-              <IconButton size="md">
-                <i className="fas fa-heart" />
-              </IconButton>
-            </div>
+
             <div className="flex gap-2">
-              <a href="#buttons-with-link">
+              <a href="#buttons-with-link" title="social">
                 <IconButton variant="text" size="sm">
-                  <i className="fa-brands fa-twitter text-lg text-white transition-colors hover:text-blue-gray-900" />
+                  <i className="fas fa-heart" />
                 </IconButton>
               </a>
-              <a href="#buttons-with-link">
+              <a href="#buttons-with-link" title="social">
                 <IconButton variant="text" size="sm">
                   <i className="fa-brands fa-youtube text-lg text-white transition-colors hover:text-blue-gray-900" />
                 </IconButton>
               </a>
-              <a href="#buttons-with-link">
+              <a href="#buttons-with-link" title="social">
                 <IconButton variant="text" size="sm">
                   <i className="fa-brands fa-instagram text-lg text-white transition-colors hover:text-blue-gray-900" />
                 </IconButton>
               </a>
-              <a href="#buttons-with-link">
+              <a href="#buttons-with-link" title="social">
                 <IconButton variant="text" size="sm">
                   <i className="fa-brands fa-github text-lg text-white transition-colors hover:text-blue-gray-900" />
                 </IconButton>
