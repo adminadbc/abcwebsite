@@ -1,22 +1,17 @@
 "use client";
-
-import { Button } from "@material-tailwind/react";
+import Link from "next/link"
 import Image from "next/image";
 
 export function FounderMessage() {
   return (
-    <section className="py-10 px-8">
-      <div className="flex flex-col text-center my-12">
+    <section className="py-10 lg:my-10 px-8">
+      <div className="text-center my-12">
         <h2 className="text-4xl lg:text-5xl ">Founder&#39;s Message</h2>
-        <div className="relative flex py-5 items-center">
-          <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <span className="flex-shrink mx-4 text-gray-400">
-            We are Changemakers
-          </span>
-          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+
+          <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto mt-2">
         </div>
       </div>
-      <div className="flex flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
+      <div className="flex flex-row-reverse flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
         <div className="lg:max-w-md">
           <h2
             color="blue-gray"
@@ -42,7 +37,7 @@ export function FounderMessage() {
             years of satellite records, scientists have observed a clear pattern
             of decline, decade-by-decade.
           </p>
-          <p className="text-xl font-normal text-gray-500">
+          <p className="text-xl mb-8 font-normal text-gray-500">
             The Arctic Ocean freezes every winter and much of the sea-ice then
             thaws every summer, and that process will continue whatever happens
             with climate change. Even if the Arctic continues to be one of the
@@ -51,13 +46,13 @@ export function FounderMessage() {
             kinds of natural reasons, there&apos;s huge variety of the state of
             the ice.
           </p>
-          <Button className="mt-9 bg-abcf"> Read More </Button>
+          <Link href="" className="mt-9 bg-abcf px-20 text-white text-lg py-3"> Read More </Link>
         </div>
         <div>
           <Image
             src="/angie-lal.jpg"
             alt="team work"
-            className="mb-6 h-full lg:h-[700px] w-full shadow-lg rounded-xl "
+            className="mb-6 h-full lg:h-[750px] w-full shadow-lg"
             width={370}
             height={500}
           />

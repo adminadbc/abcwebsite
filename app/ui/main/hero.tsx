@@ -50,44 +50,6 @@ interface SimpleCardPropsType {
   active: boolean;
 }
 
-function SimpleCard({ icon: Icon, title, desc, active }: SimpleCardPropsType) {
-  return (
-    <Card shadow={active} color={active ? "gray" : "transparent"}>
-      <CardBody className="flex items-start gap-4">
-        <Icon
-          className={`"h-7 w-7 shrink-0 ${
-            active ? "text-white" : "text-primary"
-          }`}
-        />
-        <div className="grid">
-          <Typography
-            variant="h5"
-            color={active ? "white" : "blue-gray"}
-            className="mb-2"
-          >
-            {title}
-          </Typography>
-          <Typography className="font-normal" color={active ? "white" : "gray"}>
-            {desc}
-          </Typography>
-        </div>
-      </CardBody>
-      <CardFooter className="-mt-4 pt-0 pl-[72px]">
-        <Button
-          size="sm"
-          variant="text"
-          ripple={false}
-          color={active ? "white" : "gray"}
-          className="flex items-center gap-2 px-0 hover:bg-transparent active:bg-transparent"
-        >
-          more about us
-          <ArrowRightIcon className="h-3 w-3" strokeWidth={3} />
-        </Button>
-      </CardFooter>
-    </Card>
-  );
-}
-
 export function HeroSection12() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
@@ -208,27 +170,22 @@ export function HeroSection12() {
           </div>
         </Collapse>
       </Navbar>
-      <div className="relative h-[56rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 h-full w-full bg-black/50" />
+      <div className="relative h-[56rem] w-full bg-[url('/background-hero.png')]  bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 h-full w-full bg-black bg-opacity-55" />
         <div className="grid min-h-[50rem] px-12 ">
-          <div className="container relative z-10 my-auto mx-auto text-center">
-            <h3 className="text-lg !leading-snug lg:text-2xl text-white">
-              We are Changemakers
+          <div className="container lg:w-5/6 relative z-10 my-auto mx-auto text-center">
+            <h3 className="text-lg !leading-snug lg:text-2xl lg:w-2/3 mx-auto text-white">
+         Empowering the community to confidently navigate the legal system and advocacy for equitable and fair outcomes.
             </h3>
-            <h1 className="my-4 text-2xl !leading-snug lg:text-6xl text-white">
-              We work with the lawyers and people
+            <h1 className="my-4 text-2xl !leading-snug lg:text-6xl mb-10 text-white">
+              Community empowerment Initiatives.
             </h1>
-            <h4 className="mb-10 w-full text-xl text-white/80 md:max-w-full text-white ">
-              We support communities accross Canada.
-            </h4>
-            <Button
-              size="lg"
-              variant="text"
-              color="white"
-              className="bg-[#B49712] hover:bg-[#B49712] active:bg-"
+            <Link
+            href=""
+              className="bg-[#B49712] mt-6 hover:bg-[#B49712] py-3 text-white rounded-lg px-8"
             >
-              Book a call
-            </Button>
+              Book an appointment
+            </Link>
           </div>
         </div>
       </div>

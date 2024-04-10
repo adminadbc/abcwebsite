@@ -8,11 +8,7 @@ export function ContentSection5() {
     <section className="py-10 px-8">
       <div className="flex flex-col text-center my-12">
         <h2 className="text-4xl lg:text-5xl ">Who we are</h2>
-        <div className="relative flex py-5 items-center">
-          <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <span className="flex-shrink mx-4 text-gray-400">
-            We are Changemakers
-          </span>
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
@@ -20,12 +16,12 @@ export function ContentSection5() {
         <div className="lg:max-w-md">
           <h2
             color="blue-gray"
-            className="mb-6 lg:text-3xl text-2xl lg:max-w-md"
+            className="mb-6 lg:text-3xl text-2xl font-bold lg:max-w-md"
           >
             So what does the new record for the lowest level of winter ice
             actually mean
           </h2>
-          <p className="text-xl font-normal mb-12 text-gray-500">
+          <p className="text-xl font-normal mb-12 text-gray-800">
             The Arctic Ocean freezes every winter and much of the sea-ice then
             thaws every summer, and that process will continue whatever happens
             with climate change. Even if the Arctic continues to be one of the
@@ -42,7 +38,7 @@ export function ContentSection5() {
             years of satellite records, scientists have observed a clear pattern
             of decline, decade-by-decade.
           </p>
-          <p className="text-xl font-normal text-gray-500">
+          <p className="text-xl font-normal text-gray-800">
             The Arctic Ocean freezes every winter and much of the sea-ice then
             thaws every summer, and that process will continue whatever happens
             with climate change. Even if the Arctic continues to be one of the

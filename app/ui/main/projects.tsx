@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image"
 import {
   Card,
   CardHeader,
@@ -8,68 +9,38 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import Image from "next/image";
 
 export function ProjectSection() {
   return (
-    <section className="m-10">
-      <div className="rounded-xl bg-[url('/gradientone.png')] bg-cover bg-center  p-10 flex flex-wrap justify-between items-center">
-        <div className="mb-9">
-          <Typography variant="small" color="white" className="font-bold mb-2">
-            Technologies we run
-          </Typography>
-          <Typography variant="h3" color="white">
-            Our Current Projects
-          </Typography>
-          <Typography color="white" className="mt-2 mb-6 !text-base">
-            Contact us for more information.
-          </Typography>
-          <Button color="gray" className="flex-shrink-0 ">
-            Book a call
-          </Button>
+    <section className="my-10 flex gap-4">
+      <div className="rounded-xl bg-[#F8F4E1]  py-20  pl-24 flex flex-wrap  gap-6 items-center">
+        <div className="md:w-1/2 space-y-3">
+        <h3 className="text-3xl font-semibold">
+          Our current projects
+        </h3>
+        <p>Join us at ABC Foundation to make a change</p>
+        <p>
+          The ABC Foundatoin is gearing up for groundbreaking projects
+          aims at empowering communities and promoting equitables outcomes. Stay tuned for updates on our 
+          upcoming initiatives!
+
+        </p>
         </div>
-        <div className="flex flex-wrap">
-          <Card className="mt-6 mr-5 mb-9 md:mb-10 md:w-80 lg:w-96">
-            <CardHeader color="blue-gray" className="">
-              <Image src="/02.png" alt="card-image" width={300} height={100} />
-            </CardHeader>
-            <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
-                Legal Connect
-              </Typography>
-              <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min
-                by walk and near to &quot;Naviglio&quot; where you can enjoy the
-                main night life in Barcelona.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read More</Button>
-            </CardFooter>
-          </Card>
-          <Card className="mt-6 mr-5 mb-9 md:mb-10 md:w-80 lg:w-96">
-            <CardHeader color="blue-gray" className="">
-              <Image
-                src="/changemakers.jpeg"
-                alt="card-image"
-                width={300}
-                height={100}
-              />
-            </CardHeader>
-            <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
-                The Changemakers
-              </Typography>
-              <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min
-                by walk and near to &quot;Naviglio&quot; where you can enjoy the
-                main night life in Barcelona.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read More</Button>
-            </CardFooter>
-          </Card>
+        <div>
+          <Image src="/changemakers.jpeg"
+          width={100}
+          height={100}
+          alt="changemakers logo"
+          className=""
+          />
+        </div>
+        <div>
+          <Image src="/02.png"
+          width={100}
+          height={100}
+          alt="changemakers logo"
+          className=""
+          />
         </div>
       </div>
     </section>
