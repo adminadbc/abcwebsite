@@ -3,23 +3,27 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
-interface NavItemPropsType {
-  children: React.ReactNode;
-}
-
-interface SimpleCardPropsType {
-  icon: any;
-  title: string;
-  desc: string;
-  active: boolean;
-}
+const links = [
+  { name: "Home", href: "/main" },
+  {
+    name: "About",
+    href: "/main/about",
+  },
+  { name: "Resources", href: "/main/resources" },
+  { name: "Initiatives", href: "/main/initiatives" },
+  { name: "Contacts", href: "/main/contacts" },
+];
 
 export function NavBar() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
+
+  const pathname = usePathname();
 
   React.useEffect(() => {
     window.addEventListener(
@@ -43,33 +47,19 @@ export function NavBar() {
             height={80}
             alt="ABC Foundation Logo"
           />
-          <ul className="ml-10 hidden items-center gap-14 lg:flex text-2xl">
-            <li>
-              <Link as="a" href="#">
-                Home
+          <div className="ml-10 hidden items-center gap-14 lg:flex text-2xl">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={clsx({
+                  "bg-sky-100 text-abcf": pathname === link.href,
+                })}
+              >
+                <p className="hidden md:block">{link.name}</p>
               </Link>
-            </li>
-            <li>
-              <Link as="a" href="#">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link as="a" href="#">
-                Resources
-              </Link>
-            </li>
-            <li>
-              <Link as="a" href="#">
-                Initiatives
-              </Link>
-            </li>
-            <li>
-              <Link as="a" href="#">
-                Contacts
-              </Link>
-            </li>
-          </ul>
+            ))}
+          </div>
           <div className="hidden gap-2 lg:flex">
             <IconButton variant="text" color="white" size="sm">
               <i className="fa-brands fa-facebook text-base" />
