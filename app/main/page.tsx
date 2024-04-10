@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { HeroSection12 } from "../ui/main/hero";
 
+import { NavBar } from "../ui/components/navbar";
+import { HeroSection12 } from "../ui/main/hero";
 import { ContentSection5 } from "../ui/main/whoweare";
 import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
@@ -16,8 +17,8 @@ import { Footer4 } from "../ui/main/footer";
 function MainPage() {
   return (
     <div>
+      <NavBar />
       <HeroSection12 />
-
       <ContentSection5 />
       <FeatureSection14 />
       <WidgetsExample6 />
