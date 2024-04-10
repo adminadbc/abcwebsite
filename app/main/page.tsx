@@ -12,7 +12,7 @@ import { ProjectSection } from "../ui/main/projects";
 import { TestimonialSection6 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
-import { Footer4 } from "../ui/main/footer";
+import { Footer4 } from "../ui/components/footer";
 
 function MainPage() {
   return (

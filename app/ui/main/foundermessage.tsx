@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
 
 export function FounderMessage() {
@@ -8,8 +8,7 @@ export function FounderMessage() {
       <div className="text-center my-12">
         <h2 className="text-4xl lg:text-5xl ">Founder&#39;s Message</h2>
 
-          <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto mt-2">
-        </div>
+        <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto mt-2"></div>
       </div>
       <div className="flex flex-row-reverse flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
         <div className="lg:max-w-md">
@@ -46,7 +45,10 @@ export function FounderMessage() {
             kinds of natural reasons, there&apos;s huge variety of the state of
             the ice.
           </p>
-          <Link href="" className="mt-9 bg-abcf px-20 text-white text-lg py-3"> Read More </Link>
+          <Link href="" className="mt-9 bg-abcf px-20 text-white text-lg py-3">
+            {" "}
+            Read More{" "}
+          </Link>
         </div>
         <div>
           <Image
