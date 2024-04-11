@@ -8,6 +8,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
+import { FaSquareInstagram, FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 interface TeamCardPropsType {
@@ -15,9 +17,20 @@ interface TeamCardPropsType {
   name: string;
   title: string;
   desc: string;
+  facebook: string;
+  insta: string;
+  linkedin: string;
 }
 
-function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
+function TeamCard({
+  img,
+  name,
+  title,
+  desc,
+  facebook,
+  insta,
+  linkedin,
+}: TeamCardPropsType) {
   return (
     <Card
       color="transparent"
@@ -49,15 +62,21 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
         <Typography className="mb-2 w-full font-normal !text-gray-500 xl:w-72">
           {desc}
         </Typography>
-        <div className="flex items-center gap-1.5">
-          <IconButton variant="text" color="gray">
-            <i className="fa-brands fa-facebook text-lg" />
+        <div className="flex items-center gap-7 mt-5">
+          <IconButton variant="text">
+            <a href={facebook} title="facebook" target="_blank" rel="noopener">
+              <FaSquareFacebook size={50} color={"#B49712"} />
+            </a>
           </IconButton>
-          <IconButton variant="text" color="gray">
-            <i className="fa-brands fa-twitter text-lg" />
+          <IconButton variant="text">
+            <a href={insta} title="instagram" target="_blank" rel="noopener">
+              <FaSquareInstagram size={50} color={"#B49712"} />
+            </a>
           </IconButton>
-          <IconButton variant="text" color="gray" className="text-gray-900">
-            <i className="fa-brands fa-dribbble text-lg" />
+          <IconButton variant="text">
+            <a href={linkedin} title="linkedin" target="_blank" rel="noopener">
+              <FaLinkedin size={50} color={"#B49712"} />
+            </a>
           </IconButton>
         </div>
       </CardBody>
@@ -71,18 +90,27 @@ const members = [
     name: "Angeline Lal",
     title: "Founder & Director",
     desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
+    facebook: "https://www.facebook.com/ms.angie.lal",
+    insta: "https://www.instagram.com/ms.angie.lal/",
+    linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
   },
   {
     img: "/richa.png",
     name: "Risha Sharma",
     title: "CEO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    facebook: "https://www.facebook.com/angeline.lal",
+    insta: "https://www.instagram.com/angeline.lal/",
+    linkedin: "https://www.linkedin.com/in/angeline-lal/",
   },
   {
     img: "/volunteer.jpg",
     name: "Jordan Michael",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    facebook: "https://www.facebook.com/angeline.lal",
+    insta: "https://www.instagram.com/angeline.lal/",
+    linkedin: "https://www.linkedin.com/in/angeline-lal/",
   },
 ];
 

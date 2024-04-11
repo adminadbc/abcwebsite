@@ -7,8 +7,11 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-
 import Image from "next/image";
+
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 interface TeamCardPropsType {
   img: string;
@@ -49,15 +52,15 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
         <Typography className="mb-2 w-full font-normal !text-gray-500 xl:w-72">
           {desc}
         </Typography>
-        <div className="flex items-center gap-1.5">
-          <IconButton variant="text" color="gray">
-            <i className="fa-brands fa-facebook text-lg" />
+        <div className="flex items-center gap-7 mt-5">
+          <IconButton variant="text">
+            <FaSquareFacebook size={50} color={"#B49712"} />
           </IconButton>
-          <IconButton variant="text" color="gray">
-            <i className="fa-brands fa-twitter text-lg" />
+          <IconButton variant="text">
+            <FaSquareInstagram size={50} color={"#B49712"} />
           </IconButton>
-          <IconButton variant="text" color="gray" className="text-gray-900">
-            <i className="fa-brands fa-dribbble text-lg" />
+          <IconButton variant="text">
+            <FaLinkedin size={50} color={"#B49712"} />
           </IconButton>
         </div>
       </CardBody>
