@@ -6,7 +6,6 @@ import {
   CardHeader,
   IconButton,
   Typography,
-  Tooltip,
 } from "@material-tailwind/react";
 
 import { FaSquareInstagram, FaSquareFacebook } from "react-icons/fa6";
@@ -51,11 +50,11 @@ function TeamCard({
         />
       </CardHeader>
       <CardBody className="p-0 lg:col-span-7">
-        <Tooltip title={name}>
-          <Typography variant="h5" color="blue-gray">
-            {name}
-          </Typography>
-        </Tooltip>
+        <Typography variant="h5" color="blue-gray">
+          {name}
+        </Typography>
+        <div className="flex-grow border-t-4 border-abcf w-1/2 mt-2"></div>
+
         <Typography
           variant="small"
           className="mb-3 mt-2 font-bold uppercase !text-gray-500"
