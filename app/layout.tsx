@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const bodoni = localFont({ src: "../bodoniflf-webfont/BodoniFLF-Roman.woff" });
 
 export const metadata: Metadata = {
   title: "ABC Foundation",
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" style={{width : "screen", overflowX :"hidden"}}>
+      <body className={bodoni.className}>{children}</body>
     </html>
   );
 }
