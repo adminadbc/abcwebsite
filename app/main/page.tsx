@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-
-import { NavBar } from "../ui/components/navbar";
 import { HeroSection12 } from "../ui/main/hero";
+
 import { ContentSection5 } from "../ui/main/whoweare";
 import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
@@ -13,6 +12,7 @@ import { TestimonialSection6 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
 import { Footer4 } from "../ui/main/footer";
+import NavBar from "../ui/components/navbar";
 
 function MainPage() {
   return (

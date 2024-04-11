@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{width : "screen", overflowX :"hidden"}}>
       <body className={bodoni.className}>{children}</body>
     </html>
   );

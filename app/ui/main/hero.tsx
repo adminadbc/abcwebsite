@@ -17,10 +17,11 @@ interface SimpleCardPropsType {
 export function HeroSection12() {
   return (
     <>
-      <div className="relative h-[56rem] w-full bg-[url('/background-hero.png')]  bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 h-full w-full bg-black bg-opacity-55" />
-        <div className="grid min-h-[50rem] px-12 ">
-          <div className="container lg:w-5/6 relative z-10 my-auto mx-auto text-center">
+      <div className="relative overflow-hidden w-full bg-[url('/background-hero.png')] 
+        bg-cover bg-center">
+        <div className="absolute inset-0 h-[41rem] w-screen bg-black bg-opacity-55" />
+        <div className="grid min-h-[40rem] px-12 ">
+          <div className=" lg:w-5/6 relative z-10 my-auto mx-auto text-center">
             <h3 className="text-lg !leading-snug lg:text-2xl lg:w-2/3 mx-auto text-white">
               Empowering the community to confidently navigate the legal system
               and advocacy for equitable and fair outcomes.

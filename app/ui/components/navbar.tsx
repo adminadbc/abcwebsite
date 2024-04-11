@@ -38,16 +38,16 @@ export function NavBar() {
         fullWidth
         shadow={false}
         color="transparent"
-        className="absolute z-50 border-0 bg-white text-black"
+        className="absolute z-50 border-0 bg-white text-black w-screen"
       >
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container ml-6 md:sml-14 flex items-center justify-between">
           <Image
             src="/logoabc.png"
             width={250}
             height={80}
             alt="ABC Foundation Logo"
           />
-          <div className="ml-10 hidden items-center gap-14 lg:flex text-2xl">
+          <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
             {links.map((link) => (
               <Link
                 key={link.name}

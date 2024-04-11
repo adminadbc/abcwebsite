@@ -5,8 +5,8 @@ config.autoAddCss = false;
 
 export default function Home() {
   return (
-    <main>
+    <div className="w-screen overflow-hidden">
       <MainPage />
-    </main>
+    </div>
   );
 }
