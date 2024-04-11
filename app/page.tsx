@@ -2,8 +2,8 @@ import MainPage from "./main/page";
 
 export default function Home() {
   return (
-    <main>
+    <div className="w-screen overflow-hidden">
       <MainPage />
-    </main>
+    </div>
   );
 }

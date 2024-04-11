@@ -9,6 +9,10 @@ import {
   CardHeader,
   IconButton,
 } from "@material-tailwind/react";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { GrNext, GrPrevious } from "react-icons/gr";
+
+
 
 interface TestimonialCardPropsType {
   img: string;
@@ -75,33 +79,29 @@ const testimonials = [
 
 export function TestimonialSection6() {
   return (
-    <section className="px-8 py-10 lg:py-28">
-      <div className="container mx-auto">
-        <div className="mb-20 text-center">
-          <IconButton size="lg">
-            <UserIcon className="h-6 w-6" />
-          </IconButton>
-          <Typography
-            variant="h2"
-            color="blue-gray"
-            className="mb-4 mt-10 text-3xl lg:text-5xl"
-          >
-            What Clients Say
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mx-auto max-w-3xl !text-gray-500"
-          >
-            We&apos;re constantly trying to express ourselves and actualize our
-            dreams. If you have the opportunity to play.
-          </Typography>
+    <section className="px-8 py-10 text-center lg:py-28 relative">
+      <h3 className="text-3xl font-semibold">What clients has to say</h3>
+      <div className="bg-black mx-auto rounded-md relative p-20 mt-20  md:w-1/2 lg:w-2/3">
+        <div className="rounded-full h-24 w-24
+        border-8 border-white mx-auto bg-cover bg-center 
+        bg-[url('https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] 
+        -mt-32">
         </div>
-        <div className="grid gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((props, key) => (
-            <TestimonialCard key={key} {...props} />
-          ))}
-        </div>
-      </div>
+    
+        <div className="text-white mt-10 space-y-2">
+            <h4 className="text-2xl font-semibold">John Nelson</h4>
+            <span className="">CE0, Mavis</span>
+            <p className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore animi voluptas fugit commodi quae exercitationem quod a eligendi maiores odit,
+               temporibus quos placeat! Consequuntur fugit vel ducimus expedita? Ratione.
+            </p>
+          </div>
+          <FaQuoteLeft className="absolute -top-4 -left-6 bg-white rounded-full border-8 border-white" size={60} color="#B49712" />
+          <FaQuoteRight className="absolute -bottom-4 -right-6 bg-white rounded-full border-8 border-white" size={60} color="#B49712" />
+       </div>
+
+       <GrPrevious size={40} color="black" className="top-[55%] left-10 md:left-28 absolute"/>
+       <GrNext size={40} color="black" className="top-[55%] right-10 md:right-28 absolute"/>
     </section>
   );
 }

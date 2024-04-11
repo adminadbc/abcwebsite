@@ -65,8 +65,8 @@ export function FeatureSection14() {
         You can also join us in creating this positive change! 
         </p>
       </div>
-      <div className="container mx-auto mt-4  flex flex-wrap justify-around w-full md:w-2/3">
-      <div className="flex flex-col space-y-3 text-center w-1/3">
+      <div className="container mx-auto mt-4 gap-9 md:gap-0 flex flex-wrap justify-around w-full md:w-2/3">
+      <div className="flex flex-col space-y-3 text-center w-full md:w-1/2 lg:w-1/3">
       <Image
             src="/love.png"
             alt="Education love image"
@@ -78,7 +78,7 @@ export function FeatureSection14() {
           <p className="text-lg">The ABC Foundation empowers through education by conducting workshops, seminars, and resources to enhance 
             legal awareness and enable individuals in navigating the legal system with confidence. .</p>
         </div>
-        <div className="flex flex-col space-y-3 w-1/3  text-center">
+        <div className="flex flex-col space-y-3  w-full md:w-1/2 lg:w-1/3 text-center">
         <Image
             src="/info.png"
             alt="Education love image"

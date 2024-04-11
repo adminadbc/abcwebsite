@@ -13,7 +13,7 @@ import {
 export function ProjectSection() {
   return (
     <section className="my-10 flex gap-4">
-      <div className="rounded-xl bg-[#F8F4E1]  py-20  pl-24 flex flex-wrap  gap-6 items-center">
+      <div className=" bg-[#f1e9c2fb]  py-20 pl-10 md:pl-24 flex flex-wrap  gap-6 items-center">
         <div className="md:w-1/2 space-y-3">
         <h3 className="text-3xl font-semibold">
           Our current projects
@@ -26,21 +26,25 @@ export function ProjectSection() {
 
         </p>
         </div>
-        <div>
+        <div className="flex flex-col  rounded-lg font-sans space-y-2 border-3 shadow-lg p-4 bg-white">
           <Image src="/changemakers.jpeg"
           width={100}
           height={100}
           alt="changemakers logo"
           className=""
           />
+          <h4 className="font-semibold text-xl">Changemakers</h4>
+          <span>A very brief description.</span>
         </div>
-        <div>
-          <Image src="/02.png"
+        <div className="flex rounded-lg flex-col font-sans space-y-2 border-3 shadow-lg p-4 bg-white">
+        <Image src="/02.png"
           width={100}
           height={100}
           alt="changemakers logo"
           className=""
           />
+          <h4 className="font-semibold text-xl">Coming soon...</h4>
+          <span></span>
         </div>
       </div>
     </section>

@@ -14,12 +14,12 @@ export function FounderMessage() {
         <div className="lg:max-w-md">
           <h2
             color="blue-gray"
-            className="mb-6 lg:text-3xl text-2xl lg:max-w-md"
+            className="mb-6 lg:text-3xl text-2xl font-semibold lg:max-w-md"
           >
             So what does the new record for the lowest level of winter ice
             actually mean
           </h2>
-          <p className="text-xl font-normal mb-12 text-gray-500">
+          <p className="text-xl font-normal mb-12 text-gray-800">
             The Arctic Ocean freezes every winter and much of the sea-ice then
             thaws every summer, and that process will continue whatever happens
             with climate change. Even if the Arctic continues to be one of the
@@ -36,7 +36,7 @@ export function FounderMessage() {
             years of satellite records, scientists have observed a clear pattern
             of decline, decade-by-decade.
           </p>
-          <p className="text-xl mb-8 font-normal text-gray-500">
+          <p className="text-xl mb-8 font-normal text-gray-800">
             The Arctic Ocean freezes every winter and much of the sea-ice then
             thaws every summer, and that process will continue whatever happens
             with climate change. Even if the Arctic continues to be one of the
