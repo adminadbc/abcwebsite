@@ -27,7 +27,7 @@ const links = [
   },
   {
     title: "Pages",
-    items: ["Home", "About", "Changemakers", "Contact Us"],
+    items: ["Home", "About", "Contact Us"],
   },
 ];
 
