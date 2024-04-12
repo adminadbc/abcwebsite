@@ -24,6 +24,8 @@ export function FeatureSection3() {
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">Who We Are</h2>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5 w-48 text-center">Ultimate Change</p>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
       <div className="container mx-auto mb-20 gap-10 grid place-items-start lg:grid-cols-2">
