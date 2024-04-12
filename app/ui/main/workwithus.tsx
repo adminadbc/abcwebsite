@@ -33,7 +33,12 @@ export function WorkWithUs() {
           justice. Besides, they contribute to a more equitable and inclusive
           society where everyone has equal access to justice.
         </p>
-        <Link href="" className="bg-black rounded-md px-16 py-3 text-white">
+        <Link
+          href="mailto:info@abcfoundationconnect.com?subject=We%20are%20interested%20in%20co-operation"
+          className="bg-black rounded-md px-16 py-3 text-white"
+          target="_blank"
+          rel="noreferrer"
+        >
           Contact us{" "}
         </Link>
       </div>

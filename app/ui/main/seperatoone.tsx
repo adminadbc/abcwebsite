@@ -9,8 +9,10 @@ export function WidgetsExample6() {
         aspernatur.
       </h3>
       <Link
-        href=""
+        href="/main/booking"
         className="text-white bg-black px-14 py-3 text-lg rounded-lg"
+        target="_blank"
+        rel="noreferrer"
       >
         Book a call
       </Link>
