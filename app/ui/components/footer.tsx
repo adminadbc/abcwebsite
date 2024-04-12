@@ -15,19 +15,21 @@ import { FaSquareInstagram } from "react-icons/fa6";
 const links = [
   {
     title: "Product",
-    items: ["Changemakers", "Legal Connect", "Donations"],
+    items: [{name :"Changemakers", url : "/Changemakers"},
+     {  name : "Legal Connect", url : "/legalConnect"}, 
+    { name : "Donations" , url : "/Donnation"}],
   },
   {
     title: "Resources",
-    items: ["Articles", "Education"],
+    items: [{ name :"Articles", url: "https://abc-blog-kit.vercel.app/"}, { name :"Education", url : "/education"}],
   },
   {
     title: "Legal",
-    items: ["Terms", "Privacy", "Coonfidentiality"],
+    items: [{ name :"Terms", url : "/terms"},{ name : "Privacy", url: "/privacy"},{name :"Confidentiality", url : "/confidentiality"}],
   },
   {
     title: "Pages",
-    items: ["Home", "About", "Contact Us"],
+    items: [{ name :"Home", url : "/"}, {name :"About", url : "/about"}, { name :"Contact Us", url : "/ContactUs"}],
   },
 ];
 
@@ -71,13 +73,13 @@ export function Footer4() {
                   {title}
                 </Typography>
                 {items.map((link) => (
-                  <li key={link}>
+                  <li key={link.name}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={link.url}
                       className="py-1 font-medium text-black transition-colors hover:!text-gray-900"
                     >
-                      {link}
+                      {link.name}
                     </Typography>
                   </li>
                 ))}

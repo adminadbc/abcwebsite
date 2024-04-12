@@ -20,13 +20,13 @@ const links = [
   },
   { name: "Resources", href: "/main/resources" , 
   submenu : true,
-   submenuItems : [{name :"Articles", href: "/articles"}],
+   submenuItems : [{name :"Articles", href: "https://abc-blog-kit.vercel.app/"}, {name :"Education", href: "/education"}],
   },
   {
     name: "Initiatives",
     href: "/main/initiatives",
     submenu: true,
-    submenuItems: [{ name: "LegalConnect", href: "/main/legal-connect" }],
+    submenuItems: [{ name: "LegalConnect", href: "/main/legal-connect"}, {name :"ChangeMaker", ref: "/changemakers"}],
   },
   { name: "Contacts", href: "/main/contacts" },
 ];
@@ -74,7 +74,7 @@ export function NavBar() {
     </svg>
   </summary>
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100  w-52">
-    {link.submenuItems?.map( (item) => <li><a href={item.href}>{item.name}</a></li>)}
+    {link.submenuItems?.map( (item) => <li className="text-lg"><a href={item.href}>{item.name}</a></li>)}
   </ul>
 </details>
 
