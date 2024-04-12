@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 interface DropMenuProps {
   title: string;
-  items: string[];
+  items: {name: string; href : string}[];
 }
 
 
@@ -48,10 +48,10 @@ const DropMenu: React.FC<DropMenuProps & { isOpen: boolean; toggleDropdown: () =
             <a
               key={index}
               href="#"
-              className="text-gray-700 block px-4 py-2 text-sm"
+              className="text-gray-700 block px-4 py-2 text-base"
               role="menuitem"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>
@@ -71,13 +71,13 @@ const Custom: React.FC = () => {
     <div className="sm:flex sm:justify-center gap-4 sm:items-center">
       <DropMenu
         title="Resources"
-        items={['Education', 'Articles']}
+        items={store[0].submenuItems}
         isOpen={openDropdown === 1}
         toggleDropdown={() => toggleDropdown(1)}
       />
       <DropMenu
         title="Initiatives"
-        items={['LegalConnect', 'ChangeMakers']}
+        items={store[1].submenuItems}
         isOpen={openDropdown === 2}
         toggleDropdown={() => toggleDropdown(2)}
       />
@@ -88,9 +88,15 @@ const Custom: React.FC = () => {
 export default Custom;
 
 
-const store = {
+const store = [{
+    name: "Resources",
+    href: "/main/initiatives",
+    submenu: true,
+    submenuItems: [{ name: "Education", href: "/main/resources/education" },{ name : "Articles", href  : "https://engineering.hashnode.com"}],
+  },{
     name: "Initiatives",
     href: "/main/initiatives",
     submenu: true,
-    submenuItems: [{ name: "LegalConnect", href: "/main/legal-connect" }],
+    submenuItems: [{ name: "LegalConnect", href: "/main/legal-connect" } , {name : "Changemakers", href : "/changemakers"}],
   }
+]
