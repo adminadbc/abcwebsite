@@ -47,7 +47,7 @@ const DropMenu: React.FC<DropMenuProps & { isOpen: boolean; toggleDropdown: () =
           {items.map((item, index) => (
             <a
               key={index}
-              href="#"
+              href={item.href}
               className="text-gray-700 block px-4 py-2 text-base"
               role="menuitem"
             >
@@ -92,7 +92,7 @@ const store = [{
     name: "Resources",
     href: "/main/initiatives",
     submenu: true,
-    submenuItems: [{ name: "Education", href: "/main/resources/education" },{ name : "Articles", href  : "https://engineering.hashnode.com"}],
+    submenuItems: [{ name: "Education", href: "/main/resources/education" },{ name : "Articles", href  : "https://abc-blog-kit.vercel.app/"}],
   },{
     name: "Initiatives",
     href: "/main/initiatives",
