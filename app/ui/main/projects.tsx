@@ -17,6 +17,7 @@ export function ProjectSection() {
       <div className=" bg-gradient-to-r from-abcf to-yellow-700  py-20 px-10 md:pl-24 flex flex-wrap items-center justify-evenly gap-6">
         <div className="md:w-1/3 space-y-7">
           <h3 className="text-4xl font-semibold">Our current projects</h3>
+          <div className="flex-grow border-t-4 border-white w-80"></div>
           <p>Join us at ABC Foundation to make a change</p>
           <p>
             The ABC Foundatoin is gearing up for groundbreaking projects aims at
