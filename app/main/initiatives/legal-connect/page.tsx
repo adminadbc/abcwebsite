@@ -1,19 +1,19 @@
 import React from "react";
 
 import NavBar from "../../../ui/components/navbar";
-import { HeroSection } from "../../../ui/education/hero";
-import { ContentSection7 } from "../../../ui/education/body";
+import { HeroSection } from "../../../ui/legalconnect/hero";
+import { ContentSection11 } from "../../../ui/legalconnect/legalconnect";
 import { Footer4 } from "../../../ui/components/footer";
 
-function page() {
+function LegalConnectPage() {
   return (
     <div>
       <NavBar />
       <HeroSection />
-      <ContentSection7 />
+      <ContentSection11 />
       <Footer4 />
     </div>
   );
 }
 
-export default page;
+export default LegalConnectPage;
