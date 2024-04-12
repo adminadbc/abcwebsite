@@ -3,7 +3,7 @@
 import React from "react";
 import { HeroSection12 } from "../ui/main/hero";
 
-import { ContentSection5 } from "../ui/main/whoweare";
+import { FeatureSection3 } from "../ui/main/whoweare";
 import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
 import { FounderMessage } from "../ui/main/foundermessage";
@@ -20,7 +20,7 @@ function MainPage() {
     <div>
       <NavBar />
       <HeroSection12 />
-      <ContentSection5 />
+      <FeatureSection3 />
       <FeatureSection14 />
       <WidgetsExample6 />
       <FounderMessage />
