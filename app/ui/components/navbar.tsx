@@ -17,7 +17,12 @@ const links = [
     submenuItems: [{ name: "Founder", href: "/main/founder" }],
   },
   { name: "Resources", href: "/main/resources" },
-  { name: "Initiatives", href: "/main/initiatives" },
+  {
+    name: "Initiatives",
+    href: "/main/initiatives",
+    submenu: true,
+    submenuItems: [{ name: "LegalConnect", href: "/main/legal-connect" }],
+  },
   { name: "Contacts", href: "/main/contacts" },
 ];
 
