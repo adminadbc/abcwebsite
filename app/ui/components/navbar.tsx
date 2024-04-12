@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Select, Option } from "@material-tailwind/react";
+// impor
 
 const links = [
   { name: "Home", href: "/main" },
@@ -16,7 +18,10 @@ const links = [
     submenu: true,
     submenuItems: [{ name: "Founder", href: "/main/founder" }],
   },
-  { name: "Resources", href: "/main/resources" },
+  { name: "Resources", href: "/main/resources" , 
+  submenu : true,
+   submenuItems : [{name :"Articles", href: "/articles"}],
+  },
   {
     name: "Initiatives",
     href: "/main/initiatives",
@@ -54,16 +59,25 @@ export function NavBar() {
           alt="ABC Foundation Logo"
         />
         <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
+          {links.map((link) => ( (link.name !== "Resources" && link.name !== "Initiatives" ) ? 
+          (<Link key={link.name} href={link.href}
               className={clsx({
                 "bg-sky-100 text-abcf": pathname === link.href,
               })}
             >
               <p className="hidden md:block">{link.name}</p>
-            </Link>
+            </Link>) :  <details className="dropdown w-fit">
+  <summary className="btn -mb-2 border-none bg-transparent p-0 font-thin text-2xl shadow-none hover:bg-transparent">
+    {link.name}
+    <svg className="-ml-1 mt-0 size-4 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+    </svg>
+  </summary>
+  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100  w-52">
+    {link.submenuItems?.map( (item) => <li><a href={item.href}>{item.name}</a></li>)}
+  </ul>
+</details>
+
           ))}
         </div>
         <div className="hidden gap-2 lg:flex">
