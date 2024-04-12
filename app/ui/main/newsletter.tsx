@@ -1,18 +1,32 @@
 "use client";
 
+import { Button, Input, Typography } from "@material-tailwind/react";
+
 export function NewsLetter1() {
   return (
-      <div className=" mx-auto flex space-y-5 w-fit   flex-col !items-center
-       justify-center rounded-2xl bg-white px-6 py-16">
-        <h3 className="text-3xl font-semibold">Stay informed and empowered </h3>
-        <p className="w-80 text-center">Register now to receive periodic newsletter and stay updated 
-          on our latest initiatives and advocacy records. </p>
+    <section className="mt-10 p-10">
+      <div className="container mx-auto flex !w-full max-w-6xl flex-col !items-center justify-center rounded-2xl bg-gray-900 px-6 py-16">
+        <Typography
+          className="text-center text-2xl font-bold md:text-3xl "
+          color="white"
+        >
+          Be the first who see the news
+        </Typography>
+        <Typography
+          color="white"
+          className="my-3 text-center !text-base md:w-7/12"
+        >
+          Your company may not be in the software business, but eventually, a
+          software company will be in your business.
+        </Typography>
         <div className="mt-2 flex w-full flex-col gap-3 md:w-fit md:flex-row">
-        <input type="email" placeholder="example@email.com" className="text-center border w-52 rounded-md
-         outline-none"/>
-        <button className="rounded-md bg-[#B49712] text-white py-3 px-10">Subscribe</button> 
+          <Input label="Email" color="white" crossOrigin={undefined} />
+          <Button size="md" className="flex-shrink-0 bg-abcf text-white">
+            button
+          </Button>
         </div>
-    </div>
+      </div>
+    </section>
   );
 }
 export default NewsLetter1;

@@ -1,64 +1,80 @@
 "use client";
 
-import Image from "next/image";
+import React from "react";
+import { Typography, Button } from "@material-tailwind/react";
+import { RectangleGroupIcon, FingerPrintIcon } from "@heroicons/react/24/solid";
 
-export function ContentSection5() {
+import Image from "next/image";
+interface IconPropsType {
+  children: React.ReactNode;
+}
+
+function Icon({ children }: IconPropsType) {
   return (
-    <section className="py-10 px-8">
-      <div className="flex flex-col text-center my-12">
-        <h2 className="text-4xl lg:text-5xl ">Who we are</h2>
+    <div className="mb-6 grid h-12 w-12 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow-md">
+      {children}
+    </div>
+  );
+}
+
+export function FeatureSection3() {
+  return (
+    <section className="p-8">
+      <div className="flex flex-col items-center mb-20">
+        <h2 className="mb-4 text-3xl font-normal lg:text-6xl">Who We Are</h2>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5 w-48 text-center">Ultimate Change</p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="flex flex-wrap-reverse max-w-7xl mx-auto my-auto items-center place-items-center justify-around">
-        <div className="lg:max-w-md">
-          <h2
-            color="blue-gray"
-            className="mb-6 lg:text-3xl text-2xl font-bold lg:max-w-md"
-          >
-            So what does the new record for the lowest level of winter ice
-            actually mean
-          </h2>
-          <p className="text-xl font-normal mb-12 text-gray-800">
-            The Arctic Ocean freezes every winter and much of the sea-ice then
-            thaws every summer, and that process will continue whatever happens
-            with climate change. Even if the Arctic continues to be one of the
-            fastest-warming regions of the world, it will always be plunged into
-            bitterly cold polar dark every winter. And year-by-year, for all
-            kinds of natural reasons, there&apos;s huge variety of the state of
-            the ice.
-            <br />
-            <br />
-            For a start, it does not automatically follow that a record amount
-            of ice will melt this summer. More important for determining the
-            size of the annual thaw is the state of the weather as the midnight
-            sun approaches and temperatures rise. But over the more than 30
-            years of satellite records, scientists have observed a clear pattern
-            of decline, decade-by-decade.
-          </p>
-          <p className="text-xl font-normal text-gray-800">
-            The Arctic Ocean freezes every winter and much of the sea-ice then
-            thaws every summer, and that process will continue whatever happens
-            with climate change. Even if the Arctic continues to be one of the
-            fastest-warming regions of the world, it will always be plunged into
-            bitterly cold polar dark every winter. And year-by-year, for all
-            kinds of natural reasons, there&apos;s huge variety of the state of
-            the ice.
-          </p>
-        </div>
+      <div className="container mx-auto mb-20 gap-10 grid place-items-start lg:grid-cols-2">
+        <Image
+          src={`/04-2.png`}
+          alt="background image"
+          className="h-1/50 lg:min-h-[550px] w-full rounded-xl object-cover"
+          width={500}
+          height={500}
+        />
         <div>
-          <Image
-            src="/04-2.png"
-            alt="team work"
-            className="mb-6 h-full lg:h-[370px] w-full shadow-lg rounded-xl object-cover object-center"
-            width={370}
-            height={370}
-          />
+          <Typography
+            variant="h3"
+            color="blue-gray"
+            className="mb-4 !text-2xl lg:!text-3xl"
+          >
+            Refreshing workspace atmosphere
+          </Typography>
+          <Typography
+            variant="lead"
+            className="mb-10 font-normal !text-gray-500"
+          >
+            We&apos;re not always in the position that we want to be at.
+            We&apos;re constantly growing. We&apos;re constantly making
+            mistakes. We&apos;re constantly trying to express ourselves and
+            actualize our dreams.
+            <br />
+            <br />
+            If you have the opportunity to play this game of life you need to
+            appreciate every moment. A lot of people don&apos;t appreciate the
+            moment until it&apos;s passed. We&apos;re not always in the position
+            that we want to be at. We&apos;re constantly growing. We&apos;re
+            constantly making mistakes. We&apos;re constantly trying to express
+            ourselves and actualize our dreams.
+            <br />
+            <br />
+            If you have the opportunity to play this game of life you need to
+            appreciate every moment. A lot of people don&apos;t appreciate the
+            moment until it&apos;s passed.
+            <br />
+            <br />
+            If you have the opportunity to play this game of life you need to
+            appreciate every moment. A lot of people don&apos;t appreciate the
+            moment until it&apos;s passed.
+          </Typography>
         </div>
       </div>
     </section>
   );
 }
 
-export default ContentSection5;
+export default FeatureSection3;

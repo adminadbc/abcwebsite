@@ -4,13 +4,9 @@ import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 // import { FaApple, FaGooglePlay } from "react-icons/fa";
 
-import {
-  RiFacebookBoxLine,
-  RiLinkedinBoxLine,
-  RiTiktokLine,
-  RiTwitterXLine,
-} from "react-icons/ri";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const links = [
   {
@@ -37,7 +33,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer4() {
   return (
-    <footer className="px-8 py-28 bg-abcf">
+    <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
       <div className="container mx-auto">
         <div className="grid grid-cols-1  justify-between gap-4 md:grid-cols-2 lg:px-16">
           <div className="mb-8 md:mb-0">
@@ -50,19 +46,13 @@ export function Footer4() {
 
             <div className="flex gap-4 mt-6 ">
               <a href="#buttons-with-link" title="social">
-                <RiTwitterXLine size={26} />
+                <FaSquareFacebook size={30} />
               </a>
               <a href="#buttons-with-link" title="social">
-                <FaSquareInstagram size={26} />
+                <FaLinkedin size={30} />
               </a>
               <a href="#buttons-with-link" title="social">
-                <RiTiktokLine size={26} />
-              </a>
-              <a href="#buttons-with-link" title="social">
-                <RiFacebookBoxLine size={26} />
-              </a>
-              <a href="#buttons-with-link" title="social">
-                <RiLinkedinBoxLine size={26} />
+                <FaInstagramSquare size={30} />
               </a>
             </div>
           </div>

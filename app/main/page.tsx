@@ -3,12 +3,12 @@
 import React from "react";
 import { HeroSection12 } from "../ui/main/hero";
 
-import { ContentSection5 } from "../ui/main/whoweare";
+import { FeatureSection3 } from "../ui/main/whoweare";
 import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
 import { FounderMessage } from "../ui/main/foundermessage";
 import { ProjectSection } from "../ui/main/projects";
-import { TestimonialSection6 } from "../ui/main/testimonials";
+import { TestimonialSection15 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
 
@@ -20,12 +20,12 @@ function MainPage() {
     <div>
       <NavBar />
       <HeroSection12 />
-      <ContentSection5 />
+      <FeatureSection3 />
       <FeatureSection14 />
       <WidgetsExample6 />
       <FounderMessage />
       <ProjectSection />
-      <TestimonialSection6 />
+      <TestimonialSection15 />
       <WorkWithUs />
       <NewsLetter1 />
       <Footer4 />
