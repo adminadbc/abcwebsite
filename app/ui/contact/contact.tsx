@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   Card,
   CardBody,
   IconButton,
   Typography,
+  Button,
 } from "@material-tailwind/react";
 import {
   EnvelopeIcon,
@@ -98,6 +100,12 @@ export function ContactSection1() {
             description={description}
           />
         ))}
+      </div>
+      <div className="mt-20 flex flex-col mx-auto w-96 items-center">
+        <h2 className="mb-20 text-2xl">OR</h2>
+        <Link href="/main/booking">
+          <Button className="bg-abcf w-64">Book a Call</Button>
+        </Link>
       </div>
     </section>
   );
