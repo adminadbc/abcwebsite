@@ -6,9 +6,7 @@ import Image from "next/image";
 export function BlogSection14() {
   return (
     <section className="flex flex-col items-center lg:py-28 py-10 px-8">
-      <h1 className="md:text-5xl lg:text-5xl mb-10">
-        Our Founder&apos;s Message
-      </h1>
+      <h1 className="text-4xl lg:text-5xl mb-10">Our Founder&apos;s Message</h1>
       <div className="flex-grow border-t-4 border-abcf w-3/5 mx-auto mb-10"></div>
       <div className="inline m-20 container  my-auto text-center">
         <Image
@@ -98,6 +96,16 @@ export function BlogSection14() {
             where justice is truly accessible to all.
           </Typography>
         </div>
+      </div>
+      <div className="container  flex flex-col justify-start">
+        <h4 className="text-4xl">Angeline Lal</h4>
+        <h5 className="text-xl">Founding Director</h5>
+        <Image
+          src="/signature.svg"
+          alt="founder's signature"
+          width={300}
+          height={100}
+        />
       </div>
     </section>
   );
