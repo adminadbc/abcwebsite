@@ -7,7 +7,11 @@ export function BlogSection14() {
   return (
     <section className="flex flex-col items-center lg:py-28 py-10 px-8">
       <h1 className="text-4xl lg:text-5xl mb-10">Our Founder&apos;s Message</h1>
-      <div className="flex-grow border-t-4 border-abcf w-3/5 mx-auto mb-10"></div>
+      <div className="flex-grow border-t-4 border-abcf w-3/5 mx-auto mb-5"></div>
+      <p className="mb-10 text-xl">
+        Some inspritainal an dmotivational text goes here.Some inspritainal an
+        dmotivational text goes here
+      </p>
       <div className="inline m-20 container  my-auto text-center">
         <Image
           src="/angie-lal.jpg"
@@ -98,8 +102,10 @@ export function BlogSection14() {
         </div>
       </div>
       <div className="container  flex flex-col justify-start">
-        <h4 className="text-4xl">Angeline Lal</h4>
+        <h4 className="text-4xl mb-3">Angeline Lal</h4>
+        <div className="flex-grow border-t-4 border-abcf w-2/12  mb-10"></div>
         <h5 className="text-xl">Founding Director</h5>
+        <h5 className="text-xl">ABC Foundation Connect</h5>
         <Image
           src="/signature.svg"
           alt="founder's signature"
