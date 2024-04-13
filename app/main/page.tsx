@@ -14,11 +14,12 @@ import { NewsLetter1 } from "../ui/main/newsletter";
 
 import { Footer4 } from "../ui/components/footer";
 import NavBar from "../ui/components/navbar";
+import Custom from "../ui/components/dropDown";
 
 function MainPage() {
   return (
     <div>
-      <NavBar />
+    <NavBar />
       <HeroSection12 />
       <FeatureSection3 />
       <FeatureSection14 />
