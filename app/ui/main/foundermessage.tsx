@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 
 export function FounderMessage() {
   return (
@@ -60,14 +60,17 @@ export function FounderMessage() {
               our mission. Together, we can build a future where justice is not
               just a privilege, but a fundamental right for all.
             </Typography>
-            <Typography className="mb-6 font-normal !text-gray-600">
+            {/* <Typography className="mb-6 font-normal !text-gray-600">
               Prior to founding ABC Foundation, I held various roles in real
               estate, oil & gas, finance, automotive, and construction sectors,
               honing my skills in project management, client relations, and
               organizational efficiency. My diverse background has equipped me
               with a keen understanding of community needs and a holistic
               approach to problem-solving.
-            </Typography>
+            </Typography> */}
+            <Link href="/main/about/founder">
+              <Button className="bg-abcf text-black">Read more</Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export function WorkWithUs() {
   return (
-    <div className="rounded-xl bg-gradient-to-r from-abcf to-orange-400 w-screen overflow-hidden p-10 flex flex-wrap justify-around items-center">
+    <div className="rounded-xl bg-gradient-to-r from-abcf to-orange-400 w-screen overflow-hidden p-10 flex flex-wrap-reverse justify-around items-center">
       <div className="mb-9 md:w-4/5 lg:w-2/5">
-        <h3 className="text-4xl">Work With US</h3>
-        <hr className="w-56 text-black h-px border-0 bg-black my-5" />
+        <h3 className="text-4xl font-semibold">Work With Us</h3>
+        <div className="flex-grow border-t-4 border-white w-80 my-10"></div>
         <h4 className=" font-bold text-2xl mt-3">Volunteering:</h4>
         <p className="mt-2 mb-6 text-base ">
           Volunteering with the ABC Foundation is an opportunity to actively
@@ -42,12 +42,12 @@ export function WorkWithUs() {
           Contact us{" "}
         </Link>
       </div>
-      <div className="flex flex-wrap">
+      <div className="mb-10">
         <Image
           src="/volunteer.jpg"
           alt="volunteering"
-          className="h-full"
-          width={300}
+          className="h-full w-full"
+          width={500}
           height={300}
         />
       </div>

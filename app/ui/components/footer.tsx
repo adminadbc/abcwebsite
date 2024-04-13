@@ -11,21 +11,34 @@ import { FaInstagramSquare } from "react-icons/fa";
 const links = [
   {
     title: "Product",
-    items: [{name :"Changemakers", url : "/Changemakers"},
-     {  name : "Legal Connect", url : "/legalConnect"}, 
-    { name : "Donations" , url : "/Donnation"}],
+    items: [
+      { name: "Changemakers", url: "/main/initiatives/changemakers" },
+      { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
+      { name: "Donations", url: "/donnation" },
+    ],
   },
   {
     title: "Resources",
-    items: [{ name :"Articles", url: "https://abc-blog-kit.vercel.app/"}, { name :"Education", url : "/education"}],
+    items: [
+      { name: "Articles", url: "https://abc-kit.vercel.app/" },
+      { name: "Education", url: "/main/resources/education" },
+    ],
   },
   {
     title: "Legal",
-    items: [{ name :"Terms", url : "/terms"},{ name : "Privacy", url: "/privacy"},{name :"Confidentiality", url : "/confidentiality"}],
+    items: [
+      { name: "Terms", url: "/terms" },
+      { name: "Privacy", url: "/main/legal" },
+      { name: "Confidentiality", url: "/confidentiality" },
+    ],
   },
   {
     title: "Pages",
-    items: [{ name :"Home", url : "/"}, {name :"About", url : "/about"}, { name :"Contact Us", url : "/ContactUs"}],
+    items: [
+      { name: "Home", url: "/" },
+      { name: "About", url: "/main/about" },
+      { name: "Contacts", url: "/main/contacts" },
+    ],
   },
 ];
 

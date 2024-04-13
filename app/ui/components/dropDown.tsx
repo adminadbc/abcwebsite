@@ -108,7 +108,7 @@ const store = [
     submenu: true,
     submenuItems: [
       { name: "Education", href: "/main/resources/education" },
-      { name: "Articles", href: "https://abc-blog-kit.vercel.app/" },
+      { name: "Articles", href: "https://abc-kit.vercel.app/" },
     ],
   },
   {
