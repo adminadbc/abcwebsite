@@ -98,7 +98,7 @@ const members = [
   },
   {
     img: "/richa.png",
-    name: "Risha Sharma",
+    name: "Richa Sharma",
     title: "CEO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
     facebook: "https://www.facebook.com/",

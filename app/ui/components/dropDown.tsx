@@ -11,10 +11,10 @@ const DropMenu: React.FC<
   DropMenuProps & { isOpen: boolean; toggleDropdown: () => void }
 > = ({ title, items, isOpen, toggleDropdown }) => {
   return (
-    <div className="relative inline-block text-left">
+    <div className="flex flex-col text-left">
       <div
         onClick={toggleDropdown}
-        className="inline-flex justify-center w-full  px-4 py-2 bg-white  font-medium"
+        className="inline-flex justify-start w-full   py-2 bg-white  font-medium"
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
@@ -49,7 +49,6 @@ const DropMenu: React.FC<
           </svg>
         )}
       </div>
-
       <div
         className={`absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
           isOpen ? "" : "hidden"
@@ -83,12 +82,12 @@ const Custom: React.FC = () => {
 
   return (
     <div className="sm:flex sm:justify-center gap-4 sm:items-center">
-      <DropMenu
+      {/* <DropMenu
         title="Resources"
         items={store[0].submenuItems}
         isOpen={openDropdown === 1}
         toggleDropdown={() => toggleDropdown(1)}
-      />
+      /> */}
       <DropMenu
         title="Initiatives"
         items={store[1].submenuItems}

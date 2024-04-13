@@ -29,7 +29,7 @@ export function ProjectSection() {
         <Card className="w-80">
           <CardHeader floated={false} className="h-64">
             <Image
-              src="/changemakers.jpeg"
+              src="/02.png"
               width={500}
               height={500}
               alt="changemakers logo"
@@ -53,7 +53,7 @@ export function ProjectSection() {
         <Card className="w-80">
           <CardHeader floated={false} className="h-64">
             <Image
-              src="/02.png"
+              src="/changemakers.jpeg"
               width={500}
               height={500}
               alt="changemakers logo"

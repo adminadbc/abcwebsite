@@ -1,6 +1,7 @@
 "use client";
 
 import { Button, Input, Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
 export function NewsLetter1() {
   return (
@@ -16,15 +17,22 @@ export function NewsLetter1() {
           color="black"
           className="my-3 text-center !text-base md:w-7/12"
         >
-          Your company may not be in the software business, but eventually, a
-          software company will be in your business.
+          Stay informed and empowered. Register now to receive periodic
+          newsletters and stay updated on our latest initiatives and advocacy
+          efforts!
         </Typography>
         <div className="mt-2 flex w-full flex-col gap-3 md:w-fit md:flex-row">
-          <Input label="Email" color="white" crossOrigin={undefined} />
-
-          <Button size="md" className="flex-shrink-0 bg-abcf">
-            button
-          </Button>
+          {/* <Input label="Email" color="white" crossOrigin={undefined} /> */}
+          <Link
+            href="mailto:marketing@abcfoundationconnect.com?subject=Keep%20me%20up%20to%20date"
+            className=" rounded-md px-16 py-3 text-white"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button size="md" className="flex-shrink-0 bg-abcf">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -14,22 +14,22 @@ const links = [
     items: [
       { name: "Changemakers", url: "/main/initiatives/changemakers" },
       { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
-      { name: "Donations", url: "/donnation" },
+      // { name: "Donations", url: "/donnation" },
     ],
   },
-  {
-    title: "Resources",
-    items: [
-      { name: "Articles", url: "https://abc-kit.vercel.app/" },
-      { name: "Education", url: "/main/resources/education" },
-    ],
-  },
+  // {
+  //   title: "Resources",
+  //   items: [
+  //     { name: "Articles", url: "https://abc-kit.vercel.app/" },
+  //     { name: "Education", url: "/main/resources/education" },
+  //   ],
+  // },
+
   {
     title: "Legal",
     items: [
       { name: "Terms", url: "/terms" },
       { name: "Privacy", url: "/main/legal" },
-      { name: "Confidentiality", url: "/confidentiality" },
     ],
   },
   {
@@ -48,7 +48,7 @@ export function Footer4() {
   return (
     <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1  justify-between gap-4 md:grid-cols-2 lg:px-16">
+        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-16">
           <div className="mb-8 md:mb-0">
             <Image
               src="/logoabc.png"
@@ -58,18 +58,33 @@ export function Footer4() {
             />
 
             <div className="flex gap-4 mt-6 ">
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.facebook.com/ABCFoundationConnect/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaSquareFacebook size={30} />
               </a>
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaLinkedin size={30} />
               </a>
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.instagram.com/the.abcfoundation/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaInstagramSquare size={30} />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-2 justify-between gap-4 lg:grid-cols-3">
             {links.map(({ title, items }) => (
               <ul key={title}>
                 <Typography variant="h6" className="mb-2 font-bold text-2xl">

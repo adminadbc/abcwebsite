@@ -28,48 +28,36 @@ export function FeatureSection3() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="container mx-auto mb-20 gap-10 grid place-items-start lg:grid-cols-2">
+      <div className="container mx-auto mb-20 gap-10 flex items-center flex-wrap lg:flex-nowrap justify-center">
         <Image
           src={`/04-2.png`}
           alt="background image"
-          className="h-1/50 lg:min-h-[550px] w-full rounded-xl object-cover"
-          width={500}
+          className="lg:min-w-[350px]"
+          width={300}
           height={500}
         />
-        <div>
+        <div className="my-20 pt-10 flex flex-col justify-evenly">
           <Typography
             variant="h3"
             color="blue-gray"
             className="mb-4 !text-2xl lg:!text-3xl"
           >
-            Refreshing workspace atmosphere
+            Our Vision and Mission
           </Typography>
-          <Typography
-            variant="lead"
-            className="mb-10 font-normal !text-gray-500"
-          >
-            We&apos;re not always in the position that we want to be at.
-            We&apos;re constantly growing. We&apos;re constantly making
-            mistakes. We&apos;re constantly trying to express ourselves and
-            actualize our dreams.
+          <Typography variant="lead" className=" font-normal !text-gray-500">
+            Advocacy for Better Communities Foundation is dedicated to promoting
+            access to justice, advocating for marginalized voices, and providing
+            education on legal rights. We strive to empower individuals and
+            communities to navigate the legal system with confidence and
+            advocate for fair and just outcomes for all.
             <br />
             <br />
-            If you have the opportunity to play this game of life you need to
-            appreciate every moment. A lot of people don&apos;t appreciate the
-            moment until it&apos;s passed. We&apos;re not always in the position
-            that we want to be at. We&apos;re constantly growing. We&apos;re
-            constantly making mistakes. We&apos;re constantly trying to express
-            ourselves and actualize our dreams.
+            Our vision is a Canadian society where justice is accessible to all,
+            regardless of socio-economic status or background. We envision
+            empowered communities actively engaged in shaping equitable legal
+            systems and advocating for systemic change.
             <br />
             <br />
-            If you have the opportunity to play this game of life you need to
-            appreciate every moment. A lot of people don&apos;t appreciate the
-            moment until it&apos;s passed.
-            <br />
-            <br />
-            If you have the opportunity to play this game of life you need to
-            appreciate every moment. A lot of people don&apos;t appreciate the
-            moment until it&apos;s passed.
           </Typography>
         </div>
       </div>

@@ -75,26 +75,31 @@ export function TestimonialSection15() {
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-5 text-xl font-normal"
+                className="mb-5 text-2xl font-normal"
               >
-                &quot; Knowledge is either from direct experience or from
-                verifiable, falsifiable science. There is knowledge that is
-                transmitted but not verifiable / falsifiable. They&apos;re
-                slowed down by their perception of themselves. &quot;
+                The logo of Advocacy for Better Communities Foundation
+                incorporates two key elements: the concept of &quot;six degrees
+                of separation&quot; and the dharma chakra.
               </Typography>
-              <Typography variant="h6" color="white" className="">
-                Louis Miriam,{" "}
-                <span className="text-xs font-normal">COO @ AMAZON INC.</span>{" "}
+              <Typography
+                variant="h6"
+                color="white"
+                className="mb-5 text-2xl font-normal"
+              >
+                **Six Degrees of Separation:** This symbolizes the
+                interconnectedness of individuals and communities, highlighting
+                our belief that every person&quot;s actions can create ripples
+                of change that resonate throughout society.
               </Typography>
             </div>
             <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-              <Image
+              {/* <Image
                 src={`/amazon.jpg`}
                 alt="amazon"
                 className="h-full w-2/4 rounded-lg object-contain md:!w-2/3"
                 width={700}
                 height={300}
-              />
+              /> */}
             </div>
           </div>
           <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20 ">
@@ -102,26 +107,22 @@ export function TestimonialSection15() {
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-5 text-xl font-normal "
+                className="mb-5 text-2xl font-normal "
               >
-                &quot; Knowledge is either from direct experience or from
-                verifiable, falsifiable science. There is knowledge that is
-                transmitted but not verifiable / falsifiable. They&apos;re
-                slowed down by their perception of themselves. &quot;
-              </Typography>
-              <Typography variant="h6" color="white" className="">
-                Louis Miriam,{" "}
-                <span className="text-xs font-normal">COO @ AMAZON INC.</span>{" "}
+                **Dharma Chakra**: The dharma chakra, or wheel of dharma,
+                represents justice, righteousness, and the path to
+                enlightenment. It signifies our commitment to advocating for
+                fair and just outcomes for all members of society.
               </Typography>
             </div>
             <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-              <Image
+              {/* <Image
                 src={`/microsoft.png`}
                 alt="amazon"
                 className="h-full w-2/4 rounded-lg object-contain md:!w-2/3"
                 width={700}
                 height={200}
-              />
+              /> */}
             </div>
           </div>
         </Carousel>
