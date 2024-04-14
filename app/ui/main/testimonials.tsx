@@ -93,13 +93,13 @@ export function TestimonialSection15() {
               </Typography>
             </div>
             <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-              {/* <Image
+              <Image
                 src={`/amazon.jpg`}
                 alt="amazon"
                 className="h-full w-2/4 rounded-lg object-contain md:!w-2/3"
                 width={700}
                 height={300}
-              /> */}
+              />
             </div>
           </div>
           <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20 ">

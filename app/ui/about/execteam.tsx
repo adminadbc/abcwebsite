@@ -8,8 +8,13 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import { FaSquareInstagram, FaSquareFacebook } from "react-icons/fa6";
+import {
+  FaSquareInstagram,
+  FaSquareFacebook,
+  FaSquareTwitter,
+} from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+
 import Image from "next/image";
 
 interface TeamCardPropsType {
@@ -20,6 +25,7 @@ interface TeamCardPropsType {
   facebook: string;
   insta: string;
   linkedin: string;
+  twitter: string;
 }
 
 function TeamCard({
@@ -30,6 +36,7 @@ function TeamCard({
   facebook,
   insta,
   linkedin,
+  twitter,
 }: TeamCardPropsType) {
   return (
     <Card
@@ -65,21 +72,44 @@ function TeamCard({
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
-          <IconButton variant="text">
-            <a href={facebook} title="facebook" target="_blank" rel="noopener">
-              <FaSquareFacebook size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
-          <IconButton variant="text">
-            <a href={insta} title="instagram" target="_blank" rel="noopener">
-              <FaSquareInstagram size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
-          <IconButton variant="text">
-            <a href={linkedin} title="linkedin" target="_blank" rel="noopener">
-              <FaLinkedin size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
+          {facebook && (
+            <IconButton variant="text">
+              <a
+                href={facebook}
+                title="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaSquareFacebook size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {insta && (
+            <IconButton variant="text">
+              <a href={insta} title="instagram" target="_blank" rel="noopener">
+                <FaSquareInstagram size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {linkedin && (
+            <IconButton variant="text">
+              <a
+                href={linkedin}
+                title="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaLinkedin size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {twitter && (
+            <IconButton variant="text">
+              <a href={twitter} title="twitter" target="_blank" rel="noopener">
+                <FaSquareTwitter size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -110,9 +140,9 @@ const members = [
     name: "Jordan Michael",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/",
-    insta: "https://www.instagram.com/",
-    linkedin: "https://www.linkedin.com/in/",
+    twitter: "https://twitter.com/bayrashad",
+    insta: "https://www.instagram.com/rashadbay/",
+    linkedin: "https://www.linkedin.com/in/rashadbayram/",
   },
 ];
 

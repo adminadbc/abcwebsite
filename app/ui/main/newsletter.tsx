@@ -11,21 +11,20 @@ export function NewsLetter1() {
           className="text-center text-2xl font-bold md:text-3xl "
           color="black"
         >
-          Be the first who see the news
+          Stay informed and empowered
         </Typography>
         <Typography
           color="black"
           className="my-3 text-center !text-base md:w-7/12"
         >
-          Stay informed and empowered. Register now to receive periodic
-          newsletters and stay updated on our latest initiatives and advocacy
-          efforts!
+          Register now to receive periodic newsletters and stay updated on our
+          latest initiatives and advocacy efforts!
         </Typography>
         <div className="mt-2 flex w-full flex-col gap-3 md:w-fit md:flex-row">
           {/* <Input label="Email" color="black" crossOrigin={undefined} /> */}
           <Link
             href="mailto:marketing@abcfoundationconnect.com?subject=Keep%20me%20up%20to%20date"
-            className=" rounded-md px-16 py-3 text-white"
+            className="flex justify-center rounded-md px-16 py-3 text-white"
             target="_blank"
             rel="noreferrer"
           >

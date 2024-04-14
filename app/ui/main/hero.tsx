@@ -8,16 +8,9 @@ export function HeroSection12() {
   return (
     <>
       <div className="relative h-[70rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 h-full w-full bg-black/50" />
+        <div className="absolute inset-0 h-full w-full bg-black/15" />
         <div className="grid min-h-[70rem] px-12">
           <div className="container relative z-10 my-auto mx-auto">
-            <Typography
-              variant="h3"
-              color="white"
-              className="text-lg !leading-snug lg:text-2xl"
-            >
-              Accesible law
-            </Typography>
             <Typography
               variant="h1"
               color="white"

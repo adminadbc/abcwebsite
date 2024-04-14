@@ -12,15 +12,29 @@ import Image from "next/image";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaSquareTwitter } from "react-icons/fa6";
 
 interface TeamCardPropsType {
   img: string;
   name: string;
   title: string;
   desc: string;
+  facebook?: string;
+  insta?: string;
+  linkedin?: string;
+  twitter?: string;
 }
 
-function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
+function TeamCard({
+  img,
+  name,
+  title,
+  desc,
+  facebook,
+  insta,
+  linkedin,
+  twitter,
+}: TeamCardPropsType) {
   return (
     <Card
       color="transparent"
@@ -54,15 +68,44 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
-          <IconButton variant="text">
-            <FaSquareFacebook size={50} color={"#B49712"} />
-          </IconButton>
-          <IconButton variant="text">
-            <FaSquareInstagram size={50} color={"#B49712"} />
-          </IconButton>
-          <IconButton variant="text">
-            <FaLinkedin size={50} color={"#B49712"} />
-          </IconButton>
+          {facebook && (
+            <IconButton variant="text">
+              <a
+                href={facebook}
+                title="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaSquareFacebook size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {insta && (
+            <IconButton variant="text">
+              <a href={insta} title="instagram" target="_blank" rel="noopener">
+                <FaSquareInstagram size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {linkedin && (
+            <IconButton variant="text">
+              <a
+                href={linkedin}
+                title="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaLinkedin size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {twitter && (
+            <IconButton variant="text">
+              <a href={twitter} title="teitter" target="_blank" rel="noopener">
+                <FaSquareTwitter size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -77,7 +120,6 @@ const members = [
     desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
     facebook: "https://www.facebook.com/",
     insta: "https://www.instagram.com/",
-    linkedin: "https://www.linkedin.com/in/",
   },
   {
     img: "/ritu.jpg",
@@ -93,18 +135,19 @@ const members = [
     name: "Ambreen Sheikh",
     title: "Manager Events and Community Outreach",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/",
-    insta: "https://www.instagram.com/",
-    linkedin: "https://www.linkedin.com/in/",
+    facebook:
+      "https://www.facebook.com/share/4zRTqJMmkKswPPV4/?mibextid=ibOpuV",
+    insta:
+      "https://www.instagram.com/ambreen_71?igsh=NXd0dXc4eHdpdTZx&utm_source=qr",
+    linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
   },
   {
     img: "/pat.jpg",
     name: "Pat Jones",
     title: "Data Executive and Administrative Officer",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/",
-    insta: "https://www.instagram.com/",
-    linkedin: "https://www.linkedin.com/in/",
+    facebook:
+      "https://www.facebook.com/share/C7FwydUZcB7SATdV/?mibextid=WC7FNe",
   },
 ];
 
