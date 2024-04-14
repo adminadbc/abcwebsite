@@ -4,8 +4,8 @@ import { TbTopologyStarRing3 } from "react-icons/tb";
 
 export function LogoSection6() {
   return (
-    <section className="py-8 px-8 lg:py-20">
-      <div className="container !mx-auto text-center place-content-center grid">
+    <section className="py-8 px-8 lg:py-20 ">
+      <div className="container !mx-auto text-center  place-content-center grid">
         <Typography
           variant="h1"
           color="blue-gray"
@@ -13,7 +13,7 @@ export function LogoSection6() {
         >
           Our Philosophy of Empowerment
         </Typography>
-        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+        <div className="relative flex py-5 w-1/2   mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
             <TbTopologyStarRing3 />
@@ -22,8 +22,7 @@ export function LogoSection6() {
         </div>
 
         <Typography
-          variant="lead"
-          className="mx-auto max-w-5xl !text-gray-500 lg:px-8 mb-10"
+          className="mx-auto w-1/2  border-2 border-red-300  !text-gray-500 lg:px-8 mb-10"
         >
           The Advocacy for Better Communities Foundation incorporates two key
           elements: the concept of &quot;six degrees of separation&quot; and the
