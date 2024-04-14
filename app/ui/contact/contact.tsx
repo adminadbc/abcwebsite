@@ -14,6 +14,7 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 interface ContactCardProps {
   icon: React.ReactNode;
@@ -85,7 +86,13 @@ export function ContactSection1() {
         >
           Got a Question?
         </Typography>
-        <div className="flex-grow border-t-4 border-abcf w-2/5 mx-auto mt-2 mb-7"></div>
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5  text-center">
+            <TbTopologyStarRing3 />
+          </p>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        </div>
         <Typography variant="lead" className="mx-auto !text-gray-500">
           We&apos;d like to talk more about what you need
         </Typography>

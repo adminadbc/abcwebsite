@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Typography, Button } from "@material-tailwind/react";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 export function FounderMessage() {
   return (
@@ -11,7 +12,9 @@ export function FounderMessage() {
 
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <p className="mx-5 w-48 text-center">Ultimate Change</p>
+          <p className="mx-5 text-center">
+            <TbTopologyStarRing3 />
+          </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>

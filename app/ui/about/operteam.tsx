@@ -13,6 +13,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 interface TeamCardPropsType {
   img: string;
@@ -159,7 +160,13 @@ export function OperTeam() {
           <Typography variant="h2" color="blue-gray" className="mb-4">
             The Operations Team
           </Typography>
-          <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto my-5"></div>
+          <div className="relative flex py-5 w-1/2  mx-auto items-center">
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+            <p className="mx-5  text-center">
+              <TbTopologyStarRing3 />
+            </p>
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          </div>
           <Typography
             variant="lead"
             className="mx-auto max-w-4xl !text-gray-500"

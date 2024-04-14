@@ -11,7 +11,8 @@ import {
 } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-
+import { TbTopologyStarRing3 } from "react-icons/tb";
+import { FaPersonCircleCheck } from "react-icons/fa6";
 function Option({
   icon: Icon,
   title,
@@ -45,13 +46,22 @@ export function ContentSection11() {
         <Typography variant="h3" color="blue-gray">
           Stay tuned for our upcoming project
         </Typography>
-        <div className="flex-grow border-t-4 border-abcf w-3/5 mx-auto mt-2"></div>
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5  text-center">
+            <TbTopologyStarRing3 />
+          </p>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        </div>
         <Typography
           variant="lead"
           className="mt-4 max-w-4xl mx-auto !text-gray-500"
         >
-          This is the paragraph where you can write more details about your
-          projects. Keep you user engaged by providing meaningful information.
+          Legal Connect is a transformative initiative focused on enhancing
+          access to legal services through a comprehensive network of qualified
+          lawyers. Our core mission is to bridge the gap between individuals in
+          need of legal assistance and skilled legal professionals who can
+          address their specific legal concerns.
         </Typography>
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
@@ -65,17 +75,29 @@ export function ContentSection11() {
             />
           </div>
           <div className="flex flex-col gap-8">
-            <Option icon={CloudIcon} title="Listen to Social Conversations">
-              Gain access to the demographics, psychographics, and location of
-              unique people who talk about your brand.
+            <Option icon={CloudIcon} title="Transformative Legal Access:">
+              Legal Connect revolutionizes access to legal services by
+              connecting individuals with qualified lawyers through a
+              comprehensive network.
             </Option>
-            <Option icon={TagIcon} title="Performance Analyzes">
-              Unify data from Facebook, Instagram, Twitter, LinkedIn, and
-              Youtube to gain rich insights from easy-to-use reports.
+            <Option icon={TagIcon} title="Robust Lawyer Engagement:">
+              We rigorously vet and onboard experienced lawyers across diverse
+              practice areas, ensuring a wide range of legal expertise to
+              address various legal needs.
             </Option>
-            <Option icon={Cog6ToothIcon} title="Social Conversions">
-              Track actions taken on your website that originated from social,
-              and understand the impact on your bottom line.
+            <Option icon={Cog6ToothIcon} title="Comprehensive Support:">
+              Legal Connect offers internal resources and support services to
+              guide individuals through their legal journey, including emotional
+              and financial assistance from a dedicated support team.
+            </Option>
+            <Option
+              icon={FaPersonCircleCheck}
+              title="Accessible and Empowering: "
+            >
+              We break barriers by providing multilingual support, sliding-scale
+              fee options, and educational initiatives to increase legal
+              literacy and empower individuals with knowledge about their legal
+              rights.
             </Option>
           </div>
         </div>
