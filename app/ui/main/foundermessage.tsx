@@ -34,7 +34,7 @@ export function FounderMessage() {
         </div>
       </div>
       <div
-        className="container mx-auto px-4 md:px-14 mb-15 gap-10 flex items-center flex-wrap 
+        className="container mx-auto px-4 md:px-14 mb-15 mt-10 lg:mt-0 gap-10 flex items-center flex-wrap 
        lg:flex-nowrap "
       >
         <Image
