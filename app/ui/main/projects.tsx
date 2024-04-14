@@ -29,7 +29,7 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-        <Card className="w-56 lg:w-80">
+        <Card className="w-80 lg:w-80">
           <CardHeader floated={false} className="h-64">
             <Image
               src="/02.png"
