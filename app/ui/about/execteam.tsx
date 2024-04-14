@@ -145,9 +145,9 @@ const members = [
   },
   {
     img: "/profile.jpeg",
-    name: "Rashad Bayram",
+    name: "Rashad Bayram, MSc",
     title: "CIO",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    desc: "My experience spans various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",
     email: "mailto:support@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
