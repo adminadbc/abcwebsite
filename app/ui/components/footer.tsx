@@ -10,22 +10,27 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const links = [
   {
-    title: "Product",
-    items: [{name :"Changemakers", url : "/Changemakers"},
-     {  name : "Legal Connect", url : "/legalConnect"}, 
-    { name : "Donations" , url : "/Donnation"}],
-  },
-  {
-    title: "Resources",
-    items: [{ name :"Articles", url: "https://abc-blog-kit.vercel.app/"}, { name :"Education", url : "/education"}],
+    title: "Pages",
+    items: [
+      { name: "Home", url: "/" },
+      { name: "About", url: "/main/about" },
+      { name: "Contacts", url: "/main/contacts" },
+    ],
   },
   {
     title: "Legal",
-    items: [{ name :"Terms", url : "/terms"},{ name : "Privacy", url: "/privacy"},{name :"Confidentiality", url : "/confidentiality"}],
+    items: [
+      { name: "Terms", url: "/terms" },
+      { name: "Privacy", url: "/main/legal" },
+    ],
   },
+
   {
-    title: "Pages",
-    items: [{ name :"Home", url : "/"}, {name :"About", url : "/about"}, { name :"Contact Us", url : "/ContactUs"}],
+    title: "Product",
+    items: [
+      { name: "Changemakers", url: "/main/initiatives/changemakers" },
+      { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
+    ],
   },
 ];
 
@@ -35,7 +40,7 @@ export function Footer4() {
   return (
     <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1  justify-between gap-4 md:grid-cols-2 lg:px-16">
+        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-2">
           <div className="mb-8 md:mb-0">
             <Image
               src="/logoabc.png"
@@ -45,21 +50,39 @@ export function Footer4() {
             />
 
             <div className="flex gap-4 mt-6 ">
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.facebook.com/ABCFoundationConnect/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaSquareFacebook size={30} />
               </a>
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaLinkedin size={30} />
               </a>
-              <a href="#buttons-with-link" title="social">
+              <a
+                href="https://www.instagram.com/the.abcfoundation/"
+                title="social"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaInstagramSquare size={30} />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-2 justify-between gap-6 lg:grid-cols-3">
             {links.map(({ title, items }) => (
               <ul key={title}>
-                <Typography variant="h6" className="mb-2 font-bold text-2xl">
+                <Typography
+                  variant="h6"
+                  className="mb-2 mr-2 font-bold text-2xl"
+                >
                   {title}
                 </Typography>
                 {items.map((link) => (
@@ -77,8 +100,8 @@ export function Footer4() {
             ))}
           </div>
         </div>
-        <hr className="w-11/12 mx-auto text-black h-px border-0 bg-black my-10" />
-        <div className=" flex flex-wrap justify-between mx-12">
+        <hr className="w-12/12 mx-auto text-black h-px border-0 bg-black my-10" />
+        <div className=" flex flex-wrap justify-between sm:mx-0 lg:mx-12">
           <Typography variant="small" className="font-normal">
             2024. All rights reserved.
           </Typography>

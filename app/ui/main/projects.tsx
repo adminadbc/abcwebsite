@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardHeader,
@@ -28,7 +29,7 @@ export function ProjectSection() {
         <Card className="w-80">
           <CardHeader floated={false} className="h-64">
             <Image
-              src="/changemakers.jpeg"
+              src="/02.png"
               width={500}
               height={500}
               alt="changemakers logo"
@@ -44,13 +45,15 @@ export function ProjectSection() {
             </Typography>
           </CardBody>
           <CardFooter className="flex justify-center gap-7 pt-2">
-            <Button className="bg-abcf text-black">Learn More</Button>
+            <Link href="/main/initiatives/legal-connect">
+              <Button className="bg-abcf text-black">Learn More</Button>
+            </Link>
           </CardFooter>
         </Card>
         <Card className="w-80">
           <CardHeader floated={false} className="h-64">
             <Image
-              src="/02.png"
+              src="/changemakers.jpeg"
               width={500}
               height={500}
               alt="changemakers logo"
@@ -66,7 +69,9 @@ export function ProjectSection() {
             </Typography>
           </CardBody>
           <CardFooter className="flex justify-center gap-7 pt-2">
-            <Button className="bg-abcf text-black">Learn More</Button>
+            <Link href="/main/initiatives/changemakers">
+              <Button className="bg-abcf text-black">Learn More</Button>
+            </Link>
           </CardFooter>
         </Card>
       </div>

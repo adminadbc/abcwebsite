@@ -1,133 +1,83 @@
-"use client";
-
+import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import {
-  Card,
-  CardBody,
-  Typography,
-  Avatar,
-  CardHeader,
-  IconButton,
-  Carousel,
-} from "@material-tailwind/react";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
-interface TestimonialCardPropsType {
-  img: string;
-  feedback: string;
-  client: string;
-  title: string;
-}
-
-function TestimonialCard({
-  img,
-  feedback,
-  client,
-  title,
-}: TestimonialCardPropsType) {
+export function LogoSection6() {
   return (
-    <Card shadow={false} className="items-center text-center">
-      <CardHeader shadow={false} floated={false}>
-        <Avatar src={img} alt={client} size="lg" />
-      </CardHeader>
-      <CardBody>
-        <Typography variant="h5" color="blue-gray" className="font-medium">
-          {client}
-        </Typography>
+    <section className="py-8 px-8 lg:py-20">
+      <div className="container !mx-auto text-center place-content-center grid">
         <Typography
-          variant="small"
-          className="mb-4 mt-1 font-medium !text-gray-500"
+          variant="h1"
+          color="blue-gray"
+          className="my-4 !text-2xl !leading-snug lg:!text-3xl"
         >
-          {title}
+          Our Philosophy of Empowerment
         </Typography>
-        <Typography
-          variant="paragraph"
-          className="mb-5 font-normal !text-gray-500"
-        >
-          &quot;{feedback}&quot;
-        </Typography>
-      </CardBody>
-    </Card>
-  );
-}
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5  text-center">
+            <TbTopologyStarRing3 />
+          </p>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        </div>
 
-export function TestimonialSection15() {
-  return (
-    <section className="px-8 py-10 lg:py-28">
-      <div className="container mx-auto !rounded-xl !bg-[url('https://www.material-tailwind.com/img/Background.png')] bg-center px-8 py-10 lg:px-16">
-        <Carousel
-          transition={{ duration: 1 }}
-          navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute left-10 bottom-0 z-50 flex h-5 w-20 -translate-x-2/4 gap-2 md:left-2/4">
-              {new Array(length).fill("").map((_, i) => (
-                <span
-                  key={i}
-                  className={`block h-1 w-10 cursor-pointer transition-all content-[''] ${
-                    activeIndex === i ? "bg-white" : "bg-white/50"
-                  }`}
-                  onClick={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-          )}
+        <Typography
+          variant="lead"
+          className="mx-auto max-w-5xl !text-gray-500 lg:px-8 mb-10"
         >
-          <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 rounded-2xl md:grid md:grid-cols-5 md:gap-14 md:py-20">
-            <div className="col-span-3 flex flex-col items-start justify-center">
-              <Typography
-                variant="lead"
-                color="white"
-                className="mb-5 text-xl font-normal"
-              >
-                &quot; Knowledge is either from direct experience or from
-                verifiable, falsifiable science. There is knowledge that is
-                transmitted but not verifiable / falsifiable. They&apos;re
-                slowed down by their perception of themselves. &quot;
-              </Typography>
-              <Typography variant="h6" color="white" className="">
-                Louis Miriam,{" "}
-                <span className="text-xs font-normal">COO @ AMAZON INC.</span>{" "}
-              </Typography>
-            </div>
-            <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-              <Image
-                src={`/amazon.jpg`}
-                alt="amazon"
-                className="h-full w-2/4 rounded-lg object-contain md:!w-2/3"
-                width={700}
-                height={300}
-              />
-            </div>
+          The Advocacy for Better Communities Foundation incorporates two key
+          elements: the concept of &quot;six degrees of separation&quot; and the
+          dharma chakra.
+        </Typography>
+        <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
+          <div className="flex flex-col items-center justify-center gap-6 w-80">
+            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+              <CardBody>
+                <Typography
+                  variant="small"
+                  className="font-normal text-gray-500"
+                >
+                  **Six Degrees of Separation:** This symbolizes the
+                  interconnectedness of individuals and communities,
+                  highlighting our belief that every person&quot;s actions can
+                  create ripples of change that resonate throughout society.
+                </Typography>
+              </CardBody>
+            </Card>
           </div>
-          <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20 ">
-            <div className="col-span-3 flex flex-col items-start justify-center">
-              <Typography
-                variant="lead"
-                color="white"
-                className="mb-5 text-xl font-normal "
-              >
-                &quot; Knowledge is either from direct experience or from
-                verifiable, falsifiable science. There is knowledge that is
-                transmitted but not verifiable / falsifiable. They&apos;re
-                slowed down by their perception of themselves. &quot;
-              </Typography>
-              <Typography variant="h6" color="white" className="">
-                Louis Miriam,{" "}
-                <span className="text-xs font-normal">COO @ AMAZON INC.</span>{" "}
-              </Typography>
-            </div>
-            <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
+          <Card
+            shadow={false}
+            className="bg-[#FAFAFA] lg:px-10 justify-center max-w-[18rem] lg:max-w-lg"
+          >
+            <CardBody className="text-center">
               <Image
-                src={`/microsoft.png`}
-                alt="amazon"
-                className="h-full w-2/4 rounded-lg object-contain md:!w-2/3"
-                width={700}
-                height={200}
+                src="/04-2.png"
+                alt="logo"
+                className="w-40 mx-auto"
+                width={100}
+                height={100}
               />
-            </div>
+            </CardBody>
+          </Card>
+          <div className="flex flex-col items-center justify-center gap-6 w-80">
+            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+              <CardBody>
+                <Typography
+                  variant="small"
+                  className="font-normal text-gray-500"
+                >
+                  **Dharma Chakra:** The dharma chakra, or wheel of dharma,
+                  represents justice, righteousness, and the path to
+                  enlightenment. It signifies our commitment to advocating for
+                  fair and just outcomes for all members of society.
+                </Typography>
+              </CardBody>
+            </Card>
           </div>
-        </Carousel>
+        </div>
       </div>
     </section>
   );
 }
 
-export default TestimonialSection15;
+export default LogoSection6;

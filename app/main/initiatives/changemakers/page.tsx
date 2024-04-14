@@ -1,13 +1,19 @@
 import React from "react";
 
+import NavBar from "../../../ui/components/navbar";
+import { HeroSection } from "../../../ui/changemaker/hero";
+import { ContentSection11 } from "../../../ui/changemaker/body";
+import { Footer4 } from "../../../ui/components/footer";
+
 function page() {
-  return <div>
-    <div className="bg-[#B49712] w-screen h-[30rem] flex text-center align-middle justify-center
-    ">
-      <h2 className="text-xl md:text-3xl text-black">Changemakers</h2>
-      <div className="h-2 w-2/3 md:w-60 bg-black"></div>
+  return (
+    <div>
+      <NavBar />
+      <HeroSection />
+      <ContentSection11 />
+      <Footer4 />
     </div>
-  </div>;
+  );
 }
 
 export default page;

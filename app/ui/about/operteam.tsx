@@ -12,15 +12,30 @@ import Image from "next/image";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 interface TeamCardPropsType {
   img: string;
   name: string;
   title: string;
   desc: string;
+  facebook?: string;
+  insta?: string;
+  linkedin?: string;
+  twitter?: string;
 }
 
-function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
+function TeamCard({
+  img,
+  name,
+  title,
+  desc,
+  facebook,
+  insta,
+  linkedin,
+  twitter,
+}: TeamCardPropsType) {
   return (
     <Card
       color="transparent"
@@ -54,15 +69,44 @@ function TeamCard({ img, name, title, desc }: TeamCardPropsType) {
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
-          <IconButton variant="text">
-            <FaSquareFacebook size={50} color={"#B49712"} />
-          </IconButton>
-          <IconButton variant="text">
-            <FaSquareInstagram size={50} color={"#B49712"} />
-          </IconButton>
-          <IconButton variant="text">
-            <FaLinkedin size={50} color={"#B49712"} />
-          </IconButton>
+          {facebook && (
+            <IconButton variant="text">
+              <a
+                href={facebook}
+                title="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaSquareFacebook size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {insta && (
+            <IconButton variant="text">
+              <a href={insta} title="instagram" target="_blank" rel="noopener">
+                <FaSquareInstagram size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {linkedin && (
+            <IconButton variant="text">
+              <a
+                href={linkedin}
+                title="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaLinkedin size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {twitter && (
+            <IconButton variant="text">
+              <a href={twitter} title="teitter" target="_blank" rel="noopener">
+                <FaSquareTwitter size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -74,25 +118,29 @@ const members = [
     img: "/raj.jpg",
     name: "Raj Dhillon",
     title: "Advocacy and Public Relations Manager",
-    desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
+    desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
   },
   {
     img: "/ritu.jpg",
     name: "Ritu Ghai",
     title: "Media and Marketing Manager",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",
+
+    linkedin: "https://www.linkedin.com/in/",
   },
   {
     img: "/ambreen.jpg",
     name: "Ambreen Sheikh",
     title: "Manager Events and Community Outreach",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    desc: "Ambreen Sheikh, a community advocate with an entrepreneurial background, collaborates with ministers as a community outreach and event manager. Committed to fostering inclusivity, Ambreen strives to create a positive impact in the community.",
+
+    linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
   },
   {
     img: "/pat.jpg",
     name: "Pat Jones",
     title: "Data Executive and Administrative Officer",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    desc: "Pat is a passionate and independent woman with diverse professional experience. Committed to empowering others and supporting the less fortunate, she believes in kindness and empathy in every interaction. Outside of work, Pat cares for rescued animals.",
   },
 ];
 
@@ -104,13 +152,21 @@ export function OperTeam() {
           <Typography variant="h2" color="blue-gray" className="mb-4">
             The Operations Team
           </Typography>
-          <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto my-5"></div>
+          <div className="relative flex py-5 w-1/2  mx-auto items-center">
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+            <p className="mx-5  text-center">
+              <TbTopologyStarRing3 />
+            </p>
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          </div>
           <Typography
             variant="lead"
             className="mx-auto max-w-4xl !text-gray-500"
           >
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Empowering communities starts with the dedication of those behind
+            the scenes. Together, as the operations team of Advocacy for Better
+            Communities Foundation, we turn passion into action, driving
+            positive change one step at a time.
           </Typography>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">

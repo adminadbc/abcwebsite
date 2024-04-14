@@ -5,6 +5,7 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 
 import { GiSpellBook } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 import {
   BanknotesIcon,
@@ -57,7 +58,9 @@ export function FeatureSection14() {
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">What We Do</h2>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <p className="mx-5 w-48 text-center">Ultimate Change</p>
+          <p className="mx-5 text-center">
+            <TbTopologyStarRing3 />
+          </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
         <p className="mx-auto text-2xl max-w-2xl !text-gray-800">
@@ -74,7 +77,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Advocacy
             </Typography>
-            <p className="text-xl">
+            <p className="text-xl text-center">
               The ABC Foundation champions overlooked community issues,
               amplifies marginalized voices, and advocates for equitable
               policies, elevating unheard voices in the process.
@@ -88,7 +91,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Education
             </Typography>
-            <p className="text-xl">
+            <p className="text-xl text-center">
               The ABC Foundation empowers through education by conducting
               workshops, seminars, and resources to enhance legal awareness and
               enable individuals in navigating the legal system with confidence.

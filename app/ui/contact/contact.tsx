@@ -1,17 +1,20 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   Card,
   CardBody,
   IconButton,
   Typography,
+  Button,
 } from "@material-tailwind/react";
 import {
   EnvelopeIcon,
   MapPinIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 interface ContactCardProps {
   icon: React.ReactNode;
@@ -53,7 +56,7 @@ const options = [
     icon: <MapPinIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Address",
     description: "Find us at the office",
-    contact: "12124 First Street, nr 54",
+    contact: "305, 1822 10 Ave SW, Calgary, Alberta T3C",
   },
   {
     icon: <EnvelopeIcon className="h-6 w-6" strokeWidth={2} />,
@@ -65,7 +68,7 @@ const options = [
     icon: <PhoneIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Phone",
     description: "Give us a ring",
-    contact: "+1 (424) 535-3523",
+    contact: "+1 (825) 735-4343",
   },
 ];
 
@@ -83,7 +86,13 @@ export function ContactSection1() {
         >
           Got a Question?
         </Typography>
-        <div className="flex-grow border-t-4 border-abcf w-2/5 mx-auto mt-2 mb-7"></div>
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          <p className="mx-5  text-center">
+            <TbTopologyStarRing3 />
+          </p>
+          <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        </div>
         <Typography variant="lead" className="mx-auto !text-gray-500">
           We&apos;d like to talk more about what you need
         </Typography>
@@ -98,6 +107,12 @@ export function ContactSection1() {
             description={description}
           />
         ))}
+      </div>
+      <div className="mt-20 flex flex-col mx-auto w-96 items-center">
+        <h2 className="mb-20 text-2xl">OR</h2>
+        <Link href="/main/booking">
+          <Button className="bg-abcf w-64">Book a Call</Button>
+        </Link>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
 import { FounderMessage } from "../ui/main/foundermessage";
 import { ProjectSection } from "../ui/main/projects";
-import { TestimonialSection15 } from "../ui/main/testimonials";
+import { LogoSection6 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
 
@@ -19,14 +19,14 @@ import Custom from "../ui/components/dropDown";
 function MainPage() {
   return (
     <div>
-    <NavBar />
+      <NavBar />
       <HeroSection12 />
       <FeatureSection3 />
       <FeatureSection14 />
       <WidgetsExample6 />
       <FounderMessage />
       <ProjectSection />
-      <TestimonialSection15 />
+      <LogoSection6 />
       <WorkWithUs />
       <NewsLetter1 />
       <Footer4 />

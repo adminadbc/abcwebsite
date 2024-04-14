@@ -8,8 +8,14 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import { FaSquareInstagram, FaSquareFacebook } from "react-icons/fa6";
+import {
+  FaSquareInstagram,
+  FaSquareFacebook,
+  FaSquareTwitter,
+} from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { TbTopologyStarRing3 } from "react-icons/tb";
+
 import Image from "next/image";
 
 interface TeamCardPropsType {
@@ -20,6 +26,7 @@ interface TeamCardPropsType {
   facebook: string;
   insta: string;
   linkedin: string;
+  twitter: string;
 }
 
 function TeamCard({
@@ -30,6 +37,7 @@ function TeamCard({
   facebook,
   insta,
   linkedin,
+  twitter,
 }: TeamCardPropsType) {
   return (
     <Card
@@ -65,21 +73,44 @@ function TeamCard({
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
-          <IconButton variant="text">
-            <a href={facebook} title="facebook" target="_blank" rel="noopener">
-              <FaSquareFacebook size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
-          <IconButton variant="text">
-            <a href={insta} title="instagram" target="_blank" rel="noopener">
-              <FaSquareInstagram size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
-          <IconButton variant="text">
-            <a href={linkedin} title="linkedin" target="_blank" rel="noopener">
-              <FaLinkedin size={50} color={"#B49712"} />
-            </a>
-          </IconButton>
+          {facebook && (
+            <IconButton variant="text">
+              <a
+                href={facebook}
+                title="facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaSquareFacebook size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {insta && (
+            <IconButton variant="text">
+              <a href={insta} title="instagram" target="_blank" rel="noopener">
+                <FaSquareInstagram size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {linkedin && (
+            <IconButton variant="text">
+              <a
+                href={linkedin}
+                title="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <FaLinkedin size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {twitter && (
+            <IconButton variant="text">
+              <a href={twitter} title="twitter" target="_blank" rel="noopener">
+                <FaSquareTwitter size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -90,29 +121,26 @@ const members = [
   {
     img: "/angie-lal.jpg",
     name: "Angeline Lal",
-    title: "Founder & Director",
-    desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
-    facebook: "https://www.facebook.com/ms.angie.lal",
-    insta: "https://www.instagram.com/ms.angie.lal/",
+    title: "Founding Director",
+    desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
+
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
   },
   {
     img: "/richa.png",
-    name: "Risha Sharma",
+    name: "Richa Sharma",
     title: "CEO",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/angeline.lal",
-    insta: "https://www.instagram.com/angeline.lal/",
-    linkedin: "https://www.linkedin.com/in/angeline-lal/",
+    desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
+
+    linkedin: "https://www.linkedin.com/in/",
   },
   {
-    img: "/volunteer.jpg",
-    name: "Jordan Michael",
+    img: "/profile.jpeg",
+    name: "Rashad Bayram",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/angeline.lal",
-    insta: "https://www.instagram.com/angeline.lal/",
-    linkedin: "https://www.linkedin.com/in/angeline-lal/",
+    twitter: "https://twitter.com/bayrashad",
+    linkedin: "https://www.linkedin.com/in/rashadbayram/",
   },
 ];
 
@@ -124,13 +152,21 @@ export function ExecTeam() {
           <Typography variant="h2" color="blue-gray" className="mb-4">
             The Executive Team
           </Typography>
-          <div className="flex-grow border-t-4 border-abcf w-1/2 mx-auto my-5"></div>
+          <div className="relative flex py-5 w-1/2  mx-auto items-center">
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+            <p className="mx-5  text-center">
+              <TbTopologyStarRing3 />
+            </p>
+            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+          </div>
           <Typography
             variant="lead"
             className="mx-auto max-w-4xl !text-gray-500"
           >
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Fueled by purpose, united in vision, our executive teams at Advocacy
+            for Better Communities Foundation ignite change, sculpting a
+            brighter tomorrow through unwavering dedication and collaborative
+            spirit.
           </Typography>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">

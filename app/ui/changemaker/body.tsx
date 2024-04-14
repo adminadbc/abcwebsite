@@ -44,7 +44,7 @@ export function ContentSection11() {
     <section className="mx-auto container max-w-5xl px-8 py-10">
       <div className="text-center mb-10 lg:mb-24">
         <Typography variant="h3" color="blue-gray">
-          Stay tuned for our upcoming project
+          Empowering Change through Changemakers
         </Typography>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -53,50 +53,40 @@ export function ContentSection11() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <Typography
-          variant="lead"
-          className="mt-4 max-w-4xl mx-auto !text-gray-500"
-        >
-          Legal Connect is a transformative initiative focused on enhancing
-          access to legal services through a comprehensive network of qualified
-          lawyers. Our core mission is to bridge the gap between individuals in
-          need of legal assistance and skilled legal professionals who can
-          address their specific legal concerns.
-        </Typography>
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
         <div className="grid grid-cols-1 items-center place-items-center gap-y-16 lg:grid-cols-2">
           <div className="h-[480px] text-center shadow-lg flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-white p-14">
             <Image
-              src="/02.png"
+              src="/changemakers.jpeg"
               alt="legal connect app logo"
               width={500}
               height={500}
             />
           </div>
           <div className="flex flex-col gap-8">
-            <Option icon={CloudIcon} title="Transformative Legal Access:">
-              Legal Connect revolutionizes access to legal services by
-              connecting individuals with qualified lawyers through a
-              comprehensive network.
+            <Option icon={CloudIcon} title="Unity Through Inclusion:">
+              ABC Foundation&quot;s Changemakers initiative provides a fortified
+              and inclusive platform for influential voices and transformative
+              entities to collaborate and confront persistent crises within
+              Canada&quot;s economy.
             </Option>
-            <Option icon={TagIcon} title="Robust Lawyer Engagement:">
-              We rigorously vet and onboard experienced lawyers across diverse
-              practice areas, ensuring a wide range of legal expertise to
-              address various legal needs.
+            <Option icon={TagIcon} title="Empowering Dialogue:">
+              Through dynamic real-time dialogues and active engagement,
+              Changemakers impassions and mobilizes Canadians, empowering them
+              to actively shape the trajectory of their communities.
             </Option>
-            <Option icon={Cog6ToothIcon} title="Comprehensive Support:">
-              Legal Connect offers internal resources and support services to
-              guide individuals through their legal journey, including emotional
-              and financial assistance from a dedicated support team.
+            <Option icon={Cog6ToothIcon} title="Unified Collaboration:">
+              With a commitment to inclusivity, Changemakers harnesses the
+              collective prowess and varied perspectives of diverse
+              stakeholders, fostering collaboration and driving seismic shifts
+              across Canada&quot;s economic and social fabric.
             </Option>
-            <Option
-              icon={FaPersonCircleCheck}
-              title="Accessible and Empowering: "
-            >
-              We break barriers by providing support, options, and educational
-              initiatives to increase legal literacy and empower individuals
-              with knowledge about their legal rights.
+            <Option icon={FaPersonCircleCheck} title="Action-Oriented: ">
+              Changemakers embraces inclusivity, bringing together diverse
+              stakeholders&quot; expertise and perspectives to foster
+              collaboration and propel substantial changes throughout
+              Canada&quot;s economic and social structure.
             </Option>
           </div>
         </div>
