@@ -15,8 +15,9 @@ import {
 export function ProjectSection() {
   return (
     <section className="my-10 flex gap-4">
-      <div className=" bg-gradient-to-r from-abcf to-yellow-700  py-20 px-10 md:pl-24 flex flex-wrap items-center justify-evenly gap-6">
-        <div className="md:w-1/3 space-y-7">
+      <div className=" bg-gradient-to-r from-abcf to-yellow-700  py-20 px-10 md:pl-24 flex 
+      flex-wrap items-center justify-evenly gap-6">
+        <div className="lg:w-1/3 space-y-7 border border-red-400 overflow-hidden">
           <h3 className="text-4xl font-semibold">Our current projects</h3>
           <div className="flex-grow border-t-4 border-white w-80"></div>
           <p>Join us at ABC Foundation to make a change</p>
@@ -26,7 +27,7 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-        <Card className="w-80">
+        <Card className="w-56 lg:w-80">
           <CardHeader floated={false} className="h-64">
             <Image
               src="/02.png"
@@ -50,7 +51,7 @@ export function ProjectSection() {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="w-80">
+        <Card className="w-56 lg:w-80">
           <CardHeader floated={false} className="h-64">
             <Image
               src="/changemakers.jpeg"
