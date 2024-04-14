@@ -40,7 +40,7 @@ export function FounderMessage() {
         <Image
           src={`/angie-lal.jpg`}
           alt="background image"
-          className="lg:min-w-[500px] -mt-4"
+          className="lg:min-w-[500px] -mt-4 md:mt-8 border border-red-400 md:mx-auto"
           width={500}
           height={900}
         />
