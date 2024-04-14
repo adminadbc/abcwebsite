@@ -20,7 +20,7 @@ function Icon({ children }: IconPropsType) {
 
 export function FounderMessage() {
   return (
-    <section className="w-screen border border-red-700">
+    <section className="w-screen ">
       <div className="flex flex-col items-center">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Founder&quot;s Message
@@ -40,7 +40,7 @@ export function FounderMessage() {
         <Image
           src={`/angie-lal.jpg`}
           alt="background image"
-          className="lg:min-w-[500px] -mt-4 md:mt-8 border border-red-400 md:mx-auto"
+          className="lg:min-w-[500px] -mt-4 md:mt-8  md:mx-auto"
           width={500}
           height={900}
         />
