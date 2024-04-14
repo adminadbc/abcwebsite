@@ -163,8 +163,10 @@ export function OperTeam() {
             variant="lead"
             className="mx-auto max-w-4xl !text-gray-500"
           >
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Empowering communities starts with the dedication of those behind
+            the scenes. Together, as the operations team of Advocacy for Better
+            Communities Foundation, we turn passion into action, driving
+            positive change one step at a time.
           </Typography>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">

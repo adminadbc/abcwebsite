@@ -163,8 +163,10 @@ export function ExecTeam() {
             variant="lead"
             className="mx-auto max-w-4xl !text-gray-500"
           >
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            Fueled by purpose, united in vision, our executive teams at Advocacy
+            for Better Communities Foundation ignite change, sculpting a
+            brighter tomorrow through unwavering dedication and collaborative
+            spirit.
           </Typography>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
