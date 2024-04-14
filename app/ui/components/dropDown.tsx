@@ -16,7 +16,7 @@ const DropMenu: React.FC<
         onClick={toggleDropdown}
         className="inline-flex justify-start w-full   py-2 bg-white  font-medium"
         aria-haspopup="true"
-        aria-expanded={isOpen}
+        {...(isOpen && { "aria-expanded": "true" })}
       >
         {title}
         {isOpen ? (

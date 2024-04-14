@@ -21,7 +21,7 @@ function Icon({ children }: IconPropsType) {
 export function FounderMessage() {
   return (
     <section className="p-8">
-      <div className="flex flex-col items-center mb-20">
+      <div className="flex flex-col items-center">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Founder&quot;s Message
         </h2>
@@ -33,9 +33,10 @@ export function FounderMessage() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="container mx-auto px-10 md:px-14 mb-20 gap-10 flex items-center flex-wrap 
-       lg:flex-nowrap ">
- 
+      <div
+        className="container mx-auto px-10 md:px-14 mb-20 gap-10 flex items-center flex-wrap 
+       lg:flex-nowrap "
+      >
         <Image
           src={`/angie-lal.jpg`}
           alt="background image"
@@ -43,8 +44,8 @@ export function FounderMessage() {
           width={500}
           height={900}
         />
-        <div className=" flex flex-col justify-evenly">
-          <Typography variant="lead" className=" font-normal !text-gray-500 text-xs">
+        <div className=" flex flex-col justify-evenly  lg:pt-32">
+          <p className="text-md font-normal !text-gray-500">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
             justice, amplify marginalized voices, and educate individuals about
@@ -75,7 +76,7 @@ export function FounderMessage() {
             As we embark on this journey together, we invite you to join us in
             our mission. Together, we can build a future where justice is not
             just a privilege, but a fundamental right for all.
-          </Typography>
+          </p>
           <div className="flex flex-col mb-10 mt-1">
             <Image
               src="/signature.jpeg"

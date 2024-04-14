@@ -46,7 +46,7 @@ export function FeatureSection3() {
           >
             Our Vision and Mission
           </Typography>
-          <Typography variant="lead" className=" font-normal !text-gray-500">
+          <p className="text-xl font-normal !text-gray-500">
             Advocacy for Better Communities Foundation is dedicated to promoting
             access to justice, advocating for marginalized voices, and providing
             education on legal rights. We strive to empower individuals and
@@ -60,7 +60,7 @@ export function FeatureSection3() {
             systems and advocating for systemic change.
             <br />
             <br />
-          </Typography>
+          </p>
         </div>
       </div>
     </section>
