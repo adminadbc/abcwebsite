@@ -13,6 +13,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
 interface TeamCardPropsType {
@@ -24,6 +25,7 @@ interface TeamCardPropsType {
   insta?: string;
   linkedin?: string;
   twitter?: string;
+  email?: string;
 }
 
 function TeamCard({
@@ -35,6 +37,7 @@ function TeamCard({
   insta,
   linkedin,
   twitter,
+  email,
 }: TeamCardPropsType) {
   return (
     <Card
@@ -102,8 +105,15 @@ function TeamCard({
           )}
           {twitter && (
             <IconButton variant="text">
-              <a href={twitter} title="teitter" target="_blank" rel="noopener">
+              <a href={twitter} title="twitter" target="_blank" rel="noopener">
                 <FaSquareTwitter size={50} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
+          {email && (
+            <IconButton variant="text">
+              <a href={email} title="email" target="_blank" rel="noopener">
+                <MdEmail size={60} color={"#B49712"} />
               </a>
             </IconButton>
           )}
@@ -119,13 +129,14 @@ const members = [
     name: "Raj Dhillon",
     title: "Advocacy and Public Relations Manager",
     desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
+    email: "mailto:pr@abcfoundationconnect.com",
   },
   {
     img: "/ritu.jpg",
     name: "Ritu Ghai",
     title: "Media and Marketing Manager",
     desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",
-
+    email: "mailto:marketing@abcfoundationconnect.com",
     linkedin: "https://www.linkedin.com/in/",
   },
   {
@@ -133,7 +144,7 @@ const members = [
     name: "Ambreen Sheikh",
     title: "Manager Events and Community Outreach",
     desc: "Ambreen Sheikh, a community advocate with an entrepreneurial background, collaborates with ministers as a community outreach and event manager. Committed to fostering inclusivity, Ambreen strives to create a positive impact in the community.",
-
+    email: "mailto:events@abcfoundationconnect.com",
     linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
   },
   {

@@ -13,6 +13,7 @@ import {
   FaSquareFacebook,
   FaSquareTwitter,
 } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
@@ -23,10 +24,11 @@ interface TeamCardPropsType {
   name: string;
   title: string;
   desc: string;
-  facebook: string;
-  insta: string;
-  linkedin: string;
-  twitter: string;
+  facebook?: string;
+  insta?: string;
+  linkedin?: string;
+  twitter?: string;
+  email: string;
 }
 
 function TeamCard({
@@ -38,6 +40,7 @@ function TeamCard({
   insta,
   linkedin,
   twitter,
+  email,
 }: TeamCardPropsType) {
   return (
     <Card
@@ -111,6 +114,13 @@ function TeamCard({
               </a>
             </IconButton>
           )}
+          {email && (
+            <IconButton variant="text">
+              <a href={email} title="email" target="_blank" rel="noopener">
+                <MdEmail size={70} color={"#B49712"} />
+              </a>
+            </IconButton>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -123,7 +133,7 @@ const members = [
     name: "Angeline Lal",
     title: "Founding Director",
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
-
+    email: "mailto:angeline.lal@abcfoundationconnect.com",
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
   },
   {
@@ -131,14 +141,14 @@ const members = [
     name: "Richa Sharma",
     title: "CEO",
     desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
-
-    linkedin: "https://www.linkedin.com/in/",
+    email: "mailto:richa.sharma@abcfoundationconnect.com",
   },
   {
     img: "/profile.jpeg",
     name: "Rashad Bayram",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    email: "mailto:support@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
   },
