@@ -2,7 +2,7 @@ import React from "react";
 
 import NavBar from "../../../ui/components/navbar";
 import { HeroSection } from "../../../ui/changemaker/hero";
-import { ContentSection7 } from "../../../ui/changemaker/body";
+import { ContentSection11 } from "../../../ui/changemaker/body";
 import { Footer4 } from "../../../ui/components/footer";
 
 function page() {
@@ -10,7 +10,7 @@ function page() {
     <div>
       <NavBar />
       <HeroSection />
-      <ContentSection7 />
+      <ContentSection11 />
       <Footer4 />
     </div>
   );

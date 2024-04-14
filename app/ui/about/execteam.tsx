@@ -121,28 +121,25 @@ const members = [
   {
     img: "/angie-lal.jpg",
     name: "Angeline Lal",
-    title: "Founder & Director",
+    title: "Founding Director",
     desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
-    facebook: "https://www.facebook.com/ms.angie.lal",
-    insta: "https://www.instagram.com/ms.angie.lal/",
+
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
   },
   {
     img: "/richa.png",
     name: "Richa Sharma",
     title: "CEO",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
-    facebook: "https://www.facebook.com/",
-    insta: "https://www.instagram.com/",
+    desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
+
     linkedin: "https://www.linkedin.com/in/",
   },
   {
-    img: "/volunteer.jpg",
-    name: "Jordan Michael",
+    img: "/rb.jpeg",
+    name: "Rashad Bayram",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
     twitter: "https://twitter.com/bayrashad",
-    insta: "https://www.instagram.com/rashadbay/",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
   },
 ];

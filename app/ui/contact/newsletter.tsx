@@ -37,7 +37,7 @@ export function NewsLetter1() {
             rel="noreferrer"
           >
             <Button size="md" className="flex-shrink-0 bg-abcf">
-              Contact Us
+              Register Now
             </Button>
           </Link>
         </div>

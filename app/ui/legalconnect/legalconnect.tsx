@@ -94,10 +94,9 @@ export function ContentSection11() {
               icon={FaPersonCircleCheck}
               title="Accessible and Empowering: "
             >
-              We break barriers by providing multilingual support, sliding-scale
-              fee options, and educational initiatives to increase legal
-              literacy and empower individuals with knowledge about their legal
-              rights.
+              We break barriers by providing support, options, and educational
+              initiatives to increase legal literacy and empower individuals
+              with knowledge about their legal rights.
             </Option>
           </div>
         </div>

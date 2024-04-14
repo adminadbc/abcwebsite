@@ -10,21 +10,13 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const links = [
   {
-    title: "Product",
+    title: "Pages",
     items: [
-      { name: "Changemakers", url: "/main/initiatives/changemakers" },
-      { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
-      // { name: "Donations", url: "/donnation" },
+      { name: "Home", url: "/" },
+      { name: "About", url: "/main/about" },
+      { name: "Contacts", url: "/main/contacts" },
     ],
   },
-  // {
-  //   title: "Resources",
-  //   items: [
-  //     { name: "Articles", url: "https://abc-kit.vercel.app/" },
-  //     { name: "Education", url: "/main/resources/education" },
-  //   ],
-  // },
-
   {
     title: "Legal",
     items: [
@@ -32,12 +24,12 @@ const links = [
       { name: "Privacy", url: "/main/legal" },
     ],
   },
+
   {
-    title: "Pages",
+    title: "Product",
     items: [
-      { name: "Home", url: "/" },
-      { name: "About", url: "/main/about" },
-      { name: "Contacts", url: "/main/contacts" },
+      { name: "Changemakers", url: "/main/initiatives/changemakers" },
+      { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
     ],
   },
 ];
@@ -48,7 +40,7 @@ export function Footer4() {
   return (
     <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-16">
+        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-10">
           <div className="mb-8 md:mb-0">
             <Image
               src="/logoabc.png"
@@ -84,10 +76,13 @@ export function Footer4() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between gap-4 lg:grid-cols-3">
+          <div className="grid grid-cols-2 justify-between gap-6 lg:grid-cols-3">
             {links.map(({ title, items }) => (
               <ul key={title}>
-                <Typography variant="h6" className="mb-2 font-bold text-2xl">
+                <Typography
+                  variant="h6"
+                  className="mb-2 mr-2 font-bold text-2xl"
+                >
                   {title}
                 </Typography>
                 {items.map((link) => (

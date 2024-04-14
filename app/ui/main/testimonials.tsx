@@ -11,7 +11,7 @@ export function LogoSection6() {
           color="blue-gray"
           className="my-4 !text-2xl !leading-snug lg:!text-3xl"
         >
-          Our Philosophy of Empowermen
+          Our Philosophy of Empowerment
         </Typography>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
