@@ -2,12 +2,19 @@
 
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
+import { TbTopologyStarRing3 } from "react-icons/tb";
 
 export function BlogSection14() {
   return (
     <section className="flex flex-col items-center lg:py-28 py-10 px-8">
-      <h1 className="text-4xl lg:text-5xl mb-10">Our Founder&apos;s Message</h1>
-      <div className="flex-grow border-t-4 border-abcf w-3/5 mx-auto mb-5"></div>
+      <h1 className="text-4xl lg:text-5xl mb-5">Our Founder&apos;s Message</h1>
+      <div className="relative flex py-5 w-1/2 mb-5 mx-auto items-center">
+        <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        <p className="mx-5  text-center">
+          <TbTopologyStarRing3 />
+        </p>
+        <div className="flex-grow border-t-4 border-abcf w-96"></div>
+      </div>
       <p className="mb-10 text-xl">
         &quot;Advancing Justice, Navigating Legal Rights - Empowering
         Communities, Transforming Lives.&quot;

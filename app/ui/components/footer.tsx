@@ -40,7 +40,7 @@ export function Footer4() {
   return (
     <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-10">
+        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-2">
           <div className="mb-8 md:mb-0">
             <Image
               src="/logoabc.png"
@@ -100,8 +100,8 @@ export function Footer4() {
             ))}
           </div>
         </div>
-        <hr className="w-11/12 mx-auto text-black h-px border-0 bg-black my-10" />
-        <div className=" flex flex-wrap justify-between mx-12">
+        <hr className="w-12/12 mx-auto text-black h-px border-0 bg-black my-10" />
+        <div className=" flex flex-wrap justify-between sm:mx-0 lg:mx-12">
           <Typography variant="small" className="font-normal">
             2024. All rights reserved.
           </Typography>

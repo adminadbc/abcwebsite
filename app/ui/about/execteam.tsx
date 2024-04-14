@@ -122,7 +122,7 @@ const members = [
     img: "/angie-lal.jpg",
     name: "Angeline Lal",
     title: "Founding Director",
-    desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
+    desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
 
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
   },
