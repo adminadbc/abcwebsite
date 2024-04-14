@@ -17,9 +17,11 @@ const links = [
     submenu: true,
     submenuItems: [{ name: "Founder", href: "/main/founder" }],
   },
-  { name: "Resources", href: "/main/resources" , 
-  submenu : true,
-   submenuItems : [{name :"Articles", href: "/articles"}],
+  {
+    name: "Resources",
+    href: "/main/resources",
+    submenu: true,
+    submenuItems: [{ name: "Articles", href: "/articles" }],
   },
   { name: "Contacts", href: "/main/contacts" },
 ];
@@ -45,22 +47,30 @@ export function NavBar() {
       className="absolute z-50 border-0 bg-white text-black w-screen"
     >
       <div className="container ml-6 md:sml-14 flex items-center justify-between">
-        <Image
-          src="/logoabc.png"
-          width={250}
-          height={80}
-          alt="ABC Foundation Logo"
-        />
+        <Link href="/main">
+          <Image
+            src="/logoabc.png"
+            width={250}
+            height={80}
+            alt="ABC Foundation Logo"
+          />
+        </Link>
         <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
-          {links.map((link,idx) => ( (link.name == "Resources" ) ? <Custom  key={8}/>
-          :  (<Link key={idx} href={link.href}
-            className={clsx({
-              "bg-sky-100 text-abcf": pathname === link.href,
-            })}
-          >
-            <p className="hidden md:block">{link.name}</p>
-          </Link>)
-          ))}
+          {links.map((link, idx) =>
+            link.name == "Resources" ? (
+              <Custom key={8} />
+            ) : (
+              <Link
+                key={idx}
+                href={link.href}
+                className={clsx({
+                  "bg-sky-100 text-abcf": pathname === link.href,
+                })}
+              >
+                <p className="hidden md:block">{link.name}</p>
+              </Link>
+            )
+          )}
         </div>
         <div className="hidden gap-2 lg:flex">
           <IconButton variant="text" color="white" size="sm">
@@ -90,20 +100,14 @@ export function NavBar() {
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
             <li>
-              <Link  href="/main">
-                Home
-              </Link>
+              <Link href="/main">Home</Link>
             </li>
             <li>
-              <Link href="/main/about">
-                About
-              </Link>
+              <Link href="/main/about">About</Link>
             </li>
-           <Custom />
+            <Custom />
             <li>
-              <Link  href="/main/contacts">
-                Contacts
-              </Link>
+              <Link href="/main/contacts">Contacts</Link>
             </li>
           </ul>
           <div className="mt-4 flex gap-2">
