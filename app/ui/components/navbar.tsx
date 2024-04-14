@@ -52,8 +52,8 @@ export function NavBar() {
           alt="ABC Foundation Logo"
         />
         <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
-          {links.map((link) => ( (link.name == "Resources" ) ? <Custom />
-          :  (<Link key={link.name} href={link.href}
+          {links.map((link,idx) => ( (link.name == "Resources" ) ? <Custom  key={8}/>
+          :  (<Link key={idx} href={link.href}
             className={clsx({
               "bg-sky-100 text-abcf": pathname === link.href,
             })}
