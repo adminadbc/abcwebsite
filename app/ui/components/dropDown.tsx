@@ -11,9 +11,10 @@ const DropMenu: React.FC<
   DropMenuProps & { isOpen: boolean; toggleDropdown: () => void }
 > = ({ title, items, isOpen, toggleDropdown }) => {
   return (
-    <div className="flex flex-col text-left">
+    <div className="flex flex-col text-left" 
+    onMouseEnter={toggleDropdown}
+    onMouseLeave={toggleDropdown}>
       <div
-        onClick={toggleDropdown}
         className="inline-flex justify-start w-full   py-2 bg-white  font-medium"
         aria-haspopup="true"
         aria-expanded={isOpen}
@@ -50,7 +51,7 @@ const DropMenu: React.FC<
         )}
       </div>
       <div
-        className={`absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
+        className={`absolute z-10 md:mt-10 w-56 rounded-md shadow-lg  bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
           isOpen ? "" : "hidden"
         }`}
         role="menu"
