@@ -82,7 +82,7 @@ const Custom: React.FC = () => {
   };
 
   return (
-    <div className="sm:flex sm:justify-center gap-4 sm:items-center">
+    <div className="sm:flex sm:justify-center gap-4 -mt-1 sm:items-center">
       {/* <DropMenu
         title="Resources"
         items={store[0].submenuItems}
