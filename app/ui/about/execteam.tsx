@@ -117,7 +117,7 @@ function TeamCard({
           {email && (
             <IconButton variant="text">
               <a href={email} title="email" target="_blank" rel="noopener">
-                <MdEmail size={70} color={"#B49712"} />
+                <MdEmail size={60} color={"#B49712"} />
               </a>
             </IconButton>
           )}
@@ -145,9 +145,9 @@ const members = [
   },
   {
     img: "/profile.jpeg",
-    name: "Rashad Bayram",
+    name: "Rashad Bayram, MSc",
     title: "CIO",
-    desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+    desc: "My experience spans various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",
     email: "mailto:support@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",

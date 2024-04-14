@@ -152,6 +152,7 @@ const members = [
     name: "Pat Jones",
     title: "Data Executive and Administrative Officer",
     desc: "Pat is a passionate and independent woman with diverse professional experience. Committed to empowering others and supporting the less fortunate, she believes in kindness and empathy in every interaction. Outside of work, Pat cares for rescued animals.",
+    email: "mailto:info@abcfoundationconnect.com",
   },
 ];
 
