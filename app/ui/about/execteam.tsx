@@ -135,7 +135,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/",
   },
   {
-    img: "/rb.jpeg",
+    img: "/profile.jpeg",
     name: "Rashad Bayram",
     title: "CIO",
     desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
