@@ -117,7 +117,7 @@ function TeamCard({
           {email && (
             <IconButton variant="text">
               <a href={email} title="email" target="_blank" rel="noopener">
-                <MdEmail size={70} color={"#B49712"} />
+                <MdEmail size={60} color={"#B49712"} />
               </a>
             </IconButton>
           )}
