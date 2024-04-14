@@ -33,7 +33,7 @@ export function ProjectSection() {
         <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
         <Image
               src="/02.png"
-              width={200}
+              width={250}
               height={300}
               alt="changemakers logo"
               className=""
@@ -47,7 +47,7 @@ export function ProjectSection() {
           <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
         <Image
             src="/changemakers.jpeg"
-              width={200}
+              width={250}
               height={300}
               alt="changemakers logo"
               className="mx-auto"
