@@ -7,14 +7,14 @@ import { Button, Typography } from "@material-tailwind/react";
 export function HeroSection12() {
   return (
     <>
-      <div className="relative h-[70rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
+      <div className="relative h-[60rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 h-full w-full bg-black/15" />
-        <div className="grid min-h-[70rem] px-12">
+        <div className="grid min-h-[50rem] px-12">
           <div className="container relative z-10 my-auto mx-auto">
             <Typography
               variant="h1"
               color="white"
-              className="my-4 text-3xl !leading-snug lg:text-5xl"
+              className="mb-4 text-3xl !leading-snug lg:text-5xl"
             >
               Empowering the community to confidently navigate the legal system
               and advocacy for equitable and fair outcomes.

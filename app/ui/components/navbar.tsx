@@ -90,9 +90,9 @@ export function NavBar() {
           className="ml-auto inline-block lg:hidden"
         >
           {open ? (
-            <XMarkIcon strokeWidth={2} className="h-6 w-6 text-black" />
+            <XMarkIcon strokeWidth={2} className="h-6 w-6 text-black mr-6" />
           ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6 text-black" />
+            <Bars3Icon strokeWidth={2} className="h-6 w-6 text-black mr-8" />
           )}
         </IconButton>
       </div>

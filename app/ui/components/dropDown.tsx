@@ -51,7 +51,7 @@ const DropMenu: React.FC<
         )}
       </div>
       <div
-        className={`absolute z-10 md:mt-10 w-56 rounded-md shadow-lg  bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
+        className={`absolute z-10 md:mt-10 w-56 rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
           isOpen ? "" : "hidden"
         }`}
         role="menu"

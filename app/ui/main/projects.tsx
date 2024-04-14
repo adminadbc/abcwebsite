@@ -29,54 +29,35 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-        <Card className="w-56 lg:w-80">
-          <CardHeader floated={false} className="h-64">
-            <Image
+      
+        <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
+        <Image
               src="/02.png"
-              width={500}
-              height={500}
+              width={250}
+              height={300}
               alt="changemakers logo"
               className=""
             />
-          </CardHeader>
-          <CardBody className="text-center">
-            <Typography variant="h4" color="blue-gray" className="mb-2">
-              Legal Connect
-            </Typography>
-            <Typography color="blue-gray" className="font-medium" textGradient>
-              Mobile App
-            </Typography>
-          </CardBody>
-          <CardFooter className="flex justify-center gap-7 pt-2">
-            <Link href="/main/initiatives/legal-connect">
-              <Button className="bg-abcf text-black">Learn More</Button>
-            </Link>
-          </CardFooter>
-        </Card>
-        <Card className="w-56 lg:w-80">
-          <CardHeader floated={false} className="h-64">
-            <Image
-              src="/changemakers.jpeg"
-              width={500}
-              height={500}
+            <div className="flex flex-col space-y-3">
+              <div className="mt-4 mx-auto font-semibold">Legal Connect</div> 
+              <span>Mobile App</span>
+              <Link href="/" className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg">Learn more</Link>
+            </div>
+        </div>
+          <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
+        <Image
+            src="/changemakers.jpeg"
+              width={250}
+              height={300}
               alt="changemakers logo"
-              className=""
+              className="mx-auto"
             />
-          </CardHeader>
-          <CardBody className="text-center">
-            <Typography variant="h4" color="blue-gray" className="mb-2">
-              Changemakers
-            </Typography>
-            <Typography color="blue-gray" className="font-medium" textGradient>
-              Social Impact Project
-            </Typography>
-          </CardBody>
-          <CardFooter className="flex justify-center gap-7 pt-2">
-            <Link href="/main/initiatives/changemakers">
-              <Button className="bg-abcf text-black">Learn More</Button>
-            </Link>
-          </CardFooter>
-        </Card>
+            <div className="flex flex-col space-y-3">
+              <div className="mt-4 mx-auto font-semibold">Changemakers</div> 
+              <span> Social Impact Project</span>
+              <Link href="/" className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg">Learn more</Link>
+            </div>
+        </div>
       </div>
     </section>
   );

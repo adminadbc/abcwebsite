@@ -44,7 +44,7 @@ export function LogoSection6() {
           </div>
           <Card
             shadow={false}
-            className="bg-[#FAFAFA] lg:px-10 justify-center max-w-[18rem] lg:max-w-lg"
+            className="bg-[#FAFAFA] lg:px-10 justify-center mx-auto w-full max-w-[18rem] lg:max-w-lg"
           >
             <CardBody className="text-center">
               <Image
