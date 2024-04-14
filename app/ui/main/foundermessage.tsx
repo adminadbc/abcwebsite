@@ -20,7 +20,7 @@ function Icon({ children }: IconPropsType) {
 
 export function FounderMessage() {
   return (
-    <section className="p-8">
+    <section className="w-screen border border-red-700">
       <div className="flex flex-col items-center">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Founder&quot;s Message
@@ -44,7 +44,7 @@ export function FounderMessage() {
           width={500}
           height={900}
         />
-        <div className=" flex flex-col justify-evenly  lg:pt-32">
+        <div className="flex flex-col justify-evenly  lg:pt-32">
           <p className="text-md font-normal !text-gray-500">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
