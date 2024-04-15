@@ -9,10 +9,12 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
+import {
+  FaSquareFacebook,
+  FaSquareTwitter,
+  FaSquareInstagram,
+} from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
@@ -158,9 +160,7 @@ export function OperTeam() {
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
         <div className="mb-20 text-center lg:mb-28">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            The Operations Team
-          </Typography>
+          <h2 className="text-4xl mb-4">The Operations Team</h2>
           <div className="relative flex py-5 w-1/2  mx-auto items-center">
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
             <p className="mx-5  text-center">

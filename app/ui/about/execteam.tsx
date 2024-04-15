@@ -156,7 +156,7 @@ export function ExecTeam() {
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
         <div className="mb-20 text-center lg:mb-28">
-          <h2 className="text-5xl mb-4">The Executive Team</h2>
+          <h2 className="text-4xl mb-4">The Executive Team</h2>
           <div className="relative flex py-5 w-1/2  mx-auto items-center">
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
             <p className="mx-5  text-center">
