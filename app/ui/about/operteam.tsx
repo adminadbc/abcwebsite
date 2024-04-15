@@ -67,7 +67,7 @@ function TeamCard({
         <Typography variant="small" className="mb-3 mt-2 font-bold uppercase">
           {title}
         </Typography>
-        <Typography className="mb-2 w-full font-normal xl:w-72 text-justify">
+        <Typography className="mb-2 w-full font-normal xl:w-72 text-left">
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">

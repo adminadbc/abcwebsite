@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
+import "./mainstyles.css";
 
 export function LogoSection6() {
   return (
@@ -18,8 +19,8 @@ export function LogoSection6() {
         </div>
         <p className="mx-auto text-2xl max-w-2xl">
           The Advocacy for Better Communities Foundation incorporates two key
-          elements: the concept of &#x2019;six degrees of separation&#x2019; and
-          the dharma chakra.
+          elements: the concept of &quot;Six Degrees of Separation&quot; and the
+          &quot;Dharma Chakra&quot;.
         </p>
       </div>
 
@@ -28,8 +29,8 @@ export function LogoSection6() {
           <div className="flex flex-col items-center justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
-                <p className="font-normal text-justify">
-                  Six Degrees of Separation: This symbolizes the
+                <p className="font-normal text-left text-xl">
+                  &quot;Six Degrees of Separation&quot;: This symbolizes the
                   interconnectedness of individuals and communities,
                   highlighting our belief that every person&#x2019;s actions can
                   create ripples of change that resonate throughout society.
@@ -54,11 +55,12 @@ export function LogoSection6() {
           <div className="flex flex-col justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
-                <p className="font-normal text-justify">
-                  Dharma Chakra: The dharma chakra, or wheel of dharma,
-                  represents justice, righteousness, and the path to
-                  enlightenment. It signifies our commitment to advocating for
-                  fair and just outcomes for all members of society.
+                <p className="font-normal text-left text-xl">
+                  <span className="text-bold">&quot;Dharma Chakra&quot;:</span>{" "}
+                  The &quot;Dharma Chakra&quot;, or wheel of dharma, represents
+                  justice, righteousness, and the path to enlightenment. It
+                  signifies our commitment to advocating for fair and just
+                  outcomes for all members of society.
                 </p>
               </CardBody>
             </Card>
