@@ -60,7 +60,7 @@ export function ContentSection11() {
               height={500}
             />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 text-justify">
             <Option icon={CloudIcon} title="Transformative Legal Access:">
               Legal Connect revolutionizes access to legal services by
               connecting individuals with qualified lawyers through a

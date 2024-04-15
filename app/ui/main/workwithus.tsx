@@ -11,7 +11,7 @@ export function WorkWithUs() {
         <h3 className="text-4xl font-semibold">Work With Us</h3>
         <div className="flex-grow border-t-4 border-white w-80 my-10"></div>
         <h4 className=" font-bold text-2xl mt-3">To Volunteers:</h4>
-        <p className="mt-2 mb-6 text-base ">
+        <p className="mt-2 mb-6 text-base text-justify">
           Volunteering with the ABC Foundation is an opportunity to actively
           contribute to our mission of promoting justice, advocating for
           marginalized voices, and educating communities on legal rights. As a
@@ -31,7 +31,7 @@ export function WorkWithUs() {
         </Link>
         <br></br>
         <h4 className="mt-10 font-bold text-2xl">To Partners:</h4>
-        <p className="mt-2 mb-6 text-base">
+        <p className="mt-2 mb-6 text-base text-justify">
           Partnering on matters related to empowering the community in legal
           navigation and advocating for fair outcomes is crucial. It enhances
           legal resource accessibility, addresses unaddressed issues through

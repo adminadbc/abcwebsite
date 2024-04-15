@@ -33,7 +33,7 @@ export function FeatureSection3() {
           <h3 className="mb-4 text-4xl lg:text-3xl font-bold">
             Our Vision and Mission
           </h3>
-          <p className="text-xl font-normal ">
+          <p className="text-xl font-normal text-justify">
             Advocacy for Better Communities Foundation is dedicated to promoting
             access to justice, advocating for marginalized voices, and providing
             education on legal rights. We strive to empower individuals and

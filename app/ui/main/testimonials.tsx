@@ -16,7 +16,7 @@ export function LogoSection6() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <p className="mx-auto text-2xl max-w-2xl ">
+        <p className="mx-auto text-2xl max-w-2xl">
           The Advocacy for Better Communities Foundation incorporates two key
           elements: the concept of &#x2019;six degrees of separation&#x2019; and
           the dharma chakra.
@@ -28,7 +28,7 @@ export function LogoSection6() {
           <div className="flex flex-col items-center justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
-                <p className="font-normal">
+                <p className="font-normal text-justify">
                   Six Degrees of Separation: This symbolizes the
                   interconnectedness of individuals and communities,
                   highlighting our belief that every person&#x2019;s actions can
@@ -54,7 +54,7 @@ export function LogoSection6() {
           <div className="flex flex-col justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
-                <p className="font-normal">
+                <p className="font-normal text-justify">
                   Dharma Chakra: The dharma chakra, or wheel of dharma,
                   represents justice, righteousness, and the path to
                   enlightenment. It signifies our commitment to advocating for

@@ -69,7 +69,7 @@ function TeamCard({
         <Typography variant="small" className="mb-3 mt-2 font-bold uppercase ">
           {title}
         </Typography>
-        <Typography className="mb-2 w-full font-normal  xl:w-72">
+        <Typography className="mb-2 w-full font-normal  xl:w-72 text-justify">
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
@@ -164,7 +164,7 @@ export function ExecTeam() {
             </p>
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
           </div>
-          <p className="mx-auto max-w-4xl text-lg">
+          <p className="mx-auto max-w-4xl text-lg ">
             Fueled by purpose, united in vision, our executive teams at Advocacy
             for Better Communities Foundation ignite change, sculpting a
             brighter tomorrow through unwavering dedication and collaborative
