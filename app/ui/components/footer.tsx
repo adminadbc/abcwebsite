@@ -20,8 +20,8 @@ const links = [
   {
     title: "Legal",
     items: [
-      { name: "Terms", url: "/terms" },
-      { name: "Privacy", url: "/main/legal" },
+      { name: "Terms", url: "/main/terms" },
+      { name: "Privacy", url: "/main/policy" },
     ],
   },
 
