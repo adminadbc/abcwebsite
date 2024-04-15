@@ -44,7 +44,7 @@ export function NavBar() {
       fullWidth
       shadow={false}
       color="transparent"
-      className="absolute z-50 border-0 bg-white text-black w-screen"
+      className="absolute z-50 border-0 bg-white text-black w-screen overflow-hidden"
     >
       <div className="container ml-6 md:sml-14 flex items-center justify-between">
         <Link href="/main">

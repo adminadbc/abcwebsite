@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body 
       // Wrap the max-width from the body
-      style={{maxWidth : "100vw", overflowX : "hidden"}} 
       className={roboto.className}>{children}</body>
     </html>
   );
