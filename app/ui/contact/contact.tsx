@@ -40,9 +40,7 @@ function ContactCard({ icon, title, description, contact }: ContactCardProps) {
         >
           {title}
         </Typography>
-        <Typography className="mb-4 font-normal !text-gray-500">
-          {description}
-        </Typography>
+        <Typography className="mb-4 font-normal ">{description}</Typography>
         <Typography color="blue-gray" className="font-medium">
           {contact}
         </Typography>
@@ -79,13 +77,7 @@ export function ContactSection1() {
         <Typography color="blue-gray" className="mb-4 font-bold">
           Contact Us
         </Typography>
-        <Typography
-          variant="h1"
-          color="blue-gray"
-          className="mb-4 text-4xl lg:text-5xl"
-        >
-          Got a Question?
-        </Typography>
+        <h1 className="mb-4 text-4xl lg:text-5xl">Got a Question?</h1>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -93,7 +85,7 @@ export function ContactSection1() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <Typography variant="lead" className="mx-auto !text-gray-500">
+        <Typography variant="lead" className="mx-auto ">
           We&apos;d like to talk more about what you need
         </Typography>
       </div>
