@@ -34,7 +34,7 @@ export function ContentSection11() {
   return (
     <section className="mx-auto container max-w-5xl px-8 py-10">
       <div className="text-center mb-10 lg:mb-24">
-        <h3 className="text-5xl">Empowering Change Through Changemakers</h3>
+        <h3 className="text-4xl">Empowering Change Through Changemakers</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
