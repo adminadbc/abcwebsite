@@ -30,7 +30,7 @@ export function FeatureSection3() {
           height={500}
         />
         <div className="my-20 pt-10 flex flex-col justify-evenly">
-          <h3 className="mb-4 text-4xl lg:text-3xl font-bold">
+          <h3 className="mb-4 text-4xl lg:text-3xl font-bold text-center">
             Our Vision and Mission
           </h3>
           <p className="text-xl font-normal text-justify">
