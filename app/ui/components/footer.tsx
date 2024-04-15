@@ -101,7 +101,7 @@ export function Footer4() {
           </div>
         </div>
         <hr className="w-12/12 mx-auto text-black h-px border-0 bg-black my-10" />
-        <div className=" flex flex-wrap justify-between sm:mx-0 lg:mx-12">
+        <div className=" flex flex-wrap justify-between sm:mx-0 ">
           <Typography variant="small" className="font-normal">
             2024. All rights reserved.
           </Typography>
