@@ -18,7 +18,7 @@ import Custom from "../ui/components/dropDown";
 
 function MainPage() {
   return (
-    <div>
+    <div className="w-screen overflow-x-hidden">
       <NavBar />
       <HeroSection12 />
       <FeatureSection3 />
