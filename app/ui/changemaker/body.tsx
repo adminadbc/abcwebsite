@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  TagIcon,
-  CloudArrowDownIcon,
-  CloudIcon,
-  Cog6ToothIcon,
-  KeyIcon,
-  UsersIcon,
-} from "@heroicons/react/24/solid";
+import { TagIcon, CloudIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -31,9 +24,7 @@ function Option({
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {title}
         </Typography>
-        <Typography className="font-normal !text-gray-500 lg:max-w-xs">
-          {children}
-        </Typography>
+        <Typography className="font-normal  lg:max-w-xs">{children}</Typography>
       </div>
     </div>
   );
@@ -43,9 +34,7 @@ export function ContentSection11() {
   return (
     <section className="mx-auto container max-w-5xl px-8 py-10">
       <div className="text-center mb-10 lg:mb-24">
-        <Typography variant="h3" color="blue-gray">
-          Empowering Change through Changemakers
-        </Typography>
+        <h3 className="text-5xl">Empowering Change through Changemakers</h3>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
