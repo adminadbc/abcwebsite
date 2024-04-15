@@ -15,7 +15,7 @@ export function WorkWithUs() {
           Volunteering with the ABC Foundation is an opportunity to actively
           contribute to our mission of promoting justice, advocating for
           marginalized voices, and educating communities on legal rights. As a
-          volunteer, you&quot;ll play a vital role in organizing impactful
+          volunteer, you&#x2019;ll play a vital role in organizing impactful
           seminars and sessions with community stakeholders, fostering dialogue,
           and empowering individuals to navigate the legal system confidently.
           Join us in making a difference and creating a more equitable and

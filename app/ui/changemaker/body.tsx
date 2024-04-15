@@ -55,10 +55,10 @@ export function ContentSection11() {
           </div>
           <div className="flex flex-col gap-8">
             <Option icon={CloudIcon} title="Unity Through Inclusion:">
-              ABC Foundation&quot;s Changemakers initiative provides a fortified
-              and inclusive platform for influential voices and transformative
-              entities to collaborate and confront persistent crises within
-              Canada&quot;s economy.
+              ABC Foundation&#x2019;s Changemakers initiative provides a
+              fortified and inclusive platform for influential voices and
+              transformative entities to collaborate and confront persistent
+              crises within Canada&#x2019;s economy.
             </Option>
             <Option icon={TagIcon} title="Empowering Dialogue:">
               Through dynamic real-time dialogues and active engagement,
@@ -69,13 +69,13 @@ export function ContentSection11() {
               With a commitment to inclusivity, Changemakers harnesses the
               collective prowess and varied perspectives of diverse
               stakeholders, fostering collaboration and driving seismic shifts
-              across Canada&quot;s economic and social fabric.
+              across Canada&#x2019;s economic and social fabric.
             </Option>
             <Option icon={FaPersonCircleCheck} title="Action-Oriented: ">
               Changemakers embraces inclusivity, bringing together diverse
-              stakeholders&quot; expertise and perspectives to foster
+              stakeholders&#x2019; expertise and perspectives to foster
               collaboration and propel substantial changes throughout
-              Canada&quot;s economic and social structure.
+              Canada&#x2019;s economic and social structure.
             </Option>
           </div>
         </div>

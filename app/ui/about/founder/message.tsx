@@ -76,7 +76,7 @@ export function BlogSection14() {
           </Typography>
           <Typography className="mb-6 font-normal !text-gray-600">
             My academic achievements are equally impressive, with ongoing
-            pursuit of a Juris Doctorate degree at the University of Albertas
+            pursuit of a Juris Doctorate degree at the University of Alberta
             Faculty of Law, complemented by a Bachelor of Arts in Criminal
             Justice from Mount Royal University. My academic excellence has been
             recognized through numerous awards and scholarships, underscoring my
