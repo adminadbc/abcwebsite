@@ -12,7 +12,7 @@ import Custom from "./dropDown";
 const links = [
   { name: "Home", href: "/main" },
   {
-    name: "About",
+    name: "About Us",
     href: "/main/about",
     submenu: true,
     submenuItems: [{ name: "Founder", href: "/main/founder" }],
@@ -23,7 +23,7 @@ const links = [
     submenu: true,
     submenuItems: [{ name: "Articles", href: "/articles" }],
   },
-  { name: "Contacts", href: "/main/contacts" },
+  { name: "Contact Us", href: "/main/contacts" },
 ];
 
 export function NavBar() {
