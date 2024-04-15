@@ -12,7 +12,7 @@ const DropMenu: React.FC<
 > = ({ title, items, isOpen, toggleDropdown }) => {
   return (
     <div
-      className="flex flex-col text-left"
+      className="flex flex-col text-left "
       onMouseEnter={toggleDropdown}
       onMouseLeave={toggleDropdown}
     >
@@ -24,7 +24,7 @@ const DropMenu: React.FC<
         {title}
       </div>
       <div
-        className={`absolute z-10 md:mt-10 w-56 rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
+        className={`absolute  md:mt-10 w-fit  rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
           isOpen ? "" : "hidden"
         }`}
         role="menu"
@@ -55,7 +55,7 @@ const Custom: React.FC = () => {
   };
 
   return (
-    <div className="sm:flex sm:justify-center gap-4 -mt-1 sm:items-center">
+    <div className="sm:flex sm:justify-center  z-[9999] gap-4 sm:items-center">
       {/* <DropMenu
         title="Resources"
         items={store[0].submenuItems}
