@@ -43,11 +43,11 @@ export function ContentSection11() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
         <Typography variant="lead" className="mt-4 max-w-4xl mx-auto ">
-          Legal Connect is a transformative initiative focused on enhancing
-          access to legal services through a comprehensive network of qualified
-          lawyers. Our core mission is to bridge the gap between individuals in
-          need of legal assistance and skilled legal professionals who can
-          address their specific legal concerns.
+          Legal Community Connect is a transformative initiative focused on
+          enhancing access to legal services through a comprehensive network of
+          qualified lawyers. Our core mission is to bridge the gap between
+          individuals in need of legal assistance and skilled legal
+          professionals who can address their specific legal concerns.
         </Typography>
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
@@ -55,7 +55,7 @@ export function ContentSection11() {
           <div className="h-[480px] text-center shadow-lg flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-white p-14">
             <Image
               src="/02.png"
-              alt="legal connect app logo"
+              alt="legal community connect app logo"
               width={500}
               height={500}
             />

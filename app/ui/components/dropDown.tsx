@@ -89,7 +89,10 @@ const store = [
     href: "/main/initiatives",
     submenu: true,
     submenuItems: [
-      { name: "Legal Connect", href: "/main/initiatives/legal-connect" },
+      {
+        name: "Legal Community Connect",
+        href: "/main/initiatives/legal-connect",
+      },
       { name: "Changemakers", href: "/main/initiatives/changemakers" },
     ],
   },

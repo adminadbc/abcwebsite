@@ -21,41 +21,42 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-
-        <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
-          <Image
-            src="/02.png"
-            width={250}
-            height={300}
-            alt="changemakers logo"
-            className=""
-          />
-          <div className="flex flex-col space-y-3 mt-3">
-            <span>Mobile App</span>
-            <Link
-              href="/main/initiatives/legal-connect"
-              className="mx-auto text-black my-4 px-4 py-2 rounded-lg"
-            >
-              <Button className="bg-abcf text-black">Learn more</Button>
-            </Link>
+        <div className="flex items-stretch flex-wrap justify-evenly gap-6">
+          <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
+            <Image
+              src="/02.png"
+              width={250}
+              height={300}
+              alt="legal community connect logo"
+              className="mb-16 pb-2"
+            />
+            <div className="flex flex-col space-y-3 mt-3">
+              <span>Mobile App</span>
+              <Link
+                href="/main/initiatives/legal-connect"
+                className="mx-auto text-black my-4 px-4 py-2 rounded-lg"
+              >
+                <Button className="bg-abcf text-black">Learn more</Button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
-          <Image
-            src="/changemakers.jpeg"
-            width={250}
-            height={300}
-            alt="changemakers logo"
-            className="mx-auto"
-          />
-          <div className="flex flex-col space-y-3 mt-3">
-            <span> Social Impact Project</span>
-            <Link
-              href="/main/initiatives/changemakers"
-              className=" mx-auto  my-4 px-4 py-2 rounded-lg"
-            >
-              <Button className="bg-abcf text-black">Learn more</Button>
-            </Link>
+          <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
+            <Image
+              src="/changemakers.jpeg"
+              width={250}
+              height={300}
+              alt="changemakers logo"
+              className="mx-auto"
+            />
+            <div className="flex flex-col space-y-3 mt-3">
+              <span> Social Impact Project</span>
+              <Link
+                href="/main/initiatives/changemakers"
+                className=" mx-auto  my-4 px-4 py-2 rounded-lg"
+              >
+                <Button className="bg-abcf text-black">Learn more</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
