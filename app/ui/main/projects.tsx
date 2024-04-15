@@ -33,7 +33,7 @@ export function ProjectSection() {
           <div className="flex flex-col space-y-3 mt-3">
             <span>Mobile App</span>
             <Link
-              href="/"
+              href="/main/initiatives/legal-connect"
               className="mx-auto text-black my-4 px-4 py-2 rounded-lg"
             >
               <Button className="bg-abcf text-black">Learn more</Button>
@@ -50,7 +50,10 @@ export function ProjectSection() {
           />
           <div className="flex flex-col space-y-3 mt-3">
             <span> Social Impact Project</span>
-            <Link href="/" className=" mx-auto  my-4 px-4 py-2 rounded-lg">
+            <Link
+              href="/main/initiatives/changemakers"
+              className=" mx-auto  my-4 px-4 py-2 rounded-lg"
+            >
               <Button className="bg-abcf text-black">Learn more</Button>
             </Link>
           </div>
