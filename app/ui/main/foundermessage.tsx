@@ -25,7 +25,7 @@ export function FounderMessage() {
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Founder&#x2019;s Message
         </h2>
-        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+        <div className="relative flex w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5 text-center">
             <TbTopologyStarRing3 />
@@ -40,7 +40,7 @@ export function FounderMessage() {
         <Image
           src={`/angie-lal.jpg`}
           alt="background image"
-          className="lg:min-w-[500px] -mt-4 md:mt-8  md:mx-auto"
+          className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto"
           width={500}
           height={900}
         />

@@ -11,7 +11,7 @@ interface IconPropsType {
 export function FeatureSection3() {
   return (
     <section className="py-10 p-8">
-      <div className="flex flex-col items-center mb-20">
+      <div className="flex flex-col items-center mt-20 mb-10">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">Who We Are</h2>
         <div className="relative flex py-5 w-2/3  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -21,7 +21,7 @@ export function FeatureSection3() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
       </div>
-      <div className="container mx-auto mb-20 gap-10 flex items-center flex-wrap lg:flex-nowrap justify-center">
+      <div className="container mx-auto  gap-10 flex items-center flex-wrap lg:flex-nowrap justify-center">
         <Image
           src={`/04-2.png`}
           alt="background image"
