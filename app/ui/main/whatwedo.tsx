@@ -50,14 +50,14 @@ export function FeatureSection14() {
     <section className="py-10 px-8">
       <div className="container mx-auto mb-10 text-center lg:mb-20">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">What We Do</h2>
-        <div className="relative flex py-5 w-1/2  mx-auto items-center">
+        <div className="relative flex py-5   mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5 text-center">
             <TbTopologyStarRing3 />
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <p className="mx-auto text-2xl max-w-2xl ">
+        <p className="mx-auto text-2xl max-w-5xl">
           At ABC Foundation, we champion justice, amplify marginalized voices,
           and educate communities on legal rights, paving the way for fair and
           inclusive societies. You can also join us in creating this positive

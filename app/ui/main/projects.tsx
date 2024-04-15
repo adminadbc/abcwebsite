@@ -12,7 +12,7 @@ export function ProjectSection() {
       flex-wrap items-center justify-evenly gap-6"
       >
         <div className="lg:w-1/3 space-y-7  overflow-hidden">
-          <h3 className="text-4xl font-semibold">Our current projects</h3>
+          <h3 className="text-4xl font-semibold">Our Current Projects</h3>
           <div className="flex-grow border-t-4 border-white w-80"></div>
           <p>Join us at ABC Foundation to make a change</p>
           <p>

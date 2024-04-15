@@ -74,9 +74,6 @@ export function ContactSection1() {
   return (
     <section className="px-8 py-10 lg:py-28">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-4 font-bold">
-          Contact Us
-        </Typography>
         <h1 className="mb-4 text-4xl lg:text-5xl">Got a Question?</h1>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -103,7 +100,7 @@ export function ContactSection1() {
       <div className="mt-20 flex flex-col mx-auto w-96 items-center">
         <h2 className="mb-20 text-2xl">OR</h2>
         <Link href="/main/booking">
-          <Button className="bg-abcf w-64">Book a Call</Button>
+          <Button className="bg-abcf w-64">Book an Appointment</Button>
         </Link>
       </div>
     </section>

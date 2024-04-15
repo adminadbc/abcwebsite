@@ -12,7 +12,7 @@ export function NewsLetter1() {
           className="text-center text-2xl font-bold md:text-3xl "
           color="black"
         >
-          Stay informed and empowered
+          Stay Informed and Empowered
         </Typography>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
