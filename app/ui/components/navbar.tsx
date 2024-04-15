@@ -103,11 +103,11 @@ export function NavBar() {
               <Link href="/main">Home</Link>
             </li>
             <li>
-              <Link href="/main/about">About</Link>
+              <Link href="/main/about">About Us</Link>
             </li>
             <Custom />
             <li>
-              <Link href="/main/contacts">Contacts</Link>
+              <Link href="/main/contacts">Contacts Us</Link>
             </li>
           </ul>
           <div className="mt-4 flex gap-2">
