@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button, Typography } from "@material-tailwind/react";
 
 export function WidgetsExample6() {
   return (
@@ -8,13 +9,9 @@ export function WidgetsExample6() {
         Schedule your appointment with us for personalized guidance and
         solutions.
       </h3>
-      <Link
-        href="/main/booking"
-        className="text-white bg-black px-14 py-3 text-lg rounded-lg"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Book an appointment
+
+      <Link href="/main/booking">
+        <Button className="bg-black text-white">Book an appointment</Button>
       </Link>
     </div>
   );
