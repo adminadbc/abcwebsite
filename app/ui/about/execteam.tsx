@@ -66,13 +66,10 @@ function TeamCard({
         </Typography>
         <div className="flex-grow border-t-4 border-abcf w-1/2 mt-2"></div>
 
-        <Typography
-          variant="small"
-          className="mb-3 mt-2 font-bold uppercase !text-gray-500"
-        >
+        <Typography variant="small" className="mb-3 mt-2 font-bold uppercase ">
           {title}
         </Typography>
-        <Typography className="mb-2 w-full font-normal !text-gray-500 xl:w-72">
+        <Typography className="mb-2 w-full font-normal  xl:w-72">
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
@@ -145,7 +142,7 @@ const members = [
   },
   {
     img: "/profile.jpeg",
-    name: "Rashad Bayram, MSc",
+    name: "Rashad Bayram",
     title: "CIO",
     desc: "My experience spans various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",
     email: "mailto:support@abcfoundationconnect.com",
@@ -159,9 +156,7 @@ export function ExecTeam() {
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
         <div className="mb-20 text-center lg:mb-28">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            The Executive Team
-          </Typography>
+          <h2 className="text-5xl mb-4">The Executive Team</h2>
           <div className="relative flex py-5 w-1/2  mx-auto items-center">
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
             <p className="mx-5  text-center">
@@ -169,15 +164,12 @@ export function ExecTeam() {
             </p>
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
           </div>
-          <Typography
-            variant="lead"
-            className="mx-auto max-w-4xl !text-gray-500"
-          >
+          <p className="mx-auto max-w-4xl text-lg">
             Fueled by purpose, united in vision, our executive teams at Advocacy
             for Better Communities Foundation ignite change, sculpting a
             brighter tomorrow through unwavering dedication and collaborative
             spirit.
-          </Typography>
+          </p>
         </div>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
           {members.map((props, key) => (
