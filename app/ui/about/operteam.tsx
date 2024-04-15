@@ -62,13 +62,10 @@ function TeamCard({
           {name}
         </Typography>
         <div className="flex-grow border-t-4 border-abcf w-1/2 mt-2"></div>
-        <Typography
-          variant="small"
-          className="mb-3 mt-2 font-bold uppercase !text-gray-500"
-        >
+        <Typography variant="small" className="mb-3 mt-2 font-bold uppercase">
           {title}
         </Typography>
-        <Typography className="mb-2 w-full font-normal !text-gray-500 xl:w-72">
+        <Typography className="mb-2 w-full font-normal xl:w-72">
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
@@ -171,10 +168,7 @@ export function OperTeam() {
             </p>
             <div className="flex-grow border-t-4 border-abcf w-96"></div>
           </div>
-          <Typography
-            variant="lead"
-            className="mx-auto max-w-4xl !text-gray-500"
-          >
+          <Typography variant="lead" className="mx-auto max-w-4xl">
             Empowering communities starts with the dedication of those behind
             the scenes. Together, as the operations team of Advocacy for Better
             Communities Foundation, we turn passion into action, driving
