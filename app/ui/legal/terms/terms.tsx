@@ -7,12 +7,11 @@ export function TermsPage() {
     <section className="p-8">
       <div className="mx-auto max-w-screen-md text-justify">
         <p className="font-normal">
-          Welcome to {""}
-          <Link href="https://www.abcfoundationconnect.com/">
-            abcfoundationconnect.com
-          </Link>{" "}
-          {""}
-          (hereinafter referred to as the &quote;Website&quote;), owned and
+          Welcome to{" "}
+          <a href="https://www.abcfoundationconnect.com/" className="text-abcf">
+            abcfoudnationconnect.com
+          </a>{" "}
+          (hereinafter referred to as the &quot;Website&quot;), owned and
           operated by Advocacy for Better Communities Foundation (ABC
           Foundation). By accessing or using this Website, you agree to be bound
           by the following terms and conditions:
@@ -35,10 +34,10 @@ export function TermsPage() {
         <br />
         <p className="font-normal">
           Unless otherwise stated, ABC Foundation owns the intellectual property
-          rights for all material on
-          <Link href="https://www.abcfoundationconnect.com/">
-            abcfoundationconnect.com
-          </Link>
+          rights for all material on{" "}
+          <a href="https://www.abcfoundationconnect.com/" className="text-abcf">
+            abcfoudnationconnect.com
+          </a>{" "}
           . All intellectual property rights are reserved. You may view and/or
           print pages from the Website for your own personal use subject to
           restrictions set in these terms and conditions.
