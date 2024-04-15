@@ -25,8 +25,8 @@ export function LogoSection6() {
 
       <div className="container !mx-auto text-center px-4 place-content-center grid">
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-6 w-80">
-            <Card shadow={false} className="bg-[#FAFAFA] w-80 px-10">
+          <div className="flex flex-col items-center justify-center gap-6">
+            <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
                 <p className="font-normal">
                   Six Degrees of Separation: This symbolizes the
@@ -51,8 +51,8 @@ export function LogoSection6() {
               />
             </CardBody>
           </Card>
-          <div className="flex flex-col justify-center gap-6 w-80">
-            <Card shadow={false} className="bg-[#FAFAFA] h-fit w-80 px-10">
+          <div className="flex flex-col justify-center gap-6">
+            <Card shadow={false} className="bg-[#FAFAFA] px-10">
               <CardBody>
                 <p className="font-normal">
                   Dharma Chakra: The dharma chakra, or wheel of dharma,

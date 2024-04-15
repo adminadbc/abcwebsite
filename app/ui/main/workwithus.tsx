@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@material-tailwind/react";
 
 export function WorkWithUs() {
   return (
@@ -22,11 +23,11 @@ export function WorkWithUs() {
         </p>
         <Link
           href="mailto:info@abcfoundationconnect.com?subject=We%20are%20interested%20in%20volunteering"
-          className="bg-black rounded-md px-16 py-3 text-white"
+          className="rounded-md py-3 text-white"
           target="_blank"
           rel="noreferrer"
         >
-          Volunteer With Us{" "}
+          <Button>Volunteer With Us</Button>
         </Link>
         <br></br>
         <h4 className="mt-10 font-bold text-2xl">To Partners:</h4>
@@ -43,11 +44,11 @@ export function WorkWithUs() {
         </p>
         <Link
           href="mailto:info@abcfoundationconnect.com?subject=We%20are%20interested%20in%20partnership"
-          className="bg-black rounded-md px-16 py-3 text-white"
+          className="rounded-md py-3 text-white"
           target="_blank"
           rel="noreferrer"
         >
-          Partner With Us{" "}
+          <Button>Partner With Us</Button>
         </Link>
       </div>
       <div className="mb-10">
