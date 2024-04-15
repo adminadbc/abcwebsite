@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@material-tailwind/react";
 
 export function ProjectSection() {
   return (
@@ -29,14 +30,13 @@ export function ProjectSection() {
             alt="changemakers logo"
             className=""
           />
-          <div className="flex flex-col space-y-3">
-            <div className="mt-4 mx-auto font-semibold">Legal Connect</div>
+          <div className="flex flex-col space-y-3 mt-3">
             <span>Mobile App</span>
             <Link
               href="/"
-              className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg"
+              className="mx-auto text-black my-4 px-4 py-2 rounded-lg"
             >
-              Learn more
+              <Button className="bg-abcf text-black">Learn more</Button>
             </Link>
           </div>
         </div>
@@ -48,14 +48,10 @@ export function ProjectSection() {
             alt="changemakers logo"
             className="mx-auto"
           />
-          <div className="flex flex-col space-y-3">
-            <div className="mt-4 mx-auto font-semibold">Changemakers</div>
+          <div className="flex flex-col space-y-3 mt-3">
             <span> Social Impact Project</span>
-            <Link
-              href="/"
-              className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg"
-            >
-              Learn more
+            <Link href="/" className=" mx-auto  my-4 px-4 py-2 rounded-lg">
+              <Button className="bg-abcf text-black">Learn more</Button>
             </Link>
           </div>
         </div>
