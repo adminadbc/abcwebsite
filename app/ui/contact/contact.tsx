@@ -97,7 +97,7 @@ export function ContactSection1() {
           />
         ))}
       </div>
-      <div className="mt-20 flex flex-col mx-auto w-96 items-center">
+      <div className="container mx-auto mt-20 flex flex-col  items-center">
         <h2 className="mb-20 text-2xl">OR</h2>
         <Link href="/main/booking">
           <Button className="bg-abcf w-64">Book an Appointment</Button>
