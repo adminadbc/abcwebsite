@@ -2,15 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Tooltip,
-  Button,
-} from "@material-tailwind/react";
 
 export function ProjectSection() {
   return (
@@ -29,34 +20,44 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-      
+
         <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
-        <Image
-              src="/02.png"
-              width={250}
-              height={300}
-              alt="changemakers logo"
-              className=""
-            />
-            <div className="flex flex-col space-y-3">
-              <div className="mt-4 mx-auto font-semibold">Legal Connect</div> 
-              <span>Mobile App</span>
-              <Link href="/" className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg">Learn more</Link>
-            </div>
+          <Image
+            src="/02.png"
+            width={250}
+            height={300}
+            alt="changemakers logo"
+            className=""
+          />
+          <div className="flex flex-col space-y-3">
+            <div className="mt-4 mx-auto font-semibold">Legal Connect</div>
+            <span>Mobile App</span>
+            <Link
+              href="/"
+              className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg"
+            >
+              Learn more
+            </Link>
+          </div>
         </div>
-          <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
-        <Image
+        <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
+          <Image
             src="/changemakers.jpeg"
-              width={250}
-              height={300}
-              alt="changemakers logo"
-              className="mx-auto"
-            />
-            <div className="flex flex-col space-y-3">
-              <div className="mt-4 mx-auto font-semibold">Changemakers</div> 
-              <span> Social Impact Project</span>
-              <Link href="/" className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg">Learn more</Link>
-            </div>
+            width={250}
+            height={300}
+            alt="changemakers logo"
+            className="mx-auto"
+          />
+          <div className="flex flex-col space-y-3">
+            <div className="mt-4 mx-auto font-semibold">Changemakers</div>
+            <span> Social Impact Project</span>
+            <Link
+              href="/"
+              className="bg-abcf mx-auto text-black my-4 px-4 py-2 rounded-lg"
+            >
+              Learn more
+            </Link>
+          </div>
         </div>
       </div>
     </section>

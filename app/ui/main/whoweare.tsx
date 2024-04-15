@@ -1,20 +1,11 @@
 "use client";
 
 import React from "react";
-import { Typography, Button } from "@material-tailwind/react";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
 import Image from "next/image";
 interface IconPropsType {
   children: React.ReactNode;
-}
-
-function Icon({ children }: IconPropsType) {
-  return (
-    <div className="mb-6 grid h-12 w-12 place-items-center rounded-full bg-gray-900 p-2.5 text-white shadow-md">
-      {children}
-    </div>
-  );
 }
 
 export function FeatureSection3() {
@@ -39,14 +30,10 @@ export function FeatureSection3() {
           height={500}
         />
         <div className="my-20 pt-10 flex flex-col justify-evenly">
-          <Typography
-            variant="h3"
-            color="blue-gray"
-            className="mb-4 !text-2xl lg:!text-3xl"
-          >
+          <h3 className="mb-4 text-4xl lg:text-3xl font-bold">
             Our Vision and Mission
-          </Typography>
-          <p className="text-xl font-normal !text-gray-500">
+          </h3>
+          <p className="text-xl font-normal ">
             Advocacy for Better Communities Foundation is dedicated to promoting
             access to justice, advocating for marginalized voices, and providing
             education on legal rights. We strive to empower individuals and

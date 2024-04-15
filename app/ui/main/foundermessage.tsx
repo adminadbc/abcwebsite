@@ -23,7 +23,7 @@ export function FounderMessage() {
     <section className="w-screen ">
       <div className="flex flex-col items-center">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
-          Founder&quot;s Message
+          Founder&#x2019;s Message
         </h2>
         <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -45,7 +45,7 @@ export function FounderMessage() {
           height={900}
         />
         <div className="flex flex-col justify-evenly  lg:pt-32">
-          <p className="text-md font-normal !text-gray-500">
+          <p className="text-md font-normal lg:pt-20">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
             justice, amplify marginalized voices, and educate individuals about
@@ -54,20 +54,20 @@ export function FounderMessage() {
             outcomes for all.
             <br />
             <br />
-            In today&quot;s world, the path to justice can often seem daunting
+            In today&#x2019;s world, the path to justice can often seem daunting
             and inaccessible, particularly for those facing socio-economic
-            challenges or systemic barriers. That&quot;s where we come in. Our
+            challenges or systemic barriers. That&#x2019;s where we come in. Our
             dedicated team is here to provide support, guidance, and advocacy
-            every step of the way. Whether it&quot;s navigating the complexities
-            of the legal system or standing up for your rights, we are here to
-            ensure that no one is left behind.
+            every step of the way. Whether it&#x2019;s navigating the
+            complexities of the legal system or standing up for your rights, we
+            are here to ensure that no one is left behind.
             <br />
             <br />
             Our vision for a better Canada is one where justice knows no bounds.
             We envision a society where everyone, regardless of their background
             or circumstances, can access the legal support they need. But our
-            vision doesn&quot;t stop there. We believe in the power of
-            communities to drive real change. That&quot;s why we&quot;re
+            vision doesn&#x2019;t stop there. We believe in the power of
+            communities to drive real change. That&#x2019;s why we&#x2019;re
             committed to fostering active engagement and collaboration,
             empowering individuals to become advocates for systemic reform and
             equity.

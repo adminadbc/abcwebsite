@@ -14,7 +14,7 @@ export function WidgetsExample6() {
         target="_blank"
         rel="noreferrer"
       >
-        Book a call
+        Book an appointment
       </Link>
     </div>
   );

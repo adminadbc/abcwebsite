@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 
-const bodoni = localFont({ src: "../bodoniflf-webfont/BodoniFLF-Roman.woff" });
+// Specify the weight property along with subsets
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "ABC Foundation",
@@ -15,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{width : "screen", overflowX :"hidden"}}>
-      <body className={bodoni.className}>{children}</body>
+    <html lang="en">
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

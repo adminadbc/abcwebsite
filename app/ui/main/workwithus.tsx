@@ -26,7 +26,7 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          Contact us{" "}
+          Volunteer With Us{" "}
         </Link>
         <br></br>
         <h4 className="mt-10 font-bold text-2xl">To Partners:</h4>
@@ -47,7 +47,7 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          Contact us{" "}
+          Partner With Us{" "}
         </Link>
       </div>
       <div className="mb-10">

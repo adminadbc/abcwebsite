@@ -7,13 +7,7 @@ import { GiSpellBook } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
-import {
-  BanknotesIcon,
-  PencilSquareIcon,
-  PlayCircleIcon,
-  ChartBarSquareIcon,
-} from "@heroicons/react/24/solid";
-import Image from "next/image";
+import { PlayCircleIcon, ChartBarSquareIcon } from "@heroicons/react/24/solid";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -63,7 +57,7 @@ export function FeatureSection14() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <p className="mx-auto text-2xl max-w-2xl !text-gray-800">
+        <p className="mx-auto text-2xl max-w-2xl ">
           At ABC Foundation, we champion justice, amplify marginalized voices,
           and educate communities on legal rights, paving the way for fair and
           inclusive societies. You can also join us in creating this positive

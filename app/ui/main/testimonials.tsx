@@ -1,44 +1,39 @@
-import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
+import { Card, CardBody, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
 export function LogoSection6() {
   return (
     <section className="py-8 px-8 lg:py-20 ">
-      <div className="container !mx-auto text-center px-4 place-content-center grid">
-        <Typography
-          variant="h1"
-          color="blue-gray"
-          className="my-4 !text-2xl !leading-snug lg:!text-3xl"
-        >
+      <div className="container mx-auto mb-10 text-center lg:mb-20">
+        <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Our Philosophy of Empowerment
-        </Typography>
-        <div className="relative flex py-5 w-1/2 px-10 mx-auto items-center">
+        </h2>
+        <div className="relative flex py-5 w-1/2  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <p className="mx-5  text-center">
+          <p className="mx-5 text-center">
             <TbTopologyStarRing3 />
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-
-        <Typography className="mx-auto w-1/2 px-5  !text-gray-500 lg:px-8 mb-10">
+        <p className="mx-auto text-2xl max-w-2xl ">
           The Advocacy for Better Communities Foundation incorporates two key
-          elements: the concept of &quot;six degrees of separation&quot; and the
-          dharma chakra.
-        </Typography>
+          elements: the concept of &#x2019;six degrees of separation&#x2019; and
+          the dharma chakra.
+        </p>
+      </div>
+
+      <div className="container !mx-auto text-center px-4 place-content-center grid">
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
           <div className="flex flex-col items-center justify-center gap-6 w-80">
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+            <Card shadow={false} className="bg-[#FAFAFA] w-80 px-10">
               <CardBody>
-                <Typography
-                  variant="small"
-                  className="font-normal text-gray-500"
-                >
-                  **Six Degrees of Separation:** This symbolizes the
+                <p className="font-normal">
+                  Six Degrees of Separation: This symbolizes the
                   interconnectedness of individuals and communities,
-                  highlighting our belief that every person&quot;s actions can
+                  highlighting our belief that every person&#x2019;s actions can
                   create ripples of change that resonate throughout society.
-                </Typography>
+                </p>
               </CardBody>
             </Card>
           </div>
@@ -56,18 +51,15 @@ export function LogoSection6() {
               />
             </CardBody>
           </Card>
-          <div className="flex flex-col items-center justify-center gap-6 w-80">
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+          <div className="flex flex-col justify-center gap-6 w-80">
+            <Card shadow={false} className="bg-[#FAFAFA] h-fit w-80 px-10">
               <CardBody>
-                <Typography
-                  variant="small"
-                  className="font-normal text-gray-500"
-                >
-                  **Dharma Chakra:** The dharma chakra, or wheel of dharma,
+                <p className="font-normal">
+                  Dharma Chakra: The dharma chakra, or wheel of dharma,
                   represents justice, righteousness, and the path to
                   enlightenment. It signifies our commitment to advocating for
                   fair and just outcomes for all members of society.
-                </Typography>
+                </p>
               </CardBody>
             </Card>
           </div>

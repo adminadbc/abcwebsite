@@ -11,14 +11,13 @@ export function HeroSection12() {
         <div className="absolute inset-0 h-full w-full bg-black/15" />
         <div className="grid min-h-[50rem] px-12">
           <div className="container relative z-10 my-auto mx-auto">
-            <Typography
-              variant="h1"
+            <h1
               color="white"
-              className="mb-4 text-3xl !leading-snug lg:text-5xl"
+              className="mb-4 text-white text-3xl !leading-snug lg:text-5xl"
             >
               Empowering the community to confidently navigate the legal system
               and advocacy for equitable and fair outcomes.
-            </Typography>
+            </h1>
             <Typography
               variant="lead"
               className="mb-10 w-full text-white/80 md:max-w-full lg:max-w-xl"
@@ -26,7 +25,9 @@ export function HeroSection12() {
               Community Empowerment Initiative
             </Typography>
             <Link href="/main/booking">
-              <Button className="bg-abcf text-black">Book a call</Button>
+              <Button className="bg-abcf text-white">
+                Book an appointment
+              </Button>
             </Link>
           </div>
         </div>
