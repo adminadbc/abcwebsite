@@ -8,6 +8,7 @@ import clsx from "clsx";
 import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Custom from "./dropDown";
+import SearchLayer from "./searchBox";
 
 const links = [
   { name: "Home", href: "/main" },
@@ -96,6 +97,7 @@ export function NavBar() {
           )}
         </IconButton>
       </div>
+      <SearchLayer />
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
