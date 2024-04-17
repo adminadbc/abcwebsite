@@ -50,7 +50,7 @@ export function NavBar() {
       color="transparent"
       className="absolute z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
-      <div className="container ml-6 md:sml-14 flex items-center justify-between">
+      <div className="container mx-auto md:sml-14 flex items-center">
         <Link href="/main">
           <Image
             src="/logoabc.png"
@@ -59,7 +59,8 @@ export function NavBar() {
             alt="ABC Foundation Logo"
           />
         </Link>
-        <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
+
+        <div className="mx-auto hidden items-center gap-14 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -77,7 +78,11 @@ export function NavBar() {
           )}
         </div>
 
-        <div className="hidden gap-2 lg:flex"></div>
+        <div className="hidden lg:flex">
+          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+            <Button className="bg-abcf">Donate</Button>
+          </Link>
+        </div>
 
         <IconButton
           variant="text"
