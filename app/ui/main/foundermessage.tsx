@@ -92,7 +92,7 @@ export function FounderMessage() {
             </h5>
           </div>
           <Link href="/main/about/founder">
-            <Button className="bg-abcf text-black">
+            <Button className="bg-abcf text-black" size="lg">
               Read more about the founder
             </Button>
           </Link>

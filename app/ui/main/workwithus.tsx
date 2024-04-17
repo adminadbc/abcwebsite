@@ -6,10 +6,10 @@ import { Button } from "@material-tailwind/react";
 
 export function WorkWithUs() {
   return (
-    <div className="rounded-xl bg-gradient-to-r bg-black/35 w-screen overflow-hidden p-10 flex flex-wrap-reverse justify-around items-center">
+    <div className="rounded-xl bg-gradient-to-r bg-brand1 w-screen overflow-hidden p-10 flex flex-wrap-reverse justify-around items-center text-white">
       <div className="mb-9 md:w-4/5 lg:w-2/5">
         <h3 className="text-4xl font-semibold">Work With Us</h3>
-        <div className="flex-grow border-t-4 border-white w-80 my-10"></div>
+        <div className="flex-grow border-t-4 border-abcf w-80 my-10"></div>
         <h4 className=" font-bold text-2xl mt-3">To Volunteers:</h4>
         <p className="mt-2 mb-6 text-base text-justify">
           Volunteering with the ABC Foundation is an opportunity to actively
@@ -27,7 +27,9 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          <Button className="bg-abcf text-black">Volunteer With Us</Button>
+          <Button className="bg-abcf text-black" size="lg">
+            Volunteer With Us
+          </Button>
         </Link>
         <br></br>
         <h4 className="mt-10 font-bold text-2xl">To Partners:</h4>
@@ -48,7 +50,10 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          <Button className="bg-abcf text-black"> Partner With Us</Button>
+          <Button className="bg-abcf text-black" size="lg">
+            {" "}
+            Partner With Us
+          </Button>
         </Link>
       </div>
       <div className="mb-10">

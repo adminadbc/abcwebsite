@@ -80,7 +80,9 @@ export function NavBar() {
 
         <div className="hidden lg:flex">
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
-            <Button className="bg-abcf text-black">Donate</Button>
+            <Button className="bg-abcf text-black" size="lg">
+              Donate
+            </Button>
           </Link>
         </div>
 
