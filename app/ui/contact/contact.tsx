@@ -66,7 +66,7 @@ const options = [
     icon: <PhoneIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Phone",
     description: "Give us a ring",
-    contact: "+1 (825) 735-4343",
+    contact: "+1-587-893-5222",
   },
 ];
 
