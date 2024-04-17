@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 export function WidgetsExample6() {
   return (
     // CHANGED THE ALIGNMENT OF THE WIDGET TO CENTER BASE OF THE VIEW
-    <div className="bg-gradient-to-r bg-black/35  py-14 my-16 px-10 md:px-28">
+    <div className="bg-gradient-to-r bg-black/80  py-14 my-16 px-10 md:px-28">
       <h3 color="blue-gray" className="font-bold mb-2">
         Talk to Us
       </h3>
