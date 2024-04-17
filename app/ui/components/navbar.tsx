@@ -5,9 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
+import { Navbar, Collapse, IconButton, Button } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Custom from "./dropDown";
+
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const links = [
   { name: "Home", href: "/main" },
@@ -72,17 +76,9 @@ export function NavBar() {
             )
           )}
         </div>
-        <div className="hidden gap-2 lg:flex">
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-github text-base" />
-          </IconButton>
-        </div>
+
+        <div className="hidden gap-2 lg:flex"></div>
+
         <IconButton
           variant="text"
           color="white"
@@ -96,6 +92,7 @@ export function NavBar() {
           )}
         </IconButton>
       </div>
+
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
@@ -110,16 +107,34 @@ export function NavBar() {
               <Link href="/main/contacts">Contacts Us</Link>
             </li>
           </ul>
-          <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-github text-base" />
-            </IconButton>
+          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+            <Button className="bg-abcf mt-5">Donate</Button>
+          </Link>
+          <div className="flex gap-4 mt-6 ">
+            <a
+              href="https://www.facebook.com/ABCFoundationConnect/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+            >
+              <FaSquareFacebook size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+            >
+              <FaLinkedin size={30} />
+            </a>
+            <a
+              href="https://www.instagram.com/the.abcfoundation/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+            >
+              <FaInstagramSquare size={30} />
+            </a>
           </div>
         </div>
       </Collapse>
