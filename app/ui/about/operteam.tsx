@@ -124,7 +124,7 @@ function TeamCard({
 
 const members = [
   {
-    img: "/raj.jpg",
+    img: "/raj.jpeg",
     name: "Raj Dhillon",
     title: "Advocacy and Public Relations Manager",
     desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",

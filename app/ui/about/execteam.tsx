@@ -126,7 +126,7 @@ function TeamCard({
 
 const members = [
   {
-    img: "/angie.jpeg",
+    img: "/angieabou.jpeg",
     name: "Angeline Lal",
     title: "Founding Director",
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
