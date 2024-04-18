@@ -2,10 +2,8 @@
 
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-// import { FaApple, FaGooglePlay } from "react-icons/fa";
 
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 
 const links = [
@@ -13,8 +11,8 @@ const links = [
     title: "Pages",
     items: [
       { name: "Home", url: "/" },
-      { name: "About", url: "/main/about" },
-      { name: "Contacts", url: "/main/contacts" },
+      { name: "About Us", url: "/main/about" },
+      { name: "Contact Us", url: "/main/contacts" },
     ],
   },
   {
