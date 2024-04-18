@@ -54,7 +54,7 @@ const options = [
     icon: <MapPinIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Address",
     description: "Find us at the office",
-    contact: "305, 1822 10 Ave SW, Calgary, Alberta T3C",
+    contact: "305, 1822 10 Ave SW, Calgary, Alberta T3C 0J8",
   },
   {
     icon: <EnvelopeIcon className="h-6 w-6" strokeWidth={2} />,
@@ -66,7 +66,7 @@ const options = [
     icon: <PhoneIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Phone",
     description: "Give us a ring",
-    contact: "+1 (825) 735-4343",
+    contact: "+1-587-893-5222",
   },
 ];
 
