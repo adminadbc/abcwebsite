@@ -48,7 +48,7 @@ const features = [
 export function FeatureSection14() {
   return (
     <section className="py-10 px-8">
-      <div className="container mx-auto mb-10 text-center lg:mb-20">
+      <div className="container mx-auto my-10 text-center lg:mb-20">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">What We Do</h2>
         <div className="relative flex py-5   mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
