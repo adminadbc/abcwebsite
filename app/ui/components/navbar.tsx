@@ -72,7 +72,7 @@ export function NavBar() {
                   "bg-sky-100 text-abcf": pathname === link.href,
                 })}
               >
-                <p className="hidden md:block">{link.name}</p>
+                <h6 className="hidden md:block">{link.name}</h6>
               </Link>
             )
           )}

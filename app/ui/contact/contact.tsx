@@ -100,7 +100,9 @@ export function ContactSection1() {
       <div className="container mx-auto mt-20 flex flex-col  items-center">
         <h2 className="mb-20 text-2xl">OR</h2>
         <Link href="/main/booking">
-          <Button className="bg-abcf w-64">Book an Appointment</Button>
+          <Button className="bg-abcf w-42 text-black text-lg" size="lg">
+            Book an Appointment
+          </Button>
         </Link>
       </div>
     </section>

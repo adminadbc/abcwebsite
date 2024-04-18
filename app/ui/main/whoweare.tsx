@@ -31,7 +31,7 @@ export function FeatureSection3() {
         />
         <div className="my-20 pt-10 flex flex-col justify-evenly">
           <h3 className="mb-4 text-4xl lg:text-3xl font-bold text-center">
-            Our Vision and Mission
+            Our Mission and Vision
           </h3>
           <p className="text-xl font-normal text-justify">
             Advocacy for Better Communities Foundation is dedicated to promoting

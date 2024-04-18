@@ -27,7 +27,7 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          <Button className="bg-abcf text-black" size="lg">
+          <Button className="bg-abcf text-black w-42 text-md" size="md">
             Volunteer With Us
           </Button>
         </Link>
@@ -50,7 +50,7 @@ export function WorkWithUs() {
           target="_blank"
           rel="noreferrer"
         >
-          <Button className="bg-abcf text-black" size="lg">
+          <Button className="bg-abcf text-black w-42 text-md" size="md">
             {" "}
             Partner With Us
           </Button>

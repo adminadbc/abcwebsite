@@ -36,7 +36,10 @@ export function NewsLetter1() {
             target="_blank"
             rel="noreferrer"
           >
-            <Button size="lg" className="flex-shrink-0 bg-abcf">
+            <Button
+              size="lg"
+              className="flex-shrink-0 bg-abcf text-black w-42 text-lg"
+            >
               Register Now
             </Button>
           </Link>
