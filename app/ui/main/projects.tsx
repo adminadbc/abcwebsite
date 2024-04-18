@@ -8,7 +8,7 @@ export function ProjectSection() {
   return (
     <section className="my-10 flex gap-4">
       <div
-        className=" bg-gradient-to-r bg-brand1  py-20 px-10 md:pl-24 lg:pl-10 flex 
+        className=" bg-gradient-to-r bg-brand2  py-20 px-10 md:pl-24 lg:pl-10 flex 
       flex-wrap items-center justify-evenly gap-6 w-screen text-white"
       >
         <div className="lg:w-1/3 space-y-7  overflow-hidden">

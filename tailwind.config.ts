@@ -18,6 +18,7 @@ const config: Config = withMT({
       colors: {
         abcf: "#B49712",
         brand1: "#0C0F30",
+        brand2: "#021D2C",
       },
     },
   },
