@@ -10,8 +10,8 @@ interface IconPropsType {
 
 export function FeatureSection3() {
   return (
-    <section className="py-10 p-8">
-      <div className="flex flex-col items-center mt-20 mb-10">
+    <section className="py-10">
+      <div className="flex flex-col items-center mt-10 mb-5">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">Who We Are</h2>
         <div className="relative flex py-5 w-2/3  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -29,11 +29,11 @@ export function FeatureSection3() {
           width={300}
           height={500}
         />
-        <div className="my-20 pt-10 flex flex-col justify-evenly">
+        <div className="my-20 px-5  flex flex-col justify-evenly">
           <h3 className="mb-4 text-4xl lg:text-3xl font-bold text-center">
             Our Mission and Vision
           </h3>
-          <p className="text-xl font-normal text-justify">
+          <p className="text-xl font-normal text-justify mx-6">
             Advocacy for Better Communities Foundation is dedicated to promoting
             access to justice, advocating for marginalized voices, and providing
             education on legal rights. We strive to empower individuals and

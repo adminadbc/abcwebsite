@@ -34,7 +34,7 @@ export function FounderMessage() {
         </div>
       </div>
       <div
-        className="container mx-auto px-4 md:px-14 mb-15 mt-10 lg:mt-20 gap-10 flex items-center flex-wrap 
+        className="container mx-auto px-10 md:px-14 mb-15 mt-10 lg:mt-20 gap-10 flex items-center flex-wrap 
        lg:flex-nowrap "
       >
         <Image
@@ -45,7 +45,7 @@ export function FounderMessage() {
           height={900}
         />
         <div className="flex flex-col justify-evenly">
-          <p className="text-md font-normal text-justify">
+          <p className="text-xl font-normal text-justify">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
             justice, amplify marginalized voices, and educate individuals about

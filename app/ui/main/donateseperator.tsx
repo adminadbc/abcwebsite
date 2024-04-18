@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 
 export function DonateSeperator() {
   return (
-    <div className="bg-gradient-to-r bg-brand2  py-14 my-16 px-10 md:px-28 text-white">
+    <div className="bg-gradient-to-r bg-brand2  py-14 px-10 md:px-28 text-white">
       <h3 color="blue-gray" className="font-bold mb-2">
         Join us in making a difference today
       </h3>
