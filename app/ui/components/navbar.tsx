@@ -50,12 +50,12 @@ export function NavBar() {
       color="transparent"
       className="absolute z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
-      <div className="container mx-auto md:sml-14 flex items-center">
+      <div className="container mx-auto md:sml-14 flex items-center h-18">
         <Link href="/main">
           <Image
-            src="/logoabc.png"
-            width={250}
-            height={80}
+            src="/newlogo.png"
+            width={300}
+            height={100}
             alt="ABC Foundation Logo"
           />
         </Link>

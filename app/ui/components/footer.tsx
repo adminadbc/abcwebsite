@@ -38,12 +38,12 @@ const currentYear = new Date().getFullYear();
 
 export function Footer4() {
   return (
-    <footer className="px-8 py-28 bg-brand1">
+    <footer className="px-8 py-28 bg-brand2">
       <div className="container mx-auto">
         <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-2">
           <div className="mb-8 md:mb-0">
             <Image
-              src="/logoabc.png"
+              src="/newlogowhite.png"
               width={250}
               height={80}
               alt="ABC Foundation Logo"
