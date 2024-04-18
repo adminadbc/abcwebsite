@@ -36,7 +36,7 @@ const DropMenu: React.FC<
             <a
               key={index}
               href={item.href}
-              className="text-gray-700 block px-4 py-2 text-base"
+              className="text-gray-700 block px-4 py-2 text-base hover:text-abcf"
               role="menuitem"
             >
               <h6>{item.name}</h6>

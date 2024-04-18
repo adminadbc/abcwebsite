@@ -49,12 +49,13 @@ export function Footer4() {
               alt="ABC Foundation Logo"
             />
 
-            <div className="flex gap-4 mt-6 text-white">
+            <div className="flex gap-4 mt-6 text-white ">
               <a
                 href="https://www.facebook.com/ABCFoundationConnect/"
                 title="social"
                 target="_blank"
                 rel="noopener"
+                className="hover:text-abcf"
               >
                 <FaSquareFacebook size={30} />
               </a>
@@ -63,6 +64,7 @@ export function Footer4() {
                 title="social"
                 target="_blank"
                 rel="noopener"
+                className="hover:text-abcf"
               >
                 <FaLinkedin size={30} />
               </a>
@@ -71,6 +73,7 @@ export function Footer4() {
                 title="social"
                 target="_blank"
                 rel="noopener"
+                className="hover:text-abcf"
               >
                 <FaInstagramSquare size={30} />
               </a>
@@ -107,7 +110,11 @@ export function Footer4() {
           </Typography>
           <Typography variant="small" className="font-normal">
             Powered by{" "}
-            <a href="https://www.viteconsulting.com/" title="vite consulting">
+            <a
+              href="https://www.viteconsulting.com/"
+              title="vite consulting"
+              className="hover:text-abcf"
+            >
               Vite Consulting
             </a>
           </Typography>

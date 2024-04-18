@@ -103,19 +103,27 @@ export function NavBar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
-            <li>
-              <Link href="/main">Home</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main">
+                <h6>Home</h6>
+              </Link>
             </li>
-            <li>
-              <Link href="/main/about">About Us</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main/about">
+                <h6>About Us</h6>
+              </Link>
             </li>
             <Custom />
-            <li>
-              <Link href="/main/contacts">Contacts Us</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main/contacts">
+                <h6>Contacts Us</h6>
+              </Link>
             </li>
           </ul>
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
-            <Button className="bg-abcf mt-5">Donate</Button>
+            <Button className="bg-abcf mt-5 text-black" size="lg">
+              Donate
+            </Button>
           </Link>
           <div className="flex gap-4 mt-6 ">
             <a
@@ -123,6 +131,7 @@ export function NavBar() {
               title="social"
               target="_blank"
               rel="noopener"
+              className="hover:text-abcf"
             >
               <FaSquareFacebook size={30} />
             </a>
@@ -131,6 +140,7 @@ export function NavBar() {
               title="social"
               target="_blank"
               rel="noopener"
+              className="hover:text-abcf"
             >
               <FaLinkedin size={30} />
             </a>
@@ -139,6 +149,7 @@ export function NavBar() {
               title="social"
               target="_blank"
               rel="noopener"
+              className="hover:text-abcf"
             >
               <FaInstagramSquare size={30} />
             </a>
