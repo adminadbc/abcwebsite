@@ -38,7 +38,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer4() {
   return (
-    <footer className="px-8 py-28 bg-gradient-to-r from-abcf to-orange-400">
+    <footer className="px-8 py-28 bg-brand1">
       <div className="container mx-auto">
         <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-2">
           <div className="mb-8 md:mb-0">
@@ -49,7 +49,7 @@ export function Footer4() {
               alt="ABC Foundation Logo"
             />
 
-            <div className="flex gap-4 mt-6 ">
+            <div className="flex gap-4 mt-6 text-white">
               <a
                 href="https://www.facebook.com/ABCFoundationConnect/"
                 title="social"
@@ -76,7 +76,7 @@ export function Footer4() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between gap-6 lg:grid-cols-3">
+          <div className="grid grid-cols-2 justify-between gap-6 lg:grid-cols-3 text-white">
             {links.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
@@ -90,7 +90,7 @@ export function Footer4() {
                     <Typography
                       as="a"
                       href={link.url}
-                      className="py-1 font-medium text-black transition-colors hover:!text-gray-900"
+                      className="py-1 font-medium text-white transition-colors hover:text-abcf"
                     >
                       {link.name}
                     </Typography>
@@ -100,8 +100,8 @@ export function Footer4() {
             ))}
           </div>
         </div>
-        <hr className="w-12/12 mx-auto text-black h-px border-0 bg-black my-10" />
-        <div className=" flex flex-wrap justify-between sm:mx-0 ">
+        <hr className="w-12/12 mx-auto text-white h-px border-0 bg-abcf my-10" />
+        <div className=" flex flex-wrap justify-between sm:mx-0 text-white">
           <Typography variant="small" className="font-normal">
             2024. All rights reserved.
           </Typography>
