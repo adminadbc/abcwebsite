@@ -39,8 +39,8 @@ export function FounderMessage() {
       >
         <Image
           src={`/angie.jpeg`}
-          alt="background image"
-          className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto rounded-lg shadow-xl"
+          alt="founder image"
+          className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto lg:mb-48 rounded-lg shadow-xl"
           width={500}
           height={900}
         />
