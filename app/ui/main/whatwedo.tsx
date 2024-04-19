@@ -71,7 +71,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Advocacy
             </Typography>
-            <p className="text-xl text-left">
+            <p className="text-xl">
               The ABC Foundation champions overlooked community issues,
               amplifies marginalized voices, and advocates for equitable
               policies, elevating unheard voices in the process.
@@ -85,7 +85,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Education
             </Typography>
-            <p className="text-xl text-left">
+            <p className="text-xl">
               The ABC Foundation empowers through education by conducting
               workshops, seminars, and resources to enhance legal awareness and
               enable individuals in navigating the legal system with confidence.

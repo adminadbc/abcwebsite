@@ -54,8 +54,8 @@ export function NavBar() {
         <Link href="/main">
           <Image
             src="/newlogo.png"
-            width={300}
-            height={100}
+            width={300} // Desired width
+            height={100 / 3.78} // Calculated height based on the aspect ratio
             alt="ABC Foundation Logo"
           />
         </Link>

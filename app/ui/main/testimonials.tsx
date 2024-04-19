@@ -29,7 +29,7 @@ export function LogoSection6() {
           <div className="flex flex-col items-center justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA]">
               <CardBody>
-                <p className="font-normal text-left text-xl">
+                <p className="font-normal text-xl">
                   &quot;Six Degrees of Separation&quot;: This symbolizes the
                   interconnectedness of individuals and communities,
                   highlighting our belief that every person&#x2019;s actions can
@@ -42,7 +42,7 @@ export function LogoSection6() {
             shadow={false}
             className="bg-[#FAFAFA] lg:px-10 justify-center mx-auto w-full max-w-[18rem] lg:max-w-lg"
           >
-            <CardBody className="text-center">
+            <CardBody>
               <Image
                 src="/04-2.png"
                 alt="logo"
@@ -52,10 +52,10 @@ export function LogoSection6() {
               />
             </CardBody>
           </Card>
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] ">
               <CardBody>
-                <p className="font-normal text-left text-xl">
+                <p className="font-normal text-xl">
                   <span className="text-bold">&quot;Dharma Chakra&quot;:</span>{" "}
                   The &quot;Dharma Chakra&quot;, or wheel of dharma, represents
                   justice, righteousness, and the path to enlightenment. It

@@ -45,7 +45,7 @@ export function FounderMessage() {
           height={900}
         />
         <div className="flex flex-col justify-evenly">
-          <p className="text-xl font-normal text-justify">
+          <p className="text-xl font-normal">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
             justice, amplify marginalized voices, and educate individuals about
