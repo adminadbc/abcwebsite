@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState,useEffect } from "react"
 // Connect and authenticate with your Algolia app
-const client = algoliasearch("", '')
+const client = algoliasearch("APW4RXIUMQ", '5929a2283832864e0c93607dd9e201fb')
 
 
 const appId = process.env.APP_iD!;
@@ -65,7 +65,8 @@ function SearchLayer() {
         
             </div>
          : 
-        <input onClick={()=>setPop(true)}  placeholder="search layer"/>
+        <input onClick={()=>setPop(true)} 
+         placeholder="search layer" className="h-8 pl-3 border rounded-md w-24 text-[0.75rem]"/>
     }
     </div>
   )

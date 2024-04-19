@@ -56,7 +56,7 @@ export function NavBar() {
             alt="ABC Foundation Logo"
           />
         </Link>
-        <div className="ml-auto hidden items-center gap-14 lg:flex text-2xl">
+        <div className="ml-auto hidden items-center gap-6 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -72,6 +72,7 @@ export function NavBar() {
               </Link>
             )
           )}
+          <SearchLayer />
         </div>
         <div className="hidden gap-2 lg:flex">
           <IconButton variant="text" color="white" size="sm">
@@ -97,7 +98,6 @@ export function NavBar() {
           )}
         </IconButton>
       </div>
-      <SearchLayer />
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
@@ -111,6 +111,9 @@ export function NavBar() {
             <li>
               <Link href="/main/contacts">Contacts</Link>
             </li>
+           <li>
+           <SearchLayer />
+           </li>
           </ul>
           <div className="mt-4 flex gap-2">
             <IconButton variant="text" color="gray" size="sm">
