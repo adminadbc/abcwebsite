@@ -52,7 +52,8 @@ function SearchLayer() {
                 outline-blue-500 mb-6 md:mb-10 lg:w-1/3 mx-[10%]"
                   onChange={(e)=>{handleSearch(e)}} placeholder="search..." />
                             {<div className="flex gap-2 flex-wrap mx-auto relative">
-       {resultList?.map((listData, idx)=><Link href="" key={idx} className="flex
+       {resultList?.map((listData, idx)=><Link  target="_blank" href="https://medium.com/swlh/3-subtle-signs-youve-hired-a-great-lawyer-e72a65010792" 
+       key={idx} className="flex
            z-[999] bg-white max-h-40 flex-row-reverse gap-2 w-full md:w-1/2 lg:w-1/3  overflow-hidden ">
            <div className="py-2 px-2 text-left flex flex-col justify-center align-middle">
 <div className="font-semibold text-base"> {listData.title}</div>
