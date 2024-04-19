@@ -4,13 +4,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState,useEffect } from "react"
 // Connect and authenticate with your Algolia app
-const client = algoliasearch("APW4RXIUMQ", '5929a2283832864e0c93607dd9e201fb')
+const client = algoliasearch("", '')
 
 
 const appId = process.env.APP_iD!;
 const api_key = process.env.API_KEY!;
 
-const searchClient = algoliasearch("E8D6CS8E3Q", "5d52e3e9854bc76850ea0925d500f155");
 
 let resultList : any[] ;
 
