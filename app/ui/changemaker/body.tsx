@@ -53,7 +53,7 @@ export function ContentSection11() {
               height={500}
             />
           </div>
-          <div className="flex flex-col gap-8 text-justify">
+          <div className="flex flex-col gap-8">
             <Option icon={CloudIcon} title="Unity Through Inclusion:">
               ABC Foundation&#x2019;s Changemakers initiative provides a
               fortified and inclusive platform for influential voices and
