@@ -8,7 +8,7 @@ export function HeroSection12() {
   return (
     <div
       className="relative h-[60rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] 
-      bg-cover bg-center bg-no-repeat -z-20"
+      bg-cover bg-center bg-no-repeat"
     >
       <div className="absolute inset-0 h-full w-full bg-black/15" />
       <div className="grid min-h-[50rem] px-12">
