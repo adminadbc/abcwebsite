@@ -48,7 +48,7 @@ const features = [
 export function FeatureSection14() {
   return (
     <section className="py-10 px-8">
-      <div className="container mx-auto mb-10 text-center lg:mb-20">
+      <div className="container mx-auto my-10 text-center lg:mb-20">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">What We Do</h2>
         <div className="relative flex py-5   mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -71,7 +71,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Advocacy
             </Typography>
-            <p className="text-xl text-justify">
+            <p className="text-xl">
               The ABC Foundation champions overlooked community issues,
               amplifies marginalized voices, and advocates for equitable
               policies, elevating unheard voices in the process.
@@ -85,7 +85,7 @@ export function FeatureSection14() {
             <Typography variant="h5" color="blue-gray" className="my-5">
               Education
             </Typography>
-            <p className="text-xl text-justify">
+            <p className="text-xl">
               The ABC Foundation empowers through education by conducting
               workshops, seminars, and resources to enhance legal awareness and
               enable individuals in navigating the legal system with confidence.

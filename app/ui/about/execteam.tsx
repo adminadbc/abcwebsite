@@ -69,7 +69,7 @@ function TeamCard({
         <Typography variant="small" className="mb-3 mt-2 font-bold uppercase ">
           {title}
         </Typography>
-        <Typography className="mb-2 w-full font-normal  xl:w-72 text-justify">
+        <Typography className="mb-2 w-full font-normal  xl:w-72 text-left">
           {desc}
         </Typography>
         <div className="flex items-center gap-7 mt-5">
@@ -126,7 +126,7 @@ function TeamCard({
 
 const members = [
   {
-    img: "/angie-lal.jpg",
+    img: "/angie-lal.png",
     name: "Angeline Lal",
     title: "Founding Director",
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",

@@ -1,6 +1,7 @@
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
+import "./mainstyles.css";
 
 export function LogoSection6() {
   return (
@@ -18,21 +19,24 @@ export function LogoSection6() {
         </div>
         <p className="mx-auto text-2xl max-w-2xl">
           The Advocacy for Better Communities Foundation incorporates two key
-          elements: the concept of &#x2019;six degrees of separation&#x2019; and
-          the dharma chakra.
+          elements: the concept of &quot;Six Degrees of Separation&quot; and the
+          &quot;Dharma Chakra&quot;.
         </p>
       </div>
 
       <div className="container !mx-auto text-center px-4 place-content-center grid">
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
           <div className="flex flex-col items-center justify-center gap-6">
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+            <Card shadow={false} className="bg-[#FAFAFA]">
               <CardBody>
-                <p className="font-normal text-justify">
-                  Six Degrees of Separation: This symbolizes the
-                  interconnectedness of individuals and communities,
-                  highlighting our belief that every person&#x2019;s actions can
-                  create ripples of change that resonate throughout society.
+                <h4 className="text-xl font-bold">
+                  &quot;Six Degrees of Separation&quot;:
+                </h4>
+                <p className="font-normal text-xl">
+                  This symbolizes the interconnectedness of individuals and
+                  communities, highlighting our belief that every
+                  person&#x2019;s actions can create ripples of change that
+                  resonate throughout society.
                 </p>
               </CardBody>
             </Card>
@@ -41,7 +45,7 @@ export function LogoSection6() {
             shadow={false}
             className="bg-[#FAFAFA] lg:px-10 justify-center mx-auto w-full max-w-[18rem] lg:max-w-lg"
           >
-            <CardBody className="text-center">
+            <CardBody>
               <Image
                 src="/04-2.png"
                 alt="logo"
@@ -51,14 +55,17 @@ export function LogoSection6() {
               />
             </CardBody>
           </Card>
-          <div className="flex flex-col justify-center gap-6">
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
+          <div className="flex flex-col gap-6">
+            <Card shadow={false} className="bg-[#FAFAFA] ">
               <CardBody>
-                <p className="font-normal text-justify">
-                  Dharma Chakra: The dharma chakra, or wheel of dharma,
-                  represents justice, righteousness, and the path to
-                  enlightenment. It signifies our commitment to advocating for
-                  fair and just outcomes for all members of society.
+                <h4 className="text-xl font-bold">
+                  &quot;Dharma Chakra&quot;:
+                </h4>{" "}
+                <p className="font-normal text-xl">
+                  The &quot;Dharma Chakra&quot;, or wheel of dharma, represents
+                  justice, righteousness, and the path to enlightenment. It
+                  signifies our commitment to advocating for fair and just
+                  outcomes for all members of society.
                 </p>
               </CardBody>
             </Card>

@@ -5,10 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { Navbar, Collapse, IconButton } from "@material-tailwind/react";
+import { Navbar, Collapse, IconButton, Button } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Custom from "./dropDown";
-import SearchLayer from "./searchBox";
+
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import SearchLayer from "./searchBox"
 
 const links = [
   { name: "Home", href: "/main" },
@@ -36,7 +40,7 @@ export function NavBar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 1060 && setOpen(false)
     );
   }, []);
 
@@ -47,16 +51,17 @@ export function NavBar() {
       color="transparent"
       className="absolute z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
-      <div className="container ml-6 md:sml-14 flex items-center justify-between">
+      <div className="container mx-auto md:sml-14 flex items-center h-18">
         <Link href="/main">
           <Image
-            src="/logoabc.png"
-            width={250}
-            height={80}
+            src="/newlogo.png"
+            width={300} // Desired width
+            height={100 / 3.78} // Calculated height based on the aspect ratio
             alt="ABC Foundation Logo"
           />
         </Link>
-        <div className="ml-auto hidden items-center gap-6 lg:flex text-2xl">
+
+        <div className="ml-auto mr-6 hidden items-center gap-6 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -68,23 +73,21 @@ export function NavBar() {
                   "bg-sky-100 text-abcf": pathname === link.href,
                 })}
               >
-                <p className="hidden md:block">{link.name}</p>
+                <h6 className="hidden md:block">{link.name}</h6>
               </Link>
             )
           )}
           <SearchLayer />
         </div>
-        <div className="hidden gap-2 lg:flex">
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-          <IconButton variant="text" color="white" size="sm">
-            <i className="fa-brands fa-github text-base" />
-          </IconButton>
+
+        <div className="hidden lg:flex">
+          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+            <Button className="bg-abcf text-black" size="lg">
+              Donate
+            </Button>
+          </Link>
         </div>
+
         <IconButton
           variant="text"
           color="white"
@@ -98,33 +101,61 @@ export function NavBar() {
           )}
         </IconButton>
       </div>
+
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
-            <li>
-              <Link href="/main">Home</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main">
+                <h6>Home</h6>
+              </Link>
             </li>
-            <li>
-              <Link href="/main/about">About</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main/about">
+                <h6>About Us</h6>
+              </Link>
             </li>
             <Custom />
-            <li>
-              <Link href="/main/contacts">Contacts</Link>
+            <li className="hover:text-abcf">
+              <Link href="/main/contacts">
+                <h6>Contacts Us</h6>
+              </Link>
             </li>
-           <li>
-           <SearchLayer />
-           </li>
           </ul>
-          <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-github text-base" />
-            </IconButton>
+          <SearchLayer />
+          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+            <Button className="bg-abcf mt-5 text-black" size="lg">
+              Donate
+            </Button>
+          </Link>
+          <div className="flex gap-4 mt-6 ">
+            <a
+              href="https://www.facebook.com/ABCFoundationConnect/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-abcf"
+            >
+              <FaSquareFacebook size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-abcf"
+            >
+              <FaLinkedin size={30} />
+            </a>
+            <a
+              href="https://www.instagram.com/the.abcfoundation/"
+              title="social"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-abcf"
+            >
+              <FaInstagramSquare size={30} />
+            </a>
           </div>
         </div>
       </Collapse>

@@ -15,22 +15,22 @@ export default function MyApp() {
     (async function () {
       const cal = await getCalApi();
       cal("ui", {
-        styles: { branding: { brandColor: "#B49712" } },
+        styles: { branding: { brandColor: "#021D2C" } },
         hideEventTypeDetails: false,
         layout: "month_view",
         cssVarsPerTheme: {
           light: {
-            "cal-brand": "#B49712",
-            "cal-text": "#B49712",
-            "cal-text-emphasis": "#B49712",
-            "cal-border-emphasis": "#B49712",
-            "cal-text-error": "pink",
-            "cal-border": "#B49712",
-            "cal-border-default": "#B49712",
-            "cal-border-subtle": "#B49712",
-            "cal-border-booker": "#B49712",
+            "cal-brand": "#021D2C",
+            "cal-text": "#021D2C",
+            "cal-text-emphasis": "#021D2C",
+            "cal-border-emphasis": "#021D2C",
+            "cal-text-error": "red",
+            "cal-border": "#021D2C",
+            "cal-border-default": "#021D2C",
+            "cal-border-subtle": "#021D2C",
+            "cal-border-booker": "#021D2C",
             "cal-text-muted": "#a28810",
-            "cal-bg-emphasis": "#efd55d",
+            "cal-bg-emphasis": "#B49712",
             // More CSS variables are defined here
             // https://github.com/calcom/cal.com/blob/b0ca7dae1a17f897e34b83c990f30ab65f615ee0/packages/config/tailwind-preset.js#L69
           },

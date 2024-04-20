@@ -6,6 +6,7 @@ import { HeroSection12 } from "../ui/main/hero";
 import { FeatureSection3 } from "../ui/main/whoweare";
 import { FeatureSection14 } from "../ui/main/whatwedo";
 import { WidgetsExample6 } from "../ui/main/seperatoone";
+import { DonateSeperator } from "../ui/main/donateseperator";
 import { FounderMessage } from "../ui/main/foundermessage";
 import { ProjectSection } from "../ui/main/projects";
 import { LogoSection6 } from "../ui/main/testimonials";
@@ -14,7 +15,6 @@ import { NewsLetter1 } from "../ui/main/newsletter";
 
 import { Footer4 } from "../ui/components/footer";
 import NavBar from "../ui/components/navbar";
-import Custom from "../ui/components/dropDown";
 
 function MainPage() {
   return (
@@ -22,6 +22,7 @@ function MainPage() {
       <NavBar />
       <HeroSection12 />
       <FeatureSection3 />
+      <DonateSeperator />
       <FeatureSection14 />
       <WidgetsExample6 />
       <FounderMessage />

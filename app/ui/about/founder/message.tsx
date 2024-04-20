@@ -21,17 +21,17 @@ export function BlogSection14() {
         &quot;Advancing Justice, Navigating Legal Rights - Empowering
         Communities, Transforming Lives.&quot;
       </p>
-      <div className="inline m-20 container  my-auto text-center">
+      <div className="inline m-20 container  my-auto ">
         <Image
-          src="/angie-lal.jpg"
+          src="/angie.jpeg"
           alt="blog"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={500}
           height={500}
         />
 
-        <div className="mb-12 text-justify">
-          <Typography className="mb-8 font-normal !text-gray-600">
+        <div className="mb-12">
+          <Typography className="mb-8 font-normal">
             I am a dedicated advocate for social justice and community
             empowerment, driven by a lifelong commitment to making a difference.
             With a diverse background spanning various industries, I bring a
@@ -40,7 +40,7 @@ export function BlogSection14() {
             Foundation) in Calgary.
           </Typography>
 
-          <Typography className="mb-8 font-normal !text-gray-600">
+          <Typography className="mb-8 font-normal">
             With a proven track record of leadership and innovation, I am adept
             at spearheading advocacy initiatives, forging strategic
             partnerships, and fostering community engagement. My professional
@@ -49,7 +49,7 @@ export function BlogSection14() {
             outcomes for all members of society.
           </Typography>
 
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             As the visionary behind ABC Foundation, I recognized the unmet needs
             in legal representation and advocacy services, particularly for
             those facing socio-economic challenges and systemic barriers. With
@@ -57,7 +57,7 @@ export function BlogSection14() {
             these gaps, building a robust network of legal professionals and
             community stakeholders dedicated to the cause.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             My commitment to empowerment extends beyond advocacy alone. I have
             developed and implemented educational programs and resources aimed
             at increasing legal awareness and empowering individuals to navigate
@@ -66,7 +66,7 @@ export function BlogSection14() {
             underscores my dedication to creating positive change at the
             grassroots level.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             Prior to founding ABC Foundation, I held various roles in real
             estate, oil & gas, finance, automotive, and construction sectors,
             honing my skills in project management, client relations, and
@@ -74,7 +74,7 @@ export function BlogSection14() {
             with a keen understanding of community needs and a holistic approach
             to problem-solving.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             My academic achievements are equally impressive, with ongoing
             pursuit of a Juris Doctorate degree at the University of Alberta
             Faculty of Law, complemented by a Bachelor of Arts in Criminal
@@ -82,7 +82,7 @@ export function BlogSection14() {
             recognized through numerous awards and scholarships, underscoring my
             commitment to academic and professional excellence.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             Outside of my professional endeavors, I am deeply involved in
             volunteer work, dedicating my time to various community outreach and
             engagement initiatives. I am a staunch advocate for youth
@@ -90,18 +90,18 @@ export function BlogSection14() {
             contributing to causes that align with my values of compassion,
             integrity, and equity.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             As a member of several professional associations and honour
             societies, including the Canadian Bar Association and Golden Key
             International Honour Society, I remain committed to continuous
             learning and collaboration within my field.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             In my spare time, I enjoy giving back to the community through blood
             donations, embodying my belief in the importance of collective
             action and solidarity in creating positive social change.
           </Typography>
-          <Typography className="mb-6 font-normal !text-gray-600">
+          <Typography className="mb-6 font-normal">
             My tireless dedication, visionary leadership, and unwavering
             commitment to social justice make me a driving force behind the
             mission of Advocacy for Better Communities Foundation. Through my
