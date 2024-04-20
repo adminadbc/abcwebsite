@@ -131,12 +131,11 @@ const members = [
     email: "mailto:pr@abcfoundationconnect.com",
   },
   {
-    img: "/ritu.jpg",
+    img: "/ritu.png",
     name: "Ritu Ghai",
     title: "Media and Marketing Manager",
     desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",
     email: "mailto:marketing@abcfoundationconnect.com",
-    linkedin: "https://www.linkedin.com/in/",
   },
   {
     img: "/ambreen.jpg",
