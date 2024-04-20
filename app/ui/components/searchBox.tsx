@@ -8,9 +8,9 @@ import { IoCloseOutline } from "react-icons/io5";
 const API_KEY = process.env.API_KEY;
 const userId = process.env.USER_ID;
 // Connect and authenticate with your Algolia app
-const client = algoliasearch("", "");
+const client = algoliasearch("APW4RXIUMQ", "5929a2283832864e0c93607dd9e201fb");
 
-let hiStore: string = "ade bola"
+let hiStore: string = ""
 let historyData = localStorage.getItem("recent_searches");
 console.log("the recet", historyData)
 if(historyData === null){
@@ -29,19 +29,23 @@ function SearchLayer() {
   const [list, setList] = useState<any[]>([]);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     let data = e.target.value;
-
+    console.log("the type", typeof(data))
+  
+    
+  
     if (data.length > 0) {
+      localStorage.setItem("recent_searches", historyData!+" "+data)
+      console.log(localStorage.getItem("recent_searches"))
       const index = client.initIndex("test");
       index.search(data).then(({ hits }) => {
         hits.length > 0 ? setShow(true) : null;
         console.log(hits);
         setInputValue(data);
         resultList = hits;
-        historyData += " "+data;
+
       });
-    } else if (data == "" || data.length == 0) {
+    }else if (data == "" || data.length == 0) {
       resultList = [];
-      console.log("delete");
     }
   };
   const truncateText = (text: string, maxLength: number) => {
@@ -56,10 +60,13 @@ function SearchLayer() {
         <div
           className="absolute top-0 w-screen overflow-x-hidden
        h-screen z-[100]  bg-white left-0 backdrop-blur-md bg-opacity-20
-        bg-blur-sm"
+        bg-blur-sm" 
+        onClick={()=>{setPop(false)}}
         >
      <div className="bg-white rounded-lg py-4 drop-shadow-lg z-9999
-     md:w-[70vw] mt-20 flex justify-center flex-col align-middle h-fit relative mx-auto">
+     md:w-[70vw] mt-20 flex justify-center flex-col align-middle h-fit relative mx-auto"
+     onClick={()=>{setPop(true)}}>
+      
       <div    className=" py-3 px-6 gap-1 flex border-b border-black text-center relative" >
         <CiSearch className="mt-2 font-bold"  />
       <input
