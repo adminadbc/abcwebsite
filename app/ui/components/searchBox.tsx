@@ -29,10 +29,6 @@ function SearchLayer() {
   const [list, setList] = useState<any[]>([]);
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     let data = e.target.value;
-    console.log("the type", typeof(data))
-  
-    
-  
     if (data.length > 0) {
       localStorage.setItem("recent_searches", historyData!+" "+data)
       console.log(localStorage.getItem("recent_searches"))
@@ -41,10 +37,10 @@ function SearchLayer() {
         hits.length > 0 ? setShow(true) : null;
         console.log(hits);
         setInputValue(data);
+        setHistory(false)
         resultList = hits;
-
       });
-    }else if (data == "" || data.length == 0) {
+    }else if(data == "" || data.length == 0) {
       resultList = [];
     }
   };
@@ -56,14 +52,16 @@ function SearchLayer() {
   }, [inputValue]);
   return (
     <div>
-      {pop ? (
-        <div
+         {pop ? (
+       <div className="absolute top-0 w-screen h-screen left-0 overflow-clip">
+         <div  
           className="absolute top-0 w-screen overflow-x-hidden
        h-screen z-[100]  bg-white left-0 backdrop-blur-md bg-opacity-20
         bg-blur-sm" 
         onClick={()=>{setPop(false)}}
         >
-     <div className="bg-white rounded-lg py-4 drop-shadow-lg z-9999
+        </div>
+        <div className="bg-white rounded-lg py-4 drop-shadow-lg z-[9999]
      md:w-[70vw] mt-20 flex justify-center flex-col align-middle h-fit relative mx-auto"
      onClick={()=>{setPop(true)}}>
       
@@ -76,46 +74,46 @@ function SearchLayer() {
             onChange={(e) => {
               handleSearch(e);
             }}
+            autoFocus={true}
             placeholder="search reasources..."
             autoComplete="off"
           />
           <div onClick={()=>{setPop(false)}} className="p-2 rounded-lg border border-gray-400 cursor-pointer text-sm ml-auto">ESC</div>
         </div>
-          <div className="relative ">
-            {history && <div className="">
+          <div className="relative flex flex-col ">
+            {history && <div className="flex flex-col gap-2">
               <div className="font-semibold text-xl px-7 py-5 border-b border-gray-300">Recents </div>
               <ul className="flex flex-col text-sm">{historyData?.split(" ").map((data, idc)=>
-                <li key={idc} className="px-7 border-b border-gray-300 text-gray-500 py-5">{data}</li>)}
+                data.length > 2 && <li key={idc} className="px-7 border-b border-gray-300 text-gray-500 py-5">{data}
+              </li>)}
               </ul>
               </div>}
-            {resultList?.map((listData, idx) => (
+         {!history &&    resultList?.map((listData, idx) => (
               <Link
                 target="_blank"
                 href="https://medium.com/swlh/3-subtle-signs-youve-hired-a-great-lawyer-e72a65010792"
                 key={idx}
-                className="flex
-           z-[999] bg-white max-h-40 flex-row-reverse gap-2 w-full md:w-1/2 lg:w-1/3  overflow-hidden "
-              >
-                <div className="py-2 px-2 text-left flex flex-col justify-center align-middle">
+                className="border-b border-gray-400 flex px-5"
+              >    
+              <Image
+              src={listData.image}
+              alt={listData.title}
+              width={100}
+              height={100}
+              className="h-full"
+            />
+                <div className="py-2 px-2 text-left w-full flex flex-col justify-center align-middle">
                   <div className="font-semibold text-base">
-                    {" "}
                     {listData.title}
                   </div>
 
                   <p className="text-xs md:text-sm my-1">
-                    {" "}
-                    {truncateText(listData.article, 80)}
+                    {truncateText(listData.article, 100)}
                   </p>
                 </div>
-                <Image
-                  src={listData.image}
-                  alt={listData.title}
-                  width={100}
-                  height={100}
-                  className="w-32 h-full"
-                />
+            
               </Link>
-            ))}{" "}
+            ))}
           </div>
       </div>
         </div>
