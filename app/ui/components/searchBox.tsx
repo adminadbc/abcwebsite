@@ -8,7 +8,7 @@ import { IoCloseOutline } from "react-icons/io5";
 const API_KEY = process.env.API_KEY;
 const userId = process.env.USER_ID;
 // Connect and authenticate with your Algolia app
-const client = algoliasearch("APW4RXIUMQ", "5929a2283832864e0c93607dd9e201fb");
+const client = algoliasearch("", "");
 
 let hiStore: string = ""
 let historyData = localStorage.getItem("recent_searches");
