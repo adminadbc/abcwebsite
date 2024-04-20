@@ -92,7 +92,7 @@ export function FounderMessage() {
           </div>
           <Link href="/main/about/founder" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black" size="lg">
-              Read more about the founder
+              Read more about our founder
             </Button>
           </Link>
         </div>

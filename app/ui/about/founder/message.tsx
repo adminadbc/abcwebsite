@@ -83,14 +83,6 @@ export function BlogSection14() {
             commitment to academic and professional excellence.
           </Typography>
           <Typography className="mb-6 font-normal">
-            Outside of my professional endeavors, I am deeply involved in
-            volunteer work, dedicating my time to various community outreach and
-            engagement initiatives. I am a staunch advocate for youth
-            involvement, healthcare access, and social welfare, actively
-            contributing to causes that align with my values of compassion,
-            integrity, and equity.
-          </Typography>
-          <Typography className="mb-6 font-normal">
             As a member of several professional associations and honour
             societies, including the Canadian Bar Association and Golden Key
             International Honour Society, I remain committed to continuous
@@ -107,6 +99,14 @@ export function BlogSection14() {
             mission of Advocacy for Better Communities Foundation. Through my
             work, I strive to build a more equitable and inclusive society,
             where justice is truly accessible to all.
+          </Typography>
+          <Typography className="mb-6 font-normal">
+            Outside of my professional endeavors, I am deeply involved in
+            volunteer work, dedicating my time to various community outreach and
+            engagement initiatives. I am a staunch advocate for youth
+            involvement, healthcare access, and social welfare, actively
+            contributing to causes that align with my values of compassion,
+            integrity, and equity.
           </Typography>
         </div>
       </div>
