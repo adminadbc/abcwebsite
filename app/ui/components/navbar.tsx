@@ -8,6 +8,7 @@ import clsx from "clsx";
 import { Navbar, Collapse, IconButton, Button } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Custom from "./dropDown";
+import SearchLayer from "./searchBox";
 
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -59,8 +60,7 @@ export function NavBar() {
             alt="ABC Foundation Logo"
           />
         </Link>
-
-        <div className="mx-auto hidden items-center gap-14 lg:flex text-2xl">
+        <div className="ml-auto hidden items-center gap-6 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -76,6 +76,7 @@ export function NavBar() {
               </Link>
             )
           )}
+          <SearchLayer />
         </div>
 
         <div className="hidden lg:flex">
@@ -118,6 +119,9 @@ export function NavBar() {
               <Link href="/main/contacts">
                 <h6>Contacts Us</h6>
               </Link>
+            </li>
+            <li>
+              <SearchLayer />
             </li>
           </ul>
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
