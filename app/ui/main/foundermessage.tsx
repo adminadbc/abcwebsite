@@ -90,7 +90,7 @@ export function FounderMessage() {
               Advocacy for Better Communities Foundation
             </h5>
           </div>
-          <Link href="/main/about/founder">
+          <Link href="/main/about/founder" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black" size="lg">
               Read more about the founder
             </Button>

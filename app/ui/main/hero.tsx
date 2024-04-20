@@ -26,7 +26,7 @@ export function HeroSection12() {
           >
             Community Empowerment Initiative
           </Typography>
-          <Link href="/main/booking">
+          <Link href="/main/booking" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black w-42 text-lg" size="lg">
               Book an appointment
             </Button>
