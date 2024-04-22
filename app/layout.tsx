@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google";
+import Script from "next/script";
 
 // Specify the weight property along with subsets
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
@@ -17,9 +18,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-      // Wrap the max-width from the body
-      className={roboto.className}>{children}</body>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MQW2S3KCX7"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', "${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}");
+ `}
+        </Script>
+      </head>
+      <body
+        // Wrap the max-width from the body
+        className={roboto.className}
+      >
+        {children}
+      </body>
     </html>
   );
 }
