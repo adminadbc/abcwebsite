@@ -16,14 +16,31 @@ import {
 } from "@heroicons/react/24/outline";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
+interface Contact {
+  name: string;
+  url: string;
+}
+
 interface ContactCardProps {
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
-  contact: string;
+  contact: Contact;
 }
 
 function ContactCard({ icon, title, description, contact }: ContactCardProps) {
+  const renderContact = () => {
+    if (contact.url) {
+      return (
+        <a href={contact.url} className="text-black hover:text-abcf">
+          {contact.name}
+        </a>
+      );
+    } else {
+      return <Typography color="blue-gray">{contact.name}</Typography>;
+    }
+  };
+
   return (
     <Card color="transparent" shadow={false}>
       <CardBody className="grid justify-center text-center">
@@ -41,9 +58,7 @@ function ContactCard({ icon, title, description, contact }: ContactCardProps) {
           {title}
         </Typography>
         <Typography className="mb-4 font-normal ">{description}</Typography>
-        <Typography color="blue-gray" className="font-medium">
-          {contact}
-        </Typography>
+        {renderContact()}
       </CardBody>
     </Card>
   );
@@ -54,39 +69,32 @@ const options = [
     icon: <MapPinIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Address",
     description: "Find us at the office",
-    contact: "305, 1822 10 Ave SW, Calgary, Alberta T3C 0J8",
+    contact: {
+      name: "305, 1822 10 Ave SW, Calgary, Alberta T3C 0J8",
+      url: "https://maps.app.goo.gl/jGQnQqH9RCJPzZby6",
+    },
   },
   {
     icon: <EnvelopeIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Email",
     description: "Send us your feedback",
-    contact: "info@abcfoundationconnect.com",
+    contact: {
+      name: "info@abcfoundationconnect.com",
+      url: "mailto:info@abcfoundationconnect.com",
+    },
   },
   {
     icon: <PhoneIcon className="h-6 w-6" strokeWidth={2} />,
     title: "Phone",
     description: "Give us a ring",
-    contact: "+1-587-893-5222",
+    contact: { name: "+1 587-893-5222", url: "tel:+1587893522" },
   },
 ];
 
 export function ContactSection1() {
   return (
     <section className="px-8 py-10 lg:py-28">
-      <div className="container mx-auto mb-20 text-center">
-        <h1 className="mb-4 text-4xl lg:text-5xl">Got a Question?</h1>
-        <div className="relative flex py-5 w-1/2  mx-auto items-center">
-          <div className="flex-grow border-t-4 border-abcf w-96"></div>
-          <p className="mx-5  text-center">
-            <TbTopologyStarRing3 />
-          </p>
-          <div className="flex-grow border-t-4 border-abcf w-96"></div>
-        </div>
-        <Typography variant="lead" className="mx-auto ">
-          We&apos;d like to talk more about what you need
-        </Typography>
-      </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 text-black">
         {options.map(({ icon, title, description, contact }) => (
           <ContactCard
             key={title}
@@ -97,13 +105,17 @@ export function ContactSection1() {
           />
         ))}
       </div>
-      <div className="container mx-auto mt-20 flex flex-col  items-center">
+      <div className="container mx-auto mt-20 flex flex-col items-center">
         <h2 className="mb-20 text-2xl">OR</h2>
-        <Link href="/main/booking">
-          <Button className="bg-abcf w-42 text-black text-lg" size="lg">
-            Book an Appointment
-          </Button>
-        </Link>
+        <Button
+          className="bg-abcf w-42 text-black text-lg"
+          size="lg"
+          onClick={() => {
+            window.location.href = "/main/booking";
+          }}
+        >
+          Book an Appointment
+        </Button>
       </div>
     </section>
   );

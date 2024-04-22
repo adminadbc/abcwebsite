@@ -81,7 +81,11 @@ export function NavBar() {
         </div>
 
         <div className="hidden lg:flex">
-          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+          <Link
+            href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className="bg-abcf text-black" size="lg">
               Donate
             </Button>
@@ -118,7 +122,7 @@ export function NavBar() {
             <Custom />
             <li className="hover:text-abcf">
               <Link href="/main/contacts">
-                <h6>Contacts Us</h6>
+                <h6>Contact Us</h6>
               </Link>
             </li>
           </ul>

@@ -17,7 +17,7 @@ export function ProjectSection() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
 
           <p>
-            The ABC Foundatoin is gearing up for groundbreaking projects aims at
+            The ABC Foundatoin is aimed up for groundbreaking projects aims at
             empowering communities and promoting equitables outcomes. Stay tuned
             for updates on our upcoming initiatives!
           </p>
