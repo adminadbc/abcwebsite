@@ -11,11 +11,18 @@ const userId = process.env.NEXT_PUBLIC_USER_ID;
 const client = algoliasearch(API_KEY!, userId!);
 
 let hiStore: string = "";
-let historyData = localStorage.getItem("recent_searches");
-console.log("the recet", historyData);
-if (historyData === null) {
-  localStorage.setItem("recent_searches", hiStore);
+
+let historyData = "";
+if (typeof window !== "undefined") {
+  historyData = localStorage.getItem("recent_searches") || "";
 }
+console.log("the recet", historyData);
+if (historyData === "") {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("recent_searches", hiStore);
+  }
+}
+
 const appId = process.env.APP_iD!;
 const api_key = process.env.API_KEY!;
 
