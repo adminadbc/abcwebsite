@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 import { useState, useEffect } from "react";
-import { IoCloseOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5"; 
 
-const API_KEY = process.env.API_KEY;
-const userId = process.env.USER_ID;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const userId = process.env.NEXT_PUBLIC_USER_ID;
 // Connect and authenticate with your Algolia app
-const client = algoliasearch("", "");
+const client = algoliasearch(API_KEY!, userId!);
 
 let hiStore: string = ""
 let historyData = localStorage.getItem("recent_searches");
@@ -91,7 +91,7 @@ function SearchLayer() {
          {!history &&    resultList?.map((listData, idx) => (
               <Link
                 target="_blank"
-                href="https://medium.com/swlh/3-subtle-signs-youve-hired-a-great-lawyer-e72a65010792"
+                href={listData.link}
                 key={idx}
                 className="border-b border-gray-400 flex px-5"
               >    
