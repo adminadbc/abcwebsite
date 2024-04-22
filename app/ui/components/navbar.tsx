@@ -12,6 +12,7 @@ import Custom from "./dropDown";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import SearchLayer from "./searchBox";
 
 const links = [
   { name: "Home", href: "/main" },
@@ -39,7 +40,7 @@ export function NavBar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 1060 && setOpen(false)
     );
   }, []);
 
@@ -60,7 +61,7 @@ export function NavBar() {
           />
         </Link>
 
-        <div className="mx-auto hidden items-center gap-14 lg:flex text-2xl">
+        <div className="ml-auto mr-6 hidden items-center gap-6 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -76,6 +77,7 @@ export function NavBar() {
               </Link>
             )
           )}
+          <SearchLayer />
         </div>
 
         <div className="hidden lg:flex">
@@ -124,6 +126,7 @@ export function NavBar() {
               </Link>
             </li>
           </ul>
+          <SearchLayer />
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
             <Button className="bg-abcf mt-5 text-black" size="lg">
               Donate
