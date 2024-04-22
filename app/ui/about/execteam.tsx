@@ -81,7 +81,7 @@ function TeamCard({
               </div>
             }
             position="bottom"
-            className="bg-abcf text-black w-2/6"
+            className="bg-brand2 text-white w-2/6"
           >
             <Typography
               variant="h5"
