@@ -88,18 +88,16 @@ export function BlogSection14() {
             engagement initiatives. I am a staunch advocate for youth
             involvement, healthcare access, and social welfare, actively
             contributing to causes that align with my values of compassion,
-            integrity, and equity.
+            integrity, and equity.In my spare time, I enjoy giving back to the
+            community through blood donations, embodying my belief in the
+            importance of collective action and solidarity in creating positive
+            social change.
           </Typography>
           <Typography className="mb-6 font-normal">
             As a member of several professional associations and honour
             societies, including the Canadian Bar Association and Golden Key
             International Honour Society, I remain committed to continuous
             learning and collaboration within my field.
-          </Typography>
-          <Typography className="mb-6 font-normal">
-            In my spare time, I enjoy giving back to the community through blood
-            donations, embodying my belief in the importance of collective
-            action and solidarity in creating positive social change.
           </Typography>
           <Typography className="mb-6 font-normal">
             My tireless dedication, visionary leadership, and unwavering

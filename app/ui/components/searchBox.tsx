@@ -1,3 +1,5 @@
+"use client"
+
 import algoliasearch from "algoliasearch";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,12 +14,9 @@ const client = algoliasearch(API_KEY!, userId!);
 
 let hiStore: string = ""
 let historyData = localStorage.getItem("recent_searches");
-console.log("the recet", historyData)
 if(historyData === null){
   localStorage.setItem("recent_searches", hiStore)
 }
-const appId = process.env.APP_iD!;
-const api_key = process.env.API_KEY!;
 
 let resultList: any[];
 
@@ -30,7 +29,12 @@ function SearchLayer() {
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     let data = e.target.value;
     if (data.length > 0) {
-      localStorage.setItem("recent_searches", historyData!+" "+data)
+      let latest = historyData?.split(" ")
+      if(latest?.length! > 3){
+        latest?.unshift(data)
+      latest?.pop()
+      }
+      localStorage.setItem("recent_searches", latest?.toString()!)
       console.log(localStorage.getItem("recent_searches"))
       const index = client.initIndex("test");
       index.search(data).then(({ hits }) => {
@@ -62,8 +66,7 @@ function SearchLayer() {
         >
         </div>
         <div className="bg-white rounded-lg py-4 drop-shadow-lg z-[9999]
-     md:w-[70vw] mt-20 flex justify-center flex-col align-middle h-fit relative mx-auto"
-     onClick={()=>{setPop(true)}}>
+     md:w-[70vw] mt-20 flex justify-center flex-col align-middle h-fit relative mx-auto">
       
       <div    className=" py-3 px-6 gap-1 flex border-b border-black text-center relative" >
         <CiSearch className="mt-2 font-bold"  />
@@ -78,7 +81,7 @@ function SearchLayer() {
             placeholder="search reasources..."
             autoComplete="off"
           />
-          <div onClick={()=>{setPop(false)}} className="p-2 rounded-lg border border-gray-400 cursor-pointer text-sm ml-auto">ESC</div>
+          <div onClick={()=>{setPop(false); console.log("clickedddd")}} className="p-2 rounded-lg border border-gray-400 cursor-pointer text-sm ml-auto">ESC</div>
         </div>
           <div className="relative flex flex-col ">
             {history && <div className="flex flex-col gap-2">
@@ -91,7 +94,7 @@ function SearchLayer() {
          {!history &&    resultList?.map((listData, idx) => (
               <Link
                 target="_blank"
-                href={listData.link}
+                href={listData.link.replace("abcfoundationconnect.hashnode.dev", "abc-kit.vercel.app")}
                 key={idx}
                 className="border-b border-gray-400 flex px-5"
               >    

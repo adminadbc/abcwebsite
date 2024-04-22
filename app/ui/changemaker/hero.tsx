@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="grid min-h-[50rem] px-12">
         <div className="container relative z-10 my-auto mx-auto text-center">
           <h1 className="my-4 text-3xl text-white !leading-snug lg:text-5xl">
-            Changemakers
+            The Changemakers Project
           </h1>
           <div className="flex-grow border-t-4 border-abcf w-1/5 mx-auto mt-2"></div>
         </div>

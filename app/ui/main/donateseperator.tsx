@@ -16,7 +16,11 @@ export function DonateSeperator() {
         create positive change
       </h3>
 
-      <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+      <Link
+        href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Button className="bg-abcf text-black w-36 text-lg" size="lg">
           Donate
         </Button>
