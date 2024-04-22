@@ -11,13 +11,13 @@ export function ContentSection16() {
         <p className="font-normal ">
           Advocacy For Better Communities Foundation is committed to
           safeguarding the personal information entrusted to us by our members,
-          beneficiaries and stakeholders. We manage your personal information in
-          accordance with Alberta’s Personal Information Protection Act and
-          other applicable laws. This policy outlines the principles and
-          practices we follow in protecting your personal information. This
-          policy applies to Advocacy For Better Communities Foundation and to
-          any person providing services on our behalf. A copy of this policy is
-          provided to anyone on request.
+          beneficiaries, and stakeholders. We manage your personal information
+          in accordance with Alberta’s Personal Information Protection Act and
+          other applicable laws. This policy outlines our principles and
+          practices for protecting your personal information. This policy
+          applies to the Advocacy For Better Communities Foundation and anyone
+          providing services on our behalf. A copy of this policy is provided to
+          anyone on request.
         </p>
         <br />
         <p className="  text-bold">What is personal information?</p>
@@ -25,23 +25,22 @@ export function ContentSection16() {
         <p className=" ">
           We collect only the personal information that we need for the purposes
           of providing support to our clients, including personal information
-          needed to:
+          required to:
         </p>
 
         <br />
         <p className="   ">
-          We normally collect client personal information directly from our
+          We typically collect client personal information directly from our
           clients. We may collect your information from other persons with your
           consent or as authorized by law.
         </p>
         <br />
         <p className="   ">
-          We inform our clients, before or at the time of collecting personal
-          information, of the purposes for which we are collecting the
-          information. The only time we don’t provide this notification is when
-          a client volunteers information for an obvious purpose (for example,
-          being sent a newsletter or information about upcoming sessions or
-          volunteer calls and such).
+          We inform our clients, before or when collecting personal information,
+          of the purposes for which we are collecting the information. The only
+          time we don’t provide this notification is when a client volunteers
+          information for an obvious purpose (for example, being sent a
+          newsletter or information about upcoming sessions or volunteer calls).
         </p>
         <ul className="list-disc mx-5">
           <li>enroll or register them in a program</li>
@@ -53,34 +52,34 @@ export function ContentSection16() {
         </ul>
         <br />
         <p className="font-normal ">
-          We ask for consent to collect, use or disclose client personal
-          information, except in specific circumstances where collection, use or
-          disclosure without consent is authorized or required by law. We may
+          We ask for consent to collect, use, or disclose client personal
+          information, except in specific circumstances where collection, use,
+          or disclosure without consent is authorized or required by law. We may
           assume your consent in cases where you volunteer information for an
           obvious purpose. We assume your consent to continue to use and, where
           applicable, disclose personal information that we have already
-          collected, for the purpose for which the information was collected. We
-          ask for your express consent for some purposes and may not be able to
-          provide certain services if you are unwilling to provide consent to
-          the collection, use or disclosure of certain personal information.
-          Where express consent is needed, we will normally ask clients to
-          provide their consent orally (in person, by telephone), or in writing
-          (by signing a consent form). In cases that do not involve sensitive
+          collected for the purpose for which the information was collected. We
+          ask for your express consent for some purposes. We may not be able to
+          provide certain services if you are unwilling to consent to the
+          collection, use, or disclosure of certain personal information. Where
+          express consent is needed, we will generally ask clients to provide
+          their consent orally (in person, by telephone) or in writing (by
+          signing a consent form). In cases that do not involve sensitive
           personal information, we may rely on “opt-out” consent. For example,
           we may disclose your contact information to other organizations that
-          we believe may be of interest to you, unless you request that we do
-          not disclose your information. You can do this by checking the
-          appropriate box on our application form or by telephoning our local
-          number/toll-free number. A client may withdraw consent to the use and
-          disclosure of personal information at any time, unless the personal
-          information is necessary for us to fulfill our legal obligations. We
-          will respect your decision, but we may not be able to provide you with
-          certain products and services if we do not have the necessary personal
-          information. We may collect, use or disclose client personal
-          information without consent only as authorized by law. For example, we
-          may not request consent when the collection, use or disclosure is to
-          determine suitability for an honor or award, or in an emergency that
-          threatens life, health or safety.
+          we believe may interest you unless you request that we not disclose
+          your information. You can do this by checking the appropriate box on
+          our application form or by telephoning our local number/toll-free
+          number. A client may withdraw consent to the use and disclosure of
+          personal information at any time unless the personal information is
+          necessary to fulfill our legal obligations. We will respect your
+          decision, but we may not be able to provide you with certain products
+          and services if we do not have the necessary personal information. We
+          may collect, use, or disclose client personal information without
+          consent only as authorized by law. For example, we may not request
+          consent when the collection, use, or disclosure determines suitability
+          for an honor or award or in an emergency that threatens life, health,
+          or safety.
         </p>
         <p className=" mt-10  text-bold">
           How do we use and disclose personal information?
@@ -88,28 +87,29 @@ export function ContentSection16() {
         <p className="font-normal ">
           We use and disclose client personal information only for the purpose
           for which the information was collected, except as authorized by law.
-          For example, we may use client contact information newsletter or
-          information about upcoming sessions or volunteer calls and such. If we
-          wish to use or disclose your personal information for any new business
-          purpose, we will ask for your consent. We may not seek consent if the
-          law allows this (e.g. the law allows organizations to use personal
-          information without consent for the purpose of collecting a debt).
+          For example, we may use the client contact information newsletter or
+          information about upcoming sessions, volunteer calls, and such. We
+          will ask for your consent if we wish to use or disclose your personal
+          information for any new business purpose. We may not seek consent if
+          the law allows this (e.g., the law allows organizations to use
+          personal information without consent for the purpose of collecting a
+          debt).
         </p>
         <p className=" mt-10  text-bold">
           What is personal employee information?
         </p>
         <p className="font-normal ">
           Personal employee information is personal information about an
-          employee or volunteer which is collected, used or disclosed solely for
-          the purposes of establishing, managing or terminating an employment
-          relationship or a volunteer work relationship. Personal employee
-          information may, in some circumstances, include a Social Insurance
-          Number, a performance review, etc. We can collect, use and disclose
-          your personal employee information without your consent only for the
-          purposes of establishing, managing or ending the employment or
-          volunteer relationship. We will provide current employees and
-          volunteers with prior notice about what information we collect, use or
-          disclose and our purpose for doing so.
+          employee or volunteer that is collected, used, or disclosed solely to
+          establish, manage, or terminate an employment or volunteer work
+          relationship. Personal employee information may, in some
+          circumstances, include a Social Insurance Number, a performance
+          review, etc. We can collect, use, and disclose your personal employee
+          information without your consent only for the purposes of
+          establishing, managing, or ending the employment or volunteer
+          relationship. We will provide current employees and volunteers with
+          prior notice about what information we collect, use, or disclose and
+          our purpose for doing so.
         </p>
         <p className=" mt-10  text-bold">
           What is personal employee information?
@@ -118,25 +118,25 @@ export function ContentSection16() {
         <p className="font-normal ">
           <br />
           Personal employee information is personal information about an
-          employee or volunteer which is collected, used or disclosed solely for
-          the purposes of establishing, managing or terminating an employment
+          employee or volunteer that is collected, used, or disclosed solely for
+          the purposes of establishing, managing, or terminating an employment
           relationship or a volunteer work relationship. Personal employee
           information may, in some circumstances, include a Social Insurance
           Number, a performance review, etc.
           <br />
-          We can collect, use and disclose your personal employee information
-          without your consent only for the purposes of establishing, managing
+          We can collect, use, and disclose your personal employee information
+          without your consent only for the purposes of establishing, managing,
           or ending the employment or volunteer relationship. We will provide
           current employees and volunteers with prior notice about what
-          information we collect, use or disclose and our purpose for doing so.
+          information we collect, use, or disclose and our purpose for doing so.
         </p>
         <p className=" mt-10  text-bold">
           What personal employee information do we collect, use and disclose?
         </p>
         <p className="font-normal ">
           <br />
-          We collect, use and disclose personal employee information to meet the
-          following purposes:
+          We collect, use, and disclose personal employee information to meet
+          the following purposes:
           <br />
         </p>
         <ul className="list-disc mx-5">
@@ -150,11 +150,12 @@ export function ContentSection16() {
           </li>
           <li>Administering pay and benefits (paid employees only)</li>
           <li>
-            Processing employee work-related claims (e.g. benefits, workers’
+            Processing employee work-related claims (e.g., benefits, workers’
             compensation, insurance claims) (paid employees only)
           </li>
           <li>
-            Complying with requirements of funding bodies (e.g. lottery grants)
+            Complying with the requirements of funding bodies (e.g., lottery
+            grants)
           </li>
           <li>
             Complying with applicable laws (e.g. Canada Income Tax Act, Alberta
@@ -163,10 +164,10 @@ export function ContentSection16() {
         </ul>
         <br />
         <p>
-          We only collect, use and disclose the amount and type of personal
+          We only collect, use, and disclose the amount and type of personal
           employee information that is reasonable to meet the above purposes.
           The following is a list of personal employee information that we may
-          collect, use and disclose to meet those purposes.
+          collect, use, and disclose to meet those purposes.
         </p>
         <ul className="list-disc mx-5">
           <li>
@@ -176,16 +177,16 @@ export function ContentSection16() {
           <li>Criminal background checks</li>
           <li>
             Employment or volunteer information such as your resume (including
-            educational background, work history and references), reference
+            educational background, work history, and references), reference
             information and interview notes, letters of offer and acceptance of
-            employment, policy acknowledgement forms, background verification
+            employment, policy acknowledgment forms, background verification
             information, workplace performance evaluations, emergency contacts,
             etc.
           </li>
           <li>
             Benefit information such as forms relating to applications or
-            changes to health and insurance benefits including medical and
-            dental care, life insurance, short and long term disability, etc.
+            changes to health and insurance benefits, including medical and
+            dental care, life insurance, short and long-term disability, etc.
             (paid employees only)
           </li>
           <li>
@@ -202,11 +203,11 @@ export function ContentSection16() {
         <p>
           We will inform our employees and volunteers of any new purpose for
           which we will collect, use, or disclose personal employee information,
-          or we will obtain your consent, before or at the time the information
-          is collected. We will obtain your consent to collect, use and disclose
-          your personal information for purposes unrelated to the employment or
-          volunteer relationship (e.g. such as providing you with information
-          about our workplace charity program).
+          or we will obtain your consent before or at the time the information
+          is collected. We will obtain your consent to collect, use, and
+          disclose your personal information for purposes unrelated to the
+          employment or volunteer relationship (e.g., providing you with
+          information about our workplace charity program).
         </p>
         <p className=" mt-10  text-bold">
           What information do we provide for employment/volunteer references?{" "}
@@ -242,20 +243,21 @@ export function ContentSection16() {
           accurate and complete. We rely on individuals to notify us if there is
           a change to their personal information that may affect their
           relationship with our organization. If you are aware of an error in
-          our information about you, please let us know and we will correct it
-          on request wherever possible. In some cases we may ask for a written
-          request for correction.We protect personal information in a manner
-          appropriate for the sensitivity of the information. We make every
-          reasonable effort to prevent any loss, misuse, disclosure or
-          modification of personal information, as well as any unauthorized
-          access to personal information.
+          our information about you, please let us know, and we will correct it
+          upon request, wherever possible. In some cases, we may ask for a
+          written request for correction. We protect personal information in a
+          manner appropriate for its sensitivity. We make every reasonable
+          effort to prevent any loss, misuse, disclosure, or modification of
+          personal information, as well as any unauthorized access to personal
+          information.
         </p>
         <p>
           We use appropriate security measures when destroying personal
           information, including shredding paper records and permanently
-          deleting electronic records after 7 years.We retain personal
-          information only as long as is reasonable to fulfill the purposes for
-          which the information was collected or for legal or business purposes.
+          deleting electronic records after seven years. We retain personal
+          information only as long as it is reasonable to fulfill the purposes
+          for which the information was collected or for legal or business
+          purposes.
         </p>
         <p className=" mt-10  text-bold">
           Access to records containing personal information
@@ -285,18 +287,18 @@ export function ContentSection16() {
           information.
         </p>
         <p>
-          We will respond to your request within 45 calendar days, unless an
+          We will respond to your request within 45 calendar days unless an
           extension is granted. We may charge a reasonable fee to provide
-          information, but not to make a correction. We do not charge fees when
+          information but not to make a correction. We do not charge fees when
           the request is for personal employee information. We will advise you
           of any fees that may apply before beginning to process your request.
         </p>
         <p className=" mt-10  text-bold">Questions and complaints</p>
         <br />
         <p>
-          If you have a question or concern about any collection, use or
+          If you have a question or concern about any collection, use, or
           disclosure of personal information by Advocacy For Better Communities
-          Foundation, or about a request for access to your own personal
+          Foundation or about a request for access to your own personal
           information, please contact the office of the Director.
         </p>
         <p>
