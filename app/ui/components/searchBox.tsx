@@ -1,3 +1,5 @@
+"use client"
+
 import algoliasearch from "algoliasearch";
 import Link from "next/link";
 import Image from "next/image";
@@ -92,7 +94,7 @@ function SearchLayer() {
          {!history &&    resultList?.map((listData, idx) => (
               <Link
                 target="_blank"
-                href={listData.link}
+                href={listData.link.replace("abcfoundationconnect.hashnode.dev", "abc-kit.vercel.app")}
                 key={idx}
                 className="border-b border-gray-400 flex px-5"
               >    
