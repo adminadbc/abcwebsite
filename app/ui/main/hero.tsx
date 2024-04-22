@@ -8,11 +8,11 @@ export function HeroSection12() {
   return (
     <div
       className="relative h-[60rem] w-full bg-[url('https://www.material-tailwind.com/image/image-5.jpeg')] 
-      bg-cover bg-center bg-no-repeat -z-20"
+      bg-cover bg-center bg-no-repeat"
     >
       <div className="absolute inset-0 h-full w-full bg-black/15" />
       <div className="grid min-h-[50rem] px-12">
-        <div className="container relative z-10 my-auto mx-auto">
+        <div className="container relative  my-auto mx-auto">
           <h1
             color="white"
             className="mb-4 text-white text-3xl !leading-snug lg:text-5xl"
