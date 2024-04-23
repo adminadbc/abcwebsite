@@ -77,7 +77,7 @@ export function NavBar() {
               </Link>
             )
           )}
-          <SearchLayer />
+          {/* <SearchLayer /> */}
         </div>
 
         <div className="hidden lg:flex">
@@ -126,7 +126,7 @@ export function NavBar() {
               </Link>
             </li>
           </ul>
-          <SearchLayer />
+          {/* <SearchLayer /> */}
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
             <Button className="bg-abcf mt-5 text-black" size="lg">
               Donate
