@@ -69,7 +69,7 @@ function TeamCard({
       <CardBody className="p-0 lg:col-span-7">
         {bio ? (
           <Tooltip
-            className="bg-brand2 text-white w-2/6"
+            className="bg-brand2 text-white md:w-1/6 lg:w-2/6"
             content={
               <div>
                 {paragraphs.map((paragraph, index) => (
