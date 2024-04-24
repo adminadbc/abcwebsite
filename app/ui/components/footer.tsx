@@ -27,7 +27,10 @@ const links = [
     title: "Product",
     items: [
       { name: "Changemakers", url: "/main/initiatives/changemakers" },
-      { name: "Legal Connect", url: "/main/initiatives/legal-connect" },
+      {
+        name: "Legal Community Connect",
+        url: "/main/initiatives/legal-connect",
+      },
     ],
   },
 ];

@@ -6,7 +6,7 @@ import {
   CardHeader,
   IconButton,
   Typography,
-  Tooltip,
+  Button,
 } from "@material-tailwind/react";
 
 import {
@@ -19,6 +19,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
 import Image from "next/image";
+import Link from "next/link";
 import "../../ui/about/style.css";
 
 interface TeamCardPropsType {
@@ -31,7 +32,7 @@ interface TeamCardPropsType {
   linkedin?: string;
   twitter?: string;
   email: string;
-  bio?: string;
+  url?: string;
 }
 
 function TeamCard({
@@ -44,12 +45,8 @@ function TeamCard({
   linkedin,
   twitter,
   email,
-  bio,
+  url,
 }: TeamCardPropsType) {
-  // Inside your TeamCard component
-  // Ensure the splitting logic is correct
-  const paragraphs = bio ? bio.split(/\n\n/g) : [];
-
   return (
     <Card
       color="transparent"
@@ -69,33 +66,10 @@ function TeamCard({
         />
       </CardHeader>
       <CardBody className="p-0 lg:col-span-7">
-        {bio ? (
-          <Tooltip
-            content={
-              <div>
-                {paragraphs.map((paragraph, index) => (
-                  <p key={index} className="paragraph-style">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            }
-            position="bottom"
-            className="bg-brand2 text-white w-2/6"
-          >
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="cursor-pointer"
-            >
-              {name}
-            </Typography>
-          </Tooltip>
-        ) : (
-          <Typography variant="h5" color="blue-gray">
-            {name}
-          </Typography>
-        )}
+        <Typography variant="h5" color="blue-gray">
+          {name}
+        </Typography>
+
         <div className="flex-grow border-t-4 border-abcf w-1/2 mt-2"></div>
 
         <Typography variant="small" className="mb-3 mt-2 font-bold uppercase ">
@@ -104,7 +78,8 @@ function TeamCard({
         <Typography className="mb-2 w-full font-normal  xl:w-72 text-left">
           {desc}
         </Typography>
-        <div className="flex items-center gap-7 mt-5">
+
+        <div className="flex items-center gap-7 ml-2 mt-5">
           {facebook && (
             <IconButton variant="text">
               <a
@@ -151,6 +126,11 @@ function TeamCard({
             </IconButton>
           )}
         </div>
+        <a href={url} target="_blank" rel="noreferrer">
+          <Button className="bg-abcf text-black mt-3" size="lg">
+            Read more
+          </Button>
+        </a>
       </CardBody>
     </Card>
   );
@@ -164,6 +144,7 @@ const members = [
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
     email: "mailto:angeline.lal@abcfoundationconnect.com",
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
+    url: "/main/about/founder",
   },
   {
     img: "/richa.png",
@@ -172,16 +153,18 @@ const members = [
     desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
     bio: "I am a seasoned professional with a diverse background in operational management, strategic business management, and project leadership across continents. Throughout my career, I have held management positions in various industries, including automobile, hospitality, education, and media, showcasing my versatility and expertise in different domains.My core strength lies in being a people person, with a proven track record of effective communication, team leadership, and relationship building. My experience includes serving with the Legislative Of Alberta, where I honed my skills in community engagement and strategic decision-making, particularly in serving the Calgary region.My contributions have been recognized through multiple awards, ranging from storytelling sessions to motivational speeches, where I have shared my wisdom, management strategies, and life lessons with a wide audience. My mass communication skills have allowed me to reach and inspire many individuals, making a positive impact on their personal and professional development.In 2019, I embarked on a journey to serve the Canadian community by launching the first-ever South Asian radio channel in British Columbia. This initiative demonstrated my innovative approach and commitment to diversity and inclusion in media representation.Throughout my career, I have excelled in community engagement, case work, and community outreach, showcasing an empathetic approach to working with people and addressing their needs. This aligns seamlessly with the core values and mission of the ABC Foundation, where my expertise and passion for empowering communities make me a valuable asset to any organization or initiative focused on positive social change.",
     email: "mailto:richa.sharma@abcfoundationconnect.com",
+    url: "/main/about/execteam/richa",
   },
   {
     img: "/profile.jpeg",
     name: "Rashad Bayram",
     title: "CIO",
-    desc: "My experience spans various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",
+    desc: "Rashad's experience spans accross various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",
     bio: "I am the dynamic force driving innovation and growth. My passion lies in transforming complex challenges into transformative opportunities, leveraging my expertise in operational efficiency, strategic collaboration, and technological innovation.Throughout my career, I've spearheaded game-changing initiatives. At Emerson, I led the optimization of SalesForce CRM's mobile version, achieving $1.5 million in cost savings and slashing the accounts receivable lifecycle in half. During my tenure at Nokia Corporation, I managed $250M in B2B sales, showcasing my sales prowess and account management finesse in high-stakes environments.My journey is defined by an unwavering commitment to driving excellence. With every role I undertake, I leave a lasting impact through enhanced performance and strategic innovation.From orchestrating seamless business operations to crafting bespoke solutions, I thrive on leveraging my diverse skill set to navigate the complexities of today's digital business landscape. With my influential communication style and relentless drive for success, I confidently tackle challenges, consistently exceeding expectations and delivering results that propel businesses forward.",
-    email: "mailto:support@abcfoundationconnect.com",
+    email: "mailto:rashad.bayram@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
+    url: "/main/about/execteam/rashad",
   },
 ];
 

@@ -61,7 +61,7 @@ export function NavBar() {
           />
         </Link>
 
-        <div className="ml-auto mr-6 hidden items-center gap-6 lg:flex text-2xl">
+        <div className="mx-auto hidden items-center gap-10 lg:flex text-2xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -77,7 +77,7 @@ export function NavBar() {
               </Link>
             )
           )}
-          <SearchLayer />
+          {/* <SearchLayer /> */}
         </div>
 
         <div className="hidden lg:flex">
@@ -126,7 +126,7 @@ export function NavBar() {
               </Link>
             </li>
           </ul>
-          <SearchLayer />
+          {/* <SearchLayer /> */}
           <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
             <Button className="bg-abcf mt-5 text-black" size="lg">
               Donate
