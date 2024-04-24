@@ -78,12 +78,8 @@ function TeamCard({
         <Typography className="mb-2 w-full font-normal  xl:w-72 text-left">
           {desc}
         </Typography>
-        <a href={url} target="_blank" rel="noreferrer">
-          <Button className="bg-abcf text-black" size="lg">
-            Read more
-          </Button>
-        </a>
-        <div className="flex items-center gap-7 mt-5">
+
+        <div className="flex items-center gap-7 ml-2 mt-5">
           {facebook && (
             <IconButton variant="text">
               <a
@@ -130,6 +126,11 @@ function TeamCard({
             </IconButton>
           )}
         </div>
+        <a href={url} target="_blank" rel="noreferrer">
+          <Button className="bg-abcf text-black mt-3" size="lg">
+            Read more
+          </Button>
+        </a>
       </CardBody>
     </Card>
   );
