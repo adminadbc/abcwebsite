@@ -20,6 +20,20 @@ const config: Config = withMT({
         brand1: "#0C0F30",
         brand2: "#021D2C",
       },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
   },
   plugins: [],

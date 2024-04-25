@@ -12,6 +12,7 @@ import { ProjectSection } from "../ui/main/projects";
 import { LogoSection6 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
+import LogoCarousel from "../ui/components/logoCarousel";
 
 import { Footer4 } from "../ui/components/footer";
 import NavBar from "../ui/components/navbar";
@@ -21,6 +22,7 @@ function MainPage() {
     <div className="w-screen overflow-x-hidden">
       <NavBar />
       <HeroSection12 />
+      <LogoCarousel />
       <FeatureSection3 />
       <DonateSeperator />
       <FeatureSection14 />
