@@ -56,12 +56,12 @@ const Custom: React.FC = () => {
 
   return (
     <div className="sm:flex sm:justify-left  z-[99] gap-4 sm:items-left">
-      {/* <DropMenu
+      <DropMenu
         title="Resources"
         items={store[0].submenuItems}
         isOpen={openDropdown === 1}
         toggleDropdown={() => toggleDropdown(1)}
-      /> */}
+      />
       <DropMenu
         title="Initiatives"
         items={store[1].submenuItems}

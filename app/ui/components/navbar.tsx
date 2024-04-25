@@ -26,8 +26,20 @@ const links = [
     name: "Resources",
     href: "/main/resources",
     submenu: true,
-    submenuItems: [{ name: "Articles", href: "/articles" }],
+    submenuItems: [
+      { name: "Articles", href: "/articles" },
+      { name: "Education", href: "/education" },
+    ],
   },
+  // {
+  //   name: "Initiatives",
+  //   href: "/main/initiatives",
+  //   submenu: true,
+  //   submenuItems: [
+  //     { name: "Changemakers", href: "/changemakers" },
+  //     { name: "Legal Community Connect", href: "/legal-connect" },
+  //   ],
+  // },
   { name: "Contact Us", href: "/main/contacts" },
 ];
 
@@ -55,7 +67,7 @@ export function NavBar() {
         <Link href="/main">
           <Image
             src="/newlogo.png"
-            width={300} // Desired width
+            width={300}
             height={100 / 3.78} // Calculated height based on the aspect ratio
             alt="ABC Foundation Logo"
           />
