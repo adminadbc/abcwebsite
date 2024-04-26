@@ -19,7 +19,7 @@ export default function LogoCarousel() {
   ];
 
   return (
-    <div className="relative flex overflow-x-hidden bg-brand2/10 shadow-black-900/50">
+    <div className="relative flex overflow-x-hidden bg-white shadow-black-900/50">
       <ul className="flex py-12 animate-marquee whitespace-nowrap items-center">
         {logos.map((logo, index) => (
           <li key={index} className="text-4xl mx-4">
