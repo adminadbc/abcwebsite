@@ -10,7 +10,7 @@ interface IconPropsType {
 
 export function FeatureSection3() {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <div className="flex flex-col items-center mt-10 mb-5">
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">Who We Are</h2>
         <div className="relative flex py-5 w-2/3  mx-auto items-center">
