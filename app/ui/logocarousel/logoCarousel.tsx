@@ -19,7 +19,7 @@ export default function LogoCarousel() {
   ];
 
   return (
-    <div className="container mx-auto my-10 text-center lg:mb-20">
+    <div className="container mx-auto mt-24 mb-15 text-center lg:mb-20">
       <div>
         <h2 className="mb-4 text-3xl font-normal lg:text-6xl">
           Partners & Patrons
