@@ -31,7 +31,7 @@ export function NewsLetter1() {
         <div className="mt-2 flex w-full flex-col gap-3 md:w-fit md:flex-row">
           {/* <Input label="Email" color="black" crossOrigin={undefined} /> */}
           <Link
-            href="mailto:marketing@abcfoundationconnect.com?subject=Keep%20me%20up%20to%20date"
+            href="mailto:info@abcfoundationconnect.com?subject=Keep%20me%20up%20to%20date"
             className="flex justify-center rounded-md px-16 py-3 text-white"
             target="_blank"
             rel="noreferrer"
