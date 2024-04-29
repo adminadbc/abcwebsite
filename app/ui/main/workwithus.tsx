@@ -3,10 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@material-tailwind/react";
+import LogoCarousel from "../logocarousel/logoCarousel";
 
 export function WorkWithUs() {
   return (
     <div className="bg-gradient-to-r bg-brand2 w-screen overflow-hidden p-10 flex flex-wrap-reverse justify-around items-center text-white">
+      <LogoCarousel />
+
       <div className="mb-9 md:w-4/5 lg:w-2/5">
         <h3 className="text-4xl font-semibold">Work With Us</h3>
         <div className="flex-grow border-t-4 border-abcf w-80 my-10"></div>
