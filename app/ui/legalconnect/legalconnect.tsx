@@ -43,28 +43,28 @@ export function ContentSection11() {
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
         <Typography variant="lead" className="mt-4 max-w-4xl mx-auto ">
-          Legal Community Connect is a transformative initiative focused on
-          enhancing access to legal services through a comprehensive network of
-          qualified lawyers. Our core mission is to bridge the gap between
-          individuals in need of legal assistance and skilled legal
-          professionals who can address their specific legal concerns.
+          The Law Spot is a transformative initiative focused on enhancing
+          access to legal services through a comprehensive network of qualified
+          lawyers. Our core mission is to bridge the gap between individuals in
+          need of legal assistance and skilled legal professionals who can
+          address their specific legal concerns.
         </Typography>
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
         <div className="grid grid-cols-1 items-center place-items-center gap-y-16 lg:grid-cols-2">
           <div className="h-[480px] text-center shadow-lg flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-white p-14">
             <Image
-              src="/02.png"
-              alt="legal community connect app logo"
+              src="/law.jpeg"
+              alt="the law spot app logo"
               width={500}
               height={500}
             />
           </div>
           <div className="flex flex-col gap-8">
             <Option icon={CloudIcon} title="Transformative Legal Access:">
-              Legal Connect revolutionizes access to legal services by
-              connecting individuals with qualified lawyers through a
-              comprehensive network.
+              The Law Spot revolutionizes access to legal services by connecting
+              individuals with qualified lawyers through a comprehensive
+              network.
             </Option>
             <Option icon={TagIcon} title="Robust Lawyer Engagement:">
               We rigorously vet and onboard experienced lawyers across diverse

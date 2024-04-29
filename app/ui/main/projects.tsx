@@ -25,11 +25,11 @@ export function ProjectSection() {
         <div className="flex items-stretch flex-wrap justify-evenly gap-6">
           <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
             <Image
-              src="/02.png"
+              src="/law.jpeg"
               width={250}
               height={300}
-              alt="legal community connect logo"
-              className="mb-16 pb-2 drop-shadow-2xl"
+              alt="the law spot logo"
+              className=" pb-2 drop-shadow-2xl"
             />
             <div className="flex flex-col space-y-3 mt-3">
               <span>Mobile App</span>
@@ -45,7 +45,7 @@ export function ProjectSection() {
           </div>
           <div className="bg-white rounded-lg p-3 drop-shadow-lg text-center">
             <Image
-              src="/changemakers.jpeg"
+              src="/lawspot.jpeg"
               width={250}
               height={300}
               alt="changemakers logo"

@@ -28,7 +28,7 @@ const links = [
     items: [
       { name: "Changemakers", url: "/main/initiatives/changemakers" },
       {
-        name: "Legal Community Connect",
+        name: "The Law Spot",
         url: "/main/initiatives/legal-connect",
       },
     ],

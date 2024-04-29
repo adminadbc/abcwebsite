@@ -47,7 +47,7 @@ export function ContentSection11() {
         <div className="grid grid-cols-1 items-center place-items-center gap-y-16 lg:grid-cols-2">
           <div className="h-[480px] text-center shadow-lg flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-white p-14">
             <Image
-              src="/changemakers.jpeg"
+              src="/change.jpeg"
               alt="legal connect app logo"
               width={500}
               height={500}

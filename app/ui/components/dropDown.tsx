@@ -90,7 +90,7 @@ const store = [
     submenu: true,
     submenuItems: [
       {
-        name: "Legal Community Connect",
+        name: "The Law Spot",
         href: "/main/initiatives/legal-connect",
       },
       { name: "Changemakers", href: "/main/initiatives/changemakers" },
