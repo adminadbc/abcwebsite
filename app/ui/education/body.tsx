@@ -19,9 +19,10 @@ export function ContentSection7() {
           variant="lead"
           className="mt-4 max-w-4xl mx-auto !text-gray-500"
         >
-          If you can’t decide, the answer is no. If two equally difficult paths,
-          choose the one more painful in the short term (pain avoidance is
-          creating an illusion of equality).
+          Our education initiative aims to empower individuals by providing
+          accessible seminars that illuminate various aspects of the law,
+          enabling better understanding and protection of legal rights in
+          everyday life.
         </Typography>
       </div>
     </section>
