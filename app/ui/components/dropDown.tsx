@@ -17,11 +17,11 @@ const DropMenu: React.FC<
       onMouseLeave={toggleDropdown}
     >
       <div
-        className="inline-flex justify-start w-full   py-2 bg-white  font-normal"
+        className="inline-flex justify-start w-full py-2 bg-white  font-normal"
         aria-haspopup="true"
         {...(isOpen && { "aria-expanded": "true" })}
       >
-        <h6> {title}</h6>
+        <h6 className="mr-3">{title}</h6>
       </div>
       <div
         className={`absolute  md:mt-10 w-fit  rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
@@ -36,7 +36,7 @@ const DropMenu: React.FC<
             <a
               key={index}
               href={item.href}
-              className="text-gray-700 block px-4 py-2 text-base hover:text-abcf"
+              className=" block px-4 py-2 text-base hover:text-abcf"
               role="menuitem"
             >
               <h6>{item.name}</h6>
