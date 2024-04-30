@@ -1,50 +1,45 @@
-"use client";
-import { CiSearch } from "react-icons/ci";
+"use client"
+
 import { useState, useEffect } from "react";
-import SearchPage from "./mysearch";
 import { index , indexTwo} from "./algoliaIndex";
 import Link from "next/link";
 
 
-let resultList: any[];
 
-function SearchLayer() {
-  const [pop, setPop] = useState(false);
-  const [query, setQuery] = useState<string>('');
-  const [results, setResults] = useState<any[]>([]);
+const SearchPage = () => {
+    const [query, setQuery] = useState<string>('');
+    const [results, setResults] = useState<any[]>([]);
+    const [showInput,setShowInput ] = useState<boolean>(true)
 
-  useEffect(() => {
-    const search = async () => {
-      if (query.trim() !== '') {
-        try {
-          // Perform search query on both indices
-          const [result1, result2] = await Promise.all([
-            index.search(query),
-            indexTwo.search(query)
-          ]);
-
-          // Combine the results from both indices
-          const combinedResults = [...result1.hits, ...result2.hits];
-          setResults(combinedResults);
-        } catch (error) {
-          console.error('Error performing search:', error);
+    useEffect(() => {
+      const search = async () => {
+        if (query.trim() !== '') {
+          try {
+            // Perform search query on both indices
+            const [result1, result2] = await Promise.all([
+              index.search(query),
+              indexTwo.search(query)
+            ]);
+  
+            // Combine the results from both indices
+            const combinedResults = [...result1.hits, ...result2.hits];
+            setResults(combinedResults);
+          } catch (error) {
+            console.error('Error performing search:', error);
+          }
+        } else {
+          setResults([]);
         }
-      } else {
-        setResults([]);
-      }
-    };
-
-    search();
-  }, [query]);
-  return (
-    <div>
-      {pop ? (
-        <div className="absolute top-0 w-screen h-screen left-0 overflow-clip">
-        <div className="relative pt-16">
-    <div className="absolute h-screen w-screen top-0 left-0 bg-black opacity-30" 
-    onClick={()=>{setPop(false)}}>
+      };
+  
+      search();
+    }, [query]);
+  
+    return (
+   <div className="relative pt-16">
+    <div className="absolute h-screen w-screen top-0 left-0 bg-black opacity-30" onClick={()=>{setShowInput(false)}}>
     </div>
- <div className="relative bg-white w-5/6 md:w-1/2 mx-auto p-10 rounded-lg drop-shadow-lg">
+       {showInput && <div className="relative bg-white w-5/6 md:w-1/2 mx-auto p-10 rounded-lg drop-shadow-lg">
         <input
           type="text"
           value={query}
@@ -75,22 +70,9 @@ function SearchLayer() {
             </div>
           ))}
         </div>
-      </div>
+      </div>}
    </div>
-        </div>
-      ) : (
-        <div className="border rounded-md w-32 mt-6 border-black/15 lg:mt-0 lg:w-28  flex">
-          <input
-            onClick={() => setPop(true)}
-            placeholder="search..."
-            className="h-8 ml-5 outline-none w-16
-           text-black  text-[0.75rem]"
-          />
-          <CiSearch className="mt-2" size={16} />
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default SearchLayer;
+    );
+  };
+  
+  export default SearchPage;
