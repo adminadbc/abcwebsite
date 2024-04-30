@@ -51,6 +51,7 @@ function SearchLayer() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search..."
           className="w-full h-16 outline-none "
+          autoFocus={true}
         />
         <div className="flex flex-col space-y-3">
           {results.map((hit, idx) => (
