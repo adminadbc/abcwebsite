@@ -39,9 +39,9 @@ function SearchLayer() {
   return (
     <div>
       {pop ? (
-        <div className="absolute top-0 w-screen h-screen left-0 overflow-clip">
+        <div className="fixed z-[9999] top-0 w-screen h-screen left-0 overflow-clip">
         <div className="relative pt-16">
-    <div className="absolute h-screen w-screen top-0 left-0 bg-black opacity-30" 
+    <div className="absolute h-screen w-screen top-0 left-0 bg-black backdrop-blur-md	 opacity-80" 
     onClick={()=>{setPop(false)}}>
     </div>
  <div className="relative bg-white w-5/6 md:w-1/2 mx-auto p-10 rounded-lg drop-shadow-lg">
