@@ -38,7 +38,7 @@ function SearchLayer() {
   }, [query]);
   return (
     <div>
-      {pop ? (
+      {pop &&
         <div className="fixed z-[9999] top-0 w-screen h-screen left-0 overflow-clip">
         <div className="relative pt-16">
     <div className="absolute h-screen w-screen top-0 left-0 bg-black backdrop-blur-md	 opacity-80" 
@@ -78,8 +78,8 @@ function SearchLayer() {
         </div>
       </div>
    </div>
-        </div>
-      ) : (
+        </div>}
+  
         <div className="border rounded-md w-32 mt-6 border-black/15 lg:mt-0 lg:w-28  flex">
           <input
             onClick={() => setPop(true)}
@@ -89,7 +89,7 @@ function SearchLayer() {
           />
           <CiSearch className="mt-2" size={16} />
         </div>
-      )}
+      
     </div>
   );
 }
