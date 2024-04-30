@@ -89,7 +89,7 @@ export function NavBar() {
               </Link>
             )
           )}
-          {/* <SearchLayer /> */}
+          <SearchLayer />
         </div>
 
         <div className="hidden lg:flex">
