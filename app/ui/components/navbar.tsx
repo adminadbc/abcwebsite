@@ -63,17 +63,18 @@ export function NavBar() {
       color="transparent"
       className="absolute z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
-      <div className="container mx-auto md:sml-14 flex items-center h-18">
+      <div className="container w-full  flex items-center justify-start h-18">
         <Link href="/main">
           <Image
             src="/newlogo.png"
             width={300}
             height={100 / 3.78} // Calculated height based on the aspect ratio
             alt="ABC Foundation Logo"
+            className="w-40 lg:w-56"
           />
         </Link>
 
-        <div className="mx-auto hidden items-center gap-10 lg:flex text-2xl">
+        <div className="mx-auto hidden items-center gap-6 xl:flex text-xl">
           {links.map((link, idx) =>
             link.name == "Resources" ? (
               <Custom key={8} />
@@ -89,10 +90,13 @@ export function NavBar() {
               </Link>
             )
           )}
-          <SearchLayer />
+          
         </div>
 
-        <div className="hidden lg:flex">
+        <div className="lg:mr-4 ml-[33%] md:ml-[65%] xl:ml-2">
+        <SearchLayer />
+        </div>
+        <div className="hidden xl:flex">
           <Link
             href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
             target="_blank"
@@ -108,7 +112,7 @@ export function NavBar() {
           variant="text"
           color="white"
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className="ml-auto inline-block xl:hidden"
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6 text-black mr-6" />
