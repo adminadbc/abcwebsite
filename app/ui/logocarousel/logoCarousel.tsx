@@ -1,15 +1,15 @@
 import Image from "next/image";
-// import Alberta from "@/public/partnerimages/alberta.png";
-// import Canva from "@/public/partnerimages/canva.png";
-// import Google from "@/public/partnerimages/google.png";
+import Alberta from "@/public/partnerimages/alberta.png";
+import Canva from "@/public/partnerimages/canva.png";
+import Google from "@/public/partnerimages/google.png";
 // import Maverick from "@/public/partnerimages/maverick.png";
-// import Microsoft from "@/public/partnerimages/microsoft.png";
-// import Vite from "@/public/partnerimages/vite.png";
-import Alberta from "@/public/partnerimages/alberta-w.png";
-import Canva from "@/public/partnerimages/canva-w.png";
-import Google from "@/public/partnerimages/google-w.png";
-import Microsoft from "@/public/partnerimages/microsoft-w.png";
-import Vite from "@/public/partnerimages/vite-w.png";
+import Microsoft from "@/public/partnerimages/microsoft.jpg";
+import Vite from "@/public/partnerimages/vite.png";
+// import Alberta from "@/public/partnerimages/alberta-w.png";
+// import Canva from "@/public/partnerimages/canva-w.png";
+// import Google from "@/public/partnerimages/google-w.png";
+// import Microsoft from "@/public/partnerimages/microsoft-w.png";
+// import Vite from "@/public/partnerimages/vite-w.png";
 // import Maverick from "@/public/partnerimages/maverick-w.png";
 import styles from "./LogoCarousel.module.css";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -43,13 +43,7 @@ export default function LogoCarousel() {
           {logos.map((logo, index) => (
             <li key={index} className="text-4xl mx-4">
               <div className={styles["logo-container"]}>
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={150}
-                  height={150}
-                  layout="responsive"
-                />
+                <Image src={logo.src} alt={logo.alt} width={150} height={150} />
               </div>
             </li>
           ))}
@@ -58,13 +52,7 @@ export default function LogoCarousel() {
           {logos.map((logo, index) => (
             <li key={index} className="text-4xl mx-4">
               <div className={styles["logo-container"]}>
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={150}
-                  height={150}
-                  layout="responsive"
-                />
+                <Image src={logo.src} alt={logo.alt} width={150} height={150} />
               </div>
             </li>
           ))}
