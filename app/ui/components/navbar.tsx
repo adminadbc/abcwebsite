@@ -61,7 +61,7 @@ export function NavBar() {
       fullWidth
       shadow={false}
       color="transparent"
-      className="absolute z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
+      className="absolute md:pl-0 lg:pl-40 z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
       <div className="container w-full  flex items-center justify-start h-18">
         <Link href="/main">
@@ -90,11 +90,10 @@ export function NavBar() {
               </Link>
             )
           )}
-          
         </div>
 
         <div className="lg:mr-4 ml-[33%] md:ml-[65%] xl:ml-2">
-        <SearchLayer />
+          <SearchLayer />
         </div>
         <div className="hidden xl:flex">
           <Link
