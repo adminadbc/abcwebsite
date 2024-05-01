@@ -20,7 +20,7 @@ import NavBar from "../ui/components/navbar";
 function MainPage() {
   return (
     <div className="w-screen overflow-x-hidden">
-      <NavBar />
+      {/* <NavBar /> */}
       <HeroSection12 />
       <FeatureSection3 />
       <DonateSeperator />

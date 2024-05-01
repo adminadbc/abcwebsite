@@ -3,6 +3,7 @@ import "./globals.css";
 import { Roboto } from "next/font/google";
 import Script from "next/script";
 
+import NavBar from "./ui/components/navbar";
 // Specify the weight property along with subsets
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         // Wrap the max-width from the body
         className={roboto.className}
       >
+        <NavBar />
         {children}
       </body>
     </html>
