@@ -8,7 +8,7 @@ export default function Home() {
   fetchVideos();
   return (
     <div className="w-screen overflow-hidden">
-      <Navbar />
+      {/* <Navbar /> */}
       <MainPage />
     </div>
   );
