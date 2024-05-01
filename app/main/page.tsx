@@ -12,15 +12,16 @@ import { ProjectSection } from "../ui/main/projects";
 import { LogoSection6 } from "../ui/main/testimonials";
 import { WorkWithUs } from "../ui/main/workwithus";
 import { NewsLetter1 } from "../ui/main/newsletter";
-import NavBar from "../ui/components/navbar";
+import LogoCarousel from "../ui/logocarousel/logoCarousel";
+
 import { Footer4 } from "../ui/components/footer";
+import NavBar from "../ui/components/navbar";
 
 function MainPage() {
   return (
     <div className="w-screen overflow-x-hidden">
       <NavBar />
       <HeroSection12 />
-      {/* <LogoCarousel /> */}
       <FeatureSection3 />
       <DonateSeperator />
       <FeatureSection14 />
@@ -29,6 +30,7 @@ function MainPage() {
       <ProjectSection />
       <LogoSection6 />
       <WorkWithUs />
+      <LogoCarousel />
       <NewsLetter1 />
       <Footer4 />
     </div>
