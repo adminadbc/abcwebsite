@@ -3,12 +3,33 @@
 import React from "react";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 import Image from "next/image";
 interface IconPropsType {
   children: React.ReactNode;
 }
 
 export function FeatureSection3() {
+  
+const [refFirst, inViewFirst] = useInView();
+const [refSecond, inViewSecond] = useInView();
+const controlsSecond = useAnimation();
+const controlsFirst = useAnimation();
+
+useEffect(() => {
+  if (inViewFirst) {
+    controlsFirst.start({ opacity: 1, x: 0 , transition: { delay: 0.5, duration : 0.5} });
+  }
+}, [controlsFirst, inViewFirst]);
+
+  useEffect(() => {
+  if (inViewSecond) {
+    controlsSecond.start({ opacity: 1, x: 0 , transition: { delay: 0.8, duration : 0.5 }});
+  }
+}, [controlsSecond, inViewSecond]);
   return (
     <section className="pb-10">
       <div className="flex flex-col items-center mt-10 mb-5">
@@ -22,14 +43,17 @@ export function FeatureSection3() {
         </div>
       </div>
       <div className="container mx-auto  gap-10 flex items-center flex-wrap lg:flex-nowrap justify-center">
-        <Image
+      <motion.div ref={refFirst} initial={{ opacity: 0, x: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
+      <Image
           src={`/04-2.png`}
           alt="background image"
           className="lg:min-w-[350px]"
           width={300}
           height={500}
         />
-        <div className="my-20 px-5  flex flex-col justify-evenly">
+      </motion.div>
+      <motion.div ref={refSecond} initial={{ opacity: 0, x: 50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
+      <div className="my-20 px-5  flex flex-col justify-evenly">
           <h3 className="mb-4 text-4xl lg:text-3xl font-bold text-center">
             Our Mission and Vision
           </h3>
@@ -49,6 +73,8 @@ export function FeatureSection3() {
             <br />
           </p>
         </div>
+      </motion.div>
+        
       </div>
     </section>
   );

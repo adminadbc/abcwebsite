@@ -3,6 +3,9 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { GiSpellBook } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -46,6 +49,30 @@ const features = [
   },
 ];
 export function FeatureSection14() {
+      
+const [refFirst, inViewFirst] = useInView();
+const [refSecond, inViewSecond] = useInView();
+const [refThird, inViewThird] = useInView();
+const controlsSecond = useAnimation();
+const controlsFirst = useAnimation();
+const controlsThird = useAnimation();
+
+useEffect(() => {
+  if (inViewFirst) {
+    controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+  }
+}, [controlsFirst, inViewFirst]);
+
+  useEffect(() => {
+  if (inViewSecond) {
+    controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+  }
+}, [controlsSecond, inViewSecond]);
+useEffect(() => {
+  if (inViewThird) {
+    controlsThird.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+  }
+}, [controlsThird, inViewThird]);
   return (
     <section className="py-10 px-8">
       <div className="container mx-auto my-10 text-center lg:mb-20">
@@ -57,15 +84,19 @@ export function FeatureSection14() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
+        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
         <p className="mx-auto text-2xl max-w-5xl">
           At ABC Foundation, we champion justice, amplify marginalized voices,
           and educate communities on legal rights, paving the way for fair and
           inclusive societies. You can also join us in creating this positive
           change!
         </p>
+      </motion.div>
+      
       </div>
       <div className="container mx-auto mt-4 gap-9 md:gap-0 flex flex-wrap justify-around w-full md:w-2/3">
-        <Card className="mt-6 w-96">
+      <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
+      <Card className="mt-6 w-96">
           <CardBody className="flex flex-col items-center">
             <GoLaw size={50} className="text-abcf" />
             <Typography variant="h5" color="blue-gray" className="my-5">
@@ -78,7 +109,10 @@ export function FeatureSection14() {
             </p>
           </CardBody>
         </Card>
-        <Card className="mt-6 w-96">
+      </motion.div>
+
+      <motion.div ref={refThird} initial={{ opacity: 0, y: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
+      <Card className="mt-6 w-96">
           <CardBody className="flex flex-col items-center justify-center">
             <GiSpellBook size={50} className="text-abcf" />
 
@@ -92,6 +126,8 @@ export function FeatureSection14() {
             </p>
           </CardBody>
         </Card>
+      </motion.div>       
+      
       </div>
     </section>
   );
