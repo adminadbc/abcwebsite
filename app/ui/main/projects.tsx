@@ -30,8 +30,7 @@ export function ProjectSection() {
         className=" bg-gradient-to-r bg-brand2  py-20 px-10 md:pl-24 lg:pl-10 flex 
       flex-wrap items-center justify-evenly gap-6 w-screen text-white"
       >
-         {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
-          <div className="lg:w-1/3 space-y-7  overflow-hidden">
+             <div className="lg:w-1/3 space-y-7  overflow-hidden">
           <p>Join us at ABC Foundation to make a change</p>
           <h3 className="text-4xl font-semibold">Our Current Projects</h3>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
@@ -42,7 +41,6 @@ export function ProjectSection() {
             for updates on our upcoming initiatives!
           </p>
         </div>
-      {/* </motion.div> */}
         
         <div className="flex items-stretch flex-wrap justify-evenly gap-6">
          

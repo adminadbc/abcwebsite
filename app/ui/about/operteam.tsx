@@ -19,6 +19,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
+
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
 interface TeamCardPropsType {
   img: string;
   name: string;
@@ -164,9 +169,28 @@ const members = [
 ];
 
 export function OperTeam() {
+  
+  const [refFirst, inViewFirst] = useInView();
+  const [refSecond, inViewSecond] = useInView();
+    const controlsSecond = useAnimation();
+  const controlsFirst = useAnimation();
+    useEffect(() => {
+      if (inViewFirst) {
+        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+      }
+    }, [controlsFirst, inViewFirst]);
+  
+      useEffect(() => {
+      if (inViewSecond) {
+        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+      }
+    }, [controlsSecond, inViewSecond]);
   return (
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
+       
+     
+        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
         <div className="mb-20 text-center lg:mb-28">
           <h2 className="text-4xl mb-4">The Operations Team</h2>
           <div className="relative flex py-5 w-1/2  mx-auto items-center">
@@ -183,11 +207,14 @@ export function OperTeam() {
             positive change one step at a time.
           </Typography>
         </div>
+      </motion.div>
+        <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
           {members.map((props, key) => (
             <TeamCard key={key} {...props} />
           ))}
         </div>
+      </motion.div>
       </div>
     </section>
   );
