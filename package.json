@@ -18,13 +18,15 @@
     "algoliasearch": "^4.23.3",
     "awesome": "^0.0.7",
     "clsx": "^2.1.0",
-    "next": "14.1.4",
-    "react": "^18",
+    "framer-motion": "^11.1.7",
     "googleapis": "^135.0.0",
     "graphql-request": "^6.1.0",
+    "next": "14.1.4",
+    "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-instantsearch": "^7.7.1"
+    "react-instantsearch": "^7.7.1",
+    "react-intersection-observer": "^9.10.1"
   },
   "devDependencies": {
     "@types/node": "^20",
