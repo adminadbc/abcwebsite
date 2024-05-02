@@ -2,8 +2,35 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import "./mainstyles.css";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export function LogoSection6() {
+  
+  const [refFirst, inViewFirst] = useInView();
+const [refSecond, inViewSecond] = useInView();
+const [refThird, inViewThird] = useInView();
+  const controlsSecond = useAnimation();
+const controlsThird = useAnimation();
+const controlsFirst = useAnimation();
+  useEffect(() => {
+    if (inViewFirst) {
+      controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+    }
+  }, [controlsFirst, inViewFirst]);
+
+    useEffect(() => {
+    if (inViewSecond) {
+      controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+    }
+  }, [controlsSecond, inViewSecond]);
+
+  useEffect(() => {
+    if (inViewThird) {
+      controlsThird.start({ opacity: 1, y: 0 ,   transition: { delay: 1.2, duration : 0.5 } });
+    }
+  }, [controlsThird, inViewThird]);
   return (
     <section className="py-8 px-8 lg:py-20 ">
       <div className="container mx-auto mb-10 text-center lg:mb-20">
@@ -26,6 +53,8 @@ export function LogoSection6() {
 
       <div className="container !mx-auto text-center px-4 place-content-center grid">
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
+     
+          <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
           <div className="flex flex-col items-center justify-center gap-6">
             <Card shadow={false} className="bg-[#FAFAFA]">
               <CardBody>
@@ -41,7 +70,8 @@ export function LogoSection6() {
               </CardBody>
             </Card>
           </div>
-          <Card
+      </motion.div>
+         <Card
             shadow={false}
             className="bg-[#FAFAFA] lg:px-10 justify-center mx-auto w-full max-w-[18rem] lg:max-w-lg"
           >
@@ -55,7 +85,8 @@ export function LogoSection6() {
               />
             </CardBody>
           </Card>
-          <div className="flex flex-col gap-6">
+      <motion.div ref={refThird} initial={{ opacity: 0, y: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
+      <div className="flex flex-col gap-6">
             <Card shadow={false} className="bg-[#FAFAFA] ">
               <CardBody>
                 <h4 className="text-xl font-bold">
@@ -70,6 +101,8 @@ export function LogoSection6() {
               </CardBody>
             </Card>
           </div>
+      </motion.div>
+        
         </div>
       </div>
     </section>

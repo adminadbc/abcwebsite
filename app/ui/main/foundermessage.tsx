@@ -4,7 +4,9 @@ import React from "react";
 import { Typography, Button } from "@material-tailwind/react";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import Link from "next/link";
-
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 interface IconPropsType {
   children: React.ReactNode;
@@ -19,6 +21,23 @@ function Icon({ children }: IconPropsType) {
 }
 
 export function FounderMessage() {
+
+  const [refFirst, inViewFirst] = useInView();
+const [refSecond, inViewSecond] = useInView();
+const controlsSecond = useAnimation();
+const controlsFirst = useAnimation();
+
+useEffect(() => {
+  if (inViewFirst) {
+    controlsFirst.start({ opacity: 1, x: 0 , transition: { delay: 0.5, duration : 0.5} });
+  }
+}, [controlsFirst, inViewFirst]);
+
+  useEffect(() => {
+  if (inViewSecond) {
+    controlsSecond.start({ opacity: 1, x: 0 , transition: { delay: 0.8, duration : 0.5 }});
+  }
+}, [controlsSecond, inViewSecond]);
   return (
     <section className="w-screen ">
       <div className="flex flex-col items-center">
@@ -37,14 +56,17 @@ export function FounderMessage() {
         className="container mx-auto px-10 md:px-14 mb-15 mt-10 lg:mt-20 gap-10 flex items-center flex-wrap 
        lg:flex-nowrap "
       >
-        <Image
+              <motion.div ref={refFirst} initial={{ opacity: 0, x: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
+              <Image
           src={`/angie.jpeg`}
           alt="founder image"
           className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto lg:mb-48 rounded-lg shadow-xl"
           width={500}
           height={900}
         />
-        <div className="flex flex-col justify-evenly">
+      </motion.div>
+      <motion.div ref={refSecond} initial={{ opacity: 0, x: 50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
+      <div className="flex flex-col justify-evenly">
           <p className="text-xl font-normal">
             At ABC Foundation, we are fueled by a passionate commitment to
             justice and equality. Our mission is clear: to promote access to
@@ -96,6 +118,9 @@ export function FounderMessage() {
             </Button>
           </Link>
         </div>
+      </motion.div>
+       
+        
       </div>
     </section>
   );

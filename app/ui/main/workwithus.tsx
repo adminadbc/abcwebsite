@@ -2,14 +2,42 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { Button } from "@material-tailwind/react";
 
 export function WorkWithUs() {
+   
+  const [refFirst, inViewFirst] = useInView();
+const [refSecond, inViewSecond] = useInView();
+const [refThird, inViewThird] = useInView();
+  const controlsSecond = useAnimation();
+const controlsThird = useAnimation();
+const controlsFirst = useAnimation();
+  useEffect(() => {
+    if (inViewFirst) {
+      controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+    }
+  }, [controlsFirst, inViewFirst]);
+
+    useEffect(() => {
+    if (inViewSecond) {
+      controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+    }
+  }, [controlsSecond, inViewSecond]);
+
+  useEffect(() => {
+    if (inViewThird) {
+      controlsThird.start({ opacity: 1, y: 0 ,   transition: { delay: 1.2, duration : 0.5 } });
+    }
+  }, [controlsThird, inViewThird]);
   return (
     <div className="bg-gradient-to-r bg-brand2 w-screen overflow-hidden p-10 flex flex-wrap-reverse justify-around items-center text-white">
       <div className="mb-9 md:w-4/5 lg:w-2/5">
         <h3 className="text-4xl font-semibold">Work With Us</h3>
         <div className="flex-grow border-t-4 border-abcf w-80 my-10"></div>
+        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
         <h4 className=" font-bold text-2xl mt-3">To Volunteers:</h4>
         <p className="mt-2 mb-6 text-base">
           Volunteering with the ABC Foundation is an opportunity to actively
@@ -31,7 +59,10 @@ export function WorkWithUs() {
             Volunteer With Us
           </Button>
         </Link>
+      </motion.div>
+      
         <br></br>
+        <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
         <h4 className="mt-10 font-bold text-2xl">To Partners:</h4>
         <p className="mt-2 mb-6 text-base">
           Partnering on matters related to empowering the community in legal
@@ -55,7 +86,10 @@ export function WorkWithUs() {
             Partner With Us
           </Button>
         </Link>
+      </motion.div>
+       
       </div>
+      <motion.div ref={refThird} initial={{ opacity: 0, y: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
       <div className="mb-10">
         <Image
           src="/volunteer.jpg"
@@ -65,6 +99,8 @@ export function WorkWithUs() {
           height={300}
         />
       </div>
+      </motion.div>
+     
     </div>
   );
 }
