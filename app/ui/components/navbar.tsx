@@ -9,8 +9,7 @@ import { Navbar, Collapse, IconButton, Button } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Custom from "./dropDown";
 
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import SearchLayer from "./searchBox";
 
@@ -31,15 +30,7 @@ const links = [
       { name: "Education", href: "/education" },
     ],
   },
-  // {
-  //   name: "Initiatives",
-  //   href: "/main/initiatives",
-  //   submenu: true,
-  //   submenuItems: [
-  //     { name: "Changemakers", href: "/changemakers" },
-  //     { name: "Legal Community Connect", href: "/legal-connect" },
-  //   ],
-  // },
+  
   { name: "Contact Us", href: "/main/contacts" },
 ];
 

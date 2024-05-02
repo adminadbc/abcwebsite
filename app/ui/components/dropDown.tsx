@@ -24,7 +24,7 @@ const DropMenu: React.FC<
         <h6 className="mr-3">{title}</h6>
       </div>
       <div
-        className={`absolute  md:mt-10 w-fit  rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
+        className={`absolute  md:mt-10 w-[200px]  rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
           isOpen ? "" : "hidden"
         }`}
         role="menu"
