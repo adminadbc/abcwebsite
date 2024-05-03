@@ -3,6 +3,9 @@
 import React from "react";
 import { TagIcon, CloudIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import { FaPersonCircleCheck } from "react-icons/fa6";
@@ -31,10 +34,61 @@ function Option({
 }
 
 export function ContentSection11() {
+  const [refFirst, inViewFirst] = useInView();
+  const [refSecond, inViewSecond] = useInView();
+  const [refThird, inViewThird] = useInView();
+  const [refFour, inViewFour] = useInView();
+  const [refFive, inViewFive] = useInView();
+  // const [refSix, inViewSix] = useInView();
+  // const [refSeven, inViewSeven] = useInView();
+    const controlsSecond = useAnimation();
+  const controlsFirst = useAnimation();
+  const controlsThird = useAnimation();
+  const controlsFour = useAnimation();
+  const controlsFive = useAnimation();
+  const controlsSix = useAnimation();
+  const controlsSeven = useAnimation();
+    useEffect(() => {
+      if (inViewFirst) {
+        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+      }
+    }, [controlsFirst, inViewFirst]);
+  
+      useEffect(() => {
+      if (inViewSecond) {
+        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+      }
+    }, [controlsSecond, inViewSecond]);
+    useEffect(() => {
+      if (inViewThird) {
+        controlsThird.start({ opacity: 1, y: 0 , transition: { delay: 1.2, duration : 0.5} });
+      }
+    }, [controlsThird, inViewThird]);
+    useEffect(() => {
+      if (inViewFour) {
+        controlsFour.start({ opacity: 1, y: 0 , transition: { delay: 1.2, duration : 0.5} });
+      }
+    }, [controlsFour, inViewFour]);
+    useEffect(() => {
+      if (inViewFive) {
+        controlsFive.start({ opacity: 1, y: 0 , transition: { delay: 1.4, duration : 0.5} });
+      }
+    }, [controlsFive, inViewFive]);
+    // useEffect(() => {
+    //   if (inViewSix) {
+    //     controlsSix.start({ opacity: 1, y: 0 , transition: { delay: 1.8, duration : 0.5} });
+    //   }
+    // }, [controlsSix, inViewSix]);
+    // useEffect(() => {
+    //   if (inViewSeven) {
+    //     controlsSeven.start({ opacity: 1, y: 0 , transition: { delay: 2, duration : 0.5} });
+    //   }
+    // }, [controlsSeven, inViewSeven]);
   return (
     <section className="mx-auto container max-w-5xl px-8 py-10">
       <div className="text-center mb-10 lg:mb-24">
-        <h3 className="text-4xl">Empowering Change Through Changemakers</h3>
+      <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
+      <h3 className="text-4xl">Empowering Change Through Changemakers</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -42,6 +96,7 @@ export function ContentSection11() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
+      </motion.div>   
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
         <div className="grid grid-cols-1 items-center place-items-center gap-y-16 lg:grid-cols-2">
@@ -54,29 +109,39 @@ export function ContentSection11() {
             />
           </div>
           <div className="flex flex-col gap-8">
-            <Option icon={CloudIcon} title="Unity Through Inclusion:">
+          <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
+          <Option icon={CloudIcon} title="Unity Through Inclusion:">
               ABC Foundation&#x2019;s Changemakers initiative provides a
               fortified and inclusive platform for influential voices and
               transformative entities to collaborate and confront persistent
               crises within Canada&#x2019;s economy.
             </Option>
-            <Option icon={TagIcon} title="Empowering Dialogue:">
+      </motion.div>
+      <motion.div ref={refThird} initial={{ opacity: 0, y: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
+      <Option icon={TagIcon} title="Empowering Dialogue:">
               Through dynamic real-time dialogues and active engagement,
               Changemakers impassions and mobilizes Canadians, empowering them
               to actively shape the trajectory of their communities.
             </Option>
-            <Option icon={Cog6ToothIcon} title="Unified Collaboration:">
+      </motion.div>
+      <motion.div ref={refFour} initial={{ opacity: 0, y: -50 }} animate={controlsFour} exit={{ opacity: 0, y: 50 }}>
+      <Option icon={Cog6ToothIcon} title="Unified Collaboration:">
               With a commitment to inclusivity, Changemakers harnesses the
               collective prowess and varied perspectives of diverse
               stakeholders, fostering collaboration and driving seismic shifts
               across Canada&#x2019;s economic and social fabric.
             </Option>
-            <Option icon={FaPersonCircleCheck} title="Action-Oriented: ">
+      </motion.div>
+      
+      <motion.div ref={refFive} initial={{ opacity: 0, y: -50 }} animate={controlsFive} exit={{ opacity: 0, y: 50 }}>
+      <Option icon={FaPersonCircleCheck} title="Action-Oriented: ">
               Changemakers embraces inclusivity, bringing together diverse
               stakeholders&#x2019; expertise and perspectives to foster
               collaboration and propel substantial changes throughout
               Canada&#x2019;s economic and social structure.
             </Option>
+      </motion.div>
+      
           </div>
         </div>
       </div>
