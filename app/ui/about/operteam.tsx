@@ -159,7 +159,7 @@ const members = [
   {
     img: "/ambreen.jpg",
     name: "Ambreen Sheikh",
-    title: "Manager Events and Community Outreach",
+    title: "Events and Community Outreach Manager",
     desc: "Ambreen Sheikh, a community advocate with an entrepreneurial background, collaborates with ministers as a community outreach and event manager. Committed to fostering inclusivity, Ambreen strives to create a positive impact in the community.",
 
     email: "mailto:events@abcfoundationconnect.com",
