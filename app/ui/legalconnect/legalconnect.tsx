@@ -1,6 +1,9 @@
 "use client";
 
 import React from "react";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { TagIcon, CloudIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
@@ -31,6 +34,56 @@ function Option({
 }
 
 export function ContentSection11() {
+  const [refFirst, inViewFirst] = useInView();
+  const [refSecond, inViewSecond] = useInView();
+  const [refThird, inViewThird] = useInView();
+  const [refFour, inViewFour] = useInView();
+  const [refFive, inViewFive] = useInView();
+  // const [refSix, inViewSix] = useInView();
+  // const [refSeven, inViewSeven] = useInView();
+    const controlsSecond = useAnimation();
+  const controlsFirst = useAnimation();
+  const controlsThird = useAnimation();
+  const controlsFour = useAnimation();
+  const controlsFive = useAnimation();
+  const controlsSix = useAnimation();
+  const controlsSeven = useAnimation();
+    useEffect(() => {
+      if (inViewFirst) {
+        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+      }
+    }, [controlsFirst, inViewFirst]);
+  
+      useEffect(() => {
+      if (inViewSecond) {
+        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+      }
+    }, [controlsSecond, inViewSecond]);
+    useEffect(() => {
+      if (inViewThird) {
+        controlsThird.start({ opacity: 1, y: 0 , transition: { delay: 1.2, duration : 0.5} });
+      }
+    }, [controlsThird, inViewThird]);
+    useEffect(() => {
+      if (inViewFour) {
+        controlsFour.start({ opacity: 1, y: 0 , transition: { delay: 1.2, duration : 0.5} });
+      }
+    }, [controlsFour, inViewFour]);
+    useEffect(() => {
+      if (inViewFive) {
+        controlsFive.start({ opacity: 1, y: 0 , transition: { delay: 1.4, duration : 0.5} });
+      }
+    }, [controlsFive, inViewFive]);
+    // useEffect(() => {
+    //   if (inViewSix) {
+    //     controlsSix.start({ opacity: 1, y: 0 , transition: { delay: 1.8, duration : 0.5} });
+    //   }
+    // }, [controlsSix, inViewSix]);
+    // useEffect(() => {
+    //   if (inViewSeven) {
+    //     controlsSeven.start({ opacity: 1, y: 0 , transition: { delay: 2, duration : 0.5} });
+    //   }
+    // }, [controlsSeven, inViewSeven]);
   return (
     <section className="mx-auto container max-w-5xl px-8 py-10">
       <div className="text-center mb-10 lg:mb-24">
@@ -42,6 +95,7 @@ export function ContentSection11() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
+        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
         <Typography variant="lead" className="mt-4 max-w-4xl mx-auto ">
           The Law Spot is a transformative initiative focused on enhancing
           access to legal services through a comprehensive network of qualified
@@ -49,6 +103,7 @@ export function ContentSection11() {
           need of legal assistance and skilled legal professionals who can
           address their specific legal concerns.
         </Typography>
+      </motion.div>   
       </div>
       <div className="lg:space-y-24 space-y-12 mb-20">
         <div className="grid grid-cols-1 items-center place-items-center gap-y-16 lg:grid-cols-2">
@@ -61,22 +116,30 @@ export function ContentSection11() {
             />
           </div>
           <div className="flex flex-col gap-8">
-            <Option icon={CloudIcon} title="Transformative Legal Access:">
+          <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
+          <Option icon={CloudIcon} title="Transformative Legal Access:">
               The Law Spot revolutionizes access to legal services by connecting
               individuals with qualified lawyers through a comprehensive
               network.
             </Option>
-            <Option icon={TagIcon} title="Robust Lawyer Engagement:">
+      </motion.div>
+      <motion.div ref={refThird} initial={{ opacity: 0, y: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
+      <Option icon={TagIcon} title="Robust Lawyer Engagement:">
               We rigorously vet and onboard experienced lawyers across diverse
               practice areas, ensuring a wide range of legal expertise to
               address various legal needs.
             </Option>
-            <Option icon={Cog6ToothIcon} title="Comprehensive Support:">
+      </motion.div>  
+      <motion.div ref={refFour} initial={{ opacity: 0, y: -50 }} animate={controlsFour} exit={{ opacity: 0, y: 50 }}>
+      <Option icon={Cog6ToothIcon} title="Comprehensive Support:">
               Legal Connect offers internal resources and support services to
               guide individuals through their legal journey, including emotional
               and financial assistance from a dedicated support team.
             </Option>
-            <Option
+      </motion.div>  
+      <motion.div ref={refFive} initial={{ opacity: 0, y: -50 }} animate={controlsFive} exit={{ opacity: 0, y: 50 }}>
+     
+      <Option
               icon={FaPersonCircleCheck}
               title="Accessible and Empowering: "
             >
@@ -84,6 +147,8 @@ export function ContentSection11() {
               initiatives to increase legal literacy and empower individuals
               with knowledge about their legal rights.
             </Option>
+      </motion.div> 
+       
           </div>
         </div>
       </div>
