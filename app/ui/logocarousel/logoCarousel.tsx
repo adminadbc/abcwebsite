@@ -5,6 +5,7 @@ import Google from "@/public/partnerimages/google.png";
 import Maverick from "@/public/partnerimages/maverick.png";
 import Microsoft from "@/public/partnerimages/microsoft.jpg";
 import Vite from "@/public/partnerimages/vite.png";
+import Ownit from "@/public/partnerimages/ownit.jpeg";
 
 import styles from "./LogoCarousel.module.css";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -16,7 +17,8 @@ export default function LogoCarousel() {
     { src: Google, alt: "Google" },
     { src: Microsoft, alt: "Microsoft" },
     { src: Vite, alt: "Vite Consulting" },
-    { src: Maverick, alt: "Maverick Foundation" },
+    { src: Maverick, alt: "Maverick Foundation" }, 
+    { src: Ownit, alt: "Ownit Student Chapter" },
   ];
 
   return (
