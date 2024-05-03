@@ -2,6 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
+
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
 import {
   Card,
   CardBody,
@@ -92,8 +97,25 @@ const options = [
 ];
 
 export function ContactSection1() {
+  const [refFirst, inViewFirst] = useInView();
+  const [refSecond, inViewSecond] = useInView();
+    const controlsSecond = useAnimation();
+  const controlsFirst = useAnimation();
+    useEffect(() => {
+      if (inViewFirst) {
+        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
+      }
+    }, [controlsFirst, inViewFirst]);
+  
+      useEffect(() => {
+      if (inViewSecond) {
+        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
+      }
+    }, [controlsSecond, inViewSecond]);
   return (
     <section className="px-8 py-10 lg:py-28">
+      
+      <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
       <div className="container mx-auto grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3 text-black">
         {options.map(({ icon, title, description, contact }) => (
           <ContactCard
@@ -105,6 +127,8 @@ export function ContactSection1() {
           />
         ))}
       </div>
+      </motion.div>
+      <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
       <div className="container mx-auto mt-20 flex flex-col items-center">
         <h2 className="mb-20 text-2xl">OR</h2>
         <Button
@@ -117,6 +141,8 @@ export function ContactSection1() {
           Book an Appointment
         </Button>
       </div>
+      </motion.div>
+   
     </section>
   );
 }
