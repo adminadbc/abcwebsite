@@ -55,7 +55,7 @@ const Custom: React.FC = () => {
   };
 
   return (
-    <div className="sm:flex sm:justify-left  z-[99] gap-4 sm:items-left">
+    <div className="sm:flex sm:justify-left -mt-2 lg:mb-0 z-[99] gap-4 sm:items-left">
       <DropMenu
         title="Resources"
         items={store[0].submenuItems}

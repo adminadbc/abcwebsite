@@ -126,7 +126,7 @@ export function NavBar() {
               </Link>
             </li>
             <Custom />
-            <li className="hover:text-abcf">
+            <li className="hover:text-abcf -mt-2">
               <Link href="/main/contacts">
                 <h6>Contact Us</h6>
               </Link>
