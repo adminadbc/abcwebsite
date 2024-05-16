@@ -139,7 +139,7 @@ function TeamCard({
 
 const members = [
   {
-    img: "/raj.jpeg",
+    img: "/raj.jpg",
     name: "Raj Dhillon",
     title: "Advocacy and Public Relations Manager",
     desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
@@ -148,7 +148,7 @@ const members = [
     url: "/main/about/operteam/raj",
   },
   {
-    img: "/ritu.png",
+    img: "/ritu.jpg",
     name: "Ritu Ghai",
     title: "Media and Marketing Manager",
     desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",

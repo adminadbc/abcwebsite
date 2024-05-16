@@ -58,7 +58,7 @@ useEffect(() => {
       >
               <motion.div ref={refFirst} initial={{ opacity: 0, x: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
               <Image
-          src={`/angie.jpeg`}
+          src={`/angielal2.jpg`}
           alt="founder image"
           className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto lg:mb-48 rounded-lg shadow-xl"
           width={500}

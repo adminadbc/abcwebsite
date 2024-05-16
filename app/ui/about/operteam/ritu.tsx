@@ -18,7 +18,7 @@ export function BlogSection14() {
 
       <div className="inline m-20 container  my-auto ">
         <Image
-          src="/ritu.png"
+          src="/ritu.jpg"
           alt="marketing manager image"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={350}

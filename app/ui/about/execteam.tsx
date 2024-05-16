@@ -143,7 +143,7 @@ function TeamCard({
 
 const members = [
   {
-    img: "/angie-lal.png",
+    img: "/angielal2.jpg",
     name: "Angeline Lal",
     title: "Founding Director",
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
@@ -152,7 +152,7 @@ const members = [
     url: "/main/about/founder",
   },
   {
-    img: "/richa.png",
+    img: "/richa.jpg",
     name: "Richa Sharma",
     title: "CEO",
     desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
@@ -161,7 +161,7 @@ const members = [
     url: "/main/about/execteam/richa",
   },
   {
-    img: "/profile.jpeg",
+    img: "/rashad.jpg",
     name: "Rashad Bayram",
     title: "CIO",
     desc: "Rashad's experience spans accross various roles and industries, each time leaving a mark of enhanced performance and strategic innovation.",

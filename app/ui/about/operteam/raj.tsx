@@ -18,7 +18,7 @@ export function BlogSection14() {
 
       <div className="inline m-20 container  my-auto ">
         <Image
-          src="/raj.jpeg"
+          src="/raj.jpg"
           alt="blog"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={350}
