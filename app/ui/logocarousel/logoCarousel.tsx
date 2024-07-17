@@ -15,6 +15,7 @@ import Genesis from "@/public/partnerimages/genesis.jpeg"
 import KD from "@/public/partnerimages/kd.png"
 import PCHS from "@/public/partnerimages/pchs.png"
 import Mccollege from "@/public/partnerimages/mcgcollege.jpg"
+import TastyBites from "@/public/partnerimages/tastybites.png"
 
 import styles from "./LogoCarousel.module.css";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -28,6 +29,7 @@ export default function LogoCarousel() {
     { src: ACanadian1, alt: "A-Canadian1" },
     { src: KD, alt: "KD" },
     { src: Mccollege, alt: "McCollege"},
+    { src: TastyBites, alt: "TastyBites" },
     { src: PCHS, alt: "PCHS" },
     { src: Genesis, alt: "Genesis" },
     { src: FiveCloveMedia, alt: "FiveCloveMedia" },
