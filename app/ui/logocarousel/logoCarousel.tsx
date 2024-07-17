@@ -7,6 +7,14 @@ import Microsoft from "@/public/partnerimages/microsoft.jpg";
 import Vite from "@/public/partnerimages/vite.png";
 import Ownit from "@/public/partnerimages/ownit.jpeg";
 import Nirvana from "@/public/partnerimages/nirvana.png";
+import ACanadian from "@/public/partnerimages/a-canadian.png";
+import ACanadian1 from "@/public/partnerimages/a-aanadian1.png";
+import Police from "@/public/partnerimages/CPS-logo.svg";
+import FiveCloveMedia from "@/public/partnerimages/fiveclovemedia.jpg";
+import Genesis from "@/public/partnerimages/genesis.jpeg"
+import KD from "@/public/partnerimages/kd.png"
+import PCHS from "@/public/partnerimages/pchs.png"
+import Mccollege from "@/public/partnerimages/mcgcollege.jpg"
 
 import styles from "./LogoCarousel.module.css";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -16,6 +24,14 @@ export default function LogoCarousel() {
     { src: Alberta, alt: "Alberta Government" },
     { src: Canva, alt: "Canva" },
     { src: Google, alt: "Google" },
+    { src: ACanadian, alt: "A-Canadian" },
+    { src: ACanadian1, alt: "A-Canadian1" },
+    { src: KD, alt: "KD" },
+    { src: Mccollege, alt: "McCollege"},
+    { src: PCHS, alt: "PCHS" },
+    { src: Genesis, alt: "Genesis" },
+    { src: FiveCloveMedia, alt: "FiveCloveMedia" },
+    { src: Police, alt: "Police"},
     { src: Microsoft, alt: "Microsoft" },
     { src: Vite, alt: "Vite Consulting" },
     { src: Maverick, alt: "Maverick Foundation" }, 
@@ -40,9 +56,9 @@ export default function LogoCarousel() {
       <div className="relative flex overflow-x-hidden shadow-black-900/50">
         <ul className="flex pt-16 animate-marquee whitespace-nowrap items-center">
           {logos.map((logo, index) => (
-            <li key={index} className="text-4xl mx-4">
+            <li key={index} className="text-4xl mx-4 ">
               <div className={styles["logo-container"]}>
-                <Image src={logo.src} alt={logo.alt} width={150} height={150} />
+                <Image src={logo.src} alt={logo.alt}  />
               </div>
             </li>
           ))}
@@ -51,7 +67,7 @@ export default function LogoCarousel() {
           {logos.map((logo, index) => (
             <li key={index} className="text-4xl mx-4">
               <div className={styles["logo-container"]}>
-                <Image src={logo.src} alt={logo.alt} width={150} height={150} />
+                <Image src={logo.src} alt={logo.alt}  />
               </div>
             </li>
           ))}
