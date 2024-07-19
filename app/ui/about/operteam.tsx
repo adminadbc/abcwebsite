@@ -145,7 +145,7 @@ const members = [
     desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
 
     email: "mailto:pr@abcfoundationconnect.com",
-    url: "/main/about/operteam/raj",
+    url: "/main/about/team/operteam/raj",
   },
   {
     img: "/ritu.jpg",
@@ -154,7 +154,7 @@ const members = [
     desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",
 
     email: "mailto:marketing@abcfoundationconnect.com",
-    url: "/main/about/operteam/ritu",
+    url: "/main/about/team/operteam/ritu",
   },
   {
     img: "/ambreen.jpg",
@@ -164,7 +164,7 @@ const members = [
 
     email: "mailto:events@abcfoundationconnect.com",
     linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
-    url: "/main/about/operteam/ambreen",
+    url: "/main/about/team/operteam/ambreen",
   },
 ];
 

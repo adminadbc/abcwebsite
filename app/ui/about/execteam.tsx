@@ -158,7 +158,7 @@ const members = [
     desc: "Richa is a seasoned professional with diverse experience in operational and strategic management across continents. Excelling in leadership roles, she is known for effective communication, team leadership, and relationship building.",
     bio: "I am a seasoned professional with a diverse background in operational management, strategic business management, and project leadership across continents. Throughout my career, I have held management positions in various industries, including automobile, hospitality, education, and media, showcasing my versatility and expertise in different domains.My core strength lies in being a people person, with a proven track record of effective communication, team leadership, and relationship building. My experience includes serving with the Legislative Of Alberta, where I honed my skills in community engagement and strategic decision-making, particularly in serving the Calgary region.My contributions have been recognized through multiple awards, ranging from storytelling sessions to motivational speeches, where I have shared my wisdom, management strategies, and life lessons with a wide audience. My mass communication skills have allowed me to reach and inspire many individuals, making a positive impact on their personal and professional development.In 2019, I embarked on a journey to serve the Canadian community by launching the first-ever South Asian radio channel in British Columbia. This initiative demonstrated my innovative approach and commitment to diversity and inclusion in media representation.Throughout my career, I have excelled in community engagement, case work, and community outreach, showcasing an empathetic approach to working with people and addressing their needs. This aligns seamlessly with the core values and mission of the ABC Foundation, where my expertise and passion for empowering communities make me a valuable asset to any organization or initiative focused on positive social change.",
     email: "mailto:richa.sharma@abcfoundationconnect.com",
-    url: "/main/about/execteam/richa",
+    url: "/main/about/team/execteam/richa",
   },
   {
     img: "/rashad.jpg",
@@ -169,7 +169,7 @@ const members = [
     email: "mailto:rashad.bayram@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
-    url: "/main/about/execteam/rashad",
+    url: "/main/about/team/execteam/rashad",
   },
 ];
 
