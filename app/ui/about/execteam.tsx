@@ -149,7 +149,7 @@ const members = [
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
     email: "mailto:angeline.lal@abcfoundationconnect.com",
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
-    url: "/main/about/founder",
+    url: "/main/about/team/founder",
   },
   {
     img: "/richa.jpg",
