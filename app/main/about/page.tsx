@@ -1,20 +1,9 @@
-import React from "react";
-import NavBar from "../../ui/components/navbar";
-import { Footer4 } from "../../ui/components/footer";
-import { HeroSection } from "../../ui/about/hero";
-import { ExecTeam } from "../../ui/about/execteam";
-import { OperTeam } from "../../ui/about/operteam";
+import React from 'react'
 
-function AboutPage() {
+function page() {
   return (
-    <div>
-      <NavBar />
-      <HeroSection />
-      <ExecTeam />
-      <OperTeam />
-      <Footer4 />
-    </div>
-  );
+    <div>page</div>
+  )
 }
 
-export default AboutPage;
+export default page

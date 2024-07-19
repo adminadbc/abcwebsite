@@ -16,10 +16,10 @@ import SearchLayer from "./searchBox";
 const links = [
   { name: "Home", href: "/main" },
   {
-    name: "About Us",
-    href: "/main/about",
+
+    href: "/main/about/team/founder",
     submenu: true,
-    submenuItems: [{ name: "Founder", href: "/main/founder" }],
+    submenuItems: [{ name: "Founder", href: "/main/about/team/founder" }],
   },
   {
     name: "Resources",
@@ -30,7 +30,7 @@ const links = [
       { name: "Education", href: "/education" },
     ],
   },
-  
+
   { name: "Contact Us", href: "/main/contacts" },
 ];
 
@@ -120,11 +120,7 @@ export function NavBar() {
                 <h6>Home</h6>
               </Link>
             </li>
-            <li className="hover:text-abcf">
-              <Link href="/main/about">
-                <h6>About Us</h6>
-              </Link>
-            </li>
+            
             <Custom />
             <li className="hover:text-abcf -mt-2">
               <Link href="/main/contacts">

@@ -57,14 +57,20 @@ const Custom: React.FC = () => {
   return (
     <div className="sm:flex    md:block xl:flex sm:justify-left -mt-2 xl:mt-0 lg:mb-0 z-[99] gap-4 sm:items-left">
       <DropMenu
-        title="Resources"
+        title="About Us"
         items={store[0].submenuItems}
+        isOpen={openDropdown === 0}
+        toggleDropdown={() => toggleDropdown(0)}
+      />
+      <DropMenu
+        title="Resources"
+        items={store[1].submenuItems}
         isOpen={openDropdown === 1}
         toggleDropdown={() => toggleDropdown(1)}
       />
       <DropMenu
         title="Initiatives"
-        items={store[1].submenuItems}
+        items={store[2].submenuItems}
         isOpen={openDropdown === 2}
         toggleDropdown={() => toggleDropdown(2)}
       />
@@ -75,6 +81,15 @@ const Custom: React.FC = () => {
 export default Custom;
 
 const store = [
+  {
+    name: "About",
+    href: "/main/about",
+    submenu: true,
+    submenuItems: [
+      { name: "Team", href: "/main/about/team" },
+      { name: "Gallery", href: "/main/about/gallery" },
+    ],
+  },
   {
     name: "Resources",
     href: "/main/resources",

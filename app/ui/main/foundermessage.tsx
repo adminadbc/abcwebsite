@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
-import { Typography, Button } from "@material-tailwind/react";
+import React,{ useEffect } from "react";
+import {  Button } from "@material-tailwind/react";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 interface IconPropsType {
@@ -112,7 +111,7 @@ useEffect(() => {
               Advocacy for Better Communities Foundation
             </h5>
           </div>
-          <Link href="/main/about/founder" target="_blank" rel="noreferrer">
+          <Link href="/main/about/team/founder" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black" size="lg">
               Read more about our founder
             </Button>
