@@ -1,11 +1,16 @@
 import { FC } from "react";
+import Image from "next/image";
+
+interface ImageData {
+  src: string;
+  title: string;
+  description: string;
+  width: number;
+  height: number;
+}
 
 interface ImagesProps {
-  data: {
-    src: string;
-    title: string;
-    description: string;
-  }[];
+  data: ImageData[];
   onClick: (index: number) => void;
 }
 
@@ -13,7 +18,7 @@ const Images: FC<ImagesProps> = (props) => {
   const { data, onClick } = props;
 
   const handleClickImage = (index: number) => {
-    onClick(index);
+    onClick(index); // This function triggers the parent component to set the current index
   };
 
   return (
@@ -24,7 +29,12 @@ const Images: FC<ImagesProps> = (props) => {
           key={index}
           className="image"
         >
-          <img src={slide.src} alt={slide.description} />
+          <Image
+            src={slide.src}
+            alt={slide.description}
+            width={slide.width}
+            height={slide.height}
+          />
         </div>
       ))}
     </div>

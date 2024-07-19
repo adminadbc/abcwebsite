@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
@@ -14,16 +14,13 @@ import {
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Images from "./images";
-import './gallery.css';
+import "./gallery.css";
 
 function App() {
-  // const [open, setOpen] = useState<boolean>(false);
   const [index, setIndex] = useState<number>(-1);
 
   return (
     <>
-      {/* <button onClick={() => setOpen(true)}>Open Lightbox</button> */}
-
       <Images
         data={slides}
         onClick={(currentIndex) => setIndex(currentIndex)}
@@ -35,9 +32,6 @@ function App() {
           showToggle: true,
           descriptionTextAlign: "end",
         }}
-        // open={open}
-        // close={() => setOpen(false)}
-
         index={index}
         open={index >= 0}
         close={() => setIndex(-1)}

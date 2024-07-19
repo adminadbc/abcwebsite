@@ -9,7 +9,7 @@ function GalleryPage() {
     <div>
       <NavBar />
       <Hero />
-<ImagesPage />
+      <ImagesPage />
       <Footer />
     </div>
   );
