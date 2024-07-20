@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Image from "next/image";
 
 interface ImageData {
@@ -16,6 +16,7 @@ interface ImagesProps {
 
 const Images: FC<ImagesProps> = (props) => {
   const { data, onClick } = props;
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const handleClickImage = (index: number) => {
     onClick(index); // This function triggers the parent component to set the current index
@@ -24,19 +25,23 @@ const Images: FC<ImagesProps> = (props) => {
   return (
     <div className="images-container">
       {data.map((slide, index) => (
-        <button
-          onClick={() => handleClickImage(index)}
-          key={slide.src}
+        <div
           className="image"
-          title="button"
+          key={slide.src} // Using slide.src as the key
+          onClick={() => handleClickImage(index)}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
         >
-          <Image
-            src={slide.src}
-            alt={slide.description}
-            width={slide.width}
-            height={slide.height}
-          />
-        </button>
+          <div className="image-inner">
+            <Image
+              src={slide.src}
+              alt={slide.description}
+              width={slide.width}
+              height={slide.height}
+              className={hoveredIndex === index ? "zoomed" : ""}
+            />
+          </div>
+        </div>
       ))}
     </div>
   );
