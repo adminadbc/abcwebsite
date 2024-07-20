@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+
 import { useInView } from "react-intersection-observer";
 import { GiSpellBook } from "react-icons/gi";
 import { GoLaw } from "react-icons/go";

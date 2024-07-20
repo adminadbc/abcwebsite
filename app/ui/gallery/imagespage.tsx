@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
-import { slides } from "./data";
+import { slides } from "../../main/about/gallery/data";
 import "yet-another-react-lightbox/styles.css";
 import {
   Captions,
