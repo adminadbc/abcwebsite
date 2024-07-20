@@ -24,10 +24,11 @@ const Images: FC<ImagesProps> = (props) => {
   return (
     <div className="images-container">
       {data.map((slide, index) => (
-        <div
+        <button
           onClick={() => handleClickImage(index)}
-          key={index}
+          key={slide.src}
           className="image"
+          title="button"
         >
           <Image
             src={slide.src}
@@ -35,7 +36,7 @@ const Images: FC<ImagesProps> = (props) => {
             width={slide.width}
             height={slide.height}
           />
-        </div>
+        </button>
       ))}
     </div>
   );
