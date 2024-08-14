@@ -75,8 +75,8 @@ const options = [
     title: "Address",
     description: "Find us at the office",
     contact: {
-      name: "305, 1822 10 Ave SW, Calgary, Alberta T3C 0J8",
-      url: "https://maps.app.goo.gl/jGQnQqH9RCJPzZby6",
+      name: "#600, 1509 Centre Street, Calgary, Alberta T2G 2E6",
+      url: "https://maps.app.goo.gl/kNWoZka6B8oZS3pcA",
     },
   },
   {
