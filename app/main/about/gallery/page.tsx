@@ -1,8 +1,9 @@
 'use client'
 import React from 'react'
 import NavBar from "../../../ui/components/navbar";
-import ImagesPage from "../../../ui/gallery/imagespage";
+// import ImagesPage from "../../../ui/gallery/imagespage";
 import Hero from "../../../ui/gallery/hero";
+import GalleryWidget from "../../../ui/about/gallery";
 import Footer from "../../../ui/components/footer";
 import Header from "../../../ui/gallery/header";
 
@@ -12,7 +13,8 @@ function GalleryPage() {
       <NavBar />
       <Hero />
       <Header />
-      <ImagesPage />
+      {/* <ImagesPage /> */}
+      <GalleryWidget />
       <Footer />
     </div>
   );
