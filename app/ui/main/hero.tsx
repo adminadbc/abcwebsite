@@ -61,7 +61,7 @@ const controlsFirst = useAnimation();
           </Typography>
       </motion.div>
       <motion.div ref={refThird} initial={{ opacity: 0, x: -50 }} animate={controlsThird} exit={{ opacity: 0, y: 50 }}>
-      <Link href="/main/booking" target="_blank" rel="noreferrer">
+      <Link href="/booking" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black w-42 text-lg" size="lg">
               Book an appointment
             </Button>

@@ -70,10 +70,10 @@ const links = [
   },
   {
     name: "Resources",
-    href: "/main/resources",
+    href: "/resources",
     submenu: true,
     submenuItems: [
-      { name: "Education", href: "/main/resources/education" },
+      { name: "Education", href: "/resources/education" },
       { name: "Articles", href: "https://blog.abcfoundationconnect.com/" },
     ],
   },

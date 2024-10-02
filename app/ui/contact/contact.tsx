@@ -135,7 +135,7 @@ export function ContactSection1() {
           className="bg-abcf w-42 text-black text-lg"
           size="lg"
           onClick={() => {
-            window.location.href = "/main/booking";
+            window.location.href = "/booking";
           }}
         >
           Book an Appointment

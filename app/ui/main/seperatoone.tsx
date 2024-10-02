@@ -45,7 +45,7 @@ useEffect(() => {
         towards the solutions you deserve
       </h3>
 
-      <Link href="/main/booking" target="_blank" rel="noreferrer">
+      <Link href="/booking" target="_blank" rel="noreferrer">
         <Button className="bg-abcf text-black w-42 text-lg" size="lg">
           Book an appointment
         </Button>
