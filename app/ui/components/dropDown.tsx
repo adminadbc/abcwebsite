@@ -83,11 +83,11 @@ export default Custom;
 const store = [
   {
     name: "About",
-    href: "/main/about",
+    href: "/about",
     submenu: true,
     submenuItems: [
-      { name: "Team", href: "/main/about/team" },
-      { name: "Gallery", href: "/main/about/gallery" },
+      { name: "Team", href: "/about/team" },
+      { name: "Gallery", href: "/about/gallery" },
     ],
   },
   {
