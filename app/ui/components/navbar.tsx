@@ -31,7 +31,7 @@ const links = [
     ],
   },
 
-  { name: "Contact Us", href: "/main/contacts" },
+  { name: "Contact Us", href: "/contacts" },
 ];
 
 export function NavBar() {
