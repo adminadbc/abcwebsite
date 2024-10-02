@@ -11,26 +11,30 @@ const links = [
     title: "Pages",
     items: [
       { name: "Home", url: "/" },
-      { name: "About Us", url: "/main/about" },
-      { name: "Contact Us", url: "/main/contacts" },
+      { name: "About Us", url: "/about" },
+      { name: "Contact Us", url: "/contacts" },
     ],
   },
   {
     title: "Legal",
     items: [
-      { name: "Terms", url: "/main/terms" },
-      { name: "Privacy", url: "/main/policy" },
+      { name: "Terms", url: "/terms" },
+      { name: "Privacy", url: "/policy" },
     ],
   },
 
   {
-    title: "Product",
+    title: "Projects",
     items: [
-      { name: "Changemakers", url: "/main/initiatives/changemakers" },
+      { name: "Engage", url: "/education/changemakers" },
+      { name: "Safe Spaces", url: "/education/changemakers" },
+      { name: "Changemakers", url: "/education/changemakers" },
+      { name: "United Journeys", url: "/education/changemakers" },
       {
-        name: "The Law Spot",
-        url: "/main/initiatives/legal-connect",
+        name: "Legal Awareness Program",
+        url: "/education/legal-awareness-program",
       },
+      { name: "Legal Advocacy and Support", url: "/education/changemakers" },
     ],
   },
 ];
