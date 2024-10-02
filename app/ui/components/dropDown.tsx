@@ -101,14 +101,14 @@ const store = [
   },
   {
     name: "Initiatives",
-    href: "/initiatives",
+    href: "/education",
     submenu: true,
     submenuItems: [
       {
-        name: "The Law Spot",
-        href: "/initiatives/legal-connect",
+        name: "Legal Awareness Program",
+        href: "/education/legal-awareness-program",
       },
-      { name: "Changemakers", href: "/initiatives/changemakers" },
+      { name: "Changemakers", href: "/education/changemakers" },
     ],
   },
 ];
