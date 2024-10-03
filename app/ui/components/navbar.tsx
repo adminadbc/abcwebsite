@@ -69,11 +69,14 @@ const links = [
     ],
   },
   {
-    name: "Resources",
-    href: "/resources",
+    name: "Advocacy",
+    href: "/advocacy",
     submenu: true,
     submenuItems: [
-      { name: "Education", href: "/resources/education" },
+      { name: "Engage", href: "/advocacy/engage" },
+      { name: "Safe Spaces", href: "/advocacy/safe-spaces" },
+      { name: "United Journeys", href: "/advocacy/united-journeys" },
+      { name: "Legal Advocacy and Support", href: "/advocacy/legal-advocacy-and-support" },
       { name: "Articles", href: "https://blog.abcfoundationconnect.com/" },
     ],
   },
