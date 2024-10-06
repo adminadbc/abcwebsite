@@ -1,0 +1,1 @@
+// The widget of the gallery will be added here

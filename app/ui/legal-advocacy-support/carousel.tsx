@@ -17,20 +17,15 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image"
 
 const carouselItems = [
-  { image: "/engage/engage.png", text: "Engage Alberta" },
-  { image: "/engage/1.jpg", text: "Inclusivity" },
-  { image: "/engage/2.jpg", text: "Community and Individual Empowerment" },
-  { image: "/engage/3.jpg", text: "Community Collaboration" },
-  { image: "/engage/4.jpg", text: "Cultural Sensitivity" },
-  { image: "/engage/5.jpg", text: "Awareness and Education" },
-  { image: "/engage/6.jpg", text: "Advocacy and Support" },
-  { image: "/engage/7.jpg", text: "Accessibility" },
-  { image: "/engage/8.jpg", text: "Sustainability" },
-  { image: "/engage/9.jpg", text: "Evaluation and Impact" },
-  { image: "/engage/10.jpg", text: "Community Engagement" },
+  { image: "/legal-advocacy-support/las.png", text: "Legal Advocacy & Support" },
+  { image: "/legal-advocacy-support/1.jpg", text: "Ensure Access to Legal Resources." },
+  { image: "/legal-advocacy-support/2.jpg", text: "Promote Legal Rights Awareness" },
+  { image: "/legal-advocacy-support/3.jpg", text: "Offer Advocacy and Representation" },
+  { image: "/legal-advocacy-support/4.jpg", text: "Foster Inclusive Legal Support" },
+  { image: "/legal-advocacy-support/5.jpg", text: "Strengthen Community Connections" },
 ]
 
-export default function Engage() {
+export default function LegalAdvocacySupport() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [carouselApi, setCarouselApi] = useState<CarouselApi>()
   const [refFirst, inViewFirst] = useInView();
@@ -50,7 +45,7 @@ export default function Engage() {
     <section className="mx-auto container max-w-5xl px-8 py-10">
     <div className="text-center my-5 sm:my-30">
       {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
-      <h3 className="text-4xl">Embracing Diversity, Celebrating and Unity </h3>
+      <h3 className="text-4xl">Legal Assistance and Comprehensive Advocacy Services</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -58,10 +53,10 @@ export default function Engage() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <h4>Engage is an initiative dedicated to supporting and uplifting some of the most vulnerable populations in Alberta. The program aims to create a more inclusive and compassionate community by addressing the needs of seniors, children, individuals affected by domestic violence, LGBTQIA+ communities, Indigenous and First Nations people, and those in protected and drug rehabilitation programs.</h4>
+        <h4>The Legal Advocacy and Support Initiative is designed to provide comprehensive legal assistance and advocacy services to Canadian communities. This initiative aims to support individuals and groups in navigating legal challenges, providing access to justice, and fostering an environment where legal rights are protected and upheld. The program operates with an open-door policy, welcoming individuals from all backgrounds to access legal resources and support.</h4>
       {/* </motion.div>    */}
     </div>
-    <h2 className="text-center text-4xl my-10">Engage's Mission</h2>
+    <h2 className="text-center text-4xl my-10">Legal Advocacy & Support's Mission</h2>
 
     <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
       <div className="w-full h-2/4 lg:w-1/2 aspect-square bg-gray-100 rounded-lg overflow-hidden my-5">
