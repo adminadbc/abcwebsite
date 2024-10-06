@@ -1,19 +1,23 @@
+'use client'
+
 import React from "react";
 
 import NavBar from "@/app/ui/components/navbar";
-import { HeroSection } from "@/app/ui/education/hero";
-import { ContentSection7 } from "@/app/ui/education/body";
+import { HeroSection } from "@/app/ui/united-journeys/hero";
+import  UnitedJourneys  from "@/app/ui/united-journeys/carousel";
+import GalleryWidget from "@/app/ui/about/gallery";
 import { Footer4 } from "@/app/ui/components/footer";
 
-function page() {
+function LegalConnectPage() {
   return (
     <div>
       <NavBar />
       <HeroSection />
-      <ContentSection7 />
+      <UnitedJourneys />
+      <GalleryWidget/>
       <Footer4 />
     </div>
   );
 }
 
-export default page;
+export default LegalConnectPage;
