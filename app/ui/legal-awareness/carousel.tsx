@@ -17,16 +17,16 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image"
 
 const carouselItems = [
-  { image: "/changemakers/logo.webp", text: "The Changemakers" },
-  { image: "/changemakers/1.jpg", text: "Advance Public Policy Understanding" },
-  { image: "/changemakers/2.jpg", text: "Promote Constructive Dialogue" },
-  { image: "/changemakers/3.jpg", text: "Encourage Evidence-Based Decision-Making" },
-  { image: "/changemakers/4.jpg", text: "Foster Civic Participation" },
-  { image: "/changemakers/5.jpg", text: "Influence Policy Reform" },
-  { image: "/changemakers/6.jpg", text: "Build Collaborative Networks" },
+  { image: "/lap/lap.png", text: "Legal Awareness Program" },
+  { image: "/lap/1.jpg", text: "Public Education on Legal Issues" },
+  { image: "/lap/2.jpg", text: "Individual Empowerment through Advocacy " },
+  { image: "/lap/3.jpg", text: "Access to Justice" },
+  { image: "/lap/4.jpg", text: "Legal Issue Prevention" },
+  { image: "/lap/5.jpg", text: "Community Engagement" },
+  { image: "/lap/6.jpg", text: "Resource Availability" },
 ]
 
-export default function Component() {
+export default function LegalAwarenessProgram() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [carouselApi, setCarouselApi] = useState<CarouselApi>()
   const [refFirst, inViewFirst] = useInView();
@@ -46,7 +46,7 @@ export default function Component() {
     <section className="mx-auto container max-w-5xl px-8 py-10">
     <div className="text-center my-5 sm:my-30">
       {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
-      <h3 className="text-4xl">Public Policy and Reform Dialogues</h3>
+      <h3 className="text-4xl">Legal Awareness & Education Programs</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -54,10 +54,11 @@ export default function Component() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <h4>The Changemakers initiative aims to foster critical discussions and debates on key public policy issues and potential reforms. This program brings together policymakers, experts, community leaders, and the public to explore, debate, and develop actionable solutions to pressing social and political challenges.</h4>
+        <h4>Legal Awareness Programs are educational initiatives designed to inform individuals about their legal rights and responsibilities. These programs aim to empower people by providing them with the knowledge they need to navigate the legal system effectively, understand the laws that affect their daily lives, and seek justice when necessary.
+        </h4>
       {/* </motion.div>    */}
     </div>
-    <h2 className="text-center text-4xl my-10">Changemakers Mission</h2>
+    <h2 className="text-center text-4xl my-10">Legal Awareness Program's Mission</h2>
 
     <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
       <div className="w-full h-2/4 lg:w-1/2 aspect-square bg-gray-100 rounded-lg overflow-hidden my-5">

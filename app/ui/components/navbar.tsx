@@ -81,7 +81,7 @@ const links = [
     ],
   },
   {
-    name: "Initiatives",
+    name: "Education",
     href: "/education",
     submenu: true,
     submenuItems: [
