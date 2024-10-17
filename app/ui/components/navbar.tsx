@@ -10,6 +10,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import SearchLayer from "./searchBox";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 interface DropMenuProps {
   title: string;
@@ -65,7 +67,7 @@ const links = [
     submenu: true,
     submenuItems: [
       { name: "Team", href: "/about/team" },
-      { name: "Gallery", href: "/about/gallery" },
+      { name: "Articles", href: "https://blog.abcfoundationconnect.com/" },
     ],
   },
   {
@@ -77,7 +79,6 @@ const links = [
       { name: "Safe Spaces", href: "/advocacy/safe-spaces" },
       { name: "United Journeys", href: "/advocacy/united-journeys" },
       { name: "Legal Advocacy and Support", href: "/advocacy/legal-advocacy-and-support" },
-      { name: "Articles", href: "https://blog.abcfoundationconnect.com/" },
     ],
   },
   {
@@ -112,6 +113,10 @@ export function NavBar() {
       () => window.innerWidth >= 1060 && setOpen(false)
     );
   }, []);
+
+  const handleMenuItemClick = () => {
+    setOpen(false);
+  };
 
   return (
     <Navbar
@@ -189,9 +194,35 @@ export function NavBar() {
           <ul className="flex flex-col gap-4 text-gray-900 text-lg">
             {links.map((link, idx) => (
               <li key={idx} className="hover:text-abcf">
-                <Link href={link.href}>
-                  <h6>{link.name}</h6>
-                </Link>
+                {link.submenu ? (
+                  <>
+                    <div
+                      className="flex items-center justify-between"
+                      onClick={() => toggleDropdown(idx)}
+                    >
+                      <h6>{link.name}</h6>
+                      <FontAwesomeIcon
+                        icon={openDropdown === idx ? faChevronUp : faChevronDown}
+                        className="ml-2"
+                      />
+                    </div>
+                    {openDropdown === idx && (
+                      <ul className="mt-2 ml-4">
+                        {link.submenuItems.map((subItem, subIdx) => (
+                          <li key={subIdx} className="mt-2">
+                            <Link href={subItem.href} onClick={handleMenuItemClick}>
+                              <h6>{subItem.name}</h6>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ) : (
+                  <Link href={link.href} onClick={handleMenuItemClick}>
+                    <h6>{link.name}</h6>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
