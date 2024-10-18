@@ -6,7 +6,7 @@ import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/changemaker/hero";
 import  CarouselComponent  from "@/app/ui/changemaker/carousel";
 // import { ContentSection11 } from "@/app/ui/changemaker/body";
-import GalleryWidget from "@/app/ui/about/gallery";
+import ChangemakersGallery from "@/app/ui/changemaker/changemakersgallery";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function page() {
@@ -16,7 +16,7 @@ function page() {
       <HeroSection />
       {/* <ContentSection11 /> */}
       <CarouselComponent/>
-      <GalleryWidget/>
+      <ChangemakersGallery/>
       <Footer4 />
     </div>
   );
