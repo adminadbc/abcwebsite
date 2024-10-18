@@ -37,11 +37,11 @@ function CategoriesCard({ icon, title }: CategoriesCardPropsType) {
     <div className="group">
       <Card
         shadow={false}
-        className="border !rounded-lg border-gray-300 transition-all duration-500 ease-in-out group-hover:!border-abcf"
+        className="border !rounded-lg border-gray-300 transition-all duration-500 ease-in-out group-hover:!border-abcf h-full"
       >
-        <CardBody className="grid place-items-center text-center">
+        <CardBody className="grid place-items-center text-center p-6">
           {icon}
-          <Typography color="blue-gray" className="!font-semibold mt-4">
+          <Typography color="blue-gray" className="!font-semibold mt-4 line-clamp-2">
             {title}
           </Typography>
         </CardBody>
