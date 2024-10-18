@@ -75,10 +75,11 @@ const links = [
     href: "/advocacy",
     submenu: true,
     submenuItems: [
+      { name: "LAS", href: "/advocacy/legal-advocacy-and-support" },
       { name: "Engage", href: "/advocacy/engage" },
       { name: "Safe Spaces", href: "/advocacy/safe-spaces" },
       { name: "United Journeys", href: "/advocacy/united-journeys" },
-      { name: "Legal Advocacy and Support", href: "/advocacy/legal-advocacy-and-support" },
+      
     ],
   },
   {
@@ -87,7 +88,7 @@ const links = [
     submenu: true,
     submenuItems: [
       {
-        name: "Legal Awareness Program",
+        name: "LAP",
         href: "/education/legal-awareness-program",
       },
       { name: "Changemakers", href: "/education/changemakers" },
