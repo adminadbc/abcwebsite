@@ -5,7 +5,7 @@ import React from "react";
 import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/united-journeys/hero";
 import  UnitedJourneys  from "@/app/ui/united-journeys/carousel";
-import GalleryWidget from "@/app/ui/about/gallery";
+import UnitedGallery from "@/app/ui/united-journeys/unitedgallery";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function LegalConnectPage() {
@@ -14,7 +14,7 @@ function LegalConnectPage() {
       <NavBar />
       <HeroSection />
       <UnitedJourneys />
-      <GalleryWidget/>
+      <UnitedGallery/>
       <Footer4 />
     </div>
   );

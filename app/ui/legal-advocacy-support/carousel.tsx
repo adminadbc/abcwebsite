@@ -14,6 +14,7 @@ import { useState, useEffect } from "react"
 import { motion, useAnimation } from "framer-motion";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
+import LegalAdvocacySupportMission from "@/app/ui/legal-advocacy-support/legal-advocacy-support"
 import Image from "next/image"
 
 const carouselItems = [
@@ -58,7 +59,9 @@ export default function LegalAdvocacySupport() {
     </div>
     <h2 className="text-center text-4xl my-10">Legal Advocacy & Support's Mission</h2>
 
-    <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
+    <LegalAdvocacySupportMission/>
+
+    {/* <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
       <div className="w-full h-2/4 lg:w-1/2 aspect-square bg-gray-100 rounded-lg overflow-hidden my-5">
         <Image
           src={carouselItems[currentIndex].image}
@@ -92,7 +95,7 @@ export default function LegalAdvocacySupport() {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </div> */}
     <div className="text-center ">
       {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
       <h3 className="text-4xl my-10">Events Snapshot</h3>
