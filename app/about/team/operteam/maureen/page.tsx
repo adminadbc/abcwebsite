@@ -3,17 +3,17 @@ import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/about/hero";
 import { Footer4 } from "@/app/ui/components/footer";
 
-import { BlogSection14 } from "@/app/ui/about/operteam/ambreen";
+import { MaurenBio } from "@/app/ui/about/operteam/maureen";
 
-function FounderPage() {
+function MaurenPage() {
   return (
     <div>
       <NavBar />
       <HeroSection />
-      <BlogSection14 />
+      <MaurenBio />
       <Footer4 />
     </div>
   );
 }
 
-export default FounderPage;
+export default MaurenPage;
