@@ -7,7 +7,7 @@ import { TbTopologyStarRing3 } from "react-icons/tb";
 export function MaurenBio() {
   return (
     <section className="flex flex-col items-center lg:py-28 py-10 px-8">
-      <h1 className="text-4xl lg:text-5xl mb-5">Mauren&apos;s Biography</h1>
+      <h1 className="text-4xl lg:text-5xl mb-5">Maureen&apos;s Biography</h1>
       <div className="relative flex py-5 w-1/2 mb-5 mx-auto items-center">
         <div className="flex-grow border-t-4 border-abcf w-96"></div>
         <p className="mx-5  text-center">
@@ -18,7 +18,7 @@ export function MaurenBio() {
 
       <div className="inline m-20 container  my-auto ">
         <Image
-          src="/maureen.png"
+          src="/maureen.jpg"
           alt="marketing manager image"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={350}

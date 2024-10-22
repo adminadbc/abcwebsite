@@ -167,7 +167,7 @@ const members = [
     url: "/about/team/operteam/ambreen",
   },
   {
-    img: "/maureen.png",
+    img: "/maureen.jpg",
     name: "Maureen Wit",
     title: "Projects and Program Development Manager",
     desc: "Maureen has built a career in Human Services, specializing in supporting children and families with complex needs using a trauma-informed approach. She now teaches in post-secondary institutions, sharing her expertise and guiding students. Her work has earned her several awards, recognizing her contributions to the field.",
