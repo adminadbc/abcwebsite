@@ -149,7 +149,7 @@ const members = [
     desc: "Angeline Lal, Founder of ABC Foundation, advocates for social justice and community empowerment. With diverse experience, she spearheads initiatives and empowers individuals through education, aiming for a more equitable society.",
     email: "mailto:angeline.lal@abcfoundationconnect.com",
     linkedin: "https://www.linkedin.com/in/angeline-lal-3411197b/",
-    url: "/main/about/team/founder",
+    url: "/about/team/founder",
   },
   {
     img: "/richa.jpg",
@@ -169,7 +169,7 @@ const members = [
     email: "mailto:rashad.bayram@abcfoundationconnect.com",
     twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
-    url: "/main/about/team/execteam/rashad",
+    url: "/about/team/execteam/rashad",
   },
 ];
 
