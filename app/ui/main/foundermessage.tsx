@@ -111,7 +111,7 @@ useEffect(() => {
               Advocacy for Better Communities Foundation
             </h5>
           </div>
-          <Link href="/main/about/team/founder" target="_blank" rel="noreferrer">
+          <Link href="/about/team/founder" target="_blank" rel="noreferrer">
             <Button className="bg-abcf text-black" size="lg">
               Read more about our founder
             </Button>
