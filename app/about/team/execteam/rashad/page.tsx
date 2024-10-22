@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "../../../../../ui/components/navbar";
-import { HeroSection } from "../../../../../ui/about/hero";
-import { Footer4 } from "../../../../../ui/components/footer";
+import NavBar from "@/app//ui/components/navbar";
+import { HeroSection } from "@/app//ui/about/hero";
+import { Footer4 } from "@/app//ui/components/footer";
 
-import { BlogSection14 } from "../../../../../ui/about/execteam/rashad";
+import { BlogSection14 } from "@/app//ui/about/execteam/rashad";
 
 function FounderPage() {
   return (
