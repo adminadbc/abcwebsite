@@ -148,13 +148,22 @@ const members = [
     url: "/about/team/operteam/raj",
   },
   {
-    img: "/ritu.jpg",
-    name: "Ritu Ghai",
-    title: "Media and Marketing Manager",
-    desc: "With over two decades in media, Ritu navigates digital, print, radio, and TV, amplifying unheard voices and championing inclusive representation. She believes in storytelling's power to create impactful global content.",
+    img: "/bilal.jpg",
+    name: "Bilal Iskander",
+    title: "Lorem Ipsum Lorem",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
 
     email: "mailto:marketing@abcfoundationconnect.com",
-    url: "/about/team/operteam/ritu",
+    url: "/about/team/operteam/bilal",
+  },
+  {
+    img: "/ariba.jpg",
+    name: "Ariba Azar",
+    title: "Lorem Ipsum Lorem",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+
+    email: "mailto:marketing@abcfoundationconnect.com",
+    url: "/about/team/operteam/ariba",
   },
   {
     img: "/ambreen.jpg",

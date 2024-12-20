@@ -3,14 +3,14 @@ import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/about/hero";
 import { Footer4 } from "@/app/ui/components/footer";
 
-import { BlogSection14 } from "@/app/ui/about/operteam/ritu";
+import { Ariba } from "@/app/ui/about/operteam/ariba";
 
 function FounderPage() {
   return (
     <div>
       <NavBar />
       <HeroSection />
-      <BlogSection14 />
+      <Ariba />
       <Footer4 />
     </div>
   );
