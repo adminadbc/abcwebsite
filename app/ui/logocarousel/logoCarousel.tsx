@@ -36,7 +36,6 @@ export default function LogoCarousel() {
     { src: Police, alt: "Police"},
     { src: Microsoft, alt: "Microsoft" },
     { src: Vite, alt: "Vite Consulting" },
-    { src: Maverick, alt: "Maverick Foundation" }, 
     { src: Ownit, alt: "Ownit Student Chapter" },
     { src: Nirvana, alt: "Nirvana Academy of Violin" },
   ];
