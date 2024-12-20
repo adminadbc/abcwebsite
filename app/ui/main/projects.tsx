@@ -49,7 +49,7 @@ export function ProjectSection() {
                 width={350}
                 height={300}
                 alt="the law spot logo"
-                className="pb-2 drop-shadow-2xl w-auto h-auto object-contain"
+                className="pb-2 drop-shadow-2xl h-auto"
               />
               <div className="flex flex-col space-y-3 mt-3">
                 <span>Mobile App</span>
