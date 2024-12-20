@@ -34,27 +34,27 @@ const DropMenu: React.FC<
       >
         <h6 className="mr-3">{title}</h6>
       </div>
-      <div
-        className={`absolute md:mt-10 w-[200px] rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 ${
-          isOpen ? "" : "hidden"
-        }`}
-        role="menu"
-        aria-orientation="vertical"
-        aria-labelledby="options-menu"
-      >
-        <div className="py-1" role="none">
-          {items.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              className="block px-4 py-2 text-base hover:text-abcf"
-              role="menuitem"
-            >
-              <h6>{item.name}</h6>
-            </a>
-          ))}
+      {isOpen && (
+        <div
+          className="absolute md:mt-10 w-[200px] rounded-md shadow-lg mt-10 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="options-menu"
+        >
+          <div className="py-1" role="none">
+            {items.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="block px-4 py-2 text-base hover:text-abcf"
+                role="menuitem"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
@@ -126,12 +126,12 @@ export function NavBar() {
       color="transparent"
       className="absolute md:pl-0 lg:pl-0 z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
     >
-      <div className="container w-full mx-auto  flex items-center justify-start h-18">
-        <Link href="/main">
+      <div className="container w-full mx-auto flex items-center justify-start h-18">
+        <Link href="/main" className="flex items-center">
           <Image
             src="/newlogo.png"
             width={300}
-            height={100 / 3.78} // Calculated height based on the aspect ratio
+            height={100 / 3.78}
             alt="ABC Foundation Logo"
             className="w-40 lg:w-56"
           />
@@ -169,6 +169,7 @@ export function NavBar() {
             href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
             target="_blank"
             rel="noreferrer"
+            className="inline-block"
           >
             <Button className="bg-abcf text-black" size="lg">
               Donate
@@ -228,21 +229,23 @@ export function NavBar() {
             ))}
           </ul>
           {/* <SearchLayer /> */}
-          <Link href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144">
+          <Link 
+            href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
+            className="inline-block"
+          >
             <Button className="bg-abcf mt-5 text-black" size="lg">
               Donate
             </Button>
           </Link>
-          <div className="flex gap-4 mt-6 ">
-            <a
+          <div className="flex gap-4 mt-6">
+            <Link
               href="https://www.facebook.com/ABCFoundationConnect/"
-              title="social"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="hover:text-abcf"
             >
               <FaSquareFacebook size={30} />
-            </a>
+            </Link>
             <a
               href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
               title="social"
