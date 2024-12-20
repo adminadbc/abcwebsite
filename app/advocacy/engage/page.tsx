@@ -4,8 +4,7 @@ import React from "react";
 
 import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/engage/hero";
-import  Engage  from "@/app/ui/engage/carousel";
-import EngageGallery from "@/app/ui/engage/engagegallery"
+import Engage from "@/app/ui/engage/carousel";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function LegalConnectPage() {
@@ -14,7 +13,6 @@ function LegalConnectPage() {
       <NavBar />
       <HeroSection />
       <Engage />
-      <EngageGallery/>
       <Footer4 />
     </div>
   );

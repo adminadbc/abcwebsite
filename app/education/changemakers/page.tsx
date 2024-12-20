@@ -4,9 +4,7 @@ import React from "react";
 
 import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/changemaker/hero";
-import  CarouselComponent  from "@/app/ui/changemaker/carousel";
-// import { ContentSection11 } from "@/app/ui/changemaker/body";
-import ChangemakersGallery from "@/app/ui/changemaker/changemakersgallery";
+import CarouselComponent from "@/app/ui/changemaker/carousel";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function page() {
@@ -14,9 +12,7 @@ function page() {
     <div>
       <NavBar />
       <HeroSection />
-      {/* <ContentSection11 /> */}
-      <CarouselComponent/>
-      <ChangemakersGallery/>
+      <CarouselComponent />
       <Footer4 />
     </div>
   );

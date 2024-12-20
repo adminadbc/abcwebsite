@@ -4,8 +4,7 @@ import React from "react";
 
 import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/safespaces/hero";
-import  SafeSpaces  from "@/app/ui/safespaces/carousel";
-import SafeSpacesGallery from "@/app/ui/safespaces/safespacesgallery"
+import SafeSpaces from "@/app/ui/safespaces/carousel";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function LegalConnectPage() {
@@ -14,7 +13,6 @@ function LegalConnectPage() {
       <NavBar />
       <HeroSection />
       <SafeSpaces />
-      <SafeSpacesGallery/>
       <Footer4 />
     </div>
   );

@@ -4,8 +4,7 @@ import React from "react";
 
 import NavBar from "@/app/ui/components/navbar";
 import { HeroSection } from "@/app/ui/legal-advocacy-support/hero";
-import  LegalAdvocacySupport  from "@/app/ui/legal-advocacy-support/carousel";
-import LegalAdvocacySupportGallery from "@/app/ui/legal-advocacy-support/legal-advocacygallery";
+import LegalAdvocacySupport from "@/app/ui/legal-advocacy-support/carousel";
 import { Footer4 } from "@/app/ui/components/footer";
 
 function LegalConnectPage() {
@@ -14,7 +13,6 @@ function LegalConnectPage() {
       <NavBar />
       <HeroSection />
       <LegalAdvocacySupport />
-      <LegalAdvocacySupportGallery/>
       <Footer4 />
     </div>
   );
