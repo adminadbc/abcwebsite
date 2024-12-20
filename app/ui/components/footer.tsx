@@ -47,7 +47,7 @@ export function Footer4() {
               width={250}
               height={80}
               alt="ABC Foundation Logo"
-              className="h-auto"
+              className="w-auto h-auto object-contain"
             />
             <div className="flex gap-4 mt-6 text-white">
               <a

@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -46,10 +46,10 @@ const DropMenu: React.FC<
               <Link
                 key={index}
                 href={item.href}
-                className="block px-4 py-2 text-base hover:text-abcf"
+                className="block px-4 py-2 text-xl hover:text-abcf"
                 role="menuitem"
               >
-                {item.name}
+                <h6 className="hidden md:block">{item.name}</h6>
               </Link>
             ))}
           </div>
@@ -108,6 +108,21 @@ export function NavBar() {
 
   const pathname = usePathname();
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -124,7 +139,11 @@ export function NavBar() {
       fullWidth
       shadow={false}
       color="transparent"
-      className="absolute md:pl-0 lg:pl-0 z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden"
+      className={`absolute md:pl-0 lg:pl-0 z-50 border-0 bg-white text-black w-screen overflow-x-hidden-hidden transition-all duration-300 ${
+        visible 
+          ? 'fixed top-0 transform translate-y-0' 
+          : 'transform -translate-y-full'
+      }`}
     >
       <div className="container w-full mx-auto flex items-center justify-start h-18">
         <Link href="/main" className="flex items-center">
@@ -133,7 +152,7 @@ export function NavBar() {
             width={300}
             height={100}
             alt="ABC Foundation Logo"
-            className="w-40 lg:w-56 h-auto"
+            className="w-40 lg:w-56 h-auto object-contain"
           />
         </Link>
 

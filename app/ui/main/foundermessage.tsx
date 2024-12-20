@@ -59,9 +59,9 @@ useEffect(() => {
               <Image
           src={`/angielal2.jpg`}
           alt="founder image"
-          className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto lg:mb-48 rounded-lg shadow-xl"
           width={500}
           height={900}
+          className="lg:min-w-[500px] -mt-4 sm:mt-15 lg:mt-0 md:mx-auto lg:mb-48 rounded-lg shadow-xl w-auto h-auto object-contain"
         />
       </motion.div>
       <motion.div ref={refSecond} initial={{ opacity: 0, x: 50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
@@ -100,9 +100,10 @@ useEffect(() => {
           <div className="flex flex-col mb-10 mt-1">
             <Image
               src="/signature.jpeg"
-              alt="founder's signature"
+              alt="signature"
               width={200}
               height={100}
+              className="w-auto h-auto object-contain"
             />
             <h4 className="text-xl mb-3">Angeline Lal</h4>
             <div className="flex-grow border-t-4 border-abcf w-2/12  mb-10"></div>
