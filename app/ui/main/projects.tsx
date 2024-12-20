@@ -55,6 +55,8 @@ export function ProjectSection() {
               <span>Mobile App</span>
               <Link
                 href="https://thelawspot.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mx-auto  my-4 px-4 py-2 rounded-lg"
               >
                 <Button className="bg-abcf text-black" size="lg">
