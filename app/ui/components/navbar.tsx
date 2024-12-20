@@ -131,9 +131,9 @@ export function NavBar() {
           <Image
             src="/newlogo.png"
             width={300}
-            height={100 / 3.78}
+            height={100}
             alt="ABC Foundation Logo"
-            className="w-40 lg:w-56"
+            className="w-40 lg:w-56 h-auto"
           />
         </Link>
 

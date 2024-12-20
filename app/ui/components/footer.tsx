@@ -2,7 +2,6 @@
 
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-
 import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 
@@ -22,7 +21,6 @@ const links = [
       { name: "Privacy", url: "/policy" },
     ],
   },
-
   {
     title: "Projects",
     items: [
@@ -30,10 +28,7 @@ const links = [
       { name: "Safe Spaces", url: "/education/changemakers" },
       { name: "Changemakers", url: "/education/changemakers" },
       { name: "United Journeys", url: "/education/changemakers" },
-      {
-        name: "Legal Awareness Program",
-        url: "/education/legal-awareness-program",
-      },
+      { name: "Legal Awareness Program", url: "/education/legal-awareness-program" },
       { name: "Legal Advocacy and Support", url: "/education/changemakers" },
     ],
   },
@@ -45,60 +40,55 @@ export function Footer4() {
   return (
     <footer className="px-8 py-28 bg-brand2">
       <div className="container mx-auto">
-        <div className="flex justify-between gap-4 md:grid-cols-2 lg:px-2">
-          <div className="mb-8 md:mb-0">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
+          <div className="mb-8 lg:mb-0">
             <Image
               src="/newlogowhite.png"
               width={250}
               height={80}
               alt="ABC Foundation Logo"
+              className="h-auto"
             />
-
-            <div className="flex gap-4 mt-6 text-white ">
+            <div className="flex gap-4 mt-6 text-white">
               <a
                 href="https://www.facebook.com/ABCFoundationConnect/"
-                title="social"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="hover:text-abcf"
               >
                 <FaSquareFacebook size={30} />
               </a>
               <a
                 href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
-                title="social"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="hover:text-abcf"
               >
                 <FaLinkedin size={30} />
               </a>
               <a
                 href="https://www.instagram.com/the.abcfoundation/"
-                title="social"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="hover:text-abcf"
               >
                 <FaInstagramSquare size={30} />
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between gap-6 lg:grid-cols-3 text-white">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
             {links.map(({ title, items }) => (
               <ul key={title}>
-                <Typography
-                  variant="h6"
-                  className="mb-2 mr-2 font-bold text-2xl"
-                >
+                <Typography variant="h6" className="mb-4 font-bold text-2xl">
                   {title}
                 </Typography>
                 {items.map((link) => (
-                  <li key={link.name}>
+                  <li key={link.name} className="mb-2">
                     <Typography
                       as="a"
                       href={link.url}
-                      className="py-1 font-medium text-white transition-colors hover:text-abcf"
+                      className="font-medium text-white transition-colors hover:text-abcf"
                     >
                       {link.name}
                     </Typography>
@@ -108,16 +98,19 @@ export function Footer4() {
             ))}
           </div>
         </div>
-        <hr className="w-12/12 mx-auto text-white h-px border-0 bg-abcf my-10" />
-        <div className=" flex flex-wrap justify-between sm:mx-0 text-white">
-          <Typography variant="small" className="font-normal">
-            2024. All rights reserved.
+
+        <hr className="my-10 border-abcf" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center text-white gap-4">
+          <Typography variant="small" className="font-normal text-center md:text-left">
+            &copy; {currentYear} All rights reserved.
           </Typography>
-          <Typography variant="small" className="font-normal">
+          <Typography variant="small" className="font-normal text-center md:text-right">
             Powered by{" "}
             <a
               href="https://www.viteconsulting.com/"
-              title="vite consulting"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-abcf"
             >
               Vite Consulting

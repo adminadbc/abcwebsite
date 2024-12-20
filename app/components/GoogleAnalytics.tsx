@@ -4,6 +4,13 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
+
 export default function GoogleAnalytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -11,6 +18,9 @@ export default function GoogleAnalytics() {
   useEffect(() => {
     const handlePageView = () => {
       if (!window.gtag) return;
+
+      const consent = localStorage.getItem('cookieConsent');
+      if (consent !== 'true') return;
 
       const pagePath = searchParams.size ? `${pathname}?${searchParams.toString()}` : pathname;
       const pageTitle = document.title || pathname;
@@ -22,41 +32,46 @@ export default function GoogleAnalytics() {
           page_path: pagePath,
           send_to: 'G-MQW2S3KCX7'
         });
-
-        if (process.env.NODE_ENV === 'development') {
-          console.log('Page tracked:', {
-            title: pageTitle,
-            path: pagePath,
-            url: window.location.href
-          });
-        }
       } catch (error) {
         console.error('Error tracking page view:', error);
       }
     };
 
-    // Delay the page view tracking slightly to ensure GA is properly initialized
     setTimeout(handlePageView, 100);
   }, [pathname, searchParams]);
 
   return (
     <>
       <Script
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-MQW2S3KCX7`}
-        onError={(e) => console.error('Error loading GA script:', e)}
       />
       <Script
         id="google-analytics"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+
+            // Initialize with denied consent
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'denied',
+              'personalization_storage': 'denied',
+              'security_storage': 'granted'
+            });
+
             gtag('js', new Date());
             gtag('config', 'G-MQW2S3KCX7', {
               page_path: window.location.pathname,
-              send_page_view: true,
+              send_page_view: false,
+              cookie_flags: 'SameSite=None;Secure',
+              cookie_domain: 'auto',
+              cookie_expires: 365 * 24 * 60 * 60, // 1 year in seconds
+              cookie_update: true,
+              client_storage: 'none', // Use first-party storage
               debug_mode: ${process.env.NODE_ENV === 'development'}
             });
           `,

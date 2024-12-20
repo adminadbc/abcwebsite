@@ -5,6 +5,7 @@ import Script from "next/script";
 
 import NavBar from "./ui/components/navbar";
 import GoogleAnalytics from './components/GoogleAnalytics';
+import CookieConsent from './components/CookieConsent';
 // Specify the weight property along with subsets
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <CookieConsent />
       </body>
     </html>
   );
