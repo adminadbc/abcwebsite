@@ -19,7 +19,7 @@ export function Ariba() {
       <div className="inline m-20 container  my-auto ">
         <Image
           src="/ariba.jpg"
-          alt="marketing manager image"
+          alt="ariba's profile photo"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={350}
           height={300}
@@ -27,37 +27,32 @@ export function Ariba() {
 
         <div className="mb-12">
           <Typography className="mb-8 font-normal">
-            Stepping into the vibrant world of media over two decades ago,
-            I&apos;ve become a seasoned navigator of digital realms, print,
-            radio waves, and television screens. Fluent in three languages -
-            English, Hindi, and Punjabi - I effortlessly bridge cultural gaps
-            and resonate with diverse audiences worldwide.
+            At ABC Foundation, Ariba has transformed the organization&apos;s
+            online presence by creating impactful campaigns on platforms like
+            Instagram, Facebook, Twitter, and LinkedIn. She combines her
+            expertise in content creation and analytics to craft strategies that
+            resonate with diverse audiences, boosting awareness and fostering
+            community engagement. Her efforts have played a pivotal role in
+            increasing the foundation&apos;s reach and inspiring action among
+            donors and volunteers.
           </Typography>
 
           <Typography className="mb-8 font-normal">
-            As an unwavering advocate of equality and equity, my mission is
-            clear: to amplify the often unheard voices and champion inclusive
-            representation across media platforms. I believe in the power of
-            storytelling, fueled by ethical journalism, to create impactful and
-            engaging content that resonates globally.
+            Ariba is not just a manager but also a digital innovator who thrives
+            on exploring new tools and trends to enhance her work. She
+            collaborates closely with her team to ensure that every post,
+            campaign, and interaction aligns with the foundation&apos;s core
+            values and objectives. Her dedication to social media as a force for
+            good underscores her belief that impactful communication can spark
+            lasting change.
           </Typography>
 
           <Typography className="mb-6 font-normal">
-            Beyond the professional realm, motherhood to my 11-year-old daughter
-            has infused me with patience and added depth to my personality. My
-            journey from India to Ontario in 2019 and subsequent settlement in
-            Calgary in 2022 reflects my adaptability and embrace of new
-            experiences.
-          </Typography>
-          <Typography className="mb-6 font-normal">
-            Embracing Calgary&apos;s open and friendly ambiance, I&apos;ve woven
-            myself into the fabric of community participation and digital media
-            management, contributing to meaningful change and connectivity.
-          </Typography>
-          <Typography className="mb-6 font-normal">
-            As a media maverick, I&apos;m committed to driving narratives that
-            inspire, inform, and empower, leaving a lasting impact on audiences
-            and society alike.
+            Outside of her professional endeavors, Ariba enjoys immersing
+            herself in creative pursuits such as graphic design and
+            storytelling. She is deeply committed to using her skills to support
+            causes that matter, reflecting her unwavering commitment to making a
+            difference through her work at ABC Foundation.
           </Typography>
         </div>
       </div>

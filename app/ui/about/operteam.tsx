@@ -19,7 +19,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 
-
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -153,16 +152,16 @@ const members = [
     title: "Lorem Ipsum Lorem",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
 
-    email: "mailto:marketing@abcfoundationconnect.com",
+    email: "mailto:bilal.sikander@abcfoundationconnect.com",
     url: "/about/team/operteam/bilal",
   },
   {
     img: "/ariba.jpg",
     name: "Ariba Azar",
-    title: "Lorem Ipsum Lorem",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    title: "Graphic Designer and Social Media Manager",
+    desc: "Ariba Raja is the social media manager for ABC Foundation, a non-profit organization dedicated to driving positive change in communities. With a passion for storytelling and a strategic mindset, Ariba is instrumental in amplifying the foundation's mission and connecting with supporters through engaging digital content.",
 
-    email: "mailto:marketing@abcfoundationconnect.com",
+    email: "mailto:ariba.azhar@abcfoundationconnect.com",
     url: "/about/team/operteam/ariba",
   },
   {
@@ -187,52 +186,67 @@ const members = [
 ];
 
 export function OperTeam() {
-  
   const [refFirst, inViewFirst] = useInView();
   const [refSecond, inViewSecond] = useInView();
-    const controlsSecond = useAnimation();
+  const controlsSecond = useAnimation();
   const controlsFirst = useAnimation();
-    useEffect(() => {
-      if (inViewFirst) {
-        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
-      }
-    }, [controlsFirst, inViewFirst]);
-  
-      useEffect(() => {
-      if (inViewSecond) {
-        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
-      }
-    }, [controlsSecond, inViewSecond]);
+  useEffect(() => {
+    if (inViewFirst) {
+      controlsFirst.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.5, duration: 0.5 },
+      });
+    }
+  }, [controlsFirst, inViewFirst]);
+
+  useEffect(() => {
+    if (inViewSecond) {
+      controlsSecond.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.8, duration: 0.5 },
+      });
+    }
+  }, [controlsSecond, inViewSecond]);
   return (
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
-       
-     
-        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
-        <div className="mb-20 text-center lg:mb-28">
-          <h2 className="text-4xl mb-4">The Operations Team</h2>
-          <div className="relative flex py-5 w-1/2  mx-auto items-center">
-            <div className="flex-grow border-t-4 border-abcf w-96"></div>
-            <p className="mx-5  text-center">
-              <TbTopologyStarRing3 />
-            </p>
-            <div className="flex-grow border-t-4 border-abcf w-96"></div>
+        <motion.div
+          ref={refFirst}
+          initial={{ opacity: 0, y: -50 }}
+          animate={controlsFirst}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <div className="mb-20 text-center lg:mb-28">
+            <h2 className="text-4xl mb-4">The Operations Team</h2>
+            <div className="relative flex py-5 w-1/2  mx-auto items-center">
+              <div className="flex-grow border-t-4 border-abcf w-96"></div>
+              <p className="mx-5  text-center">
+                <TbTopologyStarRing3 />
+              </p>
+              <div className="flex-grow border-t-4 border-abcf w-96"></div>
+            </div>
+            <Typography variant="lead" className="mx-auto max-w-4xl">
+              Empowering communities starts with the dedication of those behind
+              the scenes. Together, as the operations team of Advocacy for
+              Better Communities Foundation, we turn passion into action,
+              driving positive change one step at a time.
+            </Typography>
           </div>
-          <Typography variant="lead" className="mx-auto max-w-4xl">
-            Empowering communities starts with the dedication of those behind
-            the scenes. Together, as the operations team of Advocacy for Better
-            Communities Foundation, we turn passion into action, driving
-            positive change one step at a time.
-          </Typography>
-        </div>
-      </motion.div>
-        <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
-          {members.map((props, key) => (
-            <TeamCard key={key} {...props} />
-          ))}
-        </div>
-      </motion.div>
+        </motion.div>
+        <motion.div
+          ref={refSecond}
+          initial={{ opacity: 0, y: -50 }}
+          animate={controlsSecond}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
+            {members.map((props, key) => (
+              <TeamCard key={key} {...props} />
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
