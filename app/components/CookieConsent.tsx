@@ -52,7 +52,7 @@ export default function CookieConsent() {
         <div className="text-sm md:text-base text-gray-700">
           <p>
             We use cookies to enhance your browsing experience and analyze our traffic. 
-            By clicking "Accept All", you consent to our use of cookies. 
+            By clicking &quot;Accept All&quot;, you consent to our use of cookies. 
             <a 
               href="/policy" 
               className="text-abcf hover:underline ml-1"
@@ -80,4 +80,4 @@ export default function CookieConsent() {
       </div>
     </div>
   );
-} 
+}
