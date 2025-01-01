@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Card, CardContent } from "@/components/ui/card"
+import * as React from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -9,47 +9,58 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "@/components/ui/carousel"
-import { useState, useEffect } from "react"
+} from "@/components/ui/carousel";
+import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { TbTopologyStarRing3 } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
-import UnitedJourneyMission from "./unitedmission"
-import Image from "next/image"
+import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import UnitedJourneyMission from "./unitedmission";
+import Image from "next/image";
 
 const carouselItems = [
   { image: "/united-journeys/united-journeys.png", text: "United Journeys" },
-  { image: "/united-journeys/1.jpg", text: "Empower Newcomers and Current Residents" },
+  {
+    image: "/united-journeys/1.jpg",
+    text: "Empower Newcomers and Current Residents",
+  },
   { image: "/united-journeys/2.jpg", text: "Foster Language Proficiency" },
-  { image: "/united-journeys/3.jpg", text: "Facilitate Employment Opportunities" },
+  {
+    image: "/united-journeys/3.jpg",
+    text: "Facilitate Employment Opportunities",
+  },
   { image: "/united-journeys/4.jpg", text: "Support Housing Stability" },
   { image: "/united-journeys/5.jpg", text: "Promote Social Integration" },
   { image: "/united-journeys/6.jpg", text: "Enhance Digital Literacy" },
   { image: "/united-journeys/7.jpg", text: "Provide Family and Youth Support" },
-  { image: "/united-journeys/8.jpg", text: "Ensure Access to Healthcare and Mental Health Services" },
-]
+  {
+    image: "/united-journeys/8.jpg",
+    text: "Ensure Access to Healthcare and Mental Health Services",
+  },
+];
 
 export default function UnitedJourneys() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>()
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [refFirst, inViewFirst] = useInView();
   const controlsFirst = useAnimation();
 
   useEffect(() => {
     if (!carouselApi) {
-      return
+      return;
     }
 
     carouselApi.on("select", () => {
-      setCurrentIndex(carouselApi.selectedScrollSnap())
-    })
-  }, [carouselApi])
+      setCurrentIndex(carouselApi.selectedScrollSnap());
+    });
+  }, [carouselApi]);
 
   return (
     <section className="mx-auto container max-w-5xl px-8 py-10">
-    <div className="text-center my-5 sm:my-30">
-      {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
-      <h3 className="text-4xl">Newcomer and Resettlement Services</h3>
+      <div className="text-center my-5 sm:my-30">
+        {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
+        <h3 className="text-4xl">Newcomer and Resettlement Services</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -57,14 +68,26 @@ export default function UnitedJourneys() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <h4>Canadian immigrant resettlement services are essential for helping newcomers integrate into Canadian society. These services are typically offered by a combination of government agencies, non-profit organizations, and community groups, focusing on areas such as language learning, employment support, and social integration. United Journeys also assists individuals who are new to the city but may have previously lived in another city or province in Canada. The goal is to ensure everyone has access to all the services available in the community to support their journey.</h4>
-      {/* </motion.div>    */}
-    </div>
-    <h2 className="text-center text-4xl my-10">United Journey's Mission</h2>
+        <h4>
+          Canadian immigrant resettlement services are essential for helping
+          newcomers integrate into Canadian society. These services are
+          typically offered by a combination of government agencies, non-profit
+          organizations, and community groups, focusing on areas such as
+          language learning, employment support, and social integration. United
+          Journeys also assists individuals who are new to the city but may have
+          previously lived in another city or province in Canada. The goal is to
+          ensure everyone has access to all the services available in the
+          community to support their journey.
+        </h4>
+        {/* </motion.div>    */}
+      </div>
+      <h2 className="text-center text-4xl my-10">
+        United Journey&apos;s Mission
+      </h2>
 
-    <UnitedJourneyMission/>
+      <UnitedJourneyMission />
 
-    {/* <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
+      {/* <div className="flex flex-col lg:flex-row w-full h-3/4 max-w-4xl mx-auto items-center gap-4">
       <div className="w-full h-2/4 lg:w-1/2 aspect-square bg-gray-100 rounded-lg overflow-hidden my-5">
         <Image
           src={carouselItems[currentIndex].image}
@@ -99,9 +122,9 @@ export default function UnitedJourneys() {
         </Carousel>
       </div>
     </div> */}
-    <div className="text-center ">
-      {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
-      <h3 className="text-4xl my-10">Events Snapshot</h3>
+      <div className="text-center ">
+        {/* <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}> */}
+        <h3 className="text-4xl my-10">Check What Have We Been Up To</h3>
         <div className="relative flex py-5  mx-auto items-center">
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
           <p className="mx-5  text-center">
@@ -109,9 +132,39 @@ export default function UnitedJourneys() {
           </p>
           <div className="flex-grow border-t-4 border-abcf w-96"></div>
         </div>
-        <h4>Have glance at our recent events snapshot.</h4>
-      {/* </motion.div>    */}
-    </div>
+        <h4>
+          Please have a glance at our social media accounts for recent events.
+        </h4>
+        {/* </motion.div>    */}
+        <div className="flex justify-center mb-8 lg:mb-0">
+          <div className="flex gap-4 mt-6 text-abcf">
+            <a
+              href="https://www.facebook.com/ABCFoundationConnect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-abcf"
+            >
+              <FaSquareFacebook size={75} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/advocacy-for-better-communities-foundation-abc-foundation/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-abcf"
+            >
+              <FaLinkedin size={75} />
+            </a>
+            <a
+              href="https://www.instagram.com/the.abcfoundation/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-abcf"
+            >
+              <FaInstagramSquare size={75} />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
