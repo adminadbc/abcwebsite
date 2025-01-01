@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -46,10 +46,10 @@ const DropMenu: React.FC<
               <Link
                 key={index}
                 href={item.href}
-                className="block px-4 py-2 text-base hover:text-abcf"
+                className="block px-4 py-2 hover:text-abcf font-['Roboto_Serif']"
                 role="menuitem"
               >
-                {item.name}
+                <h6 className="text-xl font-normal">{item.name}</h6>
               </Link>
             ))}
           </div>
@@ -79,7 +79,6 @@ const links = [
       { name: "Engage", href: "/advocacy/engage" },
       { name: "Safe Spaces", href: "/advocacy/safe-spaces" },
       { name: "United Journeys", href: "/advocacy/united-journeys" },
-      
     ],
   },
   {
@@ -193,7 +192,7 @@ export function NavBar() {
 
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-          <ul className="flex flex-col gap-4 text-gray-900 text-lg">
+          <ul className="flex flex-col gap-4 text-gray-900 text-xl">
             {links.map((link, idx) => (
               <li key={idx} className="hover:text-abcf">
                 {link.submenu ? (
@@ -204,16 +203,26 @@ export function NavBar() {
                     >
                       <h6>{link.name}</h6>
                       <FontAwesomeIcon
-                        icon={openDropdown === idx ? faChevronUp : faChevronDown}
+                        icon={
+                          openDropdown === idx ? faChevronUp : faChevronDown
+                        }
                         className="ml-2"
                       />
                     </div>
                     {openDropdown === idx && (
                       <ul className="mt-2 ml-4">
                         {link.submenuItems.map((subItem, subIdx) => (
-                          <li key={subIdx} className="mt-2">
-                            <Link href={subItem.href} onClick={handleMenuItemClick}>
-                              <h6>{subItem.name}</h6>
+                          <li
+                            key={subIdx}
+                            className="mt-2 text-lg font-['Roboto_Serif']"
+                          >
+                            <Link
+                              href={subItem.href}
+                              onClick={handleMenuItemClick}
+                            >
+                              <h6 className="text-lg font-normal">
+                                {subItem.name}
+                              </h6>
                             </Link>
                           </li>
                         ))}
@@ -229,7 +238,7 @@ export function NavBar() {
             ))}
           </ul>
           {/* <SearchLayer /> */}
-          <Link 
+          <Link
             href="https://donate.abcfoundationconnect.com/b/8wMaEK1aw8OGdj2144"
             className="inline-block"
           >
