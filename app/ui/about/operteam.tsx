@@ -146,15 +146,15 @@ const members = [
     email: "mailto:pr@abcfoundationconnect.com",
     url: "/about/team/operteam/raj",
   },
-  {
-    img: "/bilal.jpg",
-    name: "Bilal Iskander",
-    title: "Lorem Ipsum Lorem",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+  // {
+  //   img: "/bilal.jpg",
+  //   name: "Bilal Iskander",
+  //   title: "Lorem Ipsum Lorem",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
 
-    email: "mailto:bilal.sikander@abcfoundationconnect.com",
-    url: "/about/team/operteam/bilal",
-  },
+  //   email: "mailto:bilal.sikander@abcfoundationconnect.com",
+  //   url: "/about/team/operteam/bilal",
+  // },
   {
     img: "/ariba.jpg",
     name: "Ariba Azar",
