@@ -57,7 +57,7 @@ export default function LegalAdvocacySupport() {
         <h4>The Legal Advocacy and Support Initiative is designed to provide comprehensive legal assistance and advocacy services to Canadian communities. This initiative aims to support individuals and groups in navigating legal challenges, providing access to justice, and fostering an environment where legal rights are protected and upheld. The program operates with an open-door policy, welcoming individuals from all backgrounds to access legal resources and support.</h4>
       {/* </motion.div>    */}
     </div>
-    <h2 className="text-center text-4xl my-10">Legal Advocacy & Support's Mission</h2>
+    <h2 className="text-center text-4xl my-10">Legal Advocacy & Support&apos;s Mission</h2>
 
     <LegalAdvocacySupportMission/>
 

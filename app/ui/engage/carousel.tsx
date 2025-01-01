@@ -50,7 +50,7 @@ export default function Engage() {
         <h4>Engage is an initiative dedicated to supporting and uplifting some of the most vulnerable populations in Alberta. The program aims to create a more inclusive and compassionate community by addressing the needs of seniors, children, individuals affected by domestic violence, LGBTQIA+ communities, Indigenous and First Nations people, and those in protected and drug rehabilitation programs.</h4>
       {/* </motion.div>    */}
     </div>
-    <h2 className="text-center text-4xl my-10">Engage's Mission</h2>
+    <h2 className="text-center text-4xl my-10">Engage&apos;s Mission</h2>
     <EngMission/>
    
     <div className="text-center ">
