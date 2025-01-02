@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 
 declare global {
   interface Window {
@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-export default function GoogleAnalytics() {
+function Analytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -41,7 +41,7 @@ export default function GoogleAnalytics() {
   }, [pathname, searchParams]);
 
   return (
-    <>
+    <Suspense fallback={null}>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-MQW2S3KCX7`}
@@ -77,6 +77,14 @@ export default function GoogleAnalytics() {
           `,
         }}
       />
-    </>
+    </Suspense>
   );
-} 
+}
+
+export default function GoogleAnalytics() {
+  return (
+    <Suspense fallback={null}>
+      <Analytics />
+    </Suspense>
+  );
+}
