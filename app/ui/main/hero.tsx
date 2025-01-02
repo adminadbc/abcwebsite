@@ -86,14 +86,17 @@ export function HeroSection12() {
           >
             <Link href="/booking" target="_blank" rel="noreferrer">
               <Button
-                className="bg-abcf text-black w-42 text-lg mr-3"
+                className="bg-abcf text-black w-42 text-lg mr-3 mb-2"
                 size="lg"
               >
                 Book an appointment
               </Button>
             </Link>
             <Link href="/calendar" target="_blank" rel="noreferrer">
-              <Button className="bg-abcf text-black w-42 text-lg" size="lg">
+              <Button
+                className="bg-abcf text-black w-42 text-lg mb-2"
+                size="lg"
+              >
                 Upcoming Events
               </Button>
             </Link>
