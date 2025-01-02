@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { FaSquareFacebook, FaLinkedin } from "react-icons/fa6";
@@ -34,9 +35,13 @@ const links = [
   },
 ];
 
-const currentYear = new Date().getFullYear();
-
 export function Footer4() {
+  const [currentYear, setCurrentYear] = useState(2024);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="px-8 py-28 bg-brand2">
       <div className="container mx-auto">
