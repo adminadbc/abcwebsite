@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-
 import {
   Card,
   CardBody,
@@ -158,7 +157,6 @@ const members = [
     desc: "Rashad Bayram is an innovative leader and strategic visionary, excels in driving operational efficiency and technological advancement. Rashad transforms challenges into opportunities, delivering impactful results through expertise in sales, account management, and business optimization.",
     bio: "I am the dynamic force driving innovation and growth. My passion lies in transforming complex challenges into transformative opportunities, leveraging my expertise in operational efficiency, strategic collaboration, and technological innovation.Throughout my career, I've spearheaded game-changing initiatives. At Emerson, I led the optimization of SalesForce CRM's mobile version, achieving $1.5 million in cost savings and slashing the accounts receivable lifecycle in half. During my tenure at Nokia Corporation, I managed $250M in B2B sales, showcasing my sales prowess and account management finesse in high-stakes environments.My journey is defined by an unwavering commitment to driving excellence. With every role I undertake, I leave a lasting impact through enhanced performance and strategic innovation.From orchestrating seamless business operations to crafting bespoke solutions, I thrive on leveraging my diverse skill set to navigate the complexities of today's digital business landscape. With my influential communication style and relentless drive for success, I confidently tackle challenges, consistently exceeding expectations and delivering results that propel businesses forward.",
     email: "mailto:rashad.bayram@abcfoundationconnect.com",
-    twitter: "https://twitter.com/bayrashad",
     linkedin: "https://www.linkedin.com/in/rashadbayram/",
     url: "/about/team/execteam/rashad",
   },
@@ -167,48 +165,65 @@ const members = [
 export function ExecTeam() {
   const [refFirst, inViewFirst] = useInView();
   const [refSecond, inViewSecond] = useInView();
-    const controlsSecond = useAnimation();
+  const controlsSecond = useAnimation();
   const controlsFirst = useAnimation();
-    useEffect(() => {
-      if (inViewFirst) {
-        controlsFirst.start({ opacity: 1, y: 0 , transition: { delay: 0.5, duration : 0.5} });
-      }
-    }, [controlsFirst, inViewFirst]);
-  
-      useEffect(() => {
-      if (inViewSecond) {
-        controlsSecond.start({ opacity: 1, y: 0 , transition: { delay: 0.8, duration : 0.5 }});
-      }
-    }, [controlsSecond, inViewSecond]);
+  useEffect(() => {
+    if (inViewFirst) {
+      controlsFirst.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.5, duration: 0.5 },
+      });
+    }
+  }, [controlsFirst, inViewFirst]);
+
+  useEffect(() => {
+    if (inViewSecond) {
+      controlsSecond.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.8, duration: 0.5 },
+      });
+    }
+  }, [controlsSecond, inViewSecond]);
   return (
     <section className="py-10 px-8 lg:py-28">
       <div className="container mx-auto">
-     
-        <motion.div ref={refFirst} initial={{ opacity: 0, y: -50 }} animate={controlsFirst} exit={{ opacity: 0, y: 50 }}>
-        <div className="mb-20 text-center lg:mb-28">
-          <h2 className="text-4xl mb-4">The Executive Team</h2>
-          <div className="relative flex py-5 w-1/2  mx-auto items-center">
-            <div className="flex-grow border-t-4 border-abcf w-96"></div>
-            <p className="mx-5  text-center">
-              <TbTopologyStarRing3 />
+        <motion.div
+          ref={refFirst}
+          initial={{ opacity: 0, y: -50 }}
+          animate={controlsFirst}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <div className="mb-20 text-center lg:mb-28">
+            <h2 className="text-4xl mb-4">The Executive Team</h2>
+            <div className="relative flex py-5 w-1/2  mx-auto items-center">
+              <div className="flex-grow border-t-4 border-abcf w-96"></div>
+              <p className="mx-5  text-center">
+                <TbTopologyStarRing3 />
+              </p>
+              <div className="flex-grow border-t-4 border-abcf w-96"></div>
+            </div>
+            <p className="mx-auto max-w-4xl text-lg ">
+              Fueled by purpose, united in vision, our executive teams at
+              Advocacy for Better Communities Foundation ignite change,
+              sculpting a brighter tomorrow through unwavering dedication and
+              collaborative spirit.
             </p>
-            <div className="flex-grow border-t-4 border-abcf w-96"></div>
           </div>
-          <p className="mx-auto max-w-4xl text-lg ">
-            Fueled by purpose, united in vision, our executive teams at Advocacy
-            for Better Communities Foundation ignite change, sculpting a
-            brighter tomorrow through unwavering dedication and collaborative
-            spirit.
-          </p>
-        </div>
-      </motion.div>
-        <motion.div ref={refSecond} initial={{ opacity: 0, y: -50 }} animate={controlsSecond} exit={{ opacity: 0, y: 50 }}>
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
-          {members.map((props, key) => (
-            <TeamCard key={key} {...props} />
-          ))}
-        </div>
-      </motion.div>
+        </motion.div>
+        <motion.div
+          ref={refSecond}
+          initial={{ opacity: 0, y: -50 }}
+          animate={controlsSecond}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
+            {members.map((props, key) => (
+              <TeamCard key={key} {...props} />
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
