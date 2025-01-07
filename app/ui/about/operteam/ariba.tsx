@@ -18,7 +18,7 @@ export function Ariba() {
 
       <div className="inline m-20 container  my-auto ">
         <Image
-          src="/ariba.jpg"
+          src="/ariba.png"
           alt="ariba's profile photo"
           className="float-left mr-10 mb-5 rounded-lg shadow-2xl lg:max-w-[26rem] lg:min-h-[26rem]"
           width={350}

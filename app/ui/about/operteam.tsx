@@ -156,12 +156,13 @@ const members = [
   //   url: "/about/team/operteam/bilal",
   // },
   {
-    img: "/ariba.jpg",
+    img: "/ariba.png",
     name: "Ariba Azar",
     title: "Graphic Designer and Social Media Manager",
     desc: "Ariba Raja is the social media manager for ABC Foundation, a non-profit organization dedicated to driving positive change in communities. With a passion for storytelling and a strategic mindset, Ariba is instrumental in amplifying the foundation's mission and connecting with supporters through engaging digital content.",
 
     email: "mailto:ariba.azhar@abcfoundationconnect.com",
+    linkedin: "https://www.linkedin.com/in/ariba-raja-18b10024a/",
     url: "/about/team/operteam/ariba",
   },
   {
@@ -181,6 +182,7 @@ const members = [
     desc: "Maureen has built a career in Human Services, specializing in supporting children and families with complex needs using a trauma-informed approach. She now teaches in post-secondary institutions, sharing her expertise and guiding students. Her work has earned her several awards, recognizing her contributions to the field.",
 
     email: "mailto:maureen.wit@abcfoundationconnect.com",
+    linkedin: "https://www.linkedin.com/in/maureen-wit-471149114/",
     url: "/about/team/operteam/maureen",
   },
 ];
