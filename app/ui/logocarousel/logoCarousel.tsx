@@ -11,11 +11,10 @@ import ACanadian from "@/public/partnerimages/a-canadian.png";
 import ACanadian1 from "@/public/partnerimages/a-aanadian1.png";
 import Police from "@/public/partnerimages/CPS-logo.svg";
 import FiveCloveMedia from "@/public/partnerimages/fiveclovemedia.jpg";
-import Genesis from "@/public/partnerimages/genesis.jpeg"
-import KD from "@/public/partnerimages/kd.png"
-import PCHS from "@/public/partnerimages/pchs.png"
-import Mccollege from "@/public/partnerimages/mcgcollege.jpg"
-import TastyBites from "@/public/partnerimages/tastybites.png"
+import Genesis from "@/public/partnerimages/genesis.jpeg";
+import KD from "@/public/partnerimages/kd.png";
+import PCHS from "@/public/partnerimages/pchs.png";
+import TastyBites from "@/public/partnerimages/tastybites.png";
 
 import styles from "./LogoCarousel.module.css";
 import { TbTopologyStarRing3 } from "react-icons/tb";
@@ -28,12 +27,11 @@ export default function LogoCarousel() {
     { src: ACanadian, alt: "A-Canadian" },
     { src: ACanadian1, alt: "A-Canadian1" },
     { src: KD, alt: "KD" },
-    { src: Mccollege, alt: "McCollege"},
     { src: TastyBites, alt: "TastyBites" },
     { src: PCHS, alt: "PCHS" },
     { src: Genesis, alt: "Genesis" },
     { src: FiveCloveMedia, alt: "FiveCloveMedia" },
-    { src: Police, alt: "Police"},
+    { src: Police, alt: "Police" },
     { src: Microsoft, alt: "Microsoft" },
     { src: Vite, alt: "Vite Consulting" },
     { src: Ownit, alt: "Ownit Student Chapter" },
@@ -59,7 +57,7 @@ export default function LogoCarousel() {
           {logos.map((logo, index) => (
             <li key={index} className="text-4xl mx-4 ">
               <div className={styles["logo-container"]}>
-                <Image src={logo.src} alt={logo.alt}  />
+                <Image src={logo.src} alt={logo.alt} />
               </div>
             </li>
           ))}
@@ -68,7 +66,7 @@ export default function LogoCarousel() {
           {logos.map((logo, index) => (
             <li key={index} className="text-4xl mx-4">
               <div className={styles["logo-container"]}>
-                <Image src={logo.src} alt={logo.alt}  />
+                <Image src={logo.src} alt={logo.alt} />
               </div>
             </li>
           ))}
