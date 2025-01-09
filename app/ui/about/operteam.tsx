@@ -157,7 +157,7 @@ const members = [
   // },
   {
     img: "/ariba.png",
-    name: "Ariba Azar",
+    name: "Ariba Azhar",
     title: "Graphic Designer and Social Media Manager",
     desc: "Ariba Raja is the social media manager for ABC Foundation, a non-profit organization dedicated to driving positive change in communities. With a passion for storytelling and a strategic mindset, Ariba is instrumental in amplifying the foundation's mission and connecting with supporters through engaging digital content.",
 
