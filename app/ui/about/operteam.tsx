@@ -137,15 +137,15 @@ function TeamCard({
 }
 
 const members = [
-  {
-    img: "/raj.jpg",
-    name: "Raj Dhillon",
-    title: "Advocacy and Public Relations Manager",
-    desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
+  // {
+  //   img: "/raj.jpg",
+  //   name: "Raj Dhillon",
+  //   title: "Advocacy and Public Relations Manager",
+  //   desc: "Raj's varied path, from entrepreneur to stay-at-home mom to community activist, reflects her dynamic life. She's committed to individual responsibility for community improvement and eagerly contributes her skills to projects promoting engagement, education, and advocacy.",
 
-    email: "mailto:pr@abcfoundationconnect.com",
-    url: "/about/team/operteam/raj",
-  },
+  //   email: "mailto:pr@abcfoundationconnect.com",
+  //   url: "/about/team/operteam/raj",
+  // },
   // {
   //   img: "/bilal.jpg",
   //   name: "Bilal Iskander",
@@ -165,16 +165,16 @@ const members = [
     linkedin: "https://www.linkedin.com/in/ariba-raja-18b10024a/",
     url: "/about/team/operteam/ariba",
   },
-  {
-    img: "/ambreen.jpg",
-    name: "Ambreen Sheikh",
-    title: "Events and Community Outreach Manager",
-    desc: "Ambreen Sheikh, a community advocate with an entrepreneurial background, collaborates with ministers as a community outreach and event manager. Committed to fostering inclusivity, Ambreen strives to create a positive impact in the community.",
+  // {
+  //   img: "/ambreen.jpg",
+  //   name: "Ambreen Sheikh",
+  //   title: "Events and Community Outreach Manager",
+  //   desc: "Ambreen Sheikh, a community advocate with an entrepreneurial background, collaborates with ministers as a community outreach and event manager. Committed to fostering inclusivity, Ambreen strives to create a positive impact in the community.",
 
-    email: "mailto:events@abcfoundationconnect.com",
-    linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
-    url: "/about/team/operteam/ambreen",
-  },
+  //   email: "mailto:events@abcfoundationconnect.com",
+  //   linkedin: "www.linkedin.com/in/ambreen-sheikh-ba9736114",
+  //   url: "/about/team/operteam/ambreen",
+  // },
   {
     img: "/maureen.jpg",
     name: "Maureen Wit",
