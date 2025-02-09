@@ -66,7 +66,7 @@ const links = [
     href: "/about",
     submenu: true,
     submenuItems: [
-      { name: "Team", href: "/about/team" },
+      // { name: "Team", href: "/about/team" },
       { name: "Articles", href: "https://blog.abcfoundationconnect.com/" },
     ],
   },
